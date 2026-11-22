@@ -1,0 +1,23 @@
+export global Theme {
+    in-out property <bool> dark: true;
+
+    out property <color> bg: dark ? #171b22 : #f2f4f7;
+    out property <color> sidebar: dark ? #11151b : #ffffff;
+    out property <color> card: dark ? #212733 : #ffffff;
+    out property <color> card-hover: dark ? #283040 : #f5f7fa;
+    out property <color> track: dark ? #2e3645 : #e6e9ef;
+    out property <color> border: dark ? #2c3442 : #e1e5eb;
+    out property <color> text: dark ? #e7eaf0 : #1d2330;
+    out property <color> text-dim: dark ? #8a93a5 : #687083;
+    out property <color> accent: #3d8bfd;
+    out property <color> accent-soft: dark ? #1e3354 : #e3edff;
+    out property <color> success: #2fbf71;
+    out property <color> warning: #f0a020;
+    out property <color> danger: #e5484d;
+
+    out property <length> radius: 10px;
+    out property <length> gap: 14px;
+    out property <length> font-small: 12px;
+    out property <length> font-normal: 13px;
+    out property <length> font-title: 18px;
+}

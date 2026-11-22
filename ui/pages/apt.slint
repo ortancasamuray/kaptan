@@ -1,0 +1,129 @@
+import { ListView, LineEdit, Switch, CheckBox, Spinner } from "std-widgets.slint";
+import { Theme } from "../theme.slint";
+import { Card, PageTitle, IconButton, MessageBar, EmptyState } from "../widgets.slint";
+import { Apt } from "../globals.slint";
+
+export component AptPage inherits Rectangle {
+    VerticalLayout {
+        spacing: 10px;
+
+        HorizontalLayout {
+            spacing: 8px;
+            PageTitle { text: @tr("APT Repositories"); subtitle: "(" + Apt.sources.length + ")"; }
+            Rectangle { horizontal-stretch: 1; }
+            if Apt.busy: Spinner { indeterminate: true; width: 28px; height: 28px; }
+            IconButton {
+                icon: @image-url("../icons/refresh.svg");
+                enabled: !Apt.busy;
+                clicked => { Apt.reload(); }
+            }
+        }
+
+        Card {
+            HorizontalLayout {
+                padding: 12px;
+                spacing: 10px;
+                LineEdit {
+                    horizontal-stretch: 1;
+                    placeholder-text: @tr("e.g. ppa:user/repo  or  deb http://example.com/debian stable main");
+                    text <=> Apt.new-repo;
+                    accepted => { Apt.add(); }
+                }
+                CheckBox { text: @tr("Source code"); checked <=> Apt.new-with-source; }
+                IconButton {
+                    icon: @image-url("../icons/plus.svg");
+                    text: @tr("Add Repository");
+                    primary: true;
+                    enabled: !Apt.busy && Apt.new-repo != "";
+                    clicked => { Apt.add(); }
+                }
+            }
+        }
+
+        MessageBar { text: Apt.message; error: Apt.message-error; }
+
+        if Apt.sources.length == 0: EmptyState { vertical-stretch: 1; text: @tr("No repositories found."); }
+        if Apt.sources.length > 0: ListView {
+            vertical-stretch: 1;
+            for s[i] in Apt.sources: Rectangle {
+                height: 64px;
+                Card {
+                    y: 3px;
+                    height: 58px;
+                    width: parent.width - 12px;
+                    HorizontalLayout {
+                        padding-left: 16px;
+                        padding-right: 10px;
+                        spacing: 8px;
+                        VerticalLayout {
+                            horizontal-stretch: 1;
+                            alignment: center;
+                            spacing: 2px;
+                            Text {
+                                text: s.display;
+                                color: s.active ? Theme.text : Theme.text-dim;
+                                font-size: Theme.font-normal;
+                                font-family: "monospace";
+                                overflow: elide;
+                            }
+                            Text {
+                                text: s.file;
+                                color: Theme.text-dim;
+                                font-size: 11px;
+                                overflow: elide;
+                            }
+                        }
+                        Switch {
+                            checked: s.active;
+                            enabled: !Apt.busy;
+                            toggled => { Apt.toggle(i, self.checked); }
+                        }
+                        IconButton {
+                            y: 13px;
+                            height: 32px;
+                            icon: @image-url("../icons/edit.svg");
+                            enabled: !Apt.busy;
+                            clicked => { Apt.edit(i); }
+                        }
+                        IconButton {
+                            y: 13px;
+                            height: 32px;
+                            icon: @image-url("../icons/trash.svg");
+                            enabled: !Apt.busy;
+                            clicked => { Apt.remove(i); }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    if Apt.editor-open: Rectangle {
+        background: #000000a0;
+        TouchArea { }
+        Card {
+            width: min(parent.width - 40px, 520px);
+            height: dlg.preferred-height;
+            dlg := VerticalLayout {
+                padding: 20px;
+                spacing: 10px;
+                Text { text: @tr("Edit Repository"); color: Theme.text; font-size: 16px; font-weight: 700; }
+                Text { text: @tr("Types"); color: Theme.text-dim; font-size: Theme.font-small; }
+                LineEdit { text <=> Apt.f-types; }
+                Text { text: @tr("URI"); color: Theme.text-dim; font-size: Theme.font-small; }
+                LineEdit { text <=> Apt.f-uri; }
+                Text { text: @tr("Suites"); color: Theme.text-dim; font-size: Theme.font-small; }
+                LineEdit { text <=> Apt.f-suites; }
+                Text { text: @tr("Components"); color: Theme.text-dim; font-size: Theme.font-small; }
+                LineEdit { text <=> Apt.f-components; }
+                HorizontalLayout {
+                    alignment: end;
+                    spacing: 8px;
+                    padding-top: 6px;
+                    IconButton { text: @tr("Cancel"); clicked => { Apt.editor-open = false; } }
+                    IconButton { text: @tr("Save"); primary: true; clicked => { Apt.save-edit(); } }
+                }
+            }
+        }
+    }
+}

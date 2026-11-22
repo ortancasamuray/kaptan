@@ -1,0 +1,182 @@
+import { StandardTableView, LineEdit, CheckBox, ComboBox, SpinBox, Spinner } from "std-widgets.slint";
+import { Theme } from "../theme.slint";
+import { Card, PageTitle, IconButton, MessageBar } from "../widgets.slint";
+import { Search } from "../globals.slint";
+
+component Labeled inherits VerticalLayout {
+    in property <string> label;
+    spacing: 4px;
+    Text { text: root.label; color: Theme.text-dim; font-size: Theme.font-small; }
+    @children
+}
+
+export component SearchPage inherits VerticalLayout {
+    spacing: 10px;
+
+    PageTitle { text: @tr("Search"); subtitle: Search.info; }
+
+    HorizontalLayout {
+        spacing: 8px;
+        LineEdit {
+            horizontal-stretch: 2;
+            placeholder-text: @tr("Directory");
+            text <=> Search.directory;
+        }
+        IconButton {
+            icon: @image-url("../icons/folder.svg");
+            text: @tr("Browse");
+            clicked => { Search.browse(); }
+        }
+        LineEdit {
+            horizontal-stretch: 3;
+            placeholder-text: @tr("File name or pattern, e.g. *.log");
+            text <=> Search.pattern;
+            accepted => { Search.run-search(); }
+        }
+        IconButton {
+            icon: @image-url("../icons/search.svg");
+            text: @tr("Search");
+            primary: true;
+            enabled: !Search.searching;
+            clicked => { Search.run-search(); }
+        }
+        if Search.searching: Spinner { indeterminate: true; width: 28px; height: 28px; }
+    }
+
+    HorizontalLayout {
+        spacing: 16px;
+        CheckBox { text: @tr("Case insensitive"); checked <=> Search.case-insensitive; }
+        CheckBox { text: @tr("Regular expression"); checked <=> Search.regex; }
+        CheckBox { text: @tr("Invert match"); checked <=> Search.invert; }
+        CheckBox { text: @tr("Search as root"); checked <=> Search.as-root; }
+        Rectangle { horizontal-stretch: 1; }
+        IconButton {
+            text: Search.advanced-open ? @tr("Advanced ▲") : @tr("Advanced ▼");
+            clicked => { Search.advanced-open = !Search.advanced-open; }
+        }
+    }
+
+    if Search.advanced-open: Card {
+        GridLayout {
+            padding: 14px;
+            spacing: 10px;
+            Row {
+                Labeled {
+                    label: @tr("Type");
+                    ComboBox { model: [@tr("All"), @tr("File"), @tr("Directory"), @tr("Symbolic Link")]; current-index <=> Search.type-index; }
+                }
+                Labeled {
+                    label: @tr("Time");
+                    ComboBox { model: [@tr("Any"), @tr("Accessed"), @tr("Modified"), @tr("Changed")]; current-index <=> Search.time-type-index; }
+                }
+                Labeled {
+                    label: @tr("Comparison");
+                    ComboBox { model: [@tr("Within (<)"), @tr("Exactly (=)"), @tr("Older (>)")]; current-index <=> Search.time-cmp-index; enabled: Search.time-type-index > 0; }
+                }
+                Labeled {
+                    label: @tr("Minutes");
+                    SpinBox { minimum: 0; maximum: 1000000; value <=> Search.time-minutes; enabled: Search.time-type-index > 0; }
+                }
+            }
+            Row {
+                Labeled {
+                    label: @tr("Size");
+                    ComboBox { model: [@tr("Any"), @tr("Smaller (<)"), @tr("Equal (=)"), @tr("Greater (>)")]; current-index <=> Search.size-cmp-index; }
+                }
+                Labeled {
+                    label: @tr("Amount");
+                    SpinBox { minimum: 0; maximum: 1000000; value <=> Search.size; enabled: Search.size-cmp-index > 0; }
+                }
+                Labeled {
+                    label: @tr("Unit");
+                    ComboBox { model: ["Bytes", "KiB", "MiB", "GiB"]; current-index <=> Search.size-unit-index; enabled: Search.size-cmp-index > 0; }
+                }
+                Labeled {
+                    label: @tr("Owner");
+                    ComboBox { model: Search.users; current-index <=> Search.user-index; }
+                }
+            }
+            Row {
+                Labeled {
+                    label: @tr("Group");
+                    ComboBox { model: Search.groups; current-index <=> Search.group-index; }
+                }
+                Labeled {
+                    label: @tr("Permissions");
+                    HorizontalLayout {
+                        spacing: 10px;
+                        CheckBox { text: "r"; checked <=> Search.readable; }
+                        CheckBox { text: "w"; checked <=> Search.writable; }
+                        CheckBox { text: "x"; checked <=> Search.executable; }
+                    }
+                }
+                Labeled {
+                    label: @tr("Other");
+                    CheckBox { text: @tr("Empty only"); checked <=> Search.empty; }
+                }
+            }
+        }
+    }
+
+    MessageBar { text: Search.message; error: Search.message-error; }
+
+    StandardTableView {
+        vertical-stretch: 1;
+        columns: [
+            { title: @tr("Name"), width: 220px },
+            { title: @tr("Path"), min-width: 280px, horizontal-stretch: 1 },
+            { title: @tr("Size"), width: 90px },
+            { title: @tr("Owner"), width: 90px },
+            { title: @tr("Modified"), width: 150px },
+        ];
+        rows: Search.rows;
+        current-row <=> Search.current-row;
+        sort-ascending(col) => { Search.sort(col, true); }
+        sort-descending(col) => { Search.sort(col, false); }
+    }
+
+    HorizontalLayout {
+        spacing: 8px;
+        alignment: end;
+        IconButton {
+            icon: @image-url("../icons/folder.svg");
+            text: @tr("Open Folder");
+            enabled: Search.current-row >= 0;
+            clicked => { Search.open-folder(); }
+        }
+        IconButton {
+            icon: @image-url("../icons/trash.svg");
+            text: @tr("Move to Trash");
+            enabled: Search.current-row >= 0;
+            clicked => { Search.move-to-trash(); }
+        }
+        IconButton {
+            text: @tr("Delete Permanently");
+            danger: true;
+            enabled: Search.current-row >= 0;
+            clicked => { confirm.visible = true; }
+        }
+    }
+
+    confirm := Rectangle {
+        visible: false;
+        height: self.visible ? 50px : 0px;
+        border-radius: 8px;
+        background: Theme.danger.with-alpha(0.15);
+        HorizontalLayout {
+            padding-left: 14px;
+            padding-right: 8px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            spacing: 8px;
+            Text {
+                text: @tr("Delete the selected item permanently? This cannot be undone.");
+                color: Theme.danger;
+                vertical-alignment: center;
+                horizontal-stretch: 1;
+            }
+            IconButton { text: @tr("Cancel"); clicked => { confirm.visible = false; } }
+            IconButton { text: @tr("Delete"); danger: true; clicked => { confirm.visible = false; Search.delete-file(); } }
+        }
+    }
+}

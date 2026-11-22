@@ -1,0 +1,84 @@
+import { StandardTableView, LineEdit } from "std-widgets.slint";
+import { Theme } from "../theme.slint";
+import { Card, PageTitle, IconButton, MessageBar } from "../widgets.slint";
+import { Hosts } from "../globals.slint";
+
+export component HelpersPage inherits VerticalLayout {
+    spacing: 10px;
+
+    HorizontalLayout {
+        spacing: 8px;
+        PageTitle { text: @tr("Hosts"); subtitle: "/etc/hosts  (" + Hosts.count + ")"; }
+        Rectangle { horizontal-stretch: 1; }
+        IconButton {
+            icon: @image-url("../icons/refresh.svg");
+            clicked => { Hosts.reload(); }
+        }
+        IconButton {
+            icon: @image-url("../icons/plus.svg");
+            text: @tr("New Host");
+            clicked => { Hosts.new-item(); }
+        }
+    }
+
+    MessageBar { text: Hosts.message; error: Hosts.message-error; }
+
+    if Hosts.editor-open: Card {
+        VerticalLayout {
+            padding: 14px;
+            spacing: 10px;
+            HorizontalLayout {
+                spacing: 10px;
+                LineEdit { placeholder-text: @tr("IP address *"); text <=> Hosts.f-ip; horizontal-stretch: 1; }
+                LineEdit { placeholder-text: @tr("Hostname *"); text <=> Hosts.f-host; horizontal-stretch: 2; }
+                LineEdit { placeholder-text: @tr("Aliases"); text <=> Hosts.f-aliases; horizontal-stretch: 2; }
+            }
+            MessageBar { text: Hosts.editor-error; error: true; }
+            HorizontalLayout {
+                alignment: end;
+                spacing: 8px;
+                IconButton { text: @tr("Cancel"); clicked => { Hosts.editor-open = false; } }
+                IconButton { text: @tr("Apply"); primary: true; clicked => { Hosts.save-item(); } }
+            }
+        }
+    }
+
+    StandardTableView {
+        vertical-stretch: 1;
+        columns: [
+            { title: @tr("IP Address"), width: 200px },
+            { title: @tr("Hostname"), width: 260px },
+            { title: @tr("Aliases"), horizontal-stretch: 1 },
+        ];
+        rows: Hosts.rows;
+        current-row <=> Hosts.current-row;
+    }
+
+    HorizontalLayout {
+        spacing: 8px;
+        IconButton {
+            icon: @image-url("../icons/edit.svg");
+            text: @tr("Edit");
+            enabled: Hosts.current-row >= 0;
+            clicked => { Hosts.edit-item(Hosts.current-row); }
+        }
+        IconButton {
+            icon: @image-url("../icons/trash.svg");
+            text: @tr("Delete");
+            enabled: Hosts.current-row >= 0;
+            clicked => { Hosts.delete-item(Hosts.current-row); }
+        }
+        Rectangle { horizontal-stretch: 1; }
+        if Hosts.dirty: Text {
+            text: @tr("Unsaved changes");
+            color: Theme.warning;
+            vertical-alignment: center;
+        }
+        IconButton {
+            text: @tr("Save Changes");
+            primary: true;
+            enabled: Hosts.dirty;
+            clicked => { Hosts.save-file(); }
+        }
+    }
+}

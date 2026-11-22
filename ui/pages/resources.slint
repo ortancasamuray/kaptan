@@ -1,0 +1,54 @@
+import { ScrollView } from "std-widgets.slint";
+import { Theme } from "../theme.slint";
+import { Card, HistoryChart, UsageBar, PageTitle } from "../widgets.slint";
+import { Resources } from "../globals.slint";
+
+export component ResourcesPage inherits ScrollView {
+    VerticalLayout {
+        spacing: Theme.gap;
+        padding-right: 12px;
+        for chart in Resources.charts: HistoryChart {
+            title: chart.title;
+            series: chart.series;
+            y-labels: chart.y-labels;
+        }
+        Card {
+            VerticalLayout {
+                padding: 16px;
+                spacing: 12px;
+                Text {
+                    text: @tr("File Systems");
+                    color: Theme.text;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+                for d in Resources.disks: VerticalLayout {
+                    spacing: 5px;
+                    HorizontalLayout {
+                        spacing: 8px;
+                        Text {
+                            text: d.name;
+                            color: Theme.text;
+                            font-weight: 600;
+                            font-size: Theme.font-normal;
+                        }
+                        Text {
+                            text: d.device + "  ·  " + d.fs-type;
+                            color: Theme.text-dim;
+                            font-size: Theme.font-small;
+                            vertical-alignment: center;
+                            horizontal-stretch: 1;
+                        }
+                        Text {
+                            text: d.text;
+                            color: Theme.text-dim;
+                            font-size: Theme.font-small;
+                            vertical-alignment: center;
+                        }
+                    }
+                    UsageBar { value: d.percent; }
+                }
+            }
+        }
+    }
+}

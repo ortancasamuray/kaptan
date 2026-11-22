@@ -1,0 +1,132 @@
+import { Palette } from "std-widgets.slint";
+import { Theme } from "theme.slint";
+import { Icon } from "widgets.slint";
+import { App, Dashboard, Resources, Processes, Startup, Services, Uninstaller, Cleaner, Search, Hosts, Apt, Desktop, Settings, NavItem, ChartData, DiskUsage, StartupItem, ServiceItem, PackageItem, CleanerRow, AptItem, DesktopSetting } from "globals.slint";
+import { ChartSeries } from "widgets.slint";
+import { DashboardPage } from "pages/dashboard.slint";
+import { ResourcesPage } from "pages/resources.slint";
+import { ProcessesPage } from "pages/processes.slint";
+import { StartupPage } from "pages/startup.slint";
+import { ServicesPage } from "pages/services.slint";
+import { UninstallerPage } from "pages/uninstaller.slint";
+import { CleanerPage } from "pages/cleaner.slint";
+import { SearchPage } from "pages/search.slint";
+import { HelpersPage } from "pages/helpers.slint";
+import { AptPage } from "pages/apt.slint";
+import { DesktopPage } from "pages/desktop.slint";
+import { SettingsPage } from "pages/settings.slint";
+
+export { Theme, App, Dashboard, Resources, Processes, Startup, Services, Uninstaller, Cleaner, Search, Hosts, Apt, Desktop, Settings }
+
+component SidebarButton inherits Rectangle {
+    in property <NavItem> item;
+    in property <bool> active;
+    callback clicked;
+
+    height: 40px;
+    border-radius: 8px;
+    background: active ? Theme.accent-soft : ta.has-hover ? Theme.card-hover : transparent;
+    animate background { duration: 120ms; }
+
+    ta := TouchArea {
+        mouse-cursor: pointer;
+        clicked => { root.clicked(); }
+    }
+
+    HorizontalLayout {
+        padding-left: 12px;
+        spacing: 12px;
+        Icon {
+            source: root.item.icon;
+            tint: root.active ? Theme.accent : Theme.text-dim;
+            y: (parent.height - self.height) / 2;
+        }
+        Text {
+            text: root.item.label;
+            color: root.active ? Theme.accent : Theme.text;
+            font-size: Theme.font-normal;
+            font-weight: root.active ? 700 : 500;
+            vertical-alignment: center;
+        }
+    }
+}
+
+export component AppWindow inherits Window {
+    title: "Kaptan";
+    icon: @image-url("icons/kaptan.svg");
+    preferred-width: 1180px;
+    preferred-height: 760px;
+    min-width: 880px;
+    min-height: 600px;
+    background: Theme.bg;
+    default-font-size: 13px;
+
+    property <bool> dark: Theme.dark;
+    init => { Palette.color-scheme = Theme.dark ? ColorScheme.dark : ColorScheme.light; }
+    changed dark => { Palette.color-scheme = Theme.dark ? ColorScheme.dark : ColorScheme.light; }
+
+    HorizontalLayout {
+        // Sidebar
+        Rectangle {
+            width: 236px;
+            background: Theme.sidebar;
+            border-width: 0px;
+            VerticalLayout {
+                padding: 10px;
+                spacing: 4px;
+                HorizontalLayout {
+                    padding-left: 6px;
+                    padding-bottom: 14px;
+                    padding-top: 6px;
+                    spacing: 10px;
+                    Image {
+                        source: @image-url("icons/kaptan.svg");
+                        width: 32px;
+                        height: 32px;
+                    }
+                    Text {
+                        text: "Kaptan";
+                        color: Theme.text;
+                        font-size: 18px;
+                        font-weight: 800;
+                        vertical-alignment: center;
+                    }
+                }
+                for item in App.nav: SidebarButton {
+                    item: item;
+                    active: App.current-page == item.id;
+                    clicked => {
+                        App.current-page = item.id;
+                        App.page-changed(item.id);
+                    }
+                }
+                Rectangle { vertical-stretch: 1; }
+            }
+            Rectangle {
+                x: parent.width - 1px;
+                width: 1px;
+                background: Theme.border;
+            }
+        }
+
+        // Page area
+        Rectangle {
+            horizontal-stretch: 1;
+            VerticalLayout {
+                padding: 20px;
+                if App.current-page == "dashboard": DashboardPage { }
+                if App.current-page == "resources": ResourcesPage { }
+                if App.current-page == "processes": ProcessesPage { }
+                if App.current-page == "startup": StartupPage { }
+                if App.current-page == "services": ServicesPage { }
+                if App.current-page == "uninstaller": UninstallerPage { }
+                if App.current-page == "cleaner": CleanerPage { }
+                if App.current-page == "search": SearchPage { }
+                if App.current-page == "helpers": HelpersPage { }
+                if App.current-page == "apt": AptPage { }
+                if App.current-page == "desktop": DesktopPage { }
+                if App.current-page == "settings": SettingsPage { }
+            }
+        }
+    }
+}

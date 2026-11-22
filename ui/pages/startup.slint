@@ -1,0 +1,116 @@
+import { ListView, LineEdit, Switch, Button } from "std-widgets.slint";
+import { Theme } from "../theme.slint";
+import { Card, PageTitle, IconButton, EmptyState, MessageBar, Icon } from "../widgets.slint";
+import { Startup } from "../globals.slint";
+
+component Field inherits VerticalLayout {
+    in property <string> label;
+    in-out property <string> value;
+    in property <string> placeholder;
+    spacing: 4px;
+    Text { text: root.label; color: Theme.text-dim; font-size: Theme.font-small; }
+    LineEdit { text <=> root.value; placeholder-text: root.placeholder; }
+}
+
+export component StartupPage inherits Rectangle {
+    VerticalLayout {
+        spacing: 10px;
+        HorizontalLayout {
+            PageTitle {
+                text: @tr("Startup Applications");
+                subtitle: "(" + Startup.apps.length + ")";
+            }
+            Rectangle { horizontal-stretch: 1; }
+            IconButton {
+                icon: @image-url("../icons/plus.svg");
+                text: @tr("Add Startup App");
+                primary: true;
+                clicked => { Startup.open-editor(""); }
+            }
+        }
+        MessageBar { text: Startup.message; error: true; }
+        if Startup.apps.length == 0: EmptyState {
+            vertical-stretch: 1;
+            text: @tr("No startup applications found.");
+        }
+        if Startup.apps.length > 0: ListView {
+            vertical-stretch: 1;
+            for app in Startup.apps: Rectangle {
+                height: 58px;
+                Card {
+                    y: 4px;
+                    height: 50px;
+                    width: parent.width - 12px;
+                    HorizontalLayout {
+                        padding-left: 16px;
+                        padding-right: 10px;
+                        spacing: 8px;
+                        Text {
+                            text: app.name;
+                            color: Theme.text;
+                            font-size: 14px;
+                            vertical-alignment: center;
+                            horizontal-stretch: 1;
+                            overflow: elide;
+                        }
+                        Switch {
+                            checked: app.enabled;
+                            toggled => { Startup.toggle(app.path, self.checked); }
+                        }
+                        IconButton {
+                            icon: @image-url("../icons/edit.svg");
+                            y: 9px;
+                            height: 32px;
+                            clicked => { Startup.open-editor(app.path); }
+                        }
+                        IconButton {
+                            icon: @image-url("../icons/trash.svg");
+                            y: 9px;
+                            height: 32px;
+                            clicked => { Startup.remove(app.path); }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Editor dialog
+    if Startup.editor-open: Rectangle {
+        background: #000000a0;
+        TouchArea { } // block clicks behind
+        Card {
+            width: min(parent.width - 40px, 460px);
+            height: dialog.preferred-height;
+            dialog := VerticalLayout {
+                padding: 20px;
+                spacing: 12px;
+                Text {
+                    text: Startup.editor-path == "" ? @tr("New Startup Application") : @tr("Edit Startup Application");
+                    color: Theme.text;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                Field { label: @tr("Name *"); value <=> Startup.f-name; }
+                Field { label: @tr("Command *"); value <=> Startup.f-command; placeholder: "/usr/bin/app --flag"; }
+                Field { label: @tr("Generic name"); value <=> Startup.f-generic; }
+                Field { label: @tr("Comment"); value <=> Startup.f-comment; }
+                Field { label: @tr("Icon"); value <=> Startup.f-icon; }
+                MessageBar { text: Startup.editor-error; error: true; }
+                HorizontalLayout {
+                    spacing: 8px;
+                    alignment: end;
+                    IconButton {
+                        text: @tr("Cancel");
+                        clicked => { Startup.editor-open = false; }
+                    }
+                    IconButton {
+                        text: @tr("Save");
+                        primary: true;
+                        clicked => { Startup.save(); }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+import { StandardListView } from "std-widgets.slint";
+import { Theme } from "../theme.slint";
+import { Card, CircleBar, LineBar } from "../widgets.slint";
+import { Dashboard } from "../globals.slint";
+
+export component DashboardPage inherits VerticalLayout {
+    spacing: Theme.gap;
+
+    HorizontalLayout {
+        spacing: Theme.gap;
+        min-height: 220px;
+        CircleBar {
+            title: @tr("CPU");
+            value: Dashboard.cpu-value;
+            text: Dashboard.cpu-text;
+            color-a: #A8E063;
+            color-b: #56AB2F;
+        }
+        CircleBar {
+            title: @tr("MEMORY");
+            value: Dashboard.mem-value;
+            text: Dashboard.mem-text;
+            color-a: #FFB75E;
+            color-b: #ED8F03;
+        }
+        CircleBar {
+            title: @tr("DISK");
+            value: Dashboard.disk-value;
+            text: Dashboard.disk-text;
+            color-a: #DC2430;
+            color-b: #7B4397;
+        }
+        if Dashboard.gpu-visible: CircleBar {
+            title: @tr("GPU");
+            value: Dashboard.gpu-value;
+            text: Dashboard.gpu-text;
+            color-a: #36D1DC;
+            color-b: #5B86E5;
+        }
+    }
+
+    HorizontalLayout {
+        spacing: Theme.gap;
+        vertical-stretch: 1;
+        Card {
+            horizontal-stretch: 3;
+            VerticalLayout {
+                padding: 16px;
+                spacing: 8px;
+                Text {
+                    text: @tr("SYSTEM INFO");
+                    color: Theme.text-dim;
+                    font-size: Theme.font-small;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                }
+                for item in Dashboard.system-info: Text {
+                    text: item.text;
+                    color: Theme.text;
+                    font-size: Theme.font-normal;
+                    wrap: word-wrap;
+                }
+                Rectangle { vertical-stretch: 1; }
+            }
+        }
+        VerticalLayout {
+            horizontal-stretch: 2;
+            spacing: Theme.gap;
+            alignment: start;
+            LineBar {
+                title: @tr("DOWNLOAD");
+                value: Dashboard.down-value;
+                text: Dashboard.down-text;
+                caption: Dashboard.down-total;
+                bar-color: #2fbf71;
+            }
+            LineBar {
+                title: @tr("UPLOAD");
+                value: Dashboard.up-value;
+                text: Dashboard.up-text;
+                caption: Dashboard.up-total;
+                bar-color: #3d8bfd;
+            }
+        }
+    }
+}

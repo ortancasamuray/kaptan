@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=Kaptan
+GenericName=System Optimizer
+GenericName[tr]=Sistem İyileştirici
+Comment=Linux system optimizer and monitor
+Comment[tr]=Linux sistem iyileştirici ve izleyici
+Exec=kaptan
+Icon=kaptan
+Terminal=false
+Categories=System;Monitor;
+Keywords=system;monitor;cleaner;services;processes;startup;
+Keywords[tr]=sistem;izleyici;temizleyici;servisler;işlemler;başlangıç;
+StartupWMClass=kaptan

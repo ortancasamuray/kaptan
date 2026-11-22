@@ -1,0 +1,70 @@
+import { ScrollView, Switch, SpinBox, ComboBox, Spinner } from "std-widgets.slint";
+import { Theme } from "../theme.slint";
+import { Card, PageTitle, MessageBar, EmptyState } from "../widgets.slint";
+import { Desktop } from "../globals.slint";
+
+export component DesktopPage inherits VerticalLayout {
+    spacing: 10px;
+    PageTitle { text: @tr("Desktop Settings"); subtitle: "GNOME"; }
+    MessageBar { text: Desktop.message; error: true; }
+
+    if Desktop.loading: VerticalLayout {
+        vertical-stretch: 1;
+        alignment: center;
+        Spinner { indeterminate: true; height: 40px; }
+    }
+    if !Desktop.loading && Desktop.settings.length == 0: EmptyState {
+        vertical-stretch: 1;
+        text: @tr("No supported GNOME settings were found on this system.");
+    }
+    if !Desktop.loading && Desktop.settings.length > 0: ScrollView {
+        vertical-stretch: 1;
+        VerticalLayout {
+            spacing: 6px;
+            padding-right: 12px;
+            for s[i] in Desktop.settings: Rectangle {
+                height: s.kind == 0 ? 40px : 52px;
+                if s.kind == 0: Text {
+                    y: 14px;
+                    x: 4px;
+                    text: s.label;
+                    color: Theme.text-dim;
+                    font-size: Theme.font-small;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                }
+                if s.kind != 0: Card {
+                    HorizontalLayout {
+                        padding-left: 16px;
+                        padding-right: 12px;
+                        spacing: 10px;
+                        Text {
+                            text: s.label;
+                            color: Theme.text;
+                            font-size: 14px;
+                            vertical-alignment: center;
+                            horizontal-stretch: 1;
+                        }
+                        if s.kind == 1: Switch {
+                            checked: s.bool-value;
+                            toggled => { Desktop.set-bool(i, self.checked); }
+                        }
+                        if s.kind == 2: SpinBox {
+                            width: 120px;
+                            minimum: s.min;
+                            maximum: s.max;
+                            value: s.int-value;
+                            edited(v) => { Desktop.set-int(i, v); }
+                        }
+                        if s.kind == 3: ComboBox {
+                            width: 220px;
+                            model: s.options;
+                            current-index: s.option-index;
+                            selected => { Desktop.set-option(i, self.current-index); }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+import { ListView, Spinner } from "std-widgets.slint";
+import { Theme } from "../theme.slint";
+import { Card, PageTitle, IconButton, MessageBar, Icon, Check } from "../widgets.slint";
+import { Cleaner } from "../globals.slint";
+
+export component CleanerPage inherits VerticalLayout {
+    spacing: 12px;
+
+    HorizontalLayout {
+        PageTitle { text: @tr("System Cleaner"); subtitle: Cleaner.has-results ? Cleaner.total : ""; }
+        Rectangle { horizontal-stretch: 1; }
+        if Cleaner.has-results: IconButton {
+            text: @tr("Back to categories");
+            enabled: !Cleaner.cleaning;
+            clicked => { Cleaner.back(); }
+        }
+    }
+
+    MessageBar { text: Cleaner.message; error: Cleaner.message-error; }
+
+    // Category selection
+    if !Cleaner.has-results: Card {
+        vertical-stretch: 1;
+        VerticalLayout {
+            padding: 24px;
+            spacing: 14px;
+            alignment: start;
+            Text {
+                text: @tr("Select what to scan");
+                color: Theme.text;
+                font-size: 15px;
+                font-weight: 700;
+            }
+            for title[i] in Cleaner.category-titles: Check {
+                text: title;
+                checked: Cleaner.categories[i];
+                enabled: !Cleaner.scanning;
+                toggled(on) => { Cleaner.set-category(i, on); }
+            }
+            HorizontalLayout {
+                alignment: start;
+                spacing: 12px;
+                padding-top: 10px;
+                IconButton {
+                    icon: @image-url("../icons/search.svg");
+                    text: Cleaner.scanning ? @tr("Scanning…") : @tr("System Scan");
+                    primary: true;
+                    enabled: !Cleaner.scanning;
+                    clicked => { Cleaner.scan(); }
+                }
+                if Cleaner.scanning: Spinner { indeterminate: true; width: 30px; height: 30px; }
+            }
+        }
+    }
+
+    // Scan results
+    if Cleaner.has-results: Card {
+        vertical-stretch: 1;
+        ListView {
+            for row[i] in Cleaner.rows: Rectangle {
+                height: row.is-group ? 42px : 30px;
+                background: row.is-group ? Theme.card-hover : transparent;
+                HorizontalLayout {
+                    padding-left: row.is-group ? 10px : 44px;
+                    padding-right: 16px;
+                    spacing: 6px;
+                    if row.is-group: Rectangle {
+                        width: 24px;
+                        Icon {
+                            source: row.expanded ? @image-url("../icons/chevron-down.svg") : @image-url("../icons/chevron-right.svg");
+                            tint: Theme.text-dim;
+                            width: 16px;
+                            height: 16px;
+                        }
+                        TouchArea { mouse-cursor: pointer; clicked => { Cleaner.expand(row.group); } }
+                    }
+                    Check {
+                        text: row.title;
+                        checked: row.checked;
+                        enabled: !Cleaner.cleaning;
+                        font-weight: row.is-group ? 700 : 400;
+                        horizontal-stretch: 1;
+                        toggled(on) => { Cleaner.toggle-row(i, on); }
+                    }
+                    Text {
+                        text: row.size;
+                        color: row.is-group ? Theme.text : Theme.text-dim;
+                        font-weight: row.is-group ? 700 : 400;
+                        font-size: Theme.font-normal;
+                        vertical-alignment: center;
+                        horizontal-alignment: right;
+                        width: 90px;
+                    }
+                }
+            }
+        }
+    }
+
+    if Cleaner.has-results: HorizontalLayout {
+        spacing: 12px;
+        IconButton { text: @tr("Select all"); enabled: !Cleaner.cleaning; clicked => { Cleaner.select-all(true); } }
+        IconButton { text: @tr("Select none"); enabled: !Cleaner.cleaning; clicked => { Cleaner.select-all(false); } }
+        Rectangle { horizontal-stretch: 1; }
+        if Cleaner.cleaning: Spinner { indeterminate: true; width: 28px; height: 28px; }
+        IconButton {
+            icon: @image-url("../icons/cleaner.svg");
+            text: @tr("Clean");
+            danger: true;
+            enabled: !Cleaner.cleaning;
+            clicked => { Cleaner.clean(); }
+        }
+    }
+}

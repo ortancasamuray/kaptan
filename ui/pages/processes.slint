@@ -1,0 +1,79 @@
+import { StandardTableView, LineEdit, CheckBox, Slider } from "std-widgets.slint";
+import { Theme } from "../theme.slint";
+import { PageTitle, IconButton, MessageBar } from "../widgets.slint";
+import { Processes } from "../globals.slint";
+
+export component ProcessesPage inherits VerticalLayout {
+    spacing: 10px;
+
+    HorizontalLayout {
+        spacing: 12px;
+        PageTitle {
+            text: @tr("Processes");
+            subtitle: "(" + Processes.count + ")";
+        }
+        Rectangle { horizontal-stretch: 1; }
+        LineEdit {
+            width: 220px;
+            placeholder-text: @tr("Filter by name, user or PID");
+            text <=> Processes.filter;
+            edited => { Processes.options-changed(); }
+        }
+        CheckBox {
+            text: @tr("All users");
+            checked <=> Processes.all-users;
+            toggled => { Processes.options-changed(); }
+        }
+    }
+
+    table := StandardTableView {
+        vertical-stretch: 1;
+        columns: [
+            { title: "PID", width: 85px },
+            { title: @tr("User"), width: 110px },
+            { title: "%CPU", width: 85px },
+            { title: "%" + @tr("Mem"), width: 85px },
+            { title: @tr("Resident"), width: 100px },
+            { title: @tr("Virtual"), width: 100px },
+            { title: @tr("State"), width: 80px },
+            { title: @tr("Nice"), width: 75px },
+            { title: @tr("Started"), width: 95px },
+            { title: @tr("Process"), horizontal-stretch: 1, min-width: 200px },
+        ];
+        rows: Processes.rows;
+        current-row <=> Processes.current-row;
+        sort-ascending(col) => { Processes.sort(col, true); }
+        sort-descending(col) => { Processes.sort(col, false); }
+        current-row-changed(row) => { Processes.select-row(row); }
+    }
+
+    MessageBar { text: Processes.message; error: true; }
+
+    HorizontalLayout {
+        spacing: 12px;
+        Text {
+            text: @tr("Refresh every {} s", Processes.refresh-seconds);
+            color: Theme.text-dim;
+            vertical-alignment: center;
+            font-size: Theme.font-normal;
+        }
+        Slider {
+            width: 160px;
+            minimum: 1;
+            maximum: 10;
+            step: 1;
+            value: Processes.refresh-seconds;
+            changed(v) => {
+                Processes.refresh-seconds = round(v);
+                Processes.options-changed();
+            }
+        }
+        Rectangle { horizontal-stretch: 1; }
+        IconButton {
+            text: Processes.selected-pid > 0 ? @tr("End Process {}", Processes.selected-pid) : @tr("End Process");
+            danger: true;
+            enabled: Processes.selected-pid > 0;
+            clicked => { Processes.end-process(); }
+        }
+    }
+}

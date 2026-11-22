@@ -1,0 +1,389 @@
+import { Theme } from "theme.slint";
+
+export struct ChartSeries {
+    commands: string,
+    color: color,
+    label: string,
+}
+
+export component Card inherits Rectangle {
+    background: Theme.card;
+    border-radius: Theme.radius;
+    border-width: 1px;
+    border-color: Theme.border;
+}
+
+export component PageTitle inherits HorizontalLayout {
+    in property <string> text;
+    in property <string> subtitle;
+    spacing: 10px;
+    alignment: start;
+    Text {
+        text: root.text;
+        font-size: Theme.font-title;
+        font-weight: 700;
+        color: Theme.text;
+        vertical-alignment: center;
+    }
+    if root.subtitle != "": Text {
+        text: root.subtitle;
+        font-size: Theme.font-normal;
+        color: Theme.text-dim;
+        vertical-alignment: center;
+    }
+}
+
+export component Icon inherits Image {
+    in property <color> tint: Theme.text;
+    colorize: tint;
+    width: 18px;
+    height: 18px;
+}
+
+/// Flat button with an optional icon.
+export component IconButton inherits Rectangle {
+    in property <image> icon;
+    in property <string> text;
+    in property <bool> primary: false;
+    in property <bool> danger: false;
+    in property <bool> enabled: true;
+    callback clicked;
+
+    property <color> fg: !enabled ? Theme.text-dim : primary || danger ? #ffffff : Theme.text;
+    min-height: 32px;
+    border-radius: 7px;
+    background: !enabled ? Theme.track
+        : danger ? (ta.has-hover ? Theme.danger.darker(0.15) : Theme.danger)
+        : primary ? (ta.has-hover ? Theme.accent.darker(0.15) : Theme.accent)
+        : (ta.has-hover ? Theme.card-hover : Theme.card);
+    border-width: primary || danger ? 0px : 1px;
+    border-color: Theme.border;
+    opacity: enabled ? 1 : 0.6;
+
+    ta := TouchArea {
+        enabled: root.enabled;
+        mouse-cursor: pointer;
+        clicked => { root.clicked(); }
+    }
+
+    HorizontalLayout {
+        padding-left: root.text == "" ? 7px : 12px;
+        padding-right: root.text == "" ? 7px : 12px;
+        spacing: 6px;
+        alignment: center;
+        if root.icon.width > 0: Icon {
+            source: root.icon;
+            tint: root.fg;
+            width: 16px;
+            height: 16px;
+            y: (parent.height - self.height) / 2;
+        }
+        if root.text != "": Text {
+            text: root.text;
+            color: root.fg;
+            font-size: Theme.font-normal;
+            font-weight: 600;
+            vertical-alignment: center;
+        }
+    }
+}
+
+/// Circular gauge (Stacer's CircleBar).
+export component CircleBar inherits Card {
+    in property <string> title;
+    in property <float> value; // 0..100
+    in property <string> text;
+    in property <color> color-a;
+    in property <color> color-b;
+
+    min-width: 150px;
+    min-height: 200px;
+
+    VerticalLayout {
+        padding: 14px;
+        spacing: 6px;
+        Text {
+            text: root.title;
+            color: Theme.text-dim;
+            font-size: Theme.font-small;
+            font-weight: 700;
+            letter-spacing: 1px;
+            horizontal-alignment: center;
+        }
+        gauge := Rectangle {
+            property <length> size: min(self.width, self.height);
+            property <float> v: clamp(root.value, 0, 100) / 100;
+            property <angle> a: v * 360deg;
+            property <float> ex: 50 + 42 * Math.sin(a);
+            property <float> ey: 50 - 42 * Math.cos(a);
+
+            Path {
+                x: (gauge.width - gauge.size) / 2;
+                y: (gauge.height - gauge.size) / 2;
+                width: gauge.size;
+                height: gauge.size;
+                viewbox-width: 100;
+                viewbox-height: 100;
+                stroke: Theme.track;
+                stroke-width: 9px;
+                commands: "M 50 8 A 42 42 0 1 1 49.99 8";
+            }
+            // Numeric path elements: string commands would depend on the locale's decimal separator.
+            if gauge.v > 0.004: Path {
+                x: (gauge.width - gauge.size) / 2;
+                y: (gauge.height - gauge.size) / 2;
+                width: gauge.size;
+                height: gauge.size;
+                viewbox-width: 100;
+                viewbox-height: 100;
+                stroke: @linear-gradient(135deg, root.color-a 0%, root.color-b 100%);
+                stroke-width: 9px;
+                stroke-line-cap: round;
+                MoveTo { x: 50; y: 8; }
+                ArcTo {
+                    x: gauge.v >= 0.999 ? 49.99 : gauge.ex;
+                    y: gauge.v >= 0.999 ? 8 : gauge.ey;
+                    radius-x: 42;
+                    radius-y: 42;
+                    large-arc: gauge.v > 0.5;
+                    sweep: true;
+                }
+            }
+            Text {
+                text: root.text;
+                color: Theme.text;
+                font-size: max(11px, gauge.size / 13);
+                font-weight: 600;
+                horizontal-alignment: center;
+                vertical-alignment: center;
+                width: gauge.size * 0.7;
+                height: gauge.size * 0.6;
+                x: (gauge.width - self.width) / 2;
+                y: (gauge.height - self.height) / 2;
+                wrap: word-wrap;
+            }
+        }
+    }
+}
+
+/// Horizontal bar with a value and a caption (Stacer's LineBar).
+export component LineBar inherits Card {
+    in property <string> title;
+    in property <float> value; // 0..100
+    in property <string> text;
+    in property <string> caption;
+    in property <color> bar-color: Theme.accent;
+
+    min-height: 90px;
+    VerticalLayout {
+        padding: 14px;
+        spacing: 8px;
+        HorizontalLayout {
+            Text {
+                text: root.title;
+                color: Theme.text-dim;
+                font-size: Theme.font-small;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+            Text {
+                text: root.text;
+                color: Theme.text;
+                font-size: Theme.font-normal;
+                font-weight: 600;
+                horizontal-alignment: right;
+            }
+        }
+        Rectangle {
+            height: 8px;
+            border-radius: 4px;
+            background: Theme.track;
+            Rectangle {
+                x: 0;
+                width: parent.width * clamp(root.value, 0, 100) / 100;
+                border-radius: 4px;
+                background: root.bar-color;
+                animate width { duration: 300ms; easing: ease-out; }
+            }
+        }
+        Text {
+            text: root.caption;
+            color: Theme.text-dim;
+            font-size: Theme.font-small;
+        }
+    }
+}
+
+/// Line chart of the last 60 samples (Stacer's HistoryChart).
+/// Series commands are SVG path strings in a 60 x 100 viewbox, produced in Rust.
+export component HistoryChart inherits Card {
+    in property <string> title;
+    in property <[ChartSeries]> series;
+    in property <[string]> y-labels; // top to bottom, 5 entries
+
+    property <int> legend-cols: max(1, floor((self.width - 32px) / 190px));
+    property <int> legend-rows: ceil(series.length / legend-cols);
+
+    height: 250px + root.legend-rows * 20px;
+    VerticalLayout {
+        padding: 16px;
+        spacing: 10px;
+        Text {
+            text: root.title;
+            color: Theme.text;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        Rectangle {
+            height: 170px;
+            plot := Rectangle {
+                x: 72px;
+                y: 7px;
+                width: parent.width - 72px;
+                height: parent.height - 14px;
+                for i in 5: Rectangle {
+                    y: plot.height * i / 4;
+                    height: 1px;
+                    background: Theme.border;
+                }
+                for s in root.series: Path {
+                    width: plot.width;
+                    height: plot.height;
+                    viewbox-width: 60;
+                    viewbox-height: 100;
+                    commands: s.commands;
+                    stroke: s.color;
+                    stroke-width: 1.6px;
+                }
+            }
+            for label[i] in root.y-labels: Text {
+                x: 0;
+                width: 64px;
+                height: 14px;
+                y: plot.y + plot.height * i / 4 - self.height / 2;
+                text: label;
+                color: Theme.text-dim;
+                font-size: 11px;
+                horizontal-alignment: right;
+                vertical-alignment: center;
+            }
+        }
+        Rectangle {
+            height: root.legend-rows * 20px;
+            for s[i] in root.series: HorizontalLayout {
+                x: mod(i, root.legend-cols) * (parent.width / root.legend-cols);
+                y: floor(i / root.legend-cols) * 20px;
+                width: parent.width / root.legend-cols;
+                height: 20px;
+                spacing: 6px;
+                Rectangle {
+                    width: 10px;
+                    height: 10px;
+                    y: 5px;
+                    border-radius: 5px;
+                    background: s.color;
+                }
+                Text {
+                    text: s.label;
+                    color: Theme.text-dim;
+                    font-size: 11px;
+                    vertical-alignment: center;
+                    overflow: elide;
+                }
+            }
+        }
+    }
+}
+
+/// Small horizontal usage bar used in lists.
+export component UsageBar inherits Rectangle {
+    in property <float> value;
+    height: 6px;
+    border-radius: 3px;
+    background: Theme.track;
+    Rectangle {
+        x: 0;
+        width: parent.width * clamp(root.value, 0, 100) / 100;
+        border-radius: 3px;
+        background: root.value > 90 ? Theme.danger : root.value > 75 ? Theme.warning : Theme.accent;
+    }
+}
+
+/// Centered placeholder when a list is empty.
+export component EmptyState inherits VerticalLayout {
+    in property <string> text;
+    alignment: center;
+    Text {
+        text: root.text;
+        color: Theme.text-dim;
+        font-size: 14px;
+        horizontal-alignment: center;
+    }
+}
+
+/// Status message strip (errors / info).
+export component MessageBar inherits Rectangle {
+    in property <string> text;
+    in property <bool> error: false;
+    visible: text != "";
+    height: text == "" ? 0px : 34px;
+    border-radius: 7px;
+    background: error ? Theme.danger.with-alpha(0.15) : Theme.accent-soft;
+    Text {
+        x: 12px;
+        width: parent.width - 24px;
+        text: root.text;
+        color: root.error ? Theme.danger : Theme.text;
+        font-size: Theme.font-normal;
+        vertical-alignment: center;
+        overflow: elide;
+    }
+}
+
+/// Check box whose state comes only from `checked` (never toggles itself),
+/// so it stays in sync when the model changes.
+export component Check inherits Rectangle {
+    in property <string> text;
+    in property <bool> checked;
+    in property <bool> enabled: true;
+    in property <length> font-size: Theme.font-normal;
+    in property <int> font-weight: 400;
+    callback toggled(bool);
+
+    min-height: 24px;
+    ta := TouchArea {
+        enabled: root.enabled;
+        mouse-cursor: pointer;
+        clicked => { root.toggled(!root.checked); }
+    }
+    HorizontalLayout {
+        spacing: 10px;
+        Rectangle {
+            width: 18px;
+            height: 18px;
+            y: (parent.height - self.height) / 2;
+            border-radius: 4px;
+            border-width: root.checked ? 0px : 1.5px;
+            border-color: ta.has-hover ? Theme.accent : Theme.text-dim;
+            background: root.checked ? Theme.accent : transparent;
+            opacity: root.enabled ? 1 : 0.5;
+            if root.checked: Path {
+                width: 12px;
+                height: 12px;
+                viewbox-width: 24;
+                viewbox-height: 24;
+                commands: "M 4 12 L 10 18 L 20 6";
+                stroke: #ffffff;
+                stroke-width: 2.5px;
+            }
+        }
+        Text {
+            text: root.text;
+            color: Theme.text;
+            font-size: root.font-size;
+            font-weight: root.font-weight;
+            vertical-alignment: center;
+            overflow: elide;
+        }
+    }
+}

@@ -1,0 +1,143 @@
+import { ListView, LineEdit, Spinner } from "std-widgets.slint";
+import { Theme } from "../theme.slint";
+import { Card, PageTitle, IconButton, EmptyState, MessageBar, Check } from "../widgets.slint";
+import { Uninstaller } from "../globals.slint";
+
+component Tab inherits Rectangle {
+    in property <string> text;
+    in property <bool> active;
+    callback clicked;
+    height: 34px;
+    min-width: label.preferred-width + 28px;
+    border-radius: 7px;
+    background: active ? Theme.accent-soft : ta.has-hover ? Theme.card-hover : transparent;
+    ta := TouchArea { mouse-cursor: pointer; clicked => { root.clicked(); } }
+    label := Text {
+        text: root.text;
+        color: root.active ? Theme.accent : Theme.text-dim;
+        font-weight: 600;
+        font-size: Theme.font-normal;
+    }
+}
+
+export component UninstallerPage inherits Rectangle {
+  VerticalLayout {
+    spacing: 10px;
+
+    HorizontalLayout {
+        spacing: 8px;
+        PageTitle { text: @tr("Uninstaller"); }
+        Rectangle { width: 10px; }
+        Tab {
+            text: @tr("Packages ({})", Uninstaller.system-count);
+            active: !Uninstaller.snap-tab;
+            clicked => { Uninstaller.snap-tab = false; Uninstaller.filter-changed(); }
+        }
+        if Uninstaller.snap-available: Tab {
+            text: @tr("Snap Packages ({})", Uninstaller.snap-count);
+            active: Uninstaller.snap-tab;
+            clicked => { Uninstaller.snap-tab = true; Uninstaller.filter-changed(); }
+        }
+        Rectangle { horizontal-stretch: 1; }
+        LineEdit {
+            width: 240px;
+            placeholder-text: @tr("Search packages");
+            text <=> Uninstaller.filter;
+            edited => { Uninstaller.filter-changed(); }
+        }
+    }
+
+    MessageBar { text: Uninstaller.message; error: Uninstaller.message-error; }
+
+    if Uninstaller.loading: VerticalLayout {
+        vertical-stretch: 1;
+        alignment: center;
+        Spinner { indeterminate: true; height: 40px; }
+    }
+    if !Uninstaller.loading && Uninstaller.packages.length == 0: EmptyState {
+        vertical-stretch: 1;
+        text: @tr("No packages found.");
+    }
+    if !Uninstaller.loading && Uninstaller.packages.length > 0: Card {
+        vertical-stretch: 1;
+        ListView {
+            for p in Uninstaller.packages: Rectangle {
+                height: 34px;
+                background: ta.has-hover ? Theme.card-hover : transparent;
+                ta := TouchArea { }
+                Check {
+                    x: 14px;
+                    width: parent.width - 28px;
+                    text: p.name;
+                    checked: p.checked;
+                    toggled(on) => { Uninstaller.toggle(p.name, on); }
+                }
+            }
+        }
+    }
+
+    HorizontalLayout {
+        alignment: end;
+        spacing: 12px;
+        if Uninstaller.busy: Spinner { indeterminate: true; width: 28px; height: 28px; }
+        IconButton {
+            icon: @image-url("../icons/trash.svg");
+            text: @tr("Uninstall Selected ({})", Uninstaller.selected-count);
+            danger: true;
+            enabled: Uninstaller.selected-count > 0 && !Uninstaller.busy;
+            clicked => { Uninstaller.uninstall(); }
+        }
+    }
+  }
+
+    if Uninstaller.confirm-open: Rectangle {
+        background: #000000a0;
+        TouchArea { }
+        Card {
+            width: min(parent.width - 40px, 480px);
+            height: min(parent.height - 40px, dlg.preferred-height);
+            dlg := VerticalLayout {
+                padding: 20px;
+                spacing: 10px;
+                Text {
+                    text: @tr("Remove {} package(s)?", Uninstaller.to-remove.length);
+                    color: Theme.text;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                if Uninstaller.extra-count > 0: Text {
+                    text: @tr("{} more package(s) depend on your selection and will be removed too.", Uninstaller.extra-count);
+                    color: Theme.danger;
+                    wrap: word-wrap;
+                }
+                Rectangle {
+                    border-radius: 7px;
+                    background: Theme.bg;
+                    min-height: 60px;
+                    preferred-height: min(260px, Uninstaller.to-remove.length * 24px + 16px);
+                    ListView {
+                        for name in Uninstaller.to-remove: Text {
+                            x: 12px;
+                            height: 24px;
+                            text: name;
+                            color: Theme.text;
+                            font-family: "monospace";
+                            vertical-alignment: center;
+                        }
+                    }
+                }
+                HorizontalLayout {
+                    alignment: end;
+                    spacing: 8px;
+                    IconButton { text: @tr("Cancel"); clicked => { Uninstaller.confirm-open = false; } }
+                    IconButton {
+                        icon: @image-url("../icons/trash.svg");
+                        text: @tr("Remove");
+                        danger: true;
+                        clicked => { Uninstaller.confirm-uninstall(); }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,758 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "'{}' geçerli bir IP adresi değil."
+
+msgid "/etc/hosts saved."
+msgstr "/etc/hosts kaydedildi."
+
+msgid "0 disables the alert"
+msgstr "0 uyarıyı kapatır"
+
+msgid "ABOUT"
+msgstr "HAKKINDA"
+
+msgid "Accessed"
+msgstr "Erişilme"
+
+msgid "Accessibility"
+msgstr "Erişilebilirlik"
+
+msgid "Add Repository"
+msgstr "Depo Ekle"
+
+msgid "Add Startup App"
+msgstr "Uygulama Ekle"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository kurulu değil (paket: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "Gelişmiş ▲"
+
+msgid "Advanced ▼"
+msgstr "Gelişmiş ▼"
+
+msgid "ALERTS"
+msgstr "UYARILAR"
+
+msgid "Aliases"
+msgstr "Takma adlar"
+
+msgid "All"
+msgstr "Tümü"
+
+msgid "All users"
+msgstr "Tüm kullanıcılar"
+
+msgid "Amount"
+msgstr "Miktar"
+
+msgid "Any"
+msgstr "Herhangi"
+
+msgid "Appearance"
+msgstr "Görünüm"
+
+msgid "Application Caches"
+msgstr "Uygulama Önbellekleri"
+
+msgid "Application Logs"
+msgstr "Uygulama Günlükleri"
+
+msgid "Apply"
+msgstr "Uygula"
+
+msgid "APT Repositories"
+msgstr "APT Depoları"
+
+msgid "Back to categories"
+msgstr "Kategorilere dön"
+
+msgid "Browse"
+msgstr "Gözat"
+
+msgid "Cancel"
+msgstr "İptal"
+
+msgid "Case insensitive"
+msgstr "Büyük/küçük harf duyarsız"
+
+msgid "Center new windows"
+msgstr "Yeni pencereleri ortala"
+
+msgid "Centered"
+msgstr "Ortalanmış"
+
+msgid "Changed"
+msgstr "Durum değişikliği"
+
+msgid "Clean"
+msgstr "Temizle"
+
+msgid "Click"
+msgstr "Tıklama"
+
+msgid "Command *"
+msgstr "Komut *"
+
+msgid "Comment"
+msgstr "Açıklama"
+
+msgid "Comparison"
+msgstr "Karşılaştırma"
+
+msgid "Components"
+msgstr "Bileşenler"
+
+msgid "CPU"
+msgstr "İŞLEMCİ"
+
+msgid "CPU Cores: {}"
+msgstr "İşlemci çekirdeği: {}"
+
+msgid "CPU History"
+msgstr "İşlemci Geçmişi"
+
+msgid "CPU Load Averages"
+msgstr "İşlemci Yük Ortalamaları"
+
+msgid "CPU Model: {}"
+msgstr "İşlemci modeli: {}"
+
+msgid "CPU Speed: {}"
+msgstr "İşlemci hızı: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "İşlemci kullanım uyarısı (%)"
+
+msgid "Crash Reports"
+msgstr "Çökme Raporları"
+
+msgid "Dark"
+msgstr "Koyu"
+
+msgid "Dashboard"
+msgstr "Gösterge Paneli"
+
+msgid "Dashboard disk"
+msgstr "Gösterge paneli diski"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Delete Permanently"
+msgstr "Kalıcı Olarak Sil"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "Seçilen öğe kalıcı olarak silinsin mi? Bu işlem geri alınamaz."
+
+msgid "Desktop"
+msgstr "Masaüstü"
+
+msgid "Desktop background mode"
+msgstr "Masaüstü arka plan modu"
+
+msgid "Desktop Settings"
+msgstr "Masaüstü Ayarları"
+
+msgid "Directory"
+msgstr "Dizin"
+
+msgid "Disabled"
+msgstr "Devre dışı"
+
+msgid "DISK"
+msgstr "DİSK"
+
+msgid "Disk Read / Write"
+msgstr "Disk Okuma / Yazma"
+
+msgid "Disk usage alert (%)"
+msgstr "Disk kullanım uyarısı (%)"
+
+msgid "Distribution: {}"
+msgstr "Dağıtım: {}"
+
+msgid "DOWNLOAD"
+msgstr "İNDİRME"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "İndirme: {}/s  Toplam: {}"
+
+msgid "Dynamic workspaces"
+msgstr "Dinamik çalışma alanları"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "ör. ppa:kullanici/depo  veya  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "Düzenle"
+
+msgid "Edit Repository"
+msgstr "Depoyu Düzenle"
+
+msgid "Edit Startup Application"
+msgstr "Başlangıç Uygulamasını Düzenle"
+
+msgid "Empty only"
+msgstr "Yalnızca boş"
+
+msgid "Enable animations"
+msgstr "Animasyonları etkinleştir"
+
+msgid "Enabled"
+msgstr "Etkin"
+
+msgid "End Process"
+msgstr "İşlemi Sonlandır"
+
+msgid "End Process {}"
+msgstr "{} İşlemini Sonlandır"
+
+msgid "Equal (=)"
+msgstr "Eşit (=)"
+
+msgid "Exactly (=)"
+msgstr "Tam (=)"
+
+msgid "File"
+msgstr "Dosya"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "Dosya adı veya desen, ör. *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "Gösterge panelindeki disk göstergesinde gösterilen dosya sistemi"
+
+msgid "File Systems"
+msgstr "Dosya Sistemleri"
+
+msgid "Filter by name, user or PID"
+msgstr "Ad, kullanıcı veya PID ile süz"
+
+msgid "Focus mode"
+msgstr "Odak modu"
+
+msgid "GENERAL"
+msgstr "GENEL"
+
+msgid "Generic name"
+msgstr "Genel ad"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU History"
+msgstr "GPU Geçmişi"
+
+msgid "Greater (>)"
+msgstr "Büyük (>)"
+
+msgid "Group"
+msgstr "Grup"
+
+msgid "High CPU Usage"
+msgstr "Yüksek İşlemci Kullanımı"
+
+msgid "High Disk Usage"
+msgstr "Yüksek Disk Kullanımı"
+
+msgid "High Memory Usage"
+msgstr "Yüksek Bellek Kullanımı"
+
+msgid "Hostname"
+msgstr "Bilgisayar adı"
+
+msgid "Hostname *"
+msgstr "Bilgisayar adı *"
+
+msgid "Hostname: {}"
+msgstr "Bilgisayar adı: {}"
+
+msgid "Hosts"
+msgstr "Hosts"
+
+msgid "Icon"
+msgstr "Simge"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "Gözatmak için zenity veya kdialog kurun ya da dizin yolunu yazın."
+
+msgid "Invert match"
+msgstr "Eşleşmeyi ters çevir"
+
+msgid "IP Address"
+msgstr "IP Adresi"
+
+msgid "IP address *"
+msgstr "IP adresi *"
+
+msgid "Kernel Release: {}"
+msgstr "Çekirdek sürümü: {}"
+
+msgid "Language"
+msgstr "Dil"
+
+msgid "Light"
+msgstr "Açık"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Linux sistem iyileştirici ve izleyici — Stacer'ın Rust sürümü. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "Kilit ekranı arka plan modu"
+
+msgid "Lower"
+msgstr "Arkaya gönder"
+
+msgid "Maximize"
+msgstr "Büyüt"
+
+msgid "Maximize Horizontally"
+msgstr "Yatay büyüt"
+
+msgid "Maximize Vertically"
+msgstr "Dikey büyüt"
+
+msgid "Mem"
+msgstr "Bellek"
+
+msgid "MEMORY"
+msgstr "BELLEK"
+
+msgid "Memory History"
+msgstr "Bellek Geçmişi"
+
+msgid "Memory usage alert (%)"
+msgstr "Bellek kullanım uyarısı (%)"
+
+msgid "Memory: {} of {}"
+msgstr "Bellek: {} / {}"
+
+msgid "Menu"
+msgstr "Menü"
+
+msgid "Minimize"
+msgstr "Simge durumuna küçült"
+
+msgid "Minutes"
+msgstr "Dakika"
+
+msgid "Modified"
+msgstr "Değiştirilme"
+
+msgid "Mouse"
+msgstr "Fare"
+
+msgid "Move to Trash"
+msgstr "Çöpe Taşı"
+
+msgid "Name"
+msgstr "Ad"
+
+msgid "Name *"
+msgstr "Ad *"
+
+msgid "Name and command fields are required."
+msgstr "Ad ve komut alanları zorunludur."
+
+msgid "Network History"
+msgstr "Ağ Geçmişi"
+
+msgid "New Host"
+msgstr "Yeni Kayıt"
+
+msgid "New Startup Application"
+msgstr "Yeni Başlangıç Uygulaması"
+
+msgid "Nice"
+msgstr "Öncelik"
+
+msgid "No packages found."
+msgstr "Paket bulunamadı."
+
+msgid "No repositories found."
+msgstr "Depo bulunamadı."
+
+msgid "No services found."
+msgstr "Servis bulunamadı."
+
+msgid "No startup applications found."
+msgstr "Başlangıç uygulaması bulunamadı."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "Bu sistemde desteklenen GNOME ayarı bulunamadı."
+
+msgid "No supported package manager found"
+msgstr "Desteklenen bir paket yöneticisi bulunamadı"
+
+msgid "None"
+msgstr "Yok"
+
+msgid "Nothing selected."
+msgstr "Hiçbir şey seçilmedi."
+
+msgid "Nothing to remove."
+msgstr "Kaldırılacak bir şey yok."
+
+msgid "Number of workspaces"
+msgstr "Çalışma alanı sayısı"
+
+msgid "Older (>)"
+msgstr "Daha eski (>)"
+
+msgid "On-screen keyboard"
+msgstr "Ekran klavyesi"
+
+msgid "Open Folder"
+msgstr "Klasörü Aç"
+
+msgid "Other"
+msgstr "Diğer"
+
+msgid "Owner"
+msgstr "Sahip"
+
+msgid "Package Caches"
+msgstr "Paket Önbellekleri"
+
+msgid "Packages ({})"
+msgstr "Paketler ({})"
+
+msgid "Path"
+msgstr "Yol"
+
+msgid "Permissions"
+msgstr "İzinler"
+
+msgid "Platform: {}"
+msgstr "Platform: {}"
+
+msgid "Process"
+msgstr "İşlem"
+
+msgid "Processes"
+msgstr "İşlemler"
+
+msgid "Raise windows on click"
+msgstr "Tıklanınca pencereyi öne getir"
+
+msgid "Read: {}/s"
+msgstr "Okuma: {}/s"
+
+msgid "Refresh every {} s"
+msgstr "{} sn'de bir yenile"
+
+msgid "Regular expression"
+msgstr "Düzenli ifade"
+
+msgid "Remove"
+msgstr "Kaldır"
+
+msgid "Remove {} package(s)?"
+msgstr "{} paket kaldırılsın mı?"
+
+msgid "Repository added."
+msgstr "Depo eklendi."
+
+msgid "Repository disabled."
+msgstr "Depo devre dışı bırakıldı."
+
+msgid "Repository enabled."
+msgstr "Depo etkinleştirildi."
+
+msgid "Repository is empty"
+msgstr "Depo alanı boş"
+
+msgid "Repository removed."
+msgstr "Depo kaldırıldı."
+
+msgid "Repository updated."
+msgstr "Depo güncellendi."
+
+msgid "Resident"
+msgstr "Fiziksel"
+
+msgid "Resources"
+msgstr "Kaynaklar"
+
+msgid "Running"
+msgstr "Çalışıyor"
+
+msgid "Save"
+msgstr "Kaydet"
+
+msgid "Save Changes"
+msgstr "Değişiklikleri Kaydet"
+
+msgid "Scaled"
+msgstr "Ölçeklenmiş"
+
+msgid "Scanning…"
+msgstr "Taranıyor…"
+
+msgid "Screen reader"
+msgstr "Ekran okuyucu"
+
+msgid "Search"
+msgstr "Arama"
+
+msgid "Search as root"
+msgstr "Root olarak ara"
+
+msgid "Search packages"
+msgstr "Paket ara"
+
+msgid "Search services"
+msgstr "Servis ara"
+
+msgid "Select all"
+msgstr "Tümünü seç"
+
+msgid "Select at least one category."
+msgstr "En az bir kategori seçin."
+
+msgid "Select none"
+msgstr "Hiçbirini seçme"
+
+msgid "Select the search directory."
+msgstr "Aranacak dizini seçin."
+
+msgid "Select what to scan"
+msgstr "Taranacakları seçin"
+
+msgid "Service"
+msgstr "Servis"
+
+msgid "Services"
+msgstr "Servisler"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Show battery percentage"
+msgstr "Pil yüzdesini göster"
+
+msgid "Show home folder on desktop"
+msgstr "Ev klasörünü masaüstünde göster"
+
+msgid "Show mounted volumes on desktop"
+msgstr "Bağlı birimleri masaüstünde göster"
+
+msgid "Show seconds in clock"
+msgstr "Saatte saniyeyi göster"
+
+msgid "Show trash on desktop"
+msgstr "Çöp kutusunu masaüstünde göster"
+
+msgid "Show weekday in clock"
+msgstr "Saatte haftanın gününü göster"
+
+msgid "Size"
+msgstr "Boyut"
+
+msgid "Sloppy"
+msgstr "Gevşek"
+
+msgid "Smaller (<)"
+msgstr "Küçük (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Snap Paketleri ({})"
+
+msgid "Source code"
+msgstr "Kaynak kod"
+
+msgid "source entry not found"
+msgstr "depo kaydı bulunamadı"
+
+msgid "Spanned"
+msgstr "Yayılmış"
+
+msgid "Start at boot"
+msgstr "Açılışta başlat"
+
+msgid "Start Kaptan at login"
+msgstr "Oturum açılınca Kaptan'ı başlat"
+
+msgid "Start page"
+msgstr "Açılış sayfası"
+
+msgid "Started"
+msgstr "Başlangıç"
+
+msgid "Startup Applications"
+msgstr "Başlangıç Uygulamaları"
+
+msgid "Startup Apps"
+msgstr "Başlangıç Uygulamaları"
+
+msgid "State"
+msgstr "Durum"
+
+msgid "Stopped"
+msgstr "Durdu"
+
+msgid "Stretched"
+msgstr "Uzatılmış"
+
+msgid "Suites"
+msgstr "Sürümler"
+
+msgid "Swap: {} of {}"
+msgstr "Takas: {} / {}"
+
+msgid "Symbolic Link"
+msgstr "Sembolik Bağlantı"
+
+msgid "System Cleaner"
+msgstr "Sistem Temizleyici"
+
+msgid "System default"
+msgstr "Sistem varsayılanı"
+
+msgid "SYSTEM INFO"
+msgstr "SİSTEM BİLGİSİ"
+
+msgid "System Scan"
+msgstr "Sistemi Tara"
+
+msgid "System Services"
+msgstr "Sistem Servisleri"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "İşlemci kullanımı %{} değerini aştı."
+
+msgid "The amount of disk used is over {}%."
+msgstr "Disk kullanımı %{} değerini aştı."
+
+msgid "The amount of memory used is over {}%."
+msgstr "Bellek kullanımı %{} değerini aştı."
+
+msgid "The IP address and hostname fields are required."
+msgstr "IP adresi ve bilgisayar adı alanları zorunludur."
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "Time"
+msgstr "Zaman"
+
+msgid "Title bar double click"
+msgstr "Başlık çubuğuna çift tıklama"
+
+msgid "Title bar middle click"
+msgstr "Başlık çubuğuna orta tıklama"
+
+msgid "Title bar right click"
+msgstr "Başlık çubuğuna sağ tıklama"
+
+msgid "Total {} · selected {}"
+msgstr "Toplam {} · seçilen {}"
+
+msgid "Total: {}"
+msgstr "Toplam: {}"
+
+msgid "Trash"
+msgstr "Çöp Kutusu"
+
+msgid "Type"
+msgstr "Tür"
+
+msgid "Types"
+msgstr "Türler"
+
+msgid "Types, URI and suites are required."
+msgstr "Tür, URI ve sürüm alanları zorunludur."
+
+msgid "Uninstall Selected ({})"
+msgstr "Seçilenleri Kaldır ({})"
+
+msgid "Uninstaller"
+msgstr "Kaldırıcı"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "{} paket kaldırılıyor…"
+
+msgid "Unit"
+msgstr "Birim"
+
+msgid "Unsaved changes"
+msgstr "Kaydedilmemiş değişiklikler"
+
+msgid "UPLOAD"
+msgstr "YÜKLEME"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "Yükleme: {}/s  Toplam: {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "Kullanıcı"
+
+msgid "Virtual"
+msgstr "Sanal"
+
+msgid "Wallpaper"
+msgstr "Duvar kâğıdı"
+
+msgid "Window Manager"
+msgstr "Pencere Yöneticisi"
+
+msgid "Within (<)"
+msgstr "İçinde (<)"
+
+msgid "Write: {}/s"
+msgstr "Yazma: {}/s"
+
+msgid "Zoom"
+msgstr "Yakınlaştır"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} boş)"
+
+msgid "{} cleaned."
+msgstr "{} temizlendi."
+
+msgid "{} deleted."
+msgstr "{} silindi."
+
+msgid "{} disabled."
+msgstr "{} devre dışı bırakıldı."
+
+msgid "{} enabled."
+msgstr "{} etkinleştirildi."
+
+msgid "{} found"
+msgstr "{} sonuç bulundu"
+
+msgid "{} found, showing {}"
+msgstr "{} sonuç bulundu, {} tanesi gösteriliyor"
+
+msgid "{} minute average: {}"
+msgstr "{} dakikalık ortalama: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "Seçiminize bağlı {} paket daha var, onlar da kaldırılacak."
+
+msgid "{} moved to trash."
+msgstr "{} çöpe taşındı."
+
+msgid "{} package(s) removed."
+msgstr "{} paket kaldırıldı."
+
+msgid "{} started."
+msgstr "{} başlatıldı."
+
+msgid "{} stopped."
+msgstr "{} durduruldu."

@@ -1,0 +1,104 @@
+import { ListView, LineEdit, Switch, ComboBox, Spinner } from "std-widgets.slint";
+import { Theme } from "../theme.slint";
+import { Card, PageTitle, IconButton, EmptyState, MessageBar } from "../widgets.slint";
+import { Services } from "../globals.slint";
+
+export component ServicesPage inherits VerticalLayout {
+    spacing: 10px;
+
+    HorizontalLayout {
+        spacing: 10px;
+        PageTitle {
+            text: @tr("System Services");
+            subtitle: "(" + Services.services.length + " / " + Services.total + ")";
+        }
+        Rectangle { horizontal-stretch: 1; }
+        LineEdit {
+            width: 220px;
+            placeholder-text: @tr("Search services");
+            text <=> Services.filter;
+            edited => { Services.filter-changed(); }
+        }
+        ComboBox {
+            width: 140px;
+            model: [@tr("All"), @tr("Running"), @tr("Stopped"), @tr("Enabled"), @tr("Disabled")];
+            current-index <=> Services.state-filter;
+            selected => { Services.filter-changed(); }
+        }
+        IconButton {
+            icon: @image-url("../icons/refresh.svg");
+            enabled: !Services.loading;
+            clicked => { Services.refresh(); }
+        }
+    }
+
+    MessageBar { text: Services.message; error: Services.message-error; }
+
+    // header
+    HorizontalLayout {
+        padding-left: 16px;
+        padding-right: 22px;
+        Text { text: @tr("Service"); color: Theme.text-dim; font-size: Theme.font-small; horizontal-stretch: 1; }
+        Text { text: @tr("Start at boot"); color: Theme.text-dim; font-size: Theme.font-small; width: 110px; horizontal-alignment: center; }
+        Text { text: @tr("Running"); color: Theme.text-dim; font-size: Theme.font-small; width: 90px; horizontal-alignment: center; }
+    }
+
+    if Services.loading: VerticalLayout {
+        vertical-stretch: 1;
+        alignment: center;
+        Spinner { indeterminate: true; height: 40px; }
+    }
+    if !Services.loading && Services.services.length == 0: EmptyState {
+        vertical-stretch: 1;
+        text: @tr("No services found.");
+    }
+    if !Services.loading && Services.services.length > 0: ListView {
+        vertical-stretch: 1;
+        for s in Services.services: Rectangle {
+            height: 60px;
+            Card {
+                y: 3px;
+                height: 54px;
+                width: parent.width - 12px;
+                HorizontalLayout {
+                    padding-left: 16px;
+                    padding-right: 10px;
+                    VerticalLayout {
+                        horizontal-stretch: 1;
+                        alignment: center;
+                        spacing: 2px;
+                        Text {
+                            text: s.name;
+                            color: Theme.text;
+                            font-size: 14px;
+                            font-weight: 600;
+                            overflow: elide;
+                        }
+                        Text {
+                            text: s.description;
+                            color: Theme.text-dim;
+                            font-size: Theme.font-small;
+                            overflow: elide;
+                        }
+                    }
+                    HorizontalLayout {
+                        width: 110px;
+                        alignment: center;
+                        Switch {
+                            checked: s.enabled;
+                            toggled => { Services.set-enabled(s.name, self.checked); }
+                        }
+                    }
+                    HorizontalLayout {
+                        width: 90px;
+                        alignment: center;
+                        Switch {
+                            checked: s.active;
+                            toggled => { Services.set-running(s.name, self.checked); }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

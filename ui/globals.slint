@@ -1,0 +1,300 @@
+// Data shared between Rust and the UI, one global per page.
+import { ChartSeries } from "widgets.slint";
+
+export struct NavItem {
+    id: string,
+    label: string,
+    icon: image,
+}
+
+export global App {
+    in property <[NavItem]> nav;
+    in-out property <string> current-page: "dashboard";
+    in property <string> version;
+    callback page-changed(string);
+}
+
+// ---------- Dashboard ----------
+export global Dashboard {
+    in property <float> cpu-value;
+    in property <string> cpu-text;
+    in property <float> mem-value;
+    in property <string> mem-text;
+    in property <float> disk-value;
+    in property <string> disk-text;
+    in property <bool> gpu-visible;
+    in property <float> gpu-value;
+    in property <string> gpu-text;
+    in property <string> gpu-name;
+    in property <float> down-value;
+    in property <string> down-text;
+    in property <string> down-total;
+    in property <float> up-value;
+    in property <string> up-text;
+    in property <string> up-total;
+    in property <[StandardListViewItem]> system-info;
+}
+
+// ---------- Resources ----------
+export struct ChartData {
+    title: string,
+    series: [ChartSeries],
+    y-labels: [string],
+}
+
+export struct DiskUsage {
+    name: string,
+    device: string,
+    fs-type: string,
+    text: string,
+    percent: float,
+}
+
+export global Resources {
+    in property <[ChartData]> charts;
+    in property <[DiskUsage]> disks;
+}
+
+// ---------- Processes ----------
+export global Processes {
+    in property <[[StandardListViewItem]]> rows;
+    in property <int> count;
+    in-out property <bool> all-users: true;
+    in-out property <string> filter;
+    in-out property <int> refresh-seconds: 2;
+    in-out property <int> selected-pid: -1;
+    in-out property <int> current-row: -1;
+    in property <string> message;
+    callback sort(int, bool);
+    callback select-row(int);
+    callback end-process();
+    callback options-changed();
+}
+
+// ---------- Startup Apps ----------
+export struct StartupItem {
+    name: string,
+    enabled: bool,
+    path: string,
+}
+
+export global Startup {
+    in property <[StartupItem]> apps;
+    in property <string> message;
+    in-out property <bool> editor-open;
+    in-out property <string> editor-path; // "" = new
+    in-out property <string> f-name;
+    in-out property <string> f-generic;
+    in-out property <string> f-comment;
+    in-out property <string> f-icon;
+    in-out property <string> f-command;
+    in property <string> editor-error;
+    callback toggle(string, bool);
+    callback remove(string);
+    callback open-editor(string);
+    callback save();
+}
+
+// ---------- Services ----------
+export struct ServiceItem {
+    name: string,
+    description: string,
+    enabled: bool,
+    active: bool,
+}
+
+export global Services {
+    in property <[ServiceItem]> services;
+    in property <int> total;
+    in property <bool> loading;
+    in property <string> message;
+    in property <bool> message-error;
+    in-out property <string> filter;
+    in-out property <int> state-filter; // 0 all, 1 running, 2 stopped, 3 enabled, 4 disabled
+    callback set-enabled(string, bool);
+    callback set-running(string, bool);
+    callback filter-changed();
+    callback refresh();
+}
+
+// ---------- Uninstaller ----------
+export struct PackageItem {
+    name: string,
+    checked: bool,
+}
+
+export global Uninstaller {
+    in property <[PackageItem]> packages;
+    in property <int> system-count;
+    in property <int> snap-count;
+    in property <bool> snap-available;
+    in property <int> selected-count;
+    in property <bool> loading;
+    in property <bool> busy;
+    in property <string> message;
+    in property <bool> message-error;
+    in-out property <bool> snap-tab;
+    in-out property <string> filter;
+    // confirmation step: what the package manager will really remove
+    in-out property <bool> confirm-open;
+    in property <[string]> to-remove;
+    in property <int> extra-count; // packages removed on top of the selection
+    callback toggle(string, bool);
+    callback filter-changed();
+    callback uninstall();      // simulate, then open the confirmation
+    callback confirm-uninstall();
+}
+
+// ---------- System Cleaner ----------
+export struct CleanerRow {
+    is-group: bool,
+    group: int,
+    item: int,
+    title: string,
+    size: string,
+    checked: bool,
+    expanded: bool,
+}
+
+export global Cleaner {
+    in-out property <[bool]> categories: [true, true, true, true, true];
+    in property <[string]> category-titles;
+    in property <bool> scanning;
+    in property <bool> cleaning;
+    in property <bool> has-results;
+    in property <[CleanerRow]> rows;
+    in property <string> total;
+    in property <string> message;
+    in property <bool> message-error;
+    callback set-category(int, bool);
+    callback scan();
+    callback toggle-row(int, bool);
+    callback expand(int);
+    callback select-all(bool);
+    callback clean();
+    callback back();
+}
+
+// ---------- Search ----------
+export global Search {
+    in-out property <string> directory;
+    in-out property <string> pattern;
+    in-out property <bool> case-insensitive: true;
+    in-out property <bool> regex;
+    in-out property <bool> invert;
+    in-out property <bool> empty;
+    in-out property <int> type-index;
+    in-out property <int> time-type-index;
+    in-out property <int> time-cmp-index;
+    in-out property <int> time-minutes: 60;
+    in-out property <bool> readable;
+    in-out property <bool> writable;
+    in-out property <bool> executable;
+    in-out property <int> size-cmp-index;
+    in-out property <int> size: 1;
+    in-out property <int> size-unit-index: 2;
+    in property <[string]> users;
+    in property <[string]> groups;
+    in-out property <int> user-index;
+    in-out property <int> group-index;
+    in-out property <bool> as-root;
+    in-out property <bool> advanced-open;
+    in property <bool> searching;
+    in property <string> info;
+    in property <string> message;
+    in property <bool> message-error;
+    in property <[[StandardListViewItem]]> rows;
+    in-out property <int> current-row: -1;
+    callback browse();
+    callback run-search();
+    callback sort(int, bool);
+    callback open-folder();
+    callback move-to-trash();
+    callback delete-file();
+}
+
+// ---------- Helpers (hosts) ----------
+export global Hosts {
+    in property <[[StandardListViewItem]]> rows;
+    in property <int> count;
+    in property <bool> dirty;
+    in property <string> message;
+    in property <bool> message-error;
+    in-out property <int> current-row: -1;
+    in-out property <bool> editor-open;
+    in-out property <string> f-ip;
+    in-out property <string> f-host;
+    in-out property <string> f-aliases;
+    in property <string> editor-error;
+    callback new-item();
+    callback edit-item(int);
+    callback delete-item(int);
+    callback save-item();
+    callback save-file();
+    callback reload();
+}
+
+// ---------- APT sources ----------
+export struct AptItem {
+    display: string,
+    file: string,
+    active: bool,
+}
+
+export global Apt {
+    in property <[AptItem]> sources;
+    in property <bool> busy;
+    in property <string> message;
+    in property <bool> message-error;
+    in-out property <string> new-repo;
+    in-out property <bool> new-with-source;
+    in-out property <bool> editor-open;
+    in-out property <int> editor-index: -1;
+    in-out property <string> f-types;
+    in-out property <string> f-uri;
+    in-out property <string> f-suites;
+    in-out property <string> f-components;
+    callback toggle(int, bool);
+    callback remove(int);
+    callback edit(int);
+    callback save-edit();
+    callback add();
+    callback reload();
+}
+
+// ---------- Desktop (GNOME) settings ----------
+export struct DesktopSetting {
+    kind: int, // 0 header, 1 bool, 2 int, 3 enum
+    label: string,
+    bool-value: bool,
+    int-value: int,
+    min: int,
+    max: int,
+    options: [string],
+    option-index: int,
+}
+
+export global Desktop {
+    in property <[DesktopSetting]> settings;
+    in property <bool> loading;
+    in property <string> message;
+    callback set-bool(int, bool);
+    callback set-int(int, int);
+    callback set-option(int, int);
+}
+
+// ---------- Settings ----------
+export global Settings {
+    in property <[string]> languages;
+    in-out property <int> language-index;
+    in-out property <int> theme-index;
+    in property <[string]> page-labels;
+    in-out property <int> start-page-index;
+    in property <[string]> disks;
+    in-out property <int> disk-index;
+    in-out property <int> cpu-alert;
+    in-out property <int> memory-alert;
+    in-out property <int> disk-alert;
+    in-out property <bool> autostart;
+    callback changed();
+}

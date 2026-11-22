@@ -1,0 +1,120 @@
+import { ScrollView, Switch, SpinBox, ComboBox } from "std-widgets.slint";
+import { Theme } from "../theme.slint";
+import { Card, PageTitle } from "../widgets.slint";
+import { App, Settings } from "../globals.slint";
+
+component Row inherits Card {
+    in property <string> label;
+    in property <string> hint;
+    height: 60px;
+    HorizontalLayout {
+        padding-left: 16px;
+        padding-right: 12px;
+        spacing: 10px;
+        VerticalLayout {
+            alignment: center;
+            horizontal-stretch: 1;
+            Text { text: root.label; color: Theme.text; font-size: 14px; }
+            if root.hint != "": Text { text: root.hint; color: Theme.text-dim; font-size: Theme.font-small; }
+        }
+        @children
+    }
+}
+
+export component SettingsPage inherits ScrollView {
+    VerticalLayout {
+        spacing: 8px;
+        padding-right: 12px;
+        alignment: start;
+        PageTitle { text: @tr("Settings"); }
+
+        Text { text: @tr("GENERAL"); color: Theme.text-dim; font-size: Theme.font-small; font-weight: 700; letter-spacing: 1px; }
+        Row {
+            label: @tr("Language");
+            ComboBox {
+                width: 200px;
+                y: 14px;
+                height: 32px;
+                model: Settings.languages;
+                current-index <=> Settings.language-index;
+                selected => { Settings.changed(); }
+            }
+        }
+        Row {
+            label: @tr("Theme");
+            ComboBox {
+                width: 200px;
+                y: 14px;
+                height: 32px;
+                model: [@tr("Dark"), @tr("Light")];
+                current-index <=> Settings.theme-index;
+                selected => { Settings.changed(); }
+            }
+        }
+        Row {
+            label: @tr("Start page");
+            ComboBox {
+                width: 200px;
+                y: 14px;
+                height: 32px;
+                model: Settings.page-labels;
+                current-index <=> Settings.start-page-index;
+                selected => { Settings.changed(); }
+            }
+        }
+        Row {
+            label: @tr("Dashboard disk");
+            hint: @tr("File system shown on the dashboard disk gauge");
+            ComboBox {
+                width: 200px;
+                y: 14px;
+                height: 32px;
+                model: Settings.disks;
+                current-index <=> Settings.disk-index;
+                selected => { Settings.changed(); }
+            }
+        }
+        Row {
+            label: @tr("Start Kaptan at login");
+            Switch {
+                checked <=> Settings.autostart;
+                toggled => { Settings.changed(); }
+            }
+        }
+
+        Text { text: @tr("ALERTS"); color: Theme.text-dim; font-size: Theme.font-small; font-weight: 700; letter-spacing: 1px; }
+        Row {
+            label: @tr("CPU usage alert (%)");
+            hint: @tr("0 disables the alert");
+            SpinBox { width: 120px; y: 14px; height: 32px; minimum: 0; maximum: 100; value <=> Settings.cpu-alert; edited => { Settings.changed(); } }
+        }
+        Row {
+            label: @tr("Memory usage alert (%)");
+            hint: @tr("0 disables the alert");
+            SpinBox { width: 120px; y: 14px; height: 32px; minimum: 0; maximum: 100; value <=> Settings.memory-alert; edited => { Settings.changed(); } }
+        }
+        Row {
+            label: @tr("Disk usage alert (%)");
+            hint: @tr("0 disables the alert");
+            SpinBox { width: 120px; y: 14px; height: 32px; minimum: 0; maximum: 100; value <=> Settings.disk-alert; edited => { Settings.changed(); } }
+        }
+
+        Text { text: @tr("ABOUT"); color: Theme.text-dim; font-size: Theme.font-small; font-weight: 700; letter-spacing: 1px; }
+        Card {
+            height: 80px;
+            HorizontalLayout {
+                padding: 14px;
+                spacing: 14px;
+                VerticalLayout {
+                    alignment: center;
+                    Image { source: @image-url("../icons/kaptan.svg"); width: 48px; height: 48px; }
+                }
+                VerticalLayout {
+                    alignment: center;
+                    Text { text: "Kaptan " + App.version; color: Theme.text; font-size: 15px; font-weight: 700; }
+                    Text { text: @tr("Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"); color: Theme.text-dim; font-size: Theme.font-small; }
+                }
+            }
+        }
+    }
+}
