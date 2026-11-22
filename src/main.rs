@@ -5,6 +5,7 @@ mod i18n;
 mod pages;
 #[cfg(test)]
 mod root_tests;
+mod tray;
 
 slint::include_modules!();
 
@@ -52,6 +53,7 @@ fn main() -> Result<(), slint::PlatformError> {
 
 
     let monitor = pages::monitor::setup(&ui, &settings);
+    pages::disks::setup(&ui);
     pages::processes::setup(&ui);
     pages::startup::setup(&ui);
     pages::services::setup(&ui);
@@ -61,7 +63,9 @@ fn main() -> Result<(), slint::PlatformError> {
     pages::hosts::setup(&ui);
     pages::apt::setup(&ui);
     pages::desktop::setup(&ui);
+    let close_action = settings.close_action.clone();
     pages::settings::setup(&ui, settings, monitor);
+    let tray = pages::window::setup(&ui, &close_action);
 
     // Pages that load lazily get notified when they are first opened.
     let weak = ui.as_weak();
@@ -72,5 +76,13 @@ fn main() -> Result<(), slint::PlatformError> {
     });
     pages::on_page_opened(&ui, &start);
 
-    ui.run()
+    // Autostart entries pass --hide: start in the tray like Stacer (only if there is a tray).
+    let start_hidden = tray && std::env::args().any(|a| a == "--hide");
+    if !start_hidden {
+        ui.show()?;
+    }
+    // Keeps running while the window is hidden in the tray; ends on quit_event_loop().
+    slint::run_event_loop_until_quit()?;
+    pages::window::quit();
+    Ok(())
 }

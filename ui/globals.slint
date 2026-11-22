@@ -11,7 +11,30 @@ export global App {
     in property <[NavItem]> nav;
     in-out property <string> current-page: "dashboard";
     in property <string> version;
+    in property <bool> tray-available;
+    in property <bool> sidebar-compact; // icons only
+    // "keep running in the tray?" dialog shown when the window is closed
+    in-out property <bool> quit-dialog-open;
     callback page-changed(string);
+    callback quit-choice(string, bool); // "tray" | "quit", remember
+}
+
+export struct DiskRow {
+    is-disk: bool,     // physical disk header, otherwise a partition
+    title: string,
+    subtitle: string,
+    size: string,
+    detail: string,    // used / free of a mounted file system
+    percent: float,    // -1: no usage bar
+    mount: string,     // selectable mount point, "" if none
+    selected: bool,    // shown on the dashboard gauge
+    depth: int,
+}
+
+export struct FanItem {
+    name: string,
+    rpm: string,
+    percent: float,
 }
 
 // ---------- Dashboard ----------
@@ -33,7 +56,14 @@ export global Dashboard {
     in property <string> up-text;
     in property <string> up-total;
     in property <[StandardListViewItem]> system-info;
+    in property <[FanItem]> fans;
+    // all disks dialog (click on the DISK gauge)
+    in-out property <bool> disks-open;
+    in property <[DiskRow]> disk-rows;
+    callback open-disks();
+    callback select-disk(string); // mount point to show on the gauge
 }
+
 
 // ---------- Resources ----------
 export struct ChartData {
@@ -308,6 +338,11 @@ export global Settings {
     in-out property <int> disk-alert;
     in-out property <int> gpu-alert;
     in property <bool> gpu-available; // supported NVIDIA/AMD GPU found
+    in property <bool> tray-available;
+    in property <[string]> close-actions;
+    in property <[string]> sidebar-modes;
+    in-out property <int> sidebar-mode-index; // 0 icons and text, 1 icons only
+    in-out property <int> close-action-index; // 0 ask, 1 tray, 2 quit
     in-out property <bool> autostart;
     callback changed();
 }

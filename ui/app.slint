@@ -1,6 +1,6 @@
 import { Palette } from "std-widgets.slint";
 import { Theme } from "theme.slint";
-import { Icon } from "widgets.slint";
+import { Icon, Card, IconButton, Check } from "widgets.slint";
 import { App, Dashboard, Resources, Processes, Startup, Services, Uninstaller, Cleaner, Search, Hosts, Apt, Desktop, Settings, NavItem, ChartData, DiskUsage, StartupItem, ServiceItem, PackageItem, CleanerRow, AptItem, DesktopSetting } from "globals.slint";
 import { ChartSeries } from "widgets.slint";
 import { DashboardPage } from "pages/dashboard.slint";
@@ -21,10 +21,11 @@ export { Theme, App, Dashboard, Resources, Processes, Startup, Services, Uninsta
 component SidebarButton inherits Rectangle {
     in property <NavItem> item;
     in property <bool> active;
+    in property <bool> compact; // icons only
     callback clicked;
 
-    height: 40px;
-    border-radius: 8px;
+    height: 46px;
+    border-radius: 9px;
     background: active ? Theme.accent-soft : ta.has-hover ? Theme.card-hover : transparent;
     animate background { duration: 120ms; }
 
@@ -34,19 +35,39 @@ component SidebarButton inherits Rectangle {
     }
 
     HorizontalLayout {
-        padding-left: 12px;
+        padding-left: root.compact ? 0px : 12px;
         spacing: 12px;
+        alignment: root.compact ? center : start;
         Icon {
             source: root.item.icon;
             tint: root.active ? Theme.accent : Theme.text-dim;
+            width: 22px;
+            height: 22px;
             y: (parent.height - self.height) / 2;
         }
-        Text {
+        if !root.compact: Text {
             text: root.item.label;
             color: root.active ? Theme.accent : Theme.text;
-            font-size: Theme.font-normal;
+            font-size: 14px;
             font-weight: root.active ? 700 : 500;
             vertical-alignment: center;
+        }
+    }
+
+    // Page name next to the icon while hovering in icons-only mode
+    if root.compact && ta.has-hover: Rectangle {
+        x: parent.width + 10px;
+        y: (parent.height - self.height) / 2;
+        width: tip.preferred-width + 20px;
+        height: 30px;
+        border-radius: 6px;
+        background: #2b3140; // dark in both themes so it stands out from the page
+        drop-shadow-blur: 8px;
+        drop-shadow-color: #00000060;
+        tip := Text {
+            text: root.item.label;
+            color: #ffffff;
+            font-size: Theme.font-normal;
         }
     }
 }
@@ -57,7 +78,7 @@ export component AppWindow inherits Window {
     preferred-width: 1180px;
     preferred-height: 760px;
     min-width: 880px;
-    min-height: 600px;
+    min-height: 700px; // 12 sidebar entries at 46 px + header
     background: Theme.bg;
     default-font-size: 13px;
 
@@ -66,25 +87,28 @@ export component AppWindow inherits Window {
     changed dark => { Palette.color-scheme = Theme.dark ? ColorScheme.dark : ColorScheme.light; }
 
     HorizontalLayout {
-        // Sidebar
+        // Sidebar (z: hover labels of the icons-only mode are drawn over the page)
         Rectangle {
-            width: 236px;
+            z: 1;
+            width: App.sidebar-compact ? 74px : 252px;
+            animate width { duration: 150ms; easing: ease-out; }
             background: Theme.sidebar;
             border-width: 0px;
             VerticalLayout {
                 padding: 10px;
                 spacing: 4px;
                 HorizontalLayout {
-                    padding-left: 6px;
+                    padding-left: App.sidebar-compact ? 0px : 6px;
                     padding-bottom: 14px;
                     padding-top: 6px;
                     spacing: 10px;
+                    alignment: App.sidebar-compact ? center : start;
                     Image {
                         source: @image-url("icons/kaptan.svg");
-                        width: 32px;
-                        height: 32px;
+                        width: 34px;
+                        height: 34px;
                     }
-                    Text {
+                    if !App.sidebar-compact: Text {
                         text: "Kaptan";
                         color: Theme.text;
                         font-size: 18px;
@@ -94,6 +118,7 @@ export component AppWindow inherits Window {
                 }
                 for item in App.nav: SidebarButton {
                     item: item;
+                    compact: App.sidebar-compact;
                     active: App.current-page == item.id;
                     clicked => {
                         App.current-page = item.id;
@@ -126,6 +151,45 @@ export component AppWindow inherits Window {
                 if App.current-page == "apt": AptPage { }
                 if App.current-page == "desktop": DesktopPage { }
                 if App.current-page == "settings": SettingsPage { }
+            }
+        }
+    }
+
+    // Stacer's quit question: keep running in the system tray?
+    if App.quit-dialog-open: quit-dialog := Rectangle {
+        background: #000000a0;
+        TouchArea { }
+        property <bool> remember: false;
+        Card {
+            width: min(parent.width - 40px, 440px);
+            height: qd.preferred-height;
+            qd := VerticalLayout {
+                padding: 22px;
+                spacing: 14px;
+                HorizontalLayout {
+                    spacing: 12px;
+                    Image { source: @image-url("icons/kaptan.svg"); width: 36px; height: 36px; }
+                    Text {
+                        text: @tr("Will the program continue to work in the system tray?");
+                        color: Theme.text;
+                        font-size: 15px;
+                        font-weight: 700;
+                        wrap: word-wrap;
+                        vertical-alignment: center;
+                    }
+                }
+                Check {
+                    text: @tr("Don't ask again.");
+                    checked: quit-dialog.remember;
+                    toggled(on) => { quit-dialog.remember = on; }
+                }
+                HorizontalLayout {
+                    alignment: end;
+                    spacing: 8px;
+                    IconButton { text: @tr("Cancel"); clicked => { App.quit-dialog-open = false; } }
+                    IconButton { text: @tr("Quit"); danger: true; clicked => { App.quit-choice("quit", quit-dialog.remember); } }
+                    IconButton { text: @tr("Continue"); primary: true; clicked => { App.quit-choice("tray", quit-dialog.remember); } }
+                }
             }
         }
     }

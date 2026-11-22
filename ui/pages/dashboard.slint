@@ -1,9 +1,10 @@
-import { StandardListView } from "std-widgets.slint";
+import { StandardListView, ListView } from "std-widgets.slint";
 import { Theme } from "../theme.slint";
-import { Card, CircleBar, LineBar } from "../widgets.slint";
+import { Card, CircleBar, LineBar, UsageBar, IconButton, Icon } from "../widgets.slint";
 import { Dashboard } from "../globals.slint";
 
-export component DashboardPage inherits VerticalLayout {
+export component DashboardPage inherits Rectangle {
+  VerticalLayout {
     spacing: Theme.gap;
 
     HorizontalLayout {
@@ -29,6 +30,8 @@ export component DashboardPage inherits VerticalLayout {
             text: Dashboard.disk-text;
             color-a: #DC2430;
             color-b: #7B4397;
+            clickable: true;
+            clicked => { Dashboard.open-disks(); }
         }
         if Dashboard.gpu-visible: CircleBar {
             title: @tr("GPU");
@@ -43,7 +46,7 @@ export component DashboardPage inherits VerticalLayout {
         spacing: Theme.gap;
         vertical-stretch: 1;
         Card {
-            horizontal-stretch: 3;
+            horizontal-stretch: 1;
             VerticalLayout {
                 padding: 16px;
                 spacing: 8px;
@@ -63,8 +66,9 @@ export component DashboardPage inherits VerticalLayout {
                 Rectangle { vertical-stretch: 1; }
             }
         }
+        // Fixed width: the speed texts change every second and must not move the layout.
         VerticalLayout {
-            horizontal-stretch: 2;
+            width: 340px;
             spacing: Theme.gap;
             alignment: start;
             LineBar {
@@ -80,6 +84,161 @@ export component DashboardPage inherits VerticalLayout {
                 text: Dashboard.up-text;
                 caption: Dashboard.up-total;
                 bar-color: #3d8bfd;
+            }
+            if Dashboard.fans.length > 0: Card {
+                VerticalLayout {
+                    padding: 14px;
+                    spacing: 10px;
+                    Text {
+                        text: @tr("FANS");
+                        color: Theme.text-dim;
+                        font-size: Theme.font-small;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                    }
+                    for fan in Dashboard.fans: VerticalLayout {
+                        spacing: 5px;
+                        HorizontalLayout {
+                            Text {
+                                text: fan.name;
+                                color: Theme.text;
+                                font-size: Theme.font-normal;
+                                overflow: elide;
+                            }
+                            Text {
+                                text: fan.rpm;
+                                color: Theme.text;
+                                font-size: Theme.font-normal;
+                                font-weight: 600;
+                                horizontal-alignment: right;
+                                horizontal-stretch: 1;
+                            }
+                        }
+                        Rectangle {
+                            height: 6px;
+                            border-radius: 3px;
+                            background: Theme.track;
+                            Rectangle {
+                                x: 0;
+                                width: parent.width * clamp(fan.percent, 0, 100) / 100;
+                                border-radius: 3px;
+                                background: @linear-gradient(90deg, #36D1DC 0%, #5B86E5 100%);
+                                animate width { duration: 300ms; easing: ease-out; }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+
+    if Dashboard.disks-open: Rectangle {
+        background: #000000a0;
+        TouchArea { clicked => { Dashboard.disks-open = false; } }
+        Card {
+            width: min(parent.width - 40px, 680px);
+            height: min(parent.height - 40px, dlg.preferred-height);
+            TouchArea { } // clicks inside the card don't close it
+            dlg := VerticalLayout {
+                padding: 20px;
+                spacing: 12px;
+                HorizontalLayout {
+                    spacing: 10px;
+                    Icon { source: @image-url("../icons/drive.svg"); width: 22px; height: 22px; y: 2px; }
+                    Text {
+                        text: @tr("All Disks");
+                        color: Theme.text;
+                        font-size: 17px;
+                        font-weight: 700;
+                        horizontal-stretch: 1;
+                    }
+                    IconButton { text: @tr("Close"); clicked => { Dashboard.disks-open = false; } }
+                }
+                Text {
+                    text: @tr("Click a mounted partition to show it on the dashboard.");
+                    color: Theme.text-dim;
+                    font-size: Theme.font-small;
+                }
+                ListView {
+                    preferred-height: min(520px, Dashboard.disk-rows.length * 62px);
+                    for row in Dashboard.disk-rows: Rectangle {
+                        height: row.is-disk ? 56px : 62px;
+                        border-radius: 8px;
+                        background: row.selected ? Theme.accent-soft
+                            : row.is-disk ? Theme.bg
+                            : (row.mount != "" && ta.has-hover) ? Theme.card-hover : transparent;
+                        ta := TouchArea {
+                            enabled: row.mount != "";
+                            mouse-cursor: row.mount != "" ? pointer : default;
+                            clicked => { Dashboard.select-disk(row.mount); }
+                        }
+                        HorizontalLayout {
+                            padding-left: row.is-disk ? 12px : 30px + row.depth * 18px;
+                            padding-right: 12px;
+                            padding-top: 8px;
+                            padding-bottom: 8px;
+                            spacing: 12px;
+                            if row.is-disk: Icon {
+                                source: @image-url("../icons/drive.svg");
+                                tint: Theme.accent;
+                                width: 26px;
+                                height: 26px;
+                                y: (parent.height - self.height) / 2 - 8px;
+                            }
+                            VerticalLayout {
+                                horizontal-stretch: 1;
+                                spacing: 4px;
+                                alignment: center;
+                                HorizontalLayout {
+                                    spacing: 8px;
+                                    Text {
+                                        text: row.title;
+                                        color: row.mount == "" && !row.is-disk ? Theme.text-dim : Theme.text;
+                                        font-size: row.is-disk ? 14px : 13px;
+                                        font-weight: row.is-disk ? 700 : 600;
+                                        overflow: elide;
+                                    }
+                                    if row.selected: Rectangle {
+                                        width: badge.preferred-width + 14px;
+                                        height: 18px;
+                                        y: 1px;
+                                        border-radius: 9px;
+                                        background: Theme.accent;
+                                        badge := Text {
+                                            text: @tr("Shown on dashboard");
+                                            color: #ffffff;
+                                            font-size: 10px;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                    Rectangle { horizontal-stretch: 1; }
+                                    Text {
+                                        text: row.size;
+                                        color: Theme.text-dim;
+                                        font-size: Theme.font-small;
+                                        font-weight: 600;
+                                    }
+                                }
+                                Text {
+                                    text: row.subtitle;
+                                    color: Theme.text-dim;
+                                    font-size: 11px;
+                                    overflow: elide;
+                                }
+                                if row.percent >= 0: HorizontalLayout {
+                                    spacing: 10px;
+                                    UsageBar { value: row.percent; y: 5px; horizontal-stretch: 1; }
+                                    Text {
+                                        text: row.detail;
+                                        color: Theme.text-dim;
+                                        font-size: 11px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -20,6 +20,11 @@ Kaptan is a port of [Stacer](https://github.com/QuentiumYT/Stacer) (C++/Qt).
 | Desktop | GNOME tweaks via `gsettings` (only shown on GNOME sessions) |
 | Settings | Theme (dark/light), start page, dashboard disk, usage alerts, start at login |
 
+Like Stacer, Kaptan has a system tray icon (StatusNotifierItem: KDE, XFCE 4.16+, GNOME with the
+AppIndicator extension). Its menu opens any page or quits; closing the window asks whether to keep
+running in the tray (Settings → When the window is closed). Started at login, it starts hidden in the
+tray. Without a tray host, closing the window quits.
+
 GPU usage is read from sysfs on AMD and from `nvidia-smi` on NVIDIA. On hybrid laptops a sleeping
 NVIDIA GPU is not woken up. Intel iGPUs expose no usage counter and are not shown.
 
@@ -42,6 +47,17 @@ cargo test root_ -- --ignored --test-threads=1 --nocapture   # privileged action
 
 The `root_` tests (`src/root_tests.rs`) change `/etc/hosts`, an APT source and a file in `/tmp`
 through pkexec, then check that everything is restored byte for byte.
+
+## Debian package
+
+```sh
+cargo install cargo-deb   # once
+cargo deb                 # -> target/debian/kaptan_<version>-1_amd64.deb
+sudo apt install ./target/debian/kaptan_*_amd64.deb
+```
+
+Package metadata is in `[package.metadata.deb]` in `Cargo.toml`; `debian/` holds the changelog,
+copyright and man page. Bump the version in both `Cargo.toml` and `debian/changelog`.
 
 ## Install (system-wide)
 
@@ -88,7 +104,7 @@ Settings are stored in `~/.config/kaptan/settings.json`.
 
 ## Differences from Stacer
 
-- No tray icon (Slint has no tray support); alerts use desktop notifications.
+- Alerts use desktop notifications (`notify-send`) instead of tray balloons.
 - Stacer's Unity/Compiz settings were replaced with current GNOME settings.
 - No update check against GitHub.
 

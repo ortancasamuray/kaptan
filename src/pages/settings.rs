@@ -4,8 +4,8 @@ use super::monitor::MonitorHandle;
 use super::strings;
 use crate::core::{disk, settings};
 use crate::i18n::{self, tr};
-use crate::{AppWindow, Settings, Theme};
-use slint::ComponentHandle;
+use crate::{App, AppWindow, Settings, Theme};
+use slint::{ComponentHandle, Model};
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -19,6 +19,8 @@ fn language_codes() -> Vec<&'static str> {
 pub fn set_page_labels(ui: &AppWindow) {
     let g = ui.global::<Settings>();
     g.set_page_labels(strings(super::nav_pages().into_iter().map(|(_, l)| l)));
+    g.set_close_actions(strings([tr("Ask"), tr("Keep running in the tray"), tr("Quit")]));
+    g.set_sidebar_modes(strings([tr("Icons and text"), tr("Icons only")]));
     let mut langs = vec![tr("System default"), "English".to_string()];
     langs.extend(i18n::LANGUAGES.iter().map(|(_, name, _)| name.to_string()));
     g.set_languages(strings(langs));
@@ -32,6 +34,8 @@ pub fn setup(ui: &AppWindow, s: settings::Settings, monitor: MonitorHandle) {
     set_page_labels(ui);
     g.set_language_index(language_codes().iter().position(|c| *c == s.language).unwrap_or(0) as i32);
     g.set_theme_index(if s.theme == "light" { 1 } else { 0 });
+    g.set_sidebar_mode_index(if s.sidebar_mode == "icons" { 1 } else { 0 });
+    ui.global::<App>().set_sidebar_compact(s.sidebar_mode == "icons");
     g.set_start_page_index(page_ids.iter().position(|p| *p == s.start_page).unwrap_or(0) as i32);
     g.set_disks(strings(disks.clone()));
     let disk_idx = disks.iter().position(|d| *d == s.disk_name).or_else(|| disks.iter().position(|d| d == "/")).unwrap_or(0);
@@ -40,6 +44,7 @@ pub fn setup(ui: &AppWindow, s: settings::Settings, monitor: MonitorHandle) {
     g.set_memory_alert(s.memory_alert_percent);
     g.set_disk_alert(s.disk_alert_percent);
     g.set_gpu_alert(s.gpu_alert_percent);
+    g.set_close_action_index(super::window::CLOSE_ACTIONS.iter().position(|a| *a == s.close_action).unwrap_or(0) as i32);
     g.set_autostart(settings::is_self_autostart());
 
     let state = Rc::new(RefCell::new(s));
@@ -52,12 +57,16 @@ pub fn setup(ui: &AppWindow, s: settings::Settings, monitor: MonitorHandle) {
         let language_changed = language != s.language;
         s.language = language;
         s.theme = if g.get_theme_index() == 1 { "light" } else { "dark" }.into();
+        s.sidebar_mode = if g.get_sidebar_mode_index() == 1 { "icons" } else { "full" }.into();
+        ui.global::<App>().set_sidebar_compact(s.sidebar_mode == "icons");
         s.start_page = page_ids.get(g.get_start_page_index() as usize).cloned().unwrap_or_else(|| "dashboard".into());
-        s.disk_name = disks.get(g.get_disk_index() as usize).cloned().unwrap_or_default();
+        s.disk_name = g.get_disks().row_data(g.get_disk_index().max(0) as usize).map(|d| d.to_string()).unwrap_or_default();
         s.cpu_alert_percent = g.get_cpu_alert();
         s.memory_alert_percent = g.get_memory_alert();
         s.disk_alert_percent = g.get_disk_alert();
         s.gpu_alert_percent = g.get_gpu_alert();
+        s.close_action = super::window::CLOSE_ACTIONS.get(g.get_close_action_index() as usize).unwrap_or(&"ask").to_string();
+        super::window::set_close_action(&s.close_action);
         s.save();
 
         ui.global::<Theme>().set_dark(s.theme != "light");

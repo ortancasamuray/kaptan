@@ -95,8 +95,18 @@ export component CircleBar inherits Card {
     in property <string> text;
     in property <color> color-a;
     in property <color> color-b;
+    in property <bool> clickable: false;
+    callback clicked;
 
-    min-width: 150px;
+    min-width: 130px;
+    background: clickable && click-area.has-hover ? Theme.card-hover : Theme.card;
+    animate background { duration: 120ms; }
+
+    click-area := TouchArea {
+        enabled: root.clickable;
+        mouse-cursor: root.clickable ? pointer : default;
+        clicked => { root.clicked(); }
+    } // 4 gauges + sidebar must fit the 880 px minimum window
     min-height: 200px;
 
     VerticalLayout {
@@ -116,6 +126,9 @@ export component CircleBar inherits Card {
             property <angle> a: v * 360deg;
             property <float> ex: 50 + 42 * Math.sin(a);
             property <float> ey: 50 - 42 * Math.cos(a);
+            // Ring is 15% of the diameter (hole ~69%), close to Stacer's donut (hole size 0.67).
+            // Radius 42 + half of 15 stays inside the 100-unit viewbox.
+            property <length> thickness: self.size * 0.15;
 
             Path {
                 x: (gauge.width - gauge.size) / 2;
@@ -125,7 +138,7 @@ export component CircleBar inherits Card {
                 viewbox-width: 100;
                 viewbox-height: 100;
                 stroke: Theme.track;
-                stroke-width: 9px;
+                stroke-width: gauge.thickness;
                 commands: "M 50 8 A 42 42 0 1 1 49.99 8";
             }
             // Numeric path elements: string commands would depend on the locale's decimal separator.
@@ -137,7 +150,7 @@ export component CircleBar inherits Card {
                 viewbox-width: 100;
                 viewbox-height: 100;
                 stroke: @linear-gradient(135deg, root.color-a 0%, root.color-b 100%);
-                stroke-width: 9px;
+                stroke-width: gauge.thickness;
                 stroke-line-cap: round;
                 MoveTo { x: 50; y: 8; }
                 ArcTo {
@@ -152,12 +165,13 @@ export component CircleBar inherits Card {
             Text {
                 text: root.text;
                 color: Theme.text;
-                font-size: max(11px, gauge.size / 13);
+                font-size: max(10px, gauge.size / 14);
                 font-weight: 600;
                 horizontal-alignment: center;
                 vertical-alignment: center;
-                width: gauge.size * 0.7;
-                height: gauge.size * 0.6;
+                // fits inside the hole
+                width: gauge.size * 0.58;
+                height: gauge.size * 0.5;
                 x: (gauge.width - self.width) / 2;
                 y: (gauge.height - self.height) / 2;
                 wrap: word-wrap;
@@ -179,12 +193,14 @@ export component LineBar inherits Card {
         padding: 14px;
         spacing: 8px;
         HorizontalLayout {
+            spacing: 8px;
             Text {
                 text: root.title;
                 color: Theme.text-dim;
                 font-size: Theme.font-small;
                 font-weight: 700;
                 letter-spacing: 1px;
+                overflow: elide;
             }
             Text {
                 text: root.text;
@@ -192,6 +208,9 @@ export component LineBar inherits Card {
                 font-size: Theme.font-normal;
                 font-weight: 600;
                 horizontal-alignment: right;
+                horizontal-stretch: 1;
+                min-width: 0;
+                overflow: elide;
             }
         }
         Rectangle {
@@ -210,6 +229,8 @@ export component LineBar inherits Card {
             text: root.caption;
             color: Theme.text-dim;
             font-size: Theme.font-small;
+            min-width: 0;
+            overflow: elide;
         }
     }
 }

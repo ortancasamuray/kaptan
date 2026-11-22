@@ -1,0 +1,23 @@
+kaptan (0.1.1-1) unstable; urgency=medium
+
+  * System tray icon with page shortcuts; closing the window can keep Kaptan
+    running in the tray (asks first, like Stacer). Autostart starts hidden.
+  * Dashboard: fan speeds, thicker gauges, all-disks dialog from the DISK
+    gauge, steady download/upload cards.
+  * Settings: sidebar with icons and text or icons only, larger icons,
+    GPU usage alert, close behaviour.
+  * System Cleaner: Stacer's category icons and application icons.
+  * Uninstaller shows what apt will really remove before uninstalling.
+  * Debian packaging: man page, copyright, runtime library dependencies.
+
+ -- os <4129330+ortancasamuray@users.noreply.github.com>  Mon, 23 Nov 2026 01:13:47 +0300
+
+kaptan (0.1.0-1) unstable; urgency=medium
+
+  * Initial release: Rust + Slint port of Stacer.
+  * Dashboard, resources, processes, startup apps, services, uninstaller,
+    system cleaner, search, hosts, APT repositories, GNOME settings.
+  * GPU usage monitoring and alerts (AMD sysfs, NVIDIA nvidia-smi).
+  * English and Turkish user interface.
+
+ -- os <4129330+ortancasamuray@users.noreply.github.com>  Mon, 23 Nov 2026 00:42:24 +0300

@@ -1,11 +1,13 @@
 //! Platform logic (no UI). Ported from Stacer's `stacer-core`.
 
 pub mod apt_source;
+pub mod blockdev;
 pub mod cleaner;
 pub mod command;
 pub mod cpu;
 pub mod desktop_file;
 pub mod disk;
+pub mod fans;
 pub mod format;
 pub mod fsutil;
 pub mod gpu;

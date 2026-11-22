@@ -18,6 +18,10 @@ pub struct Settings {
     pub memory_alert_percent: i32,
     pub disk_alert_percent: i32,
     pub gpu_alert_percent: i32,
+    /// Closing the window: "ask", "tray" (keep running in the tray) or "quit"
+    pub close_action: String,
+    /// Sidebar: "full" (icons and text) or "icons"
+    pub sidebar_mode: String,
 }
 
 impl Default for Settings {
@@ -31,6 +35,8 @@ impl Default for Settings {
             memory_alert_percent: 0,
             disk_alert_percent: 0,
             gpu_alert_percent: 0,
+            close_action: "ask".into(),
+            sidebar_mode: "full".into(),
         }
     }
 }
@@ -71,7 +77,7 @@ pub fn set_self_autostart(on: bool) -> std::io::Result<()> {
         let exe = std::env::current_exe().map(|e| e.display().to_string()).unwrap_or_else(|_| "kaptan".into());
         std::fs::write(
             p,
-            format!("[Desktop Entry]\nType=Application\nName=Kaptan\nComment=System optimizer and monitor\nExec={exe}\nIcon=kaptan\nTerminal=false\nX-GNOME-Autostart-enabled=true\n"),
+            format!("[Desktop Entry]\nType=Application\nName=Kaptan\nComment=System optimizer and monitor\nExec={exe} --hide\nIcon=kaptan\nTerminal=false\nX-GNOME-Autostart-enabled=true\n"),
         )
     } else if p.exists() {
         std::fs::remove_file(p)

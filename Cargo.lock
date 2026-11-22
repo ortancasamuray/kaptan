@@ -2358,9 +2358,11 @@ dependencies = [
 
 [[package]]
 name = "kaptan"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
+ "ksni",
  "libc",
+ "resvg",
  "serde",
  "serde_json",
  "slint",

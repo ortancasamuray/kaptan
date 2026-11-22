@@ -1,15 +1,20 @@
 [package]
 name = "kaptan"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Linux system optimizer and monitor (Rust port of Stacer)"
 license = "GPL-3.0-or-later"
+authors = ["os <4129330+ortancasamuray@users.noreply.github.com>"]
+repository = "http://192.168.1.201:3100/os/kaptan"
+readme = "README.md"
 
 [dependencies]
 slint = "1.18"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 libc = "0.2"
+ksni = { version = "0.3.7", default-features = false, features = ["async-io", "blocking"] }
+resvg = { version = "0.49", default-features = false }
 
 [build-dependencies]
 slint-build = "1.18"
@@ -17,3 +22,29 @@ slint-build = "1.18"
 [profile.release]
 lto = "thin"
 strip = true
+
+[package.metadata.deb]
+maintainer = "os <4129330+ortancasamuray@users.noreply.github.com>"
+copyright = "2017-2026 Stacer authors, 2026 Kaptan contributors"
+changelog = "debian/changelog"
+section = "admin"
+priority = "optional"
+extended-description = """\
+Kaptan is a Linux system optimizer and monitor, a Rust and Slint port of Stacer. \
+It shows CPU, memory, disk, network and GPU usage with history charts, manages \
+processes, systemd services, startup applications, packages, APT repositories \
+and /etc/hosts, and cleans package caches, logs, crash reports, application \
+caches and the trash. Privileged actions use pkexec."""
+# $auto: libraries the binary links to. The rest are loaded at runtime by the
+# windowing/OpenGL backend (dlopen) and are invisible to dpkg-shlibdeps.
+depends = "$auto, libgl1, libx11-6, libx11-xcb1, libxcursor1, libxi6, libxkbcommon-x11-0, procps, systemd"
+recommends = "pkexec, libnotify-bin, libwayland-client0, libwayland-egl1, libegl1"
+suggests = "zenity | kdialog, nvidia-smi, software-properties-common"
+assets = [
+    ["target/release/kaptan", "usr/bin/", "755"],
+    ["data/kaptan.desktop", "usr/share/applications/", "644"],
+    ["data/kaptan.svg", "usr/share/icons/hicolor/scalable/apps/", "644"],
+    ["README.md", "usr/share/doc/kaptan/", "644"],
+    ["debian/copyright", "usr/share/doc/kaptan/copyright", "644"],
+    ["debian/kaptan.1", "usr/share/man/man1/kaptan.1", "644"],
+]

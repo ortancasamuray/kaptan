@@ -1,9 +1,9 @@
 //! Live monitoring: Dashboard gauges, Resources history charts and usage alerts.
 
 use super::{model, strings, sync};
-use crate::core::{cpu, disk, format, gpu, memory, network, settings, system};
+use crate::core::{cpu, disk, fans, format, gpu, memory, network, settings, system};
 use crate::i18n::{tr, trf};
-use crate::{App, AppWindow, ChartData, ChartSeries, Dashboard, DiskUsage, Resources};
+use crate::{App, AppWindow, ChartData, ChartSeries, Dashboard, DiskUsage, FanItem, Resources};
 use slint::{Color, ComponentHandle, ModelRc, SharedString, StandardListViewItem, Timer, TimerMode, VecModel};
 use std::cell::RefCell;
 use std::collections::VecDeque;
@@ -94,6 +94,9 @@ struct State {
     ticks: u64,
     alerts: [Alert; 4], // cpu, memory, disk, gpu
     charts_model: Rc<VecModel<ChartData>>,
+    fans_model: Rc<VecModel<FanItem>>,
+    /// Highest speed seen per fan, scales the bars when the driver has no maximum
+    fan_max: Vec<u32>,
     disks_model: Rc<VecModel<DiskUsage>>,
 }
 
@@ -181,11 +184,14 @@ pub fn setup(ui: &AppWindow, s: &settings::Settings) -> MonitorHandle {
         ticks: 0,
         alerts: Default::default(),
         charts_model: Rc::new(VecModel::default()),
+        fans_model: Rc::new(VecModel::default()),
+        fan_max: Vec::new(),
         disks_model: Rc::new(VecModel::default()),
     }));
     {
         let st = state.borrow();
         ui.global::<Resources>().set_charts(ModelRc::from(st.charts_model.clone()));
+        ui.global::<Dashboard>().set_fans(ModelRc::from(st.fans_model.clone()));
         ui.global::<Resources>().set_disks(ModelRc::from(st.disks_model.clone()));
     }
 
@@ -256,6 +262,24 @@ fn tick(ui: &AppWindow, st: &mut State, cfg: &MonitorConfig) {
     dash.set_up_value((dtx as f64 / st.net_max.1 as f64 * 100.0) as f32);
     dash.set_up_text(format!("{}/s", format::bytes(dtx)).into());
     dash.set_up_total(trf("Total: {}", &[&format::bytes(tx)]).into());
+
+    // Fans
+    let list = fans::read();
+    st.fan_max.resize(list.len(), 0);
+    let items: Vec<FanItem> = list
+        .iter()
+        .zip(st.fan_max.iter_mut())
+        .map(|(f, seen)| {
+            *seen = (*seen).max(f.rpm);
+            let max = f.max.unwrap_or_else(|| (*seen).max(6000));
+            FanItem {
+                name: tr(&fans::display_name(f)).into(),
+                rpm: if f.rpm == 0 { tr("Stopped").into() } else { format!("{} RPM", f.rpm).into() },
+                percent: (f.rpm as f64 / max as f64 * 100.0) as f32,
+            }
+        })
+        .collect();
+    sync(&st.fans_model, items);
 
     // Disk I/O
     let (r, w) = disk::io_bytes();

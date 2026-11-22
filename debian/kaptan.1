@@ -1,0 +1,31 @@
+.TH KAPTAN 1 "November 2026" "kaptan 0.1.0" "User Commands"
+.SH NAME
+kaptan \- Linux system optimizer and monitor
+.SH SYNOPSIS
+.B kaptan
+.SH DESCRIPTION
+.B kaptan
+is a graphical system optimizer and monitor, a Rust and Slint port of Stacer.
+It shows CPU, memory, disk, network and GPU usage with history charts, manages
+processes, systemd services, startup applications, installed packages, APT
+repositories and /etc/hosts, and cleans package caches, logs, crash reports,
+application caches and the trash.
+.PP
+Actions that need root privileges (services, packages, repositories, hosts,
+cleaning system files) ask for authorization through
+.BR pkexec (1).
+.SH FILES
+.TP
+.I ~/.config/kaptan/settings.json
+User settings: language, theme, start page, dashboard disk, usage alerts.
+.TP
+.I ~/.config/autostart/kaptan.desktop
+Created when "Start Kaptan at login" is enabled.
+.SH ENVIRONMENT
+.TP
+.B LANGUAGE, LC_ALL, LC_MESSAGES, LANG
+Select the interface language when the language setting is "System default".
+.SH SEE ALSO
+.BR pkexec (1),
+.BR systemctl (1),
+.BR nvidia-smi (1)

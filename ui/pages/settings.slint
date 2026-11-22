@@ -52,6 +52,17 @@ export component SettingsPage inherits ScrollView {
             }
         }
         Row {
+            label: @tr("Sidebar");
+            ComboBox {
+                width: 200px;
+                y: 14px;
+                height: 32px;
+                model: Settings.sidebar-modes;
+                current-index <=> Settings.sidebar-mode-index;
+                selected => { Settings.changed(); }
+            }
+        }
+        Row {
             label: @tr("Start page");
             ComboBox {
                 width: 200px;
@@ -74,8 +85,20 @@ export component SettingsPage inherits ScrollView {
                 selected => { Settings.changed(); }
             }
         }
+        if Settings.tray-available: Row {
+            label: @tr("When the window is closed");
+            ComboBox {
+                width: 260px;
+                y: 14px;
+                height: 32px;
+                model: Settings.close-actions;
+                current-index <=> Settings.close-action-index;
+                selected => { Settings.changed(); }
+            }
+        }
         Row {
             label: @tr("Start Kaptan at login");
+            hint: Settings.tray-available ? @tr("Starts hidden in the system tray") : "";
             Switch {
                 checked <=> Settings.autostart;
                 toggled => { Settings.changed(); }

@@ -16,6 +16,10 @@ EXTRA = [
     "Package Caches", "Crash Reports", "Application Logs", "Application Caches", "Trash",
     # alerts
     "High CPU Usage", "High Memory Usage", "High Disk Usage", "High GPU Usage",
+    # tray / window
+    # fans
+    "CPU fan", "GPU fan", "Middle fan", "System fan", "Chassis fan", "Pump", "Stopped",
+    "Ask", "Keep running in the tray", "Icons and text", "Icons only",
     # page messages
     "Repository enabled.", "Repository disabled.", "Repository removed.", "Repository updated.", "Repository added.",
     "{} enabled.", "{} disabled.", "{} started.", "{} stopped.", "{} moved to trash.", "{} deleted.",
@@ -58,6 +62,18 @@ TR = {
     "High CPU Usage": "Yüksek İşlemci Kullanımı", "High Memory Usage": "Yüksek Bellek Kullanımı", "High Disk Usage": "Yüksek Disk Kullanımı",
     "High GPU Usage": "Yüksek GPU Kullanımı", "The amount of GPU used is over {}%.": "GPU kullanımı %{} değerini aştı.",
     "GPU usage alert (%)": "GPU kullanım uyarısı (%)",
+    "Open Kaptan": "Kaptan'ı Aç", "Quit": "Çıkış", "Continue": "Devam et",
+    "Will the program continue to work in the system tray?": "Program sistem tepsisinde çalışmaya devam etsin mi?",
+    "Don't ask again.": "Bir daha sorma.", "When the window is closed": "Pencere kapatıldığında",
+    "Ask": "Sor", "Keep running in the tray": "Tepside çalışmaya devam et",
+    "Starts hidden in the system tray": "Sistem tepsisinde gizli başlar",
+    "FANS": "FANLAR", "CPU fan": "İşlemci fanı", "GPU fan": "GPU fanı", "Middle fan": "Orta fan",
+    "System fan": "Sistem fanı", "Chassis fan": "Kasa fanı", "Pump": "Pompa",
+    "All Disks": "Tüm Diskler", "Close": "Kapat", "Shown on dashboard": "Panelde gösteriliyor",
+    "Click a mounted partition to show it on the dashboard.": "Gösterge panelinde göstermek için bağlı bir bölüme tıklayın.",
+    "Not mounted": "Bağlı değil", "Swap": "Takas alanı", "Swap (inactive)": "Takas alanı (etkin değil)",
+    "{} used · {} free": "{} dolu · {} boş",
+    "Sidebar": "Yan menü", "Icons and text": "Simge ve metin", "Icons only": "Yalnızca simge",
     "The amount of CPU used is over {}%.": "İşlemci kullanımı %{} değerini aştı.",
     "The amount of memory used is over {}%.": "Bellek kullanımı %{} değerini aştı.",
     "The amount of disk used is over {}%.": "Disk kullanımı %{} değerini aştı.",

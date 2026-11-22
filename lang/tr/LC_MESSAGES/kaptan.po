@@ -49,6 +49,9 @@ msgstr "Takma adlar"
 msgid "All"
 msgstr "Tümü"
 
+msgid "All Disks"
+msgstr "Tüm Diskler"
+
 msgid "All users"
 msgstr "Tüm kullanıcılar"
 
@@ -73,6 +76,9 @@ msgstr "Uygula"
 msgid "APT Repositories"
 msgstr "APT Depoları"
 
+msgid "Ask"
+msgstr "Sor"
+
 msgid "Back to categories"
 msgstr "Kategorilere dön"
 
@@ -94,11 +100,20 @@ msgstr "Ortalanmış"
 msgid "Changed"
 msgstr "Durum değişikliği"
 
+msgid "Chassis fan"
+msgstr "Kasa fanı"
+
 msgid "Clean"
 msgstr "Temizle"
 
 msgid "Click"
 msgstr "Tıklama"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "Gösterge panelinde göstermek için bağlı bir bölüme tıklayın."
+
+msgid "Close"
+msgstr "Kapat"
 
 msgid "Command *"
 msgstr "Komut *"
@@ -112,11 +127,17 @@ msgstr "Karşılaştırma"
 msgid "Components"
 msgstr "Bileşenler"
 
+msgid "Continue"
+msgstr "Devam et"
+
 msgid "CPU"
 msgstr "İŞLEMCİ"
 
 msgid "CPU Cores: {}"
 msgstr "İşlemci çekirdeği: {}"
+
+msgid "CPU fan"
+msgstr "İşlemci fanı"
 
 msgid "CPU History"
 msgstr "İşlemci Geçmişi"
@@ -181,6 +202,9 @@ msgstr "Disk kullanım uyarısı (%)"
 msgid "Distribution: {}"
 msgstr "Dağıtım: {}"
 
+msgid "Don't ask again."
+msgstr "Bir daha sorma."
+
 msgid "DOWNLOAD"
 msgstr "İNDİRME"
 
@@ -223,6 +247,9 @@ msgstr "Eşit (=)"
 msgid "Exactly (=)"
 msgstr "Tam (=)"
 
+msgid "FANS"
+msgstr "FANLAR"
+
 msgid "File"
 msgstr "Dosya"
 
@@ -249,6 +276,9 @@ msgstr "Genel ad"
 
 msgid "GPU"
 msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "GPU fanı"
 
 msgid "GPU History"
 msgstr "GPU Geçmişi"
@@ -289,6 +319,12 @@ msgstr "Hosts"
 msgid "Icon"
 msgstr "Simge"
 
+msgid "Icons and text"
+msgstr "Simge ve metin"
+
+msgid "Icons only"
+msgstr "Yalnızca simge"
+
 msgid "Install zenity or kdialog to browse, or type the directory path."
 msgstr "Gözatmak için zenity veya kdialog kurun ya da dizin yolunu yazın."
 
@@ -300,6 +336,9 @@ msgstr "IP Adresi"
 
 msgid "IP address *"
 msgstr "IP adresi *"
+
+msgid "Keep running in the tray"
+msgstr "Tepside çalışmaya devam et"
 
 msgid "Kernel Release: {}"
 msgstr "Çekirdek sürümü: {}"
@@ -345,6 +384,9 @@ msgstr "Bellek: {} / {}"
 
 msgid "Menu"
 msgstr "Menü"
+
+msgid "Middle fan"
+msgstr "Orta fan"
 
 msgid "Minimize"
 msgstr "Simge durumuna küçült"
@@ -403,6 +445,9 @@ msgstr "Desteklenen bir paket yöneticisi bulunamadı"
 msgid "None"
 msgstr "Yok"
 
+msgid "Not mounted"
+msgstr "Bağlı değil"
+
 msgid "Nothing selected."
 msgstr "Hiçbir şey seçilmedi."
 
@@ -420,6 +465,9 @@ msgstr "Ekran klavyesi"
 
 msgid "Open Folder"
 msgstr "Klasörü Aç"
+
+msgid "Open Kaptan"
+msgstr "Kaptan'ı Aç"
 
 msgid "Other"
 msgstr "Diğer"
@@ -447,6 +495,12 @@ msgstr "İşlem"
 
 msgid "Processes"
 msgstr "İşlemler"
+
+msgid "Pump"
+msgstr "Pompa"
+
+msgid "Quit"
+msgstr "Çıkış"
 
 msgid "Raise windows on click"
 msgstr "Tıklanınca pencereyi öne getir"
@@ -559,6 +613,12 @@ msgstr "Çöp kutusunu masaüstünde göster"
 msgid "Show weekday in clock"
 msgstr "Saatte haftanın gününü göster"
 
+msgid "Shown on dashboard"
+msgstr "Panelde gösteriliyor"
+
+msgid "Sidebar"
+msgstr "Yan menü"
+
 msgid "Size"
 msgstr "Boyut"
 
@@ -592,6 +652,9 @@ msgstr "Açılış sayfası"
 msgid "Started"
 msgstr "Başlangıç"
 
+msgid "Starts hidden in the system tray"
+msgstr "Sistem tepsisinde gizli başlar"
+
 msgid "Startup Applications"
 msgstr "Başlangıç Uygulamaları"
 
@@ -610,6 +673,12 @@ msgstr "Uzatılmış"
 msgid "Suites"
 msgstr "Sürümler"
 
+msgid "Swap"
+msgstr "Takas alanı"
+
+msgid "Swap (inactive)"
+msgstr "Takas alanı (etkin değil)"
+
 msgid "Swap: {} of {}"
 msgstr "Takas: {} / {}"
 
@@ -621,6 +690,9 @@ msgstr "Sistem Temizleyici"
 
 msgid "System default"
 msgstr "Sistem varsayılanı"
+
+msgid "System fan"
+msgstr "Sistem fanı"
 
 msgid "SYSTEM INFO"
 msgstr "SİSTEM BİLGİSİ"
@@ -712,6 +784,12 @@ msgstr "Sanal"
 msgid "Wallpaper"
 msgstr "Duvar kâğıdı"
 
+msgid "When the window is closed"
+msgstr "Pencere kapatıldığında"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "Program sistem tepsisinde çalışmaya devam etsin mi?"
+
 msgid "Window Manager"
 msgstr "Pencere Yöneticisi"
 
@@ -762,3 +840,6 @@ msgstr "{} başlatıldı."
 
 msgid "{} stopped."
 msgstr "{} durduruldu."
+
+msgid "{} used · {} free"
+msgstr "{} dolu · {} boş"

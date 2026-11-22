@@ -3,6 +3,7 @@
 pub mod apt;
 pub mod cleaner;
 pub mod desktop;
+pub mod disks;
 pub mod hosts;
 pub mod monitor;
 pub mod processes;
@@ -11,6 +12,7 @@ pub mod services;
 pub mod settings;
 pub mod startup;
 pub mod uninstaller;
+pub mod window;
 
 use crate::i18n::tr;
 use crate::{App, AppWindow, NavItem};
@@ -46,6 +48,7 @@ pub fn retranslate(ui: &AppWindow) {
     cleaner::set_titles(ui);
     search::set_lists(ui);
     desktop::reload(ui);
+    window::retranslate();
 }
 
 /// Run `work` on a background thread, then `done` on the UI thread with the result.
