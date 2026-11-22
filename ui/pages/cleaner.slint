@@ -3,6 +3,99 @@ import { Theme } from "../theme.slint";
 import { Card, PageTitle, IconButton, MessageBar, Icon, Check } from "../widgets.slint";
 import { Cleaner } from "../globals.slint";
 
+component CategoryCard inherits Rectangle {
+    in property <string> title;
+    in property <image> icon;
+    in property <bool> checked;
+    in property <bool> enabled: true;
+    callback toggled(bool);
+
+    width: 158px;
+    height: 170px;
+    border-radius: Theme.radius;
+    background: ta.has-hover ? Theme.card-hover : Theme.card;
+    border-width: checked ? 2px : 1px;
+    border-color: checked ? Theme.accent : Theme.border;
+    opacity: enabled ? 1 : 0.6;
+    animate border-color, background { duration: 120ms; }
+
+    ta := TouchArea {
+        enabled: root.enabled;
+        mouse-cursor: pointer;
+        clicked => { root.toggled(!root.checked); }
+    }
+    VerticalLayout {
+        padding: 14px;
+        spacing: 12px;
+        alignment: center;
+        Image {
+            source: root.icon;
+            width: 72px;
+            height: 72px;
+            x: (parent.width - self.width) / 2;
+            image-fit: contain;
+            opacity: root.checked ? 1 : 0.45;
+        }
+        Text {
+            text: root.title;
+            color: Theme.text;
+            font-size: Theme.font-normal;
+            font-weight: 600;
+            horizontal-alignment: center;
+            wrap: word-wrap;
+        }
+    }
+    // check badge
+    Rectangle {
+        x: parent.width - 30px;
+        y: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background: root.checked ? Theme.accent : transparent;
+        border-width: root.checked ? 0px : 1.5px;
+        border-color: Theme.text-dim;
+        if root.checked: Path {
+            width: 12px;
+            height: 12px;
+            viewbox-width: 24;
+            viewbox-height: 24;
+            commands: "M 4 12 L 10 18 L 20 6";
+            stroke: #ffffff;
+            stroke-width: 2.5px;
+        }
+    }
+}
+
+/// Large circular action button (Stacer's scan button).
+component RoundButton inherits Rectangle {
+    in property <image> icon;
+    in property <bool> busy;
+    callback clicked;
+    width: 84px;
+    height: 84px;
+    border-radius: self.width / 2;
+    background: busy ? Theme.track : ta.pressed ? Theme.accent.darker(0.25) : ta.has-hover ? Theme.accent.darker(0.1) : Theme.accent;
+    drop-shadow-blur: 18px;
+    drop-shadow-color: Theme.accent.with-alpha(0.45);
+    ta := TouchArea {
+        enabled: !root.busy;
+        mouse-cursor: pointer;
+        clicked => { root.clicked(); }
+    }
+    if !root.busy: Image {
+        source: root.icon;
+        colorize: #ffffff;
+        width: 36px;
+        height: 36px;
+    }
+    if root.busy: Spinner {
+        indeterminate: true;
+        width: 44px;
+        height: 44px;
+    }
+}
+
 export component CleanerPage inherits VerticalLayout {
     spacing: 12px;
 
@@ -18,37 +111,39 @@ export component CleanerPage inherits VerticalLayout {
 
     MessageBar { text: Cleaner.message; error: Cleaner.message-error; }
 
-    // Category selection
-    if !Cleaner.has-results: Card {
+    // Category selection: icon cards like Stacer
+    if !Cleaner.has-results: VerticalLayout {
         vertical-stretch: 1;
-        VerticalLayout {
-            padding: 24px;
+        spacing: 28px;
+        alignment: center;
+        HorizontalLayout {
             spacing: 14px;
-            alignment: start;
-            Text {
-                text: @tr("Select what to scan");
-                color: Theme.text;
-                font-size: 15px;
-                font-weight: 700;
-            }
-            for title[i] in Cleaner.category-titles: Check {
-                text: title;
+            alignment: center;
+            for title[i] in Cleaner.category-titles: CategoryCard {
+                title: title;
+                icon: Cleaner.category-icons[i];
                 checked: Cleaner.categories[i];
                 enabled: !Cleaner.scanning;
                 toggled(on) => { Cleaner.set-category(i, on); }
             }
+        }
+        VerticalLayout {
+            spacing: 10px;
+            alignment: center;
             HorizontalLayout {
-                alignment: start;
-                spacing: 12px;
-                padding-top: 10px;
-                IconButton {
-                    icon: @image-url("../icons/search.svg");
-                    text: Cleaner.scanning ? @tr("Scanning…") : @tr("System Scan");
-                    primary: true;
-                    enabled: !Cleaner.scanning;
-                    clicked => { Cleaner.scan(); }
-                }
-                if Cleaner.scanning: Spinner { indeterminate: true; width: 30px; height: 30px; }
+              alignment: center;
+              RoundButton {
+                icon: @image-url("../icons/search.svg");
+                busy: Cleaner.scanning;
+                clicked => { Cleaner.scan(); }
+              }
+            }
+            Text {
+                text: Cleaner.scanning ? @tr("Scanning…") : @tr("System Scan");
+                color: Theme.text;
+                font-size: 15px;
+                font-weight: 700;
+                horizontal-alignment: center;
             }
         }
     }
@@ -61,11 +156,11 @@ export component CleanerPage inherits VerticalLayout {
                 height: row.is-group ? 42px : 30px;
                 background: row.is-group ? Theme.card-hover : transparent;
                 HorizontalLayout {
-                    padding-left: row.is-group ? 10px : 44px;
+                    padding-left: row.is-group ? 10px : 40px;
                     padding-right: 16px;
                     spacing: 6px;
                     if row.is-group: Rectangle {
-                        width: 24px;
+                        width: 20px;
                         Icon {
                             source: row.expanded ? @image-url("../icons/chevron-down.svg") : @image-url("../icons/chevron-right.svg");
                             tint: Theme.text-dim;
@@ -73,6 +168,13 @@ export component CleanerPage inherits VerticalLayout {
                             height: 16px;
                         }
                         TouchArea { mouse-cursor: pointer; clicked => { Cleaner.expand(row.group); } }
+                    }
+                    Image {
+                        source: row.has-icon ? row.icon : Cleaner.category-icons[row.category];
+                        width: row.is-group ? 26px : 20px;
+                        height: self.width;
+                        y: (parent.height - self.height) / 2;
+                        image-fit: contain;
                     }
                     Check {
                         text: row.title;

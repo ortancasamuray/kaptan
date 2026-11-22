@@ -98,6 +98,11 @@ export component SettingsPage inherits ScrollView {
             hint: @tr("0 disables the alert");
             SpinBox { width: 120px; y: 14px; height: 32px; minimum: 0; maximum: 100; value <=> Settings.disk-alert; edited => { Settings.changed(); } }
         }
+        if Settings.gpu-available: Row {
+            label: @tr("GPU usage alert (%)");
+            hint: @tr("0 disables the alert");
+            SpinBox { width: 120px; y: 14px; height: 32px; minimum: 0; maximum: 100; value <=> Settings.gpu-alert; edited => { Settings.changed(); } }
+        }
 
         Text { text: @tr("ABOUT"); color: Theme.text-dim; font-size: Theme.font-small; font-weight: 700; letter-spacing: 1px; }
         Card {

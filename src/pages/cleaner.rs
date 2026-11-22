@@ -7,6 +7,8 @@ use crate::i18n::{tr, trf};
 use crate::{AppWindow, Cleaner, CleanerRow};
 use slint::{ComponentHandle, Model, VecModel};
 use std::cell::RefCell;
+use std::collections::HashMap;
+use std::path::{Path, PathBuf};
 use std::rc::Rc;
 
 #[derive(Default)]
@@ -20,6 +22,23 @@ struct State {
 
 thread_local! {
     static STATE: RefCell<State> = RefCell::new(State::default());
+    /// Decoded application icons, shared by all rows.
+    static ICONS: RefCell<HashMap<PathBuf, slint::Image>> = RefCell::new(HashMap::new());
+}
+
+fn load_icon(path: &Path) -> Option<slint::Image> {
+    ICONS.with_borrow_mut(|c| {
+        if let Some(img) = c.get(path) {
+            return Some(img.clone());
+        }
+        let img = slint::Image::load_from_path(path).ok()?;
+        c.insert(path.to_path_buf(), img.clone());
+        Some(img)
+    })
+}
+
+fn category_index(c: Category) -> i32 {
+    Category::ALL.iter().position(|x| *x == c).unwrap_or(0) as i32
 }
 
 pub fn setup(ui: &AppWindow) {
@@ -169,6 +188,9 @@ fn render(ui: &AppWindow) {
             let checked = &s.checked[gi];
             rows.push(CleanerRow {
                 is_group: true,
+                category: category_index(g.category),
+                icon: Default::default(),
+                has_icon: false,
                 group: gi as i32,
                 item: -1,
                 title: format!("{} ({})", tr(g.category.title()), g.items.len()).into(),
@@ -179,8 +201,12 @@ fn render(ui: &AppWindow) {
             map.push((gi, None));
             if s.expanded[gi] {
                 for (ii, it) in g.items.iter().enumerate() {
+                    let icon = it.icon.as_deref().and_then(load_icon);
                     rows.push(CleanerRow {
                         is_group: false,
+                        category: category_index(g.category),
+                        has_icon: icon.is_some(),
+                        icon: icon.unwrap_or_default(),
                         group: gi as i32,
                         item: ii as i32,
                         title: it.name.clone().into(),

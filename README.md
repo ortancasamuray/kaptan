@@ -43,6 +43,17 @@ cargo test root_ -- --ignored --test-threads=1 --nocapture   # privileged action
 The `root_` tests (`src/root_tests.rs`) change `/etc/hosts`, an APT source and a file in `/tmp`
 through pkexec, then check that everything is restored byte for byte.
 
+## Install (system-wide)
+
+```sh
+cargo build --release
+sudo install -Dm755 target/release/kaptan /usr/local/bin/kaptan
+sudo install -Dm644 data/kaptan.desktop /usr/local/share/applications/kaptan.desktop
+sudo install -Dm644 data/kaptan.svg /usr/local/share/icons/hicolor/scalable/apps/kaptan.svg
+```
+
+Uninstall: `sudo rm /usr/local/bin/kaptan /usr/local/share/applications/kaptan.desktop /usr/local/share/icons/hicolor/scalable/apps/kaptan.svg`
+
 ## Install (user)
 
 ```sh

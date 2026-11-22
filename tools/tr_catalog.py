@@ -15,7 +15,7 @@ EXTRA = [
     # cleaner categories
     "Package Caches", "Crash Reports", "Application Logs", "Application Caches", "Trash",
     # alerts
-    "High CPU Usage", "High Memory Usage", "High Disk Usage",
+    "High CPU Usage", "High Memory Usage", "High Disk Usage", "High GPU Usage",
     # page messages
     "Repository enabled.", "Repository disabled.", "Repository removed.", "Repository updated.", "Repository added.",
     "{} enabled.", "{} disabled.", "{} started.", "{} stopped.", "{} moved to trash.", "{} deleted.",
@@ -56,6 +56,8 @@ TR = {
     "File Systems": "Dosya Sistemleri",
     # --- alerts
     "High CPU Usage": "Yüksek İşlemci Kullanımı", "High Memory Usage": "Yüksek Bellek Kullanımı", "High Disk Usage": "Yüksek Disk Kullanımı",
+    "High GPU Usage": "Yüksek GPU Kullanımı", "The amount of GPU used is over {}%.": "GPU kullanımı %{} değerini aştı.",
+    "GPU usage alert (%)": "GPU kullanım uyarısı (%)",
     "The amount of CPU used is over {}%.": "İşlemci kullanımı %{} değerini aştı.",
     "The amount of memory used is over {}%.": "Bellek kullanımı %{} değerini aştı.",
     "The amount of disk used is over {}%.": "Disk kullanımı %{} değerini aştı.",
@@ -85,7 +87,7 @@ TR = {
     # --- cleaner
     "Package Caches": "Paket Önbellekleri", "Crash Reports": "Çökme Raporları", "Application Logs": "Uygulama Günlükleri",
     "Application Caches": "Uygulama Önbellekleri", "Trash": "Çöp Kutusu", "Back to categories": "Kategorilere dön",
-    "Select what to scan": "Taranacakları seçin", "Scanning…": "Taranıyor…", "System Scan": "Sistemi Tara",
+    "Scanning…": "Taranıyor…", "System Scan": "Sistemi Tara",
     "Select all": "Tümünü seç", "Select none": "Hiçbirini seçme", "Clean": "Temizle",
     "Select at least one category.": "En az bir kategori seçin.", "Nothing selected.": "Hiçbir şey seçilmedi.",
     "{} cleaned.": "{} temizlendi.", "Total {} · selected {}": "Toplam {} · seçilen {}",

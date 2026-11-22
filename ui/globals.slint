@@ -148,6 +148,9 @@ export global Uninstaller {
 // ---------- System Cleaner ----------
 export struct CleanerRow {
     is-group: bool,
+    category: int,     // index into Cleaner.category-icons
+    icon: image,       // application icon of an item
+    has-icon: bool,    // false: show the category icon
     group: int,
     item: int,
     title: string,
@@ -159,6 +162,14 @@ export struct CleanerRow {
 export global Cleaner {
     in-out property <[bool]> categories: [true, true, true, true, true];
     in property <[string]> category-titles;
+    // Stacer's category artwork, in Category::ALL order
+    in property <[image]> category-icons: [
+        @image-url("icons/cleaner/package.png"),
+        @image-url("icons/cleaner/crash.png"),
+        @image-url("icons/cleaner/logs.png"),
+        @image-url("icons/cleaner/cache.png"),
+        @image-url("icons/cleaner/trash.png"),
+    ];
     in property <bool> scanning;
     in property <bool> cleaning;
     in property <bool> has-results;
@@ -295,6 +306,8 @@ export global Settings {
     in-out property <int> cpu-alert;
     in-out property <int> memory-alert;
     in-out property <int> disk-alert;
+    in-out property <int> gpu-alert;
+    in property <bool> gpu-available; // supported NVIDIA/AMD GPU found
     in-out property <bool> autostart;
     callback changed();
 }

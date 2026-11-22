@@ -11,6 +11,7 @@ pub mod fsutil;
 pub mod gpu;
 pub mod gsettings;
 pub mod hosts;
+pub mod icons;
 pub mod memory;
 pub mod network;
 pub mod package;

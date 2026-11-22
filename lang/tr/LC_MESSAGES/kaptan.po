@@ -253,6 +253,9 @@ msgstr "GPU"
 msgid "GPU History"
 msgstr "GPU Geçmişi"
 
+msgid "GPU usage alert (%)"
+msgstr "GPU kullanım uyarısı (%)"
+
 msgid "Greater (>)"
 msgstr "Büyük (>)"
 
@@ -264,6 +267,9 @@ msgstr "Yüksek İşlemci Kullanımı"
 
 msgid "High Disk Usage"
 msgstr "Yüksek Disk Kullanımı"
+
+msgid "High GPU Usage"
+msgstr "Yüksek GPU Kullanımı"
 
 msgid "High Memory Usage"
 msgstr "Yüksek Bellek Kullanımı"
@@ -526,9 +532,6 @@ msgstr "Hiçbirini seçme"
 msgid "Select the search directory."
 msgstr "Aranacak dizini seçin."
 
-msgid "Select what to scan"
-msgstr "Taranacakları seçin"
-
 msgid "Service"
 msgstr "Servis"
 
@@ -633,6 +636,9 @@ msgstr "İşlemci kullanımı %{} değerini aştı."
 
 msgid "The amount of disk used is over {}%."
 msgstr "Disk kullanımı %{} değerini aştı."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "GPU kullanımı %{} değerini aştı."
 
 msgid "The amount of memory used is over {}%."
 msgstr "Bellek kullanımı %{} değerini aştı."

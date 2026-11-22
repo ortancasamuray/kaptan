@@ -17,6 +17,7 @@ pub struct Settings {
     pub cpu_alert_percent: i32,
     pub memory_alert_percent: i32,
     pub disk_alert_percent: i32,
+    pub gpu_alert_percent: i32,
 }
 
 impl Default for Settings {
@@ -29,6 +30,7 @@ impl Default for Settings {
             cpu_alert_percent: 0,
             memory_alert_percent: 0,
             disk_alert_percent: 0,
+            gpu_alert_percent: 0,
         }
     }
 }

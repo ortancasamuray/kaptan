@@ -32,6 +32,24 @@ pub struct Item {
     pub path: PathBuf,
     pub name: String,
     pub size: u64,
+    /// Matching application icon from the icon theme, if any.
+    pub icon: Option<PathBuf>,
+}
+
+/// Application name an item belongs to, for the icon lookup.
+fn app_name(cat: Category, path: &Path) -> String {
+    let file = |p: &Path| p.file_name().map(|n| n.to_string_lossy().into_owned()).unwrap_or_default();
+    match cat {
+        // firefox-esr_128.0_amd64.deb -> firefox-esr
+        Category::PackageCache => file(path).split('_').next().unwrap_or_default().to_string(),
+        // ~/.config/Code/Cache -> Code
+        Category::AppCaches if ["Cache", "GPUCache", "Code Cache", "DawnCache"].contains(&file(path).as_str()) => {
+            path.parent().map(file).unwrap_or_default()
+        }
+        // syslog.1, Xorg.0.log -> syslog, xorg
+        Category::AppLogs => file(path).split('.').next().unwrap_or_default().to_string(),
+        _ => file(path),
+    }
 }
 
 #[derive(Clone, Debug)]
@@ -100,7 +118,8 @@ pub fn scan(categories: &[Category]) -> Vec<ScanGroup> {
                     } else {
                         path.file_name().map(|n| n.to_string_lossy().into_owned()).unwrap_or_default()
                     };
-                    Item { size: size_of(&path), name, path }
+                    let icon = if category == Category::Trash { None } else { super::icons::lookup(&app_name(category, &path)) };
+                    Item { size: size_of(&path), name, icon, path }
                 })
                 .collect();
             items.sort_by(|a, b| b.size.cmp(&a.size));
@@ -156,4 +175,16 @@ fn empty_dir(dir: &Path) -> std::io::Result<()> {
         }
     }
     first_err.map_or(Ok(()), Err)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn app_names() {
+        assert_eq!(app_name(Category::PackageCache, Path::new("/var/cache/apt/archives/firefox-esr_128.0_amd64.deb")), "firefox-esr");
+        assert_eq!(app_name(Category::AppCaches, Path::new("/home/u/.config/Code/Cache")), "Code");
+        assert_eq!(app_name(Category::AppCaches, Path::new("/home/u/.cache/chromium")), "chromium");
+        assert_eq!(app_name(Category::AppLogs, Path::new("/var/log/Xorg.0.log")), "Xorg");
+    }
 }

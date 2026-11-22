@@ -39,6 +39,7 @@ pub fn setup(ui: &AppWindow, s: settings::Settings, monitor: MonitorHandle) {
     g.set_cpu_alert(s.cpu_alert_percent);
     g.set_memory_alert(s.memory_alert_percent);
     g.set_disk_alert(s.disk_alert_percent);
+    g.set_gpu_alert(s.gpu_alert_percent);
     g.set_autostart(settings::is_self_autostart());
 
     let state = Rc::new(RefCell::new(s));
@@ -56,6 +57,7 @@ pub fn setup(ui: &AppWindow, s: settings::Settings, monitor: MonitorHandle) {
         s.cpu_alert_percent = g.get_cpu_alert();
         s.memory_alert_percent = g.get_memory_alert();
         s.disk_alert_percent = g.get_disk_alert();
+        s.gpu_alert_percent = g.get_gpu_alert();
         s.save();
 
         ui.global::<Theme>().set_dark(s.theme != "light");
@@ -65,6 +67,7 @@ pub fn setup(ui: &AppWindow, s: settings::Settings, monitor: MonitorHandle) {
             m.cpu_alert = s.cpu_alert_percent;
             m.memory_alert = s.memory_alert_percent;
             m.disk_alert = s.disk_alert_percent;
+            m.gpu_alert = s.gpu_alert_percent;
         }
         if g.get_autostart() != settings::is_self_autostart() {
             let _ = settings::set_self_autostart(g.get_autostart());

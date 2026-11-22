@@ -21,6 +21,7 @@ pub struct MonitorConfig {
     pub cpu_alert: i32,
     pub memory_alert: i32,
     pub disk_alert: i32,
+    pub gpu_alert: i32,
 }
 
 pub type MonitorHandle = Rc<RefCell<MonitorConfig>>;
@@ -91,7 +92,7 @@ struct State {
     gpu_hist: [History; 2],
     disks: Vec<disk::Disk>,
     ticks: u64,
-    alerts: [Alert; 3],
+    alerts: [Alert; 4], // cpu, memory, disk, gpu
     charts_model: Rc<VecModel<ChartData>>,
     disks_model: Rc<VecModel<DiskUsage>>,
 }
@@ -147,6 +148,7 @@ pub fn setup(ui: &AppWindow, s: &settings::Settings) -> MonitorHandle {
         cpu_alert: s.cpu_alert_percent,
         memory_alert: s.memory_alert_percent,
         disk_alert: s.disk_alert_percent,
+        gpu_alert: s.gpu_alert_percent,
     }));
 
     // Static system info
@@ -154,6 +156,7 @@ pub fn setup(ui: &AppWindow, s: &settings::Settings) -> MonitorHandle {
 
     let gpu_info = Arc::new(gpu::GpuInfo::detect());
     ui.global::<Dashboard>().set_gpu_visible(false);
+    ui.global::<crate::Settings>().set_gpu_available(gpu_info.has_gpu());
 
     let cores = cpu::core_count();
     let mut cpu_info = cpu::CpuInfo::default();
@@ -263,7 +266,7 @@ fn tick(ui: &AppWindow, st: &mut State, cfg: &MonitorConfig) {
     // GPU: query on a worker thread, use the latest finished result.
     if st.gpu.has_gpu() {
         if let Some(g) = st.gpu_last.lock().ok().and_then(|mut l| l.take()) {
-            apply_gpu(ui, st, &g);
+            apply_gpu(ui, st, &g, cfg);
         }
         if !st.gpu_busy.swap(true, Ordering::SeqCst) {
             let (info, busy, last) = (st.gpu.clone(), st.gpu_busy.clone(), st.gpu_last.clone());
@@ -283,13 +286,14 @@ fn tick(ui: &AppWindow, st: &mut State, cfg: &MonitorConfig) {
     }
 }
 
-fn apply_gpu(ui: &AppWindow, st: &mut State, g: &gpu::GpuStatus) {
+fn apply_gpu(ui: &AppWindow, st: &mut State, g: &gpu::GpuStatus, cfg: &MonitorConfig) {
     let dash = ui.global::<Dashboard>();
     dash.set_gpu_visible(g.available);
     if !g.available {
         return;
     }
     let vram_pct = if g.mem_total > 0 { g.mem_used as f64 / g.mem_total as f64 * 100.0 } else { 0.0 };
+    st.alerts[3].check(g.usage, cfg.gpu_alert, "High GPU Usage", trf("The amount of GPU used is over {}%.", &[&cfg.gpu_alert]));
     st.gpu_hist[0].push(g.usage as f64);
     st.gpu_hist[1].push(vram_pct);
     dash.set_gpu_value(g.usage as f32);
