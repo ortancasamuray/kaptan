@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "'{}' ليس عنوان IP صالحًا."
+
+msgid "/etc/hosts saved."
+msgstr "تم حفظ /etc/hosts."
+
+msgid "0 disables the alert"
+msgstr "القيمة 0 تعطّل التنبيه"
+
+msgid "ABOUT"
+msgstr "حول"
+
+msgid "Accessed"
+msgstr "الوصول"
+
+msgid "Accessibility"
+msgstr "إمكانية الوصول"
+
+msgid "Add Repository"
+msgstr "إضافة مستودع"
+
+msgid "Add Startup App"
+msgstr "إضافة تطبيق بدء التشغيل"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository غير مثبّت (الحزمة: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "متقدم ▲"
+
+msgid "Advanced ▼"
+msgstr "متقدم ▼"
+
+msgid "ALERTS"
+msgstr "التنبيهات"
+
+msgid "Aliases"
+msgstr "الأسماء البديلة"
+
+msgid "All"
+msgstr "الكل"
+
+msgid "All Disks"
+msgstr "كل الأقراص"
+
+msgid "All users"
+msgstr "كل المستخدمين"
+
+msgid "Amount"
+msgstr "الكمية"
+
+msgid "Any"
+msgstr "أي"
+
+msgid "Appearance"
+msgstr "المظهر"
+
+msgid "Application Caches"
+msgstr "الذاكرة المخبئية للتطبيق"
+
+msgid "Application Logs"
+msgstr "سجلات التطبيق"
+
+msgid "Apply"
+msgstr "تطبيق"
+
+msgid "APT Repositories"
+msgstr "مستودعات APT"
+
+msgid "Ask"
+msgstr "اسأل"
+
+msgid "Back to categories"
+msgstr "العودة إلى الفئات"
+
+msgid "Browse"
+msgstr "تصفح"
+
+msgid "Cancel"
+msgstr "إلغاء"
+
+msgid "Case insensitive"
+msgstr "تجاهل حالة الأحرف"
+
+msgid "Center new windows"
+msgstr "توسيط النوافذ الجديدة"
+
+msgid "Centered"
+msgstr "موسّط"
+
+msgid "Changed"
+msgstr "تغيير الحالة"
+
+msgid "Chassis fan"
+msgstr "مروحة الهيكل"
+
+msgid "Clean"
+msgstr "تنظيف"
+
+msgid "Click"
+msgstr "نقرة"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "انقر على قسم مُركَّب لعرضه في لوحة المعلومات."
+
+msgid "Close"
+msgstr "إغلاق"
+
+msgid "Cold"
+msgstr "بارد"
+
+msgid "Command *"
+msgstr "الأمر *"
+
+msgid "Comment"
+msgstr "تعليق"
+
+msgid "Comparison"
+msgstr "المقارنة"
+
+msgid "Components"
+msgstr "المكونات"
+
+msgid "Continue"
+msgstr "متابعة"
+
+msgid "CPU"
+msgstr "المعالج"
+
+msgid "CPU Cores: {}"
+msgstr "أنوية المعالج: {}"
+
+msgid "CPU fan"
+msgstr "مروحة المعالج"
+
+msgid "CPU History"
+msgstr "سجل المعالج"
+
+msgid "CPU Load Averages"
+msgstr "متوسط حمل المعالج"
+
+msgid "CPU Model: {}"
+msgstr "طراز المعالج: {}"
+
+msgid "CPU Speed: {}"
+msgstr "سرعة المعالج: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "تنبيه استخدام المعالج (%)"
+
+msgid "Crash Reports"
+msgstr "تقارير الإنهيار"
+
+msgid "Dark"
+msgstr "داكن"
+
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+msgid "Dashboard disk"
+msgstr "قرص لوحة المعلومات"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "Delete Permanently"
+msgstr "حذف نهائيًا"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "حذف العنصر المحدد نهائيًا؟ لا يمكن التراجع عن ذلك."
+
+msgid "Desktop"
+msgstr "سطح المكتب"
+
+msgid "Desktop background mode"
+msgstr "وضع خلفية سطح المكتب"
+
+msgid "Desktop Settings"
+msgstr "إعدادات سطح المكتب"
+
+msgid "Directory"
+msgstr "المجلد"
+
+msgid "Disabled"
+msgstr "معطّل"
+
+msgid "DISK"
+msgstr "القرص"
+
+msgid "Disk Read / Write"
+msgstr "القراءة / الكتابة على القرص"
+
+msgid "Disk usage alert (%)"
+msgstr "تنبيه استخدام القرص (%)"
+
+msgid "Distribution: {}"
+msgstr "التوزيعة: {}"
+
+msgid "Don't ask again."
+msgstr "لا تسأل مجددًا."
+
+msgid "DOWNLOAD"
+msgstr "تنزيل"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "التنزيل: {}/ث  الإجمالي: {}"
+
+msgid "Dynamic workspaces"
+msgstr "مساحات عمل ديناميكية"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "مثال: ppa:user/repo  أو  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "تعديل"
+
+msgid "Edit Repository"
+msgstr "تحرير المستودع"
+
+msgid "Edit Startup Application"
+msgstr "تحرير تطبيق بدء التشغيل"
+
+msgid "Empty only"
+msgstr "الفارغة فقط"
+
+msgid "Enable animations"
+msgstr "تفعيل الحركات"
+
+msgid "Enabled"
+msgstr "مفعّل"
+
+msgid "End Process"
+msgstr "إنهاء عملية"
+
+msgid "End Process {}"
+msgstr "إنهاء العملية {}"
+
+msgid "Equal (=)"
+msgstr "يساوي (=)"
+
+msgid "Exactly (=)"
+msgstr "تمامًا (=)"
+
+msgid "FANS"
+msgstr "المراوح"
+
+msgid "File"
+msgstr "ملف"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "اسم الملف أو النمط، مثال: *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "نظام الملفات المعروض في مؤشر القرص في لوحة المعلومات"
+
+msgid "File Systems"
+msgstr "أنظمة الملفات"
+
+msgid "Filter by name, user or PID"
+msgstr "تصفية حسب الاسم أو المستخدم أو PID"
+
+msgid "Focus mode"
+msgstr "وضع التركيز"
+
+msgid "GENERAL"
+msgstr "عام"
+
+msgid "Generic name"
+msgstr "الاسم العام"
+
+msgid "GPU"
+msgstr "المعالج الرسومي"
+
+msgid "GPU fan"
+msgstr "مروحة المعالج الرسومي"
+
+msgid "GPU History"
+msgstr "سجل المعالج الرسومي"
+
+msgid "GPU usage alert (%)"
+msgstr "تنبيه استخدام المعالج الرسومي (%)"
+
+msgid "Graphics Card"
+msgstr "بطاقة الرسوميات"
+
+msgid "Greater (>)"
+msgstr "أكبر (>)"
+
+msgid "Group"
+msgstr "المجموعة"
+
+msgid "High CPU Usage"
+msgstr "استخدام مرتفع للمعالج"
+
+msgid "High Disk Usage"
+msgstr "استخدام مرتفع للقرص"
+
+msgid "High GPU Usage"
+msgstr "استخدام مرتفع للمعالج الرسومي"
+
+msgid "High Memory Usage"
+msgstr "استخدام مرتفع للذاكرة"
+
+msgid "Hostname"
+msgstr "اسم المضيف"
+
+msgid "Hostname *"
+msgstr "اسم المضيف *"
+
+msgid "Hostname: {}"
+msgstr "اسم المضيف: {}"
+
+msgid "Hosts"
+msgstr "المضيفون"
+
+msgid "Hot"
+msgstr "ساخن"
+
+msgid "Icon"
+msgstr "أيقونة"
+
+msgid "Icons and text"
+msgstr "أيقونات ونص"
+
+msgid "Icons only"
+msgstr "أيقونات فقط"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "ثبّت zenity أو kdialog للتصفح، أو اكتب مسار المجلد."
+
+msgid "Invert match"
+msgstr "عكس المطابقة"
+
+msgid "IP Address"
+msgstr "عنوان IP"
+
+msgid "IP address *"
+msgstr "عنوان IP *"
+
+msgid "Keep running in the tray"
+msgstr "الاستمرار في علبة النظام"
+
+msgid "Kernel Release: {}"
+msgstr "إصدار النواة: {}"
+
+msgid "Language"
+msgstr "لغة"
+
+msgid "Light"
+msgstr "فاتح"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "محسّن ومراقب نظام لينكس — نسخة من Stacer بلغة Rust. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "وضع خلفية شاشة القفل"
+
+msgid "Lower"
+msgstr "خفض"
+
+msgid "Maximize"
+msgstr "تكبير"
+
+msgid "Maximize Horizontally"
+msgstr "تكبير أفقي"
+
+msgid "Maximize Vertically"
+msgstr "تكبير رأسي"
+
+msgid "Mem"
+msgstr "الذاكرة"
+
+msgid "MEMORY"
+msgstr "الذاكرة"
+
+msgid "Memory History"
+msgstr "سجل الذاكرة"
+
+msgid "Memory usage alert (%)"
+msgstr "تنبيه استخدام الذاكرة (%)"
+
+msgid "Memory: {} of {}"
+msgstr "الذاكرة: {} من {}"
+
+msgid "Menu"
+msgstr "القائمة"
+
+msgid "Middle fan"
+msgstr "المروحة الوسطى"
+
+msgid "Minimize"
+msgstr "تصغير"
+
+msgid "Minutes"
+msgstr "دقائق"
+
+msgid "Modified"
+msgstr "معدّل"
+
+msgid "Mouse"
+msgstr "الفأرة"
+
+msgid "Move to Trash"
+msgstr "نقل إلى المهملات"
+
+msgid "Name"
+msgstr "الاسم"
+
+msgid "Name *"
+msgstr "الاسم *"
+
+msgid "Name and command fields are required."
+msgstr "حقلا الاسم والأمر مطلوبان."
+
+msgid "Network History"
+msgstr "سجل الشبكة"
+
+msgid "New Host"
+msgstr "مضيف جديد"
+
+msgid "New Startup Application"
+msgstr "تطبيق بدء تشغيل جديد"
+
+msgid "Nice"
+msgstr "Nice"
+
+msgid "No packages found."
+msgstr "لم يُعثر على حزم."
+
+msgid "No repositories found."
+msgstr "لم يُعثر على مستودعات."
+
+msgid "No services found."
+msgstr "لم يُعثر على خدمات."
+
+msgid "No startup applications found."
+msgstr "لم يُعثر على تطبيقات بدء تشغيل."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "لم يُعثر على إعدادات GNOME مدعومة على هذا النظام."
+
+msgid "No supported package manager found"
+msgstr "لم يُعثر على مدير حزم مدعوم"
+
+msgid "None"
+msgstr "لا شيء"
+
+msgid "Not mounted"
+msgstr "غير مُركَّب"
+
+msgid "Nothing selected."
+msgstr "لم يُحدَّد شيء."
+
+msgid "Nothing to remove."
+msgstr "لا شيء لإزالته."
+
+msgid "Number of workspaces"
+msgstr "عدد مساحات العمل"
+
+msgid "Older (>)"
+msgstr "أقدم (>)"
+
+msgid "On-screen keyboard"
+msgstr "لوحة المفاتيح على الشاشة"
+
+msgid "Open Folder"
+msgstr "فتح المجلد"
+
+msgid "Open Kaptan"
+msgstr "فتح Kaptan"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "يفتح نافذة كابتان عند تسجيل الدخول"
+
+msgid "Other"
+msgstr "أخرى"
+
+msgid "Owner"
+msgstr "المالك"
+
+msgid "Package Caches"
+msgstr "الذاكرة المخبئية للحزمة"
+
+msgid "Packages ({})"
+msgstr "الحزم ({})"
+
+msgid "Path"
+msgstr "المسار"
+
+msgid "Permissions"
+msgstr "الأذونات"
+
+msgid "Platform: {}"
+msgstr "نظام التشغيل: {}"
+
+msgid "Process"
+msgstr "العملية"
+
+msgid "Processes"
+msgstr "العمليات"
+
+msgid "Processor"
+msgstr "المعالج"
+
+msgid "Pump"
+msgstr "مضخة"
+
+msgid "Quit"
+msgstr "خروج"
+
+msgid "Raise windows on click"
+msgstr "رفع النوافذ عند النقر"
+
+msgid "Read: {}/s"
+msgstr "القراءة: {}/ث"
+
+msgid "Refresh every {} s"
+msgstr "التحديث كل {} ث"
+
+msgid "Regular expression"
+msgstr "تعبير نمطي"
+
+msgid "Remove"
+msgstr "إزالة"
+
+msgid "Remove {} package(s)?"
+msgstr "إزالة {} حزمة؟"
+
+msgid "Repository added."
+msgstr "تمت إضافة المستودع."
+
+msgid "Repository disabled."
+msgstr "تم تعطيل المستودع."
+
+msgid "Repository enabled."
+msgstr "تم تفعيل المستودع."
+
+msgid "Repository is empty"
+msgstr "المستودع فارغ"
+
+msgid "Repository removed."
+msgstr "تمت إزالة المستودع."
+
+msgid "Repository updated."
+msgstr "تم تحديث المستودع."
+
+msgid "Resident"
+msgstr "المقيمة"
+
+msgid "Resources"
+msgstr "الموارد"
+
+msgid "Running"
+msgstr "قيد التشغيل"
+
+msgid "Save"
+msgstr "حفظ"
+
+msgid "Save Changes"
+msgstr "حفظ التغييرات"
+
+msgid "Scaled"
+msgstr "مُحجَّم"
+
+msgid "Scanning…"
+msgstr "جارٍ الفحص…"
+
+msgid "Screen reader"
+msgstr "قارئ الشاشة"
+
+msgid "Search"
+msgstr "بحث.."
+
+msgid "Search as root"
+msgstr "البحث بصلاحيات الجذر"
+
+msgid "Search packages"
+msgstr "البحث عن حزم"
+
+msgid "Search services"
+msgstr "البحث عن خدمات"
+
+msgid "Select all"
+msgstr "تحديد الكل"
+
+msgid "Select at least one category."
+msgstr "اختر فئة واحدة على الأقل."
+
+msgid "Select none"
+msgstr "إلغاء تحديد الكل"
+
+msgid "Select the search directory."
+msgstr "اختر مجلد البحث."
+
+msgid "Service"
+msgstr "الخدمة"
+
+msgid "Services"
+msgstr "الخدمات"
+
+msgid "Settings"
+msgstr "الإعدادات"
+
+msgid "Show battery percentage"
+msgstr "إظهار نسبة البطارية"
+
+msgid "Show home folder on desktop"
+msgstr "إظهار مجلد المنزل على سطح المكتب"
+
+msgid "Show mounted volumes on desktop"
+msgstr "إظهار وحدات التخزين المُركَّبة على سطح المكتب"
+
+msgid "Show seconds in clock"
+msgstr "إظهار الثواني في الساعة"
+
+msgid "Show trash on desktop"
+msgstr "إظهار المهملات على سطح المكتب"
+
+msgid "Show weekday in clock"
+msgstr "إظهار يوم الأسبوع في الساعة"
+
+msgid "Shown on dashboard"
+msgstr "معروض في لوحة المعلومات"
+
+msgid "Sidebar"
+msgstr "الشريط الجانبي"
+
+msgid "Size"
+msgstr "الحجم"
+
+msgid "Sleeping"
+msgstr "في وضع السكون"
+
+msgid "Sloppy"
+msgstr "متساهل"
+
+msgid "Smaller (<)"
+msgstr "أصغر (<)"
+
+msgid "Snap Packages ({})"
+msgstr "حزم Snap ({})"
+
+msgid "Source code"
+msgstr "الشيفرة المصدرية"
+
+msgid "source entry not found"
+msgstr "لم يُعثر على مدخل المستودع"
+
+msgid "Spanned"
+msgstr "ممتد"
+
+msgid "Start at boot"
+msgstr "عند الإقلاع"
+
+msgid "Start Kaptan at login"
+msgstr "تشغيل Kaptan عند تسجيل الدخول"
+
+msgid "Start page"
+msgstr "صفحة البدء"
+
+msgid "Started"
+msgstr "بدأ"
+
+msgid "Startup Applications"
+msgstr "تطبيقات بدء التشغيل"
+
+msgid "Startup Apps"
+msgstr "تطبيقات بدء التشغيل"
+
+msgid "State"
+msgstr "الحالة"
+
+msgid "Stopped"
+msgstr "متوقف"
+
+msgid "Stretched"
+msgstr "مُمدَّد"
+
+msgid "Suites"
+msgstr "الإصدارات"
+
+msgid "Swap"
+msgstr "الذاكرة البديلة"
+
+msgid "Swap (inactive)"
+msgstr "الذاكرة البديلة (غير نشطة)"
+
+msgid "Swap: {} of {}"
+msgstr "الذاكرة البديلة: {} من {}"
+
+msgid "Symbolic Link"
+msgstr "رابط رمزي"
+
+msgid "System Cleaner"
+msgstr "منظف النظام"
+
+msgid "System default"
+msgstr "افتراضي النظام"
+
+msgid "System fan"
+msgstr "مروحة النظام"
+
+msgid "SYSTEM INFO"
+msgstr "معلومات النظام"
+
+msgid "System Scan"
+msgstr "فحص النظام"
+
+msgid "System Services"
+msgstr "خدمات النظام"
+
+msgid "TEMPERATURES"
+msgstr "درجات الحرارة"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "تجاوز استخدام المعالج {}%."
+
+msgid "The amount of disk used is over {}%."
+msgstr "تجاوز استخدام القرص {}%."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "تجاوز استخدام المعالج الرسومي {}%."
+
+msgid "The amount of memory used is over {}%."
+msgstr "تجاوز استخدام الذاكرة {}%."
+
+msgid "The IP address and hostname fields are required."
+msgstr "حقلا عنوان IP واسم المضيف مطلوبان."
+
+msgid "Theme"
+msgstr "السمة"
+
+msgid "Time"
+msgstr "الوقت"
+
+msgid "Title bar double click"
+msgstr "النقر المزدوج على شريط العنوان"
+
+msgid "Title bar middle click"
+msgstr "النقر الأوسط على شريط العنوان"
+
+msgid "Title bar right click"
+msgstr "النقر الأيمن على شريط العنوان"
+
+msgid "Total {} · selected {}"
+msgstr "الإجمالي {} · المحدد {}"
+
+msgid "Total: {}"
+msgstr "المجموع: {}"
+
+msgid "Trash"
+msgstr "سلهة المهملات"
+
+msgid "Type"
+msgstr "النوع"
+
+msgid "Types"
+msgstr "الأنواع"
+
+msgid "Types, URI and suites are required."
+msgstr "الأنواع وURI والإصدارات مطلوبة."
+
+msgid "Uninstall Selected ({})"
+msgstr "إلغاء تثبيت المحدد ({})"
+
+msgid "Uninstaller"
+msgstr "ملغي التثبيتات"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "جارٍ إلغاء تثبيت {} حزمة…"
+
+msgid "Unit"
+msgstr "الوحدة"
+
+msgid "Unsaved changes"
+msgstr "تغييرات غير محفوظة"
+
+msgid "UPLOAD"
+msgstr "رفع"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "الرفع: {}/ث  الإجمالي: {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "المستخدم"
+
+msgid "Very hot"
+msgstr "ساخن جدًا"
+
+msgid "Virtual"
+msgstr "الافتراضية"
+
+msgid "Wallpaper"
+msgstr "الخلفية"
+
+msgid "When the window is closed"
+msgstr "عند إغلاق النافذة"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "هل يستمر البرنامج في العمل في علبة النظام؟"
+
+msgid "Window Manager"
+msgstr "مدير النوافذ"
+
+msgid "Within (<)"
+msgstr "خلال (<)"
+
+msgid "Write: {}/s"
+msgstr "الكتابة: {}/ث"
+
+msgid "Zoom"
+msgstr "تكبير"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} متاح)"
+
+msgid "{} cleaned."
+msgstr "تم تنظيف {}."
+
+msgid "{} deleted."
+msgstr "تم حذف {}."
+
+msgid "{} disabled."
+msgstr "تم تعطيل {}."
+
+msgid "{} enabled."
+msgstr "تم تفعيل {}."
+
+msgid "{} found"
+msgstr "تم العثور على {}"
+
+msgid "{} found, showing {}"
+msgstr "تم العثور على {}، يُعرض {}"
+
+msgid "{} minute average: {}"
+msgstr "متوسط {} دقيقة: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "{} حزمة أخرى تعتمد على اختيارك وستُزال أيضًا."
+
+msgid "{} moved to trash."
+msgstr "تم نقل {} إلى المهملات."
+
+msgid "{} package(s) removed."
+msgstr "تمت إزالة {} حزمة."
+
+msgid "{} started."
+msgstr "تم تشغيل {}."
+
+msgid "{} stopped."
+msgstr "تم إيقاف {}."
+
+msgid "{} used · {} free"
+msgstr "{} مستخدم · {} متاح"

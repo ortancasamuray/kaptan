@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "„{}” nu este o adresă IP validă."
+
+msgid "/etc/hosts saved."
+msgstr "/etc/hosts a fost salvat."
+
+msgid "0 disables the alert"
+msgstr "0 dezactivează alerta"
+
+msgid "ABOUT"
+msgstr "DESPRE"
+
+msgid "Accessed"
+msgstr "Accesare"
+
+msgid "Accessibility"
+msgstr "Accesibilitate"
+
+msgid "Add Repository"
+msgstr "Adăugați Repozitoriu"
+
+msgid "Add Startup App"
+msgstr "Adaugă Aplicație la Pornire"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository nu este instalat (pachet: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "Avansat ▲"
+
+msgid "Advanced ▼"
+msgstr "Avansat ▼"
+
+msgid "ALERTS"
+msgstr "ALERTE"
+
+msgid "Aliases"
+msgstr "Alias-uri"
+
+msgid "All"
+msgstr "Toate"
+
+msgid "All Disks"
+msgstr "Toate discurile"
+
+msgid "All users"
+msgstr "Toți utilizatorii"
+
+msgid "Amount"
+msgstr "Cantitate"
+
+msgid "Any"
+msgstr "Oricare"
+
+msgid "Appearance"
+msgstr "Aspect"
+
+msgid "Application Caches"
+msgstr "Aplicații în Cache"
+
+msgid "Application Logs"
+msgstr "Jurnalele de Aplicații"
+
+msgid "Apply"
+msgstr "Aplică"
+
+msgid "APT Repositories"
+msgstr "Depozite APT"
+
+msgid "Ask"
+msgstr "Întreabă"
+
+msgid "Back to categories"
+msgstr "Înapoi la categorii"
+
+msgid "Browse"
+msgstr "Răsfoiește"
+
+msgid "Cancel"
+msgstr "Anulare"
+
+msgid "Case insensitive"
+msgstr "Fără a ține cont de majuscule"
+
+msgid "Center new windows"
+msgstr "Centrează ferestrele noi"
+
+msgid "Centered"
+msgstr "Centrat"
+
+msgid "Changed"
+msgstr "Schimbare de stare"
+
+msgid "Chassis fan"
+msgstr "Ventilatorul carcasei"
+
+msgid "Clean"
+msgstr "Curăță"
+
+msgid "Click"
+msgstr "Click"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "Faceți clic pe o partiție montată pentru a o afișa pe panou."
+
+msgid "Close"
+msgstr "Închide"
+
+msgid "Cold"
+msgstr "Rece"
+
+msgid "Command *"
+msgstr "Comandă *"
+
+msgid "Comment"
+msgstr "Comentariu"
+
+msgid "Comparison"
+msgstr "Comparație"
+
+msgid "Components"
+msgstr "Componente"
+
+msgid "Continue"
+msgstr "Continuă"
+
+msgid "CPU"
+msgstr "PROCESOR"
+
+msgid "CPU Cores: {}"
+msgstr "Nuclee CPU: {}"
+
+msgid "CPU fan"
+msgstr "Ventilatorul procesorului"
+
+msgid "CPU History"
+msgstr "Istoric CPU"
+
+msgid "CPU Load Averages"
+msgstr "Încărcare medie CPU"
+
+msgid "CPU Model: {}"
+msgstr "Model Procesor: {}"
+
+msgid "CPU Speed: {}"
+msgstr "Viteză Procesor: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "Alertă de utilizare CPU (%)"
+
+msgid "Crash Reports"
+msgstr "Rapoarte de Avarie"
+
+msgid "Dark"
+msgstr "Întunecată"
+
+msgid "Dashboard"
+msgstr "Tablou de Bord"
+
+msgid "Dashboard disk"
+msgstr "Discul panoului"
+
+msgid "Delete"
+msgstr "Șterge"
+
+msgid "Delete Permanently"
+msgstr "Șterge definitiv"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "Ștergeți definitiv elementul selectat? Acțiunea nu poate fi anulată."
+
+msgid "Desktop"
+msgstr "Desktop"
+
+msgid "Desktop background mode"
+msgstr "Modul de fundal al desktopului"
+
+msgid "Desktop Settings"
+msgstr "Setări desktop"
+
+msgid "Directory"
+msgstr "Dosar"
+
+msgid "Disabled"
+msgstr "Dezactivat"
+
+msgid "DISK"
+msgstr "DISC"
+
+msgid "Disk Read / Write"
+msgstr "Citire / scriere disc"
+
+msgid "Disk usage alert (%)"
+msgstr "Alertă de utilizare disc (%)"
+
+msgid "Distribution: {}"
+msgstr "Distribuire: {}"
+
+msgid "Don't ask again."
+msgstr "Nu mai întreba."
+
+msgid "DOWNLOAD"
+msgstr "Descarcă"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "Descărcare: {}/s  Total: {}"
+
+msgid "Dynamic workspaces"
+msgstr "Spații de lucru dinamice"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "ex. ppa:utilizator/depozit  sau  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "Editați"
+
+msgid "Edit Repository"
+msgstr "Editează depozitul"
+
+msgid "Edit Startup Application"
+msgstr "Editează aplicația de pornire"
+
+msgid "Empty only"
+msgstr "Doar goale"
+
+msgid "Enable animations"
+msgstr "Activează animațiile"
+
+msgid "Enabled"
+msgstr "Activat"
+
+msgid "End Process"
+msgstr "Închide Proces"
+
+msgid "End Process {}"
+msgstr "Încheie procesul {}"
+
+msgid "Equal (=)"
+msgstr "Egal (=)"
+
+msgid "Exactly (=)"
+msgstr "Exact (=)"
+
+msgid "FANS"
+msgstr "VENTILATOARE"
+
+msgid "File"
+msgstr "Fișier"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "Nume de fișier sau model, ex. *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "Sistemul de fișiere afișat pe indicatorul de disc al panoului"
+
+msgid "File Systems"
+msgstr "Sisteme de fișiere"
+
+msgid "Filter by name, user or PID"
+msgstr "Filtrează după nume, utilizator sau PID"
+
+msgid "Focus mode"
+msgstr "Mod Focalizare"
+
+msgid "GENERAL"
+msgstr "General"
+
+msgid "Generic name"
+msgstr "Nume generic"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "Ventilatorul GPU"
+
+msgid "GPU History"
+msgstr "Istoric GPU"
+
+msgid "GPU usage alert (%)"
+msgstr "Alertă de utilizare GPU (%)"
+
+msgid "Graphics Card"
+msgstr "Placă video"
+
+msgid "Greater (>)"
+msgstr "Mai mare (>)"
+
+msgid "Group"
+msgstr "Grup"
+
+msgid "High CPU Usage"
+msgstr "Utilizare Înaltă a Procesorului"
+
+msgid "High Disk Usage"
+msgstr "Utilizare de Disc Înaltă"
+
+msgid "High GPU Usage"
+msgstr "Utilizare GPU ridicată"
+
+msgid "High Memory Usage"
+msgstr "Utilizare de Memorie Ridicată"
+
+msgid "Hostname"
+msgstr "Nume gazdă"
+
+msgid "Hostname *"
+msgstr "Nume gazdă *"
+
+msgid "Hostname: {}"
+msgstr "Nume Gazdă: {}"
+
+msgid "Hosts"
+msgstr "Gazde"
+
+msgid "Hot"
+msgstr "Cald"
+
+msgid "Icon"
+msgstr "Pictogramă"
+
+msgid "Icons and text"
+msgstr "Pictograme și text"
+
+msgid "Icons only"
+msgstr "Doar pictograme"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "Instalați zenity sau kdialog pentru a răsfoi sau tastați calea dosarului."
+
+msgid "Invert match"
+msgstr "Inversează potrivirea"
+
+msgid "IP Address"
+msgstr "Adresă IP"
+
+msgid "IP address *"
+msgstr "Adresă IP *"
+
+msgid "Keep running in the tray"
+msgstr "Continuă în zona de notificare"
+
+msgid "Kernel Release: {}"
+msgstr "Eliberare Kernel: {}"
+
+msgid "Language"
+msgstr "Limbă"
+
+msgid "Light"
+msgstr "Luminoasă"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Optimizator și monitor de sistem Linux — o versiune Rust a lui Stacer. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "Modul de fundal al ecranului de blocare"
+
+msgid "Lower"
+msgstr "Lăsa în Jos"
+
+msgid "Maximize"
+msgstr "Maximizați"
+
+msgid "Maximize Horizontally"
+msgstr "Maximizați Orizontal"
+
+msgid "Maximize Vertically"
+msgstr "Maximizați Vertical"
+
+msgid "Mem"
+msgstr "Mem."
+
+msgid "MEMORY"
+msgstr "MEMORIE"
+
+msgid "Memory History"
+msgstr "Istoric memorie"
+
+msgid "Memory usage alert (%)"
+msgstr "Alertă de utilizare memorie (%)"
+
+msgid "Memory: {} of {}"
+msgstr "Memorie: {} din {}"
+
+msgid "Menu"
+msgstr "Meniu"
+
+msgid "Middle fan"
+msgstr "Ventilatorul din mijloc"
+
+msgid "Minimize"
+msgstr "Minimizați"
+
+msgid "Minutes"
+msgstr "Minute"
+
+msgid "Modified"
+msgstr "Modificat"
+
+msgid "Mouse"
+msgstr "Mouse"
+
+msgid "Move to Trash"
+msgstr "Mută la coșul de gunoi"
+
+msgid "Name"
+msgstr "Nume"
+
+msgid "Name *"
+msgstr "Nume *"
+
+msgid "Name and command fields are required."
+msgstr "Câmpurile nume și comandă sunt obligatorii."
+
+msgid "Network History"
+msgstr "Istoric rețea"
+
+msgid "New Host"
+msgstr "Gazdă nouă"
+
+msgid "New Startup Application"
+msgstr "Aplicație de pornire nouă"
+
+msgid "Nice"
+msgstr "Nice"
+
+msgid "No packages found."
+msgstr "Nu s-au găsit pachete."
+
+msgid "No repositories found."
+msgstr "Nu s-au găsit depozite."
+
+msgid "No services found."
+msgstr "Nu s-au găsit servicii."
+
+msgid "No startup applications found."
+msgstr "Nu s-au găsit aplicații de pornire."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "Nu s-au găsit setări GNOME acceptate pe acest sistem."
+
+msgid "No supported package manager found"
+msgstr "Nu s-a găsit un manager de pachete acceptat"
+
+msgid "None"
+msgstr "Nici unul"
+
+msgid "Not mounted"
+msgstr "Nemontat"
+
+msgid "Nothing selected."
+msgstr "Nu este selectat nimic."
+
+msgid "Nothing to remove."
+msgstr "Nimic de eliminat."
+
+msgid "Number of workspaces"
+msgstr "Numărul de spații de lucru"
+
+msgid "Older (>)"
+msgstr "Mai vechi (>)"
+
+msgid "On-screen keyboard"
+msgstr "Tastatură pe ecran"
+
+msgid "Open Folder"
+msgstr "Deschide dosarul"
+
+msgid "Open Kaptan"
+msgstr "Deschide Kaptan"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "Deschide fereastra Kaptan la autentificare"
+
+msgid "Other"
+msgstr "Altele"
+
+msgid "Owner"
+msgstr "Proprietar"
+
+msgid "Package Caches"
+msgstr "Pachete în Cache"
+
+msgid "Packages ({})"
+msgstr "Pachete ({})"
+
+msgid "Path"
+msgstr "Cale"
+
+msgid "Permissions"
+msgstr "Permisiuni"
+
+msgid "Platform: {}"
+msgstr "Platformă: {}"
+
+msgid "Process"
+msgstr "Proces"
+
+msgid "Processes"
+msgstr "Procese"
+
+msgid "Processor"
+msgstr "Procesor"
+
+msgid "Pump"
+msgstr "Pompă"
+
+msgid "Quit"
+msgstr "Ieșire"
+
+msgid "Raise windows on click"
+msgstr "Aduce fereastra în față la clic"
+
+msgid "Read: {}/s"
+msgstr "Citire: {}/s"
+
+msgid "Refresh every {} s"
+msgstr "Reîmprospătează la fiecare {} s"
+
+msgid "Regular expression"
+msgstr "Expresie regulată"
+
+msgid "Remove"
+msgstr "Elimină"
+
+msgid "Remove {} package(s)?"
+msgstr "Eliminați {} pachet(e)?"
+
+msgid "Repository added."
+msgstr "Depozit adăugat."
+
+msgid "Repository disabled."
+msgstr "Depozit dezactivat."
+
+msgid "Repository enabled."
+msgstr "Depozit activat."
+
+msgid "Repository is empty"
+msgstr "Depozitul este gol"
+
+msgid "Repository removed."
+msgstr "Depozit eliminat."
+
+msgid "Repository updated."
+msgstr "Depozit actualizat."
+
+msgid "Resident"
+msgstr "Rezidentă"
+
+msgid "Resources"
+msgstr "Resurse"
+
+msgid "Running"
+msgstr "Pornite"
+
+msgid "Save"
+msgstr "Salvează"
+
+msgid "Save Changes"
+msgstr "Salvează modificările"
+
+msgid "Scaled"
+msgstr "Scalat"
+
+msgid "Scanning…"
+msgstr "Se scanează…"
+
+msgid "Screen reader"
+msgstr "Cititor Ecran"
+
+msgid "Search"
+msgstr "Căutare.."
+
+msgid "Search as root"
+msgstr "Caută ca root"
+
+msgid "Search packages"
+msgstr "Caută pachete"
+
+msgid "Search services"
+msgstr "Caută servicii"
+
+msgid "Select all"
+msgstr "Selectează tot"
+
+msgid "Select at least one category."
+msgstr "Selectați cel puțin o categorie."
+
+msgid "Select none"
+msgstr "Deselectează tot"
+
+msgid "Select the search directory."
+msgstr "Selectați dosarul de căutare."
+
+msgid "Service"
+msgstr "Serviciu"
+
+msgid "Services"
+msgstr "Servicii"
+
+msgid "Settings"
+msgstr "Setări"
+
+msgid "Show battery percentage"
+msgstr "Afișează procentul bateriei"
+
+msgid "Show home folder on desktop"
+msgstr "Afișează dosarul personal pe desktop"
+
+msgid "Show mounted volumes on desktop"
+msgstr "Afișează volumele montate pe desktop"
+
+msgid "Show seconds in clock"
+msgstr "Afișează secundele în ceas"
+
+msgid "Show trash on desktop"
+msgstr "Afișează coșul de gunoi pe desktop"
+
+msgid "Show weekday in clock"
+msgstr "Afișează ziua săptămânii în ceas"
+
+msgid "Shown on dashboard"
+msgstr "Afișat pe panou"
+
+msgid "Sidebar"
+msgstr "Bară laterală"
+
+msgid "Size"
+msgstr "Mărime"
+
+msgid "Sleeping"
+msgstr "În repaus"
+
+msgid "Sloppy"
+msgstr "Neîngrijit"
+
+msgid "Smaller (<)"
+msgstr "Mai mic (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Pachete Snap ({})"
+
+msgid "Source code"
+msgstr "Cod sursă"
+
+msgid "source entry not found"
+msgstr "intrarea depozitului nu a fost găsită"
+
+msgid "Spanned"
+msgstr "Etalonat"
+
+msgid "Start at boot"
+msgstr "La pornire"
+
+msgid "Start Kaptan at login"
+msgstr "Pornește Kaptan la autentificare"
+
+msgid "Start page"
+msgstr "Pagină de Start"
+
+msgid "Started"
+msgstr "Pornit"
+
+msgid "Startup Applications"
+msgstr "Aplicații de pornire"
+
+msgid "Startup Apps"
+msgstr "Aplicații la Pornire"
+
+msgid "State"
+msgstr "Stare"
+
+msgid "Stopped"
+msgstr "Oprit"
+
+msgid "Stretched"
+msgstr "Întins"
+
+msgid "Suites"
+msgstr "Suite"
+
+msgid "Swap"
+msgstr "Swap"
+
+msgid "Swap (inactive)"
+msgstr "Swap (inactiv)"
+
+msgid "Swap: {} of {}"
+msgstr "Swap: {} din {}"
+
+msgid "Symbolic Link"
+msgstr "Legătură simbolică"
+
+msgid "System Cleaner"
+msgstr "Curățare Sistem"
+
+msgid "System default"
+msgstr "Implicit sistem"
+
+msgid "System fan"
+msgstr "Ventilatorul sistemului"
+
+msgid "SYSTEM INFO"
+msgstr "INFORMAȚIE SISTEM"
+
+msgid "System Scan"
+msgstr "Scanează sistemul"
+
+msgid "System Services"
+msgstr "Servicii de sistem"
+
+msgid "TEMPERATURES"
+msgstr "TEMPERATURI"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "Cantitatea de procesor utilizată este de peste: {}%."
+
+msgid "The amount of disk used is over {}%."
+msgstr "Cantitatea de disc folosită este de peste {}%."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "Utilizarea GPU depășește {}%."
+
+msgid "The amount of memory used is over {}%."
+msgstr "Cantitatea de memorie folosită este de peste {}%."
+
+msgid "The IP address and hostname fields are required."
+msgstr "Câmpurile adresă IP și nume gazdă sunt obligatorii."
+
+msgid "Theme"
+msgstr "Temă"
+
+msgid "Time"
+msgstr "Timp"
+
+msgid "Title bar double click"
+msgstr "Dublu clic pe bara de titlu"
+
+msgid "Title bar middle click"
+msgstr "Clic mijlociu pe bara de titlu"
+
+msgid "Title bar right click"
+msgstr "Clic dreapta pe bara de titlu"
+
+msgid "Total {} · selected {}"
+msgstr "Total {} · selectat {}"
+
+msgid "Total: {}"
+msgstr "Total: {}"
+
+msgid "Trash"
+msgstr "Gunoi"
+
+msgid "Type"
+msgstr "Tip"
+
+msgid "Types"
+msgstr "Tipuri"
+
+msgid "Types, URI and suites are required."
+msgstr "Tipurile, URI-ul și suitele sunt obligatorii."
+
+msgid "Uninstall Selected ({})"
+msgstr "Dezinstalează selectate ({})"
+
+msgid "Uninstaller"
+msgstr "Program de Dezinstalare"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "Se dezinstalează {} pachet(e)…"
+
+msgid "Unit"
+msgstr "Unitate"
+
+msgid "Unsaved changes"
+msgstr "Modificări nesalvate"
+
+msgid "UPLOAD"
+msgstr "ÎNCĂRCARE"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "Încărcare: {}/s  Total: {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "Utilizator"
+
+msgid "Very hot"
+msgstr "Foarte cald"
+
+msgid "Virtual"
+msgstr "Virtuală"
+
+msgid "Wallpaper"
+msgstr "Imagine de Fundal"
+
+msgid "When the window is closed"
+msgstr "La închiderea ferestrei"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "Programul să continue să ruleze în zona de notificare?"
+
+msgid "Window Manager"
+msgstr "Manager Fereastră"
+
+msgid "Within (<)"
+msgstr "În ultimele (<)"
+
+msgid "Write: {}/s"
+msgstr "Scriere: {}/s"
+
+msgid "Zoom"
+msgstr "Zoom"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} liber)"
+
+msgid "{} cleaned."
+msgstr "{} curățat."
+
+msgid "{} deleted."
+msgstr "{} șters."
+
+msgid "{} disabled."
+msgstr "{} dezactivat."
+
+msgid "{} enabled."
+msgstr "{} activat."
+
+msgid "{} found"
+msgstr "{} găsite"
+
+msgid "{} found, showing {}"
+msgstr "{} găsite, se afișează {}"
+
+msgid "{} minute average: {}"
+msgstr "{} Minut Medie: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "Încă {} pachet(e) depind de selecție și vor fi de asemenea eliminate."
+
+msgid "{} moved to trash."
+msgstr "{} mutat la coșul de gunoi."
+
+msgid "{} package(s) removed."
+msgstr "{} pachet(e) eliminat(e)."
+
+msgid "{} started."
+msgstr "{} pornit."
+
+msgid "{} stopped."
+msgstr "{} oprit."
+
+msgid "{} used · {} free"
+msgstr "{} folosit · {} liber"

@@ -39,7 +39,7 @@ caches and the trash. Privileged actions use pkexec."""
 # windowing/OpenGL backend (dlopen) and are invisible to dpkg-shlibdeps.
 depends = "$auto, libgl1, libx11-6, libx11-xcb1, libxcursor1, libxi6, libxkbcommon-x11-0, procps, systemd"
 recommends = "pkexec, libnotify-bin, libwayland-client0, libwayland-egl1, libegl1"
-suggests = "zenity | kdialog, nvidia-smi, software-properties-common"
+suggests = "zenity | kdialog, nvidia-smi, software-properties-common, fonts-noto-cjk | fonts-nanum"
 assets = [
     ["target/release/kaptan", "usr/bin/", "755"],
     ["data/kaptan.desktop", "usr/share/applications/", "644"],

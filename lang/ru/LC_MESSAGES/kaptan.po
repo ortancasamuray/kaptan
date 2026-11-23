@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "«{}» — недопустимый IP-адрес."
+
+msgid "/etc/hosts saved."
+msgstr "/etc/hosts сохранён."
+
+msgid "0 disables the alert"
+msgstr "0 отключает предупреждение"
+
+msgid "ABOUT"
+msgstr "О ПРОГРАММЕ"
+
+msgid "Accessed"
+msgstr "Доступ"
+
+msgid "Accessibility"
+msgstr "Специальные возможности"
+
+msgid "Add Repository"
+msgstr "Добавить репозиторий"
+
+msgid "Add Startup App"
+msgstr "Добавить приложение в автозапуск"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository не установлен (пакет: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "Дополнительно ▲"
+
+msgid "Advanced ▼"
+msgstr "Дополнительно ▼"
+
+msgid "ALERTS"
+msgstr "ПРЕДУПРЕЖДЕНИЯ"
+
+msgid "Aliases"
+msgstr "Псевдонимы"
+
+msgid "All"
+msgstr "Все"
+
+msgid "All Disks"
+msgstr "Все диски"
+
+msgid "All users"
+msgstr "Все пользователи"
+
+msgid "Amount"
+msgstr "Количество"
+
+msgid "Any"
+msgstr "Любой"
+
+msgid "Appearance"
+msgstr "Внешний вид"
+
+msgid "Application Caches"
+msgstr "Кэш приложений"
+
+msgid "Application Logs"
+msgstr "Журналы приложений"
+
+msgid "Apply"
+msgstr "Применить"
+
+msgid "APT Repositories"
+msgstr "Репозитории APT"
+
+msgid "Ask"
+msgstr "Спрашивать"
+
+msgid "Back to categories"
+msgstr "Назад к категориям"
+
+msgid "Browse"
+msgstr "Обзор.."
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Case insensitive"
+msgstr "Без учёта регистра"
+
+msgid "Center new windows"
+msgstr "Размещать новые окна по центру"
+
+msgid "Centered"
+msgstr "По центру"
+
+msgid "Changed"
+msgstr "Изменение статуса"
+
+msgid "Chassis fan"
+msgstr "Вентилятор корпуса"
+
+msgid "Clean"
+msgstr "Очистить"
+
+msgid "Click"
+msgstr "По щелчку"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "Нажмите на смонтированный раздел, чтобы показать его на панели."
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Cold"
+msgstr "Холодный"
+
+msgid "Command *"
+msgstr "Команда *"
+
+msgid "Comment"
+msgstr "Комментарий"
+
+msgid "Comparison"
+msgstr "Сравнение"
+
+msgid "Components"
+msgstr "Компоненты"
+
+msgid "Continue"
+msgstr "Продолжить"
+
+msgid "CPU"
+msgstr "ЦП"
+
+msgid "CPU Cores: {}"
+msgstr "Ядра ЦП: {}"
+
+msgid "CPU fan"
+msgstr "Вентилятор ЦП"
+
+msgid "CPU History"
+msgstr "История ЦП"
+
+msgid "CPU Load Averages"
+msgstr "Средняя нагрузка ЦП"
+
+msgid "CPU Model: {}"
+msgstr "Модель ЦП: {}"
+
+msgid "CPU Speed: {}"
+msgstr "Частота ЦП: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "Предупреждение о загрузке ЦП (%)"
+
+msgid "Crash Reports"
+msgstr "Отчёты об ошибках"
+
+msgid "Dark"
+msgstr "Тёмная"
+
+msgid "Dashboard"
+msgstr "Обзор"
+
+msgid "Dashboard disk"
+msgstr "Диск на панели"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Delete Permanently"
+msgstr "Удалить навсегда"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "Удалить выбранный элемент навсегда? Это действие нельзя отменить."
+
+msgid "Desktop"
+msgstr "Рабочий стол"
+
+msgid "Desktop background mode"
+msgstr "Режим фона рабочего стола"
+
+msgid "Desktop Settings"
+msgstr "Настройки рабочего стола"
+
+msgid "Directory"
+msgstr "Каталог"
+
+msgid "Disabled"
+msgstr "Отключено"
+
+msgid "DISK"
+msgstr "ДИСК"
+
+msgid "Disk Read / Write"
+msgstr "Чтение / запись диска"
+
+msgid "Disk usage alert (%)"
+msgstr "Предупреждение о заполнении диска (%)"
+
+msgid "Distribution: {}"
+msgstr "Дистрибутив: {}"
+
+msgid "Don't ask again."
+msgstr "Более не спрашивать."
+
+msgid "DOWNLOAD"
+msgstr "Скачать"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "Загрузка: {}/с  Всего: {}"
+
+msgid "Dynamic workspaces"
+msgstr "Динамические рабочие столы"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "напр. ppa:user/repo  или  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "Изменить"
+
+msgid "Edit Repository"
+msgstr "Изменить репозиторий"
+
+msgid "Edit Startup Application"
+msgstr "Изменить приложение автозапуска"
+
+msgid "Empty only"
+msgstr "Только пустые"
+
+msgid "Enable animations"
+msgstr "Включить анимацию"
+
+msgid "Enabled"
+msgstr "Включено"
+
+msgid "End Process"
+msgstr "Завершить процесс"
+
+msgid "End Process {}"
+msgstr "Завершить процесс {}"
+
+msgid "Equal (=)"
+msgstr "Равно (=)"
+
+msgid "Exactly (=)"
+msgstr "Ровно (=)"
+
+msgid "FANS"
+msgstr "ВЕНТИЛЯТОРЫ"
+
+msgid "File"
+msgstr "Файл"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "Имя файла или шаблон, напр. *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "Файловая система, отображаемая на индикаторе диска на панели"
+
+msgid "File Systems"
+msgstr "Файловые системы"
+
+msgid "Filter by name, user or PID"
+msgstr "Фильтр по имени, пользователю или PID"
+
+msgid "Focus mode"
+msgstr "Режим фокусировки"
+
+msgid "GENERAL"
+msgstr "Основное"
+
+msgid "Generic name"
+msgstr "Общее название"
+
+msgid "GPU"
+msgstr "ГП"
+
+msgid "GPU fan"
+msgstr "Вентилятор ГП"
+
+msgid "GPU History"
+msgstr "История ГП"
+
+msgid "GPU usage alert (%)"
+msgstr "Предупреждение о загрузке ГП (%)"
+
+msgid "Graphics Card"
+msgstr "Видеокарта"
+
+msgid "Greater (>)"
+msgstr "Больше (>)"
+
+msgid "Group"
+msgstr "Группа"
+
+msgid "High CPU Usage"
+msgstr "Высокая загрузка процессора"
+
+msgid "High Disk Usage"
+msgstr "Высокая загрузка диска"
+
+msgid "High GPU Usage"
+msgstr "Высокая загрузка ГП"
+
+msgid "High Memory Usage"
+msgstr "Высокое потребление памяти"
+
+msgid "Hostname"
+msgstr "Имя хоста"
+
+msgid "Hostname *"
+msgstr "Имя хоста *"
+
+msgid "Hostname: {}"
+msgstr "Имя компьютера: {}"
+
+msgid "Hosts"
+msgstr "Хосты"
+
+msgid "Hot"
+msgstr "Горячий"
+
+msgid "Icon"
+msgstr "Значок"
+
+msgid "Icons and text"
+msgstr "Значки и текст"
+
+msgid "Icons only"
+msgstr "Только значки"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "Установите zenity или kdialog для выбора папки или введите путь вручную."
+
+msgid "Invert match"
+msgstr "Инвертировать совпадение"
+
+msgid "IP Address"
+msgstr "Адрес IP"
+
+msgid "IP address *"
+msgstr "Адрес IP *"
+
+msgid "Keep running in the tray"
+msgstr "Продолжить работу в трее"
+
+msgid "Kernel Release: {}"
+msgstr "Версия ядра: {}"
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "Light"
+msgstr "Светлая"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Оптимизатор и монитор системы Linux — порт Stacer на Rust. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "Режим фона экрана блокировки"
+
+msgid "Lower"
+msgstr "На задний план"
+
+msgid "Maximize"
+msgstr "Распахнуть"
+
+msgid "Maximize Horizontally"
+msgstr "Распахнуть горизонтально"
+
+msgid "Maximize Vertically"
+msgstr "Распахнуть вертикально"
+
+msgid "Mem"
+msgstr "Пам."
+
+msgid "MEMORY"
+msgstr "ПАМЯТЬ"
+
+msgid "Memory History"
+msgstr "История памяти"
+
+msgid "Memory usage alert (%)"
+msgstr "Предупреждение о загрузке памяти (%)"
+
+msgid "Memory: {} of {}"
+msgstr "Память: {} из {}"
+
+msgid "Menu"
+msgstr "Меню"
+
+msgid "Middle fan"
+msgstr "Средний вентилятор"
+
+msgid "Minimize"
+msgstr "Свернуть"
+
+msgid "Minutes"
+msgstr "Минуты"
+
+msgid "Modified"
+msgstr "Изменён"
+
+msgid "Mouse"
+msgstr "По положению курсора"
+
+msgid "Move to Trash"
+msgstr "Переместить в корзину"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "Name *"
+msgstr "Имя *"
+
+msgid "Name and command fields are required."
+msgstr "Поля «Имя» и «Команда» обязательны."
+
+msgid "Network History"
+msgstr "История сети"
+
+msgid "New Host"
+msgstr "Новый хост"
+
+msgid "New Startup Application"
+msgstr "Новое приложение автозапуска"
+
+msgid "Nice"
+msgstr "Приоритет"
+
+msgid "No packages found."
+msgstr "Пакеты не найдены."
+
+msgid "No repositories found."
+msgstr "Репозитории не найдены."
+
+msgid "No services found."
+msgstr "Службы не найдены."
+
+msgid "No startup applications found."
+msgstr "Приложения автозапуска не найдены."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "В этой системе не найдено поддерживаемых настроек GNOME."
+
+msgid "No supported package manager found"
+msgstr "Поддерживаемый менеджер пакетов не найден"
+
+msgid "None"
+msgstr "Не выбрано"
+
+msgid "Not mounted"
+msgstr "Не смонтирован"
+
+msgid "Nothing selected."
+msgstr "Ничего не выбрано."
+
+msgid "Nothing to remove."
+msgstr "Нечего удалять."
+
+msgid "Number of workspaces"
+msgstr "Количество рабочих столов"
+
+msgid "Older (>)"
+msgstr "Старше (>)"
+
+msgid "On-screen keyboard"
+msgstr "Экранная клавиатура"
+
+msgid "Open Folder"
+msgstr "Открыть папку"
+
+msgid "Open Kaptan"
+msgstr "Открыть Kaptan"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "Открывает окно Kaptan при входе в систему"
+
+msgid "Other"
+msgstr "Прочее"
+
+msgid "Owner"
+msgstr "Владелец"
+
+msgid "Package Caches"
+msgstr "Загруженные пакеты"
+
+msgid "Packages ({})"
+msgstr "Пакеты ({})"
+
+msgid "Path"
+msgstr "Путь"
+
+msgid "Permissions"
+msgstr "Права"
+
+msgid "Platform: {}"
+msgstr "Платформа: {}"
+
+msgid "Process"
+msgstr "Процесс"
+
+msgid "Processes"
+msgstr "Процессы"
+
+msgid "Processor"
+msgstr "Процессор"
+
+msgid "Pump"
+msgstr "Помпа"
+
+msgid "Quit"
+msgstr "Выход"
+
+msgid "Raise windows on click"
+msgstr "Поднимать окно по щелчку"
+
+msgid "Read: {}/s"
+msgstr "Чтение: {}/с"
+
+msgid "Refresh every {} s"
+msgstr "Обновлять каждые {} с"
+
+msgid "Regular expression"
+msgstr "Регулярное выражение"
+
+msgid "Remove"
+msgstr "Удалить"
+
+msgid "Remove {} package(s)?"
+msgstr "Удалить пакеты ({})?"
+
+msgid "Repository added."
+msgstr "Репозиторий добавлен."
+
+msgid "Repository disabled."
+msgstr "Репозиторий отключён."
+
+msgid "Repository enabled."
+msgstr "Репозиторий включён."
+
+msgid "Repository is empty"
+msgstr "Репозиторий не указан"
+
+msgid "Repository removed."
+msgstr "Репозиторий удалён."
+
+msgid "Repository updated."
+msgstr "Репозиторий обновлён."
+
+msgid "Resident"
+msgstr "Резидентная"
+
+msgid "Resources"
+msgstr "Ресурсы"
+
+msgid "Running"
+msgstr "Запущена"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+msgid "Scaled"
+msgstr "Масштабирование"
+
+msgid "Scanning…"
+msgstr "Сканирование…"
+
+msgid "Screen reader"
+msgstr "Чтение с экрана"
+
+msgid "Search"
+msgstr "Поиск.."
+
+msgid "Search as root"
+msgstr "Искать с правами Root"
+
+msgid "Search packages"
+msgstr "Поиск пакетов"
+
+msgid "Search services"
+msgstr "Поиск служб"
+
+msgid "Select all"
+msgstr "Выбрать все"
+
+msgid "Select at least one category."
+msgstr "Выберите хотя бы одну категорию."
+
+msgid "Select none"
+msgstr "Снять выделение"
+
+msgid "Select the search directory."
+msgstr "Выбрать каталог поиска."
+
+msgid "Service"
+msgstr "Служба"
+
+msgid "Services"
+msgstr "Службы"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Show battery percentage"
+msgstr "Показывать процент заряда батареи"
+
+msgid "Show home folder on desktop"
+msgstr "Показывать домашнюю папку на рабочем столе"
+
+msgid "Show mounted volumes on desktop"
+msgstr "Показывать смонтированные тома на рабочем столе"
+
+msgid "Show seconds in clock"
+msgstr "Показывать секунды в часах"
+
+msgid "Show trash on desktop"
+msgstr "Показывать корзину на рабочем столе"
+
+msgid "Show weekday in clock"
+msgstr "Показывать день недели в часах"
+
+msgid "Shown on dashboard"
+msgstr "Показан на панели"
+
+msgid "Sidebar"
+msgstr "Боковая панель"
+
+msgid "Size"
+msgstr "Размер"
+
+msgid "Sleeping"
+msgstr "В спящем режиме"
+
+msgid "Sloppy"
+msgstr "По положению курсора, исключая рабочий стол"
+
+msgid "Smaller (<)"
+msgstr "Меньше (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Пакеты Snap ({})"
+
+msgid "Source code"
+msgstr "Исходный код"
+
+msgid "source entry not found"
+msgstr "запись репозитория не найдена"
+
+msgid "Spanned"
+msgstr "Заполнение"
+
+msgid "Start at boot"
+msgstr "При загрузке"
+
+msgid "Start Kaptan at login"
+msgstr "Запускать Kaptan при входе в систему"
+
+msgid "Start page"
+msgstr "Стартовая страница"
+
+msgid "Started"
+msgstr "Запущен"
+
+msgid "Startup Applications"
+msgstr "Приложения автозапуска"
+
+msgid "Startup Apps"
+msgstr "Автозапуск приложений"
+
+msgid "State"
+msgstr "Состояние"
+
+msgid "Stopped"
+msgstr "Остановлен"
+
+msgid "Stretched"
+msgstr "Растягивание"
+
+msgid "Suites"
+msgstr "Сьюты"
+
+msgid "Swap"
+msgstr "Подкачка"
+
+msgid "Swap (inactive)"
+msgstr "Подкачка (неактивна)"
+
+msgid "Swap: {} of {}"
+msgstr "Подкачка: {} из {}"
+
+msgid "Symbolic Link"
+msgstr "Символическая ссылка"
+
+msgid "System Cleaner"
+msgstr "Очистка системы"
+
+msgid "System default"
+msgstr "Системный по умолчанию"
+
+msgid "System fan"
+msgstr "Системный вентилятор"
+
+msgid "SYSTEM INFO"
+msgstr "СВЕДЕНИЯ О СИСТЕМЕ"
+
+msgid "System Scan"
+msgstr "Сканировать систему"
+
+msgid "System Services"
+msgstr "Системные службы"
+
+msgid "TEMPERATURES"
+msgstr "ТЕМПЕРАТУРА"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "Использование процессора превышает {}%."
+
+msgid "The amount of disk used is over {}%."
+msgstr "Использование диска превышает {}%."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "Загрузка ГП превысила {}%."
+
+msgid "The amount of memory used is over {}%."
+msgstr "Использование памяти превышает {}%."
+
+msgid "The IP address and hostname fields are required."
+msgstr "Поля «IP-адрес» и «Имя хоста» обязательны."
+
+msgid "Theme"
+msgstr "Тема"
+
+msgid "Time"
+msgstr "Время"
+
+msgid "Title bar double click"
+msgstr "Двойной щелчок по заголовку"
+
+msgid "Title bar middle click"
+msgstr "Средний щелчок по заголовку"
+
+msgid "Title bar right click"
+msgstr "Правый щелчок по заголовку"
+
+msgid "Total {} · selected {}"
+msgstr "Всего {} · выбрано {}"
+
+msgid "Total: {}"
+msgstr "Всего: {}"
+
+msgid "Trash"
+msgstr "Корзина"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Types"
+msgstr "Типы"
+
+msgid "Types, URI and suites are required."
+msgstr "Типы, URI и выпуски обязательны."
+
+msgid "Uninstall Selected ({})"
+msgstr "Удалить выбранные ({})"
+
+msgid "Uninstaller"
+msgstr "Удаление пакетов"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "Удаление пакетов ({})…"
+
+msgid "Unit"
+msgstr "Единица"
+
+msgid "Unsaved changes"
+msgstr "Несохранённые изменения"
+
+msgid "UPLOAD"
+msgstr "ОТПРАВКА"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "Отправка: {}/c Всего: {}"
+
+msgid "URI"
+msgstr "Адрес"
+
+msgid "User"
+msgstr "Пользователь"
+
+msgid "Very hot"
+msgstr "Очень горячий"
+
+msgid "Virtual"
+msgstr "Виртуальная"
+
+msgid "Wallpaper"
+msgstr "Обои"
+
+msgid "When the window is closed"
+msgstr "При закрытии окна"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "Продолжить работу программы в системном трее?"
+
+msgid "Window Manager"
+msgstr "Оконный менеджер"
+
+msgid "Within (<)"
+msgstr "В пределах (<)"
+
+msgid "Write: {}/s"
+msgstr "Запись: {}/с"
+
+msgid "Zoom"
+msgstr "Увеличение"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} свободно)"
+
+msgid "{} cleaned."
+msgstr "Очищено: {}."
+
+msgid "{} deleted."
+msgstr "{} удалён."
+
+msgid "{} disabled."
+msgstr "{} отключена."
+
+msgid "{} enabled."
+msgstr "{} включена."
+
+msgid "{} found"
+msgstr "Найдено: {}"
+
+msgid "{} found, showing {}"
+msgstr "Найдено: {}, показано: {}"
+
+msgid "{} minute average: {}"
+msgstr "Среднее за {} минут: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "Ещё пакетов, зависящих от выбранных и также удаляемых: {}."
+
+msgid "{} moved to trash."
+msgstr "{} перемещён в корзину."
+
+msgid "{} package(s) removed."
+msgstr "Удалено пакетов: {}."
+
+msgid "{} started."
+msgstr "{} запущена."
+
+msgid "{} stopped."
+msgstr "{} остановлена."
+
+msgid "{} used · {} free"
+msgstr "{} занято · {} свободно"

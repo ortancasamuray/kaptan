@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "'{}' không phải là địa chỉ IP hợp lệ."
+
+msgid "/etc/hosts saved."
+msgstr "Đã lưu /etc/hosts."
+
+msgid "0 disables the alert"
+msgstr "0 sẽ tắt cảnh báo"
+
+msgid "ABOUT"
+msgstr "GIỚI THIỆU"
+
+msgid "Accessed"
+msgstr "Truy cập"
+
+msgid "Accessibility"
+msgstr "Trợ năng"
+
+msgid "Add Repository"
+msgstr "Thêm kho"
+
+msgid "Add Startup App"
+msgstr "Thêm Ứng Dụng"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository chưa được cài đặt (gói: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "Nâng cao ▲"
+
+msgid "Advanced ▼"
+msgstr "Nâng cao ▼"
+
+msgid "ALERTS"
+msgstr "CẢNH BÁO"
+
+msgid "Aliases"
+msgstr "Bí danh"
+
+msgid "All"
+msgstr "Tất cả"
+
+msgid "All Disks"
+msgstr "Tất cả ổ đĩa"
+
+msgid "All users"
+msgstr "Tất cả người dùng"
+
+msgid "Amount"
+msgstr "Số lượng"
+
+msgid "Any"
+msgstr "Bất kỳ"
+
+msgid "Appearance"
+msgstr "Giao diện"
+
+msgid "Application Caches"
+msgstr "Bộ Nhớ Tạm Ứng Dụng"
+
+msgid "Application Logs"
+msgstr "Bản Ghi Ứng Dụng"
+
+msgid "Apply"
+msgstr "Áp dụng"
+
+msgid "APT Repositories"
+msgstr "Kho APT"
+
+msgid "Ask"
+msgstr "Hỏi"
+
+msgid "Back to categories"
+msgstr "Quay lại danh mục"
+
+msgid "Browse"
+msgstr "Duyệt"
+
+msgid "Cancel"
+msgstr "Hủy"
+
+msgid "Case insensitive"
+msgstr "Không phân biệt hoa thường"
+
+msgid "Center new windows"
+msgstr "Đặt cửa sổ mới ở giữa"
+
+msgid "Centered"
+msgstr "Ở giữa"
+
+msgid "Changed"
+msgstr "Thay đổi trạng thái"
+
+msgid "Chassis fan"
+msgstr "Quạt thùng máy"
+
+msgid "Clean"
+msgstr "Dọn dẹp"
+
+msgid "Click"
+msgstr "Nhấn"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "Nhấn vào một phân vùng đã gắn để hiển thị nó trên bảng điều khiển."
+
+msgid "Close"
+msgstr "Đóng"
+
+msgid "Cold"
+msgstr "Mát"
+
+msgid "Command *"
+msgstr "Lệnh *"
+
+msgid "Comment"
+msgstr "Chú thích"
+
+msgid "Comparison"
+msgstr "So sánh"
+
+msgid "Components"
+msgstr "Thành phần"
+
+msgid "Continue"
+msgstr "Tiếp tục"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "CPU Cores: {}"
+msgstr "Số nhân CPU: {}"
+
+msgid "CPU fan"
+msgstr "Quạt CPU"
+
+msgid "CPU History"
+msgstr "Lịch sử CPU"
+
+msgid "CPU Load Averages"
+msgstr "Tải trung bình CPU"
+
+msgid "CPU Model: {}"
+msgstr "Model Của CPU: {}"
+
+msgid "CPU Speed: {}"
+msgstr "Tốc Độ CPU: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "Cảnh báo sử dụng CPU (%)"
+
+msgid "Crash Reports"
+msgstr "Báo Cáo Lỗi"
+
+msgid "Dark"
+msgstr "Tối"
+
+msgid "Dashboard"
+msgstr "Bảng Điều Khiển"
+
+msgid "Dashboard disk"
+msgstr "Ổ đĩa trên bảng điều khiển"
+
+msgid "Delete"
+msgstr "Xóa"
+
+msgid "Delete Permanently"
+msgstr "Xóa vĩnh viễn"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "Xóa vĩnh viễn mục đã chọn? Không thể hoàn tác."
+
+msgid "Desktop"
+msgstr "Màn hình nền"
+
+msgid "Desktop background mode"
+msgstr "Chế độ ảnh nền màn hình"
+
+msgid "Desktop Settings"
+msgstr "Cài đặt màn hình nền"
+
+msgid "Directory"
+msgstr "Thư mục"
+
+msgid "Disabled"
+msgstr "Đã tắt"
+
+msgid "DISK"
+msgstr "Ổ Đĩa"
+
+msgid "Disk Read / Write"
+msgstr "Đọc / ghi ổ đĩa"
+
+msgid "Disk usage alert (%)"
+msgstr "Cảnh báo sử dụng ổ đĩa (%)"
+
+msgid "Distribution: {}"
+msgstr "Phiên Bản: {}"
+
+msgid "Don't ask again."
+msgstr "Không hỏi lại."
+
+msgid "DOWNLOAD"
+msgstr "Tải Xuống"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "Tải xuống: {}/s  Tổng: {}"
+
+msgid "Dynamic workspaces"
+msgstr "Không gian làm việc động"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "ví dụ ppa:user/repo  hoặc  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "Sửa"
+
+msgid "Edit Repository"
+msgstr "Sửa kho"
+
+msgid "Edit Startup Application"
+msgstr "Sửa ứng dụng khởi động"
+
+msgid "Empty only"
+msgstr "Chỉ mục trống"
+
+msgid "Enable animations"
+msgstr "Bật hiệu ứng động"
+
+msgid "Enabled"
+msgstr "Đã bật"
+
+msgid "End Process"
+msgstr "Kết Thúc Tiến Trình"
+
+msgid "End Process {}"
+msgstr "Kết thúc tiến trình {}"
+
+msgid "Equal (=)"
+msgstr "Bằng (=)"
+
+msgid "Exactly (=)"
+msgstr "Chính xác (=)"
+
+msgid "FANS"
+msgstr "QUẠT"
+
+msgid "File"
+msgstr "Tệp"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "Tên tệp hoặc mẫu, ví dụ *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "Hệ thống tệp hiển thị trên đồng hồ ổ đĩa của bảng điều khiển"
+
+msgid "File Systems"
+msgstr "Hệ thống tệp"
+
+msgid "Filter by name, user or PID"
+msgstr "Lọc theo tên, người dùng hoặc PID"
+
+msgid "Focus mode"
+msgstr "Chế độ tiêu điểm"
+
+msgid "GENERAL"
+msgstr "CHUNG"
+
+msgid "Generic name"
+msgstr "Tên chung"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "Quạt GPU"
+
+msgid "GPU History"
+msgstr "Lịch sử GPU"
+
+msgid "GPU usage alert (%)"
+msgstr "Cảnh báo sử dụng GPU (%)"
+
+msgid "Graphics Card"
+msgstr "Card đồ họa"
+
+msgid "Greater (>)"
+msgstr "Lớn hơn (>)"
+
+msgid "Group"
+msgstr "Nhóm"
+
+msgid "High CPU Usage"
+msgstr "Sử dụng CPU cao"
+
+msgid "High Disk Usage"
+msgstr "Sử dụng ổ đĩa cao"
+
+msgid "High GPU Usage"
+msgstr "Sử dụng GPU cao"
+
+msgid "High Memory Usage"
+msgstr "Sử dụng bộ nhớ cao"
+
+msgid "Hostname"
+msgstr "Tên máy"
+
+msgid "Hostname *"
+msgstr "Tên máy *"
+
+msgid "Hostname: {}"
+msgstr "Tên Máy: {}"
+
+msgid "Hosts"
+msgstr "Máy chủ"
+
+msgid "Hot"
+msgstr "Nóng"
+
+msgid "Icon"
+msgstr "Biểu tượng"
+
+msgid "Icons and text"
+msgstr "Biểu tượng và chữ"
+
+msgid "Icons only"
+msgstr "Chỉ biểu tượng"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "Cài đặt zenity hoặc kdialog để duyệt, hoặc nhập đường dẫn thư mục."
+
+msgid "Invert match"
+msgstr "Đảo ngược khớp"
+
+msgid "IP Address"
+msgstr "Địa chỉ IP"
+
+msgid "IP address *"
+msgstr "Địa chỉ IP *"
+
+msgid "Keep running in the tray"
+msgstr "Tiếp tục chạy trong khay hệ thống"
+
+msgid "Kernel Release: {}"
+msgstr "Phiên Bản Kernel: {}"
+
+msgid "Language"
+msgstr "Ngôn Ngữ"
+
+msgid "Light"
+msgstr "Sáng"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Trình tối ưu và giám sát hệ thống Linux — bản Rust của Stacer. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "Chế độ ảnh nền màn hình khóa"
+
+msgid "Lower"
+msgstr "Hạ xuống"
+
+msgid "Maximize"
+msgstr "Phóng to"
+
+msgid "Maximize Horizontally"
+msgstr "Phóng to theo chiều ngang"
+
+msgid "Maximize Vertically"
+msgstr "Phóng to theo chiều dọc"
+
+msgid "Mem"
+msgstr "B.nhớ"
+
+msgid "MEMORY"
+msgstr "RAM"
+
+msgid "Memory History"
+msgstr "Lịch sử bộ nhớ"
+
+msgid "Memory usage alert (%)"
+msgstr "Cảnh báo sử dụng bộ nhớ (%)"
+
+msgid "Memory: {} of {}"
+msgstr "Bộ nhớ: {} / {}"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Middle fan"
+msgstr "Quạt giữa"
+
+msgid "Minimize"
+msgstr "Thu nhỏ"
+
+msgid "Minutes"
+msgstr "Phút"
+
+msgid "Modified"
+msgstr "Đã sửa đổi"
+
+msgid "Mouse"
+msgstr "Chuột"
+
+msgid "Move to Trash"
+msgstr "Chuyển vào thùng rác"
+
+msgid "Name"
+msgstr "Tên"
+
+msgid "Name *"
+msgstr "Tên *"
+
+msgid "Name and command fields are required."
+msgstr "Tên và lệnh là bắt buộc."
+
+msgid "Network History"
+msgstr "Lịch sử mạng"
+
+msgid "New Host"
+msgstr "Máy chủ mới"
+
+msgid "New Startup Application"
+msgstr "Ứng dụng khởi động mới"
+
+msgid "Nice"
+msgstr "Tốt"
+
+msgid "No packages found."
+msgstr "Không tìm thấy gói nào."
+
+msgid "No repositories found."
+msgstr "Không tìm thấy kho nào."
+
+msgid "No services found."
+msgstr "Không tìm thấy dịch vụ nào."
+
+msgid "No startup applications found."
+msgstr "Không tìm thấy ứng dụng khởi động nào."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "Không tìm thấy cài đặt GNOME được hỗ trợ trên hệ thống này."
+
+msgid "No supported package manager found"
+msgstr "Không tìm thấy trình quản lý gói được hỗ trợ"
+
+msgid "None"
+msgstr "Không"
+
+msgid "Not mounted"
+msgstr "Chưa gắn"
+
+msgid "Nothing selected."
+msgstr "Chưa chọn gì."
+
+msgid "Nothing to remove."
+msgstr "Không có gì để gỡ bỏ."
+
+msgid "Number of workspaces"
+msgstr "Số không gian làm việc"
+
+msgid "Older (>)"
+msgstr "Cũ hơn (>)"
+
+msgid "On-screen keyboard"
+msgstr "Bàn phím ảo"
+
+msgid "Open Folder"
+msgstr "Mở thư mục"
+
+msgid "Open Kaptan"
+msgstr "Mở Kaptan"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "Mở cửa sổ Kaptan khi đăng nhập"
+
+msgid "Other"
+msgstr "Khác"
+
+msgid "Owner"
+msgstr "Chủ sở hữu"
+
+msgid "Package Caches"
+msgstr "Bộ Nhớ Tạm Gói"
+
+msgid "Packages ({})"
+msgstr "Gói ({})"
+
+msgid "Path"
+msgstr "Đường dẫn"
+
+msgid "Permissions"
+msgstr "Quyền"
+
+msgid "Platform: {}"
+msgstr "Nền Tảng: {}"
+
+msgid "Process"
+msgstr "Tiến Trình"
+
+msgid "Processes"
+msgstr "Tiến Trình"
+
+msgid "Processor"
+msgstr "Bộ xử lý"
+
+msgid "Pump"
+msgstr "Bơm"
+
+msgid "Quit"
+msgstr "Thoát"
+
+msgid "Raise windows on click"
+msgstr "Đưa cửa sổ lên trên khi nhấn"
+
+msgid "Read: {}/s"
+msgstr "Đọc: {}/s"
+
+msgid "Refresh every {} s"
+msgstr "Làm mới mỗi {} giây"
+
+msgid "Regular expression"
+msgstr "Biểu thức chính quy"
+
+msgid "Remove"
+msgstr "Gỡ bỏ"
+
+msgid "Remove {} package(s)?"
+msgstr "Gỡ bỏ {} gói?"
+
+msgid "Repository added."
+msgstr "Đã thêm kho."
+
+msgid "Repository disabled."
+msgstr "Đã tắt kho."
+
+msgid "Repository enabled."
+msgstr "Đã bật kho."
+
+msgid "Repository is empty"
+msgstr "Kho trống"
+
+msgid "Repository removed."
+msgstr "Đã gỡ bỏ kho."
+
+msgid "Repository updated."
+msgstr "Đã cập nhật kho."
+
+msgid "Resident"
+msgstr "Thường trú"
+
+msgid "Resources"
+msgstr "Biểu Đồ Tài Nguyên"
+
+msgid "Running"
+msgstr "Đang chạy"
+
+msgid "Save"
+msgstr "Lưu"
+
+msgid "Save Changes"
+msgstr "Lưu thay đổi"
+
+msgid "Scaled"
+msgstr "Co giãn"
+
+msgid "Scanning…"
+msgstr "Đang quét…"
+
+msgid "Screen reader"
+msgstr "Trình đọc màn hình"
+
+msgid "Search"
+msgstr "Tìm Kiếm.."
+
+msgid "Search as root"
+msgstr "Tìm với quyền root"
+
+msgid "Search packages"
+msgstr "Tìm gói"
+
+msgid "Search services"
+msgstr "Tìm dịch vụ"
+
+msgid "Select all"
+msgstr "Chọn tất cả"
+
+msgid "Select at least one category."
+msgstr "Hãy chọn ít nhất một danh mục."
+
+msgid "Select none"
+msgstr "Bỏ chọn tất cả"
+
+msgid "Select the search directory."
+msgstr "Hãy chọn thư mục tìm kiếm."
+
+msgid "Service"
+msgstr "Dịch vụ"
+
+msgid "Services"
+msgstr "Dịch vụ"
+
+msgid "Settings"
+msgstr "Cài Đặt"
+
+msgid "Show battery percentage"
+msgstr "Hiển thị phần trăm pin"
+
+msgid "Show home folder on desktop"
+msgstr "Hiển thị thư mục cá nhân trên màn hình nền"
+
+msgid "Show mounted volumes on desktop"
+msgstr "Hiển thị ổ đĩa đã gắn trên màn hình nền"
+
+msgid "Show seconds in clock"
+msgstr "Hiển thị giây trên đồng hồ"
+
+msgid "Show trash on desktop"
+msgstr "Hiển thị thùng rác trên màn hình nền"
+
+msgid "Show weekday in clock"
+msgstr "Hiển thị thứ trong tuần trên đồng hồ"
+
+msgid "Shown on dashboard"
+msgstr "Đang hiển thị trên bảng điều khiển"
+
+msgid "Sidebar"
+msgstr "Thanh bên"
+
+msgid "Size"
+msgstr "Kích Cỡ"
+
+msgid "Sleeping"
+msgstr "Đang ngủ"
+
+msgid "Sloppy"
+msgstr "Lỏng"
+
+msgid "Smaller (<)"
+msgstr "Nhỏ hơn (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Gói Snap ({})"
+
+msgid "Source code"
+msgstr "Mã nguồn"
+
+msgid "source entry not found"
+msgstr "không tìm thấy mục kho"
+
+msgid "Spanned"
+msgstr "Trải rộng"
+
+msgid "Start at boot"
+msgstr "Khi khởi động"
+
+msgid "Start Kaptan at login"
+msgstr "Khởi chạy Kaptan khi đăng nhập"
+
+msgid "Start page"
+msgstr "Trang khởi đầu"
+
+msgid "Started"
+msgstr "Bắt đầu"
+
+msgid "Startup Applications"
+msgstr "Ứng dụng khởi động"
+
+msgid "Startup Apps"
+msgstr "Khởi động"
+
+msgid "State"
+msgstr "Khu Vực"
+
+msgid "Stopped"
+msgstr "Đã dừng"
+
+msgid "Stretched"
+msgstr "Kéo giãn"
+
+msgid "Suites"
+msgstr "Bản phát hành"
+
+msgid "Swap"
+msgstr "Bộ nhớ hoán đổi"
+
+msgid "Swap (inactive)"
+msgstr "Bộ nhớ hoán đổi (không hoạt động)"
+
+msgid "Swap: {} of {}"
+msgstr "Bộ nhớ hoán đổi: {} / {}"
+
+msgid "Symbolic Link"
+msgstr "Liên kết tượng trưng"
+
+msgid "System Cleaner"
+msgstr "Làm Sạch Hệ Thống"
+
+msgid "System default"
+msgstr "Mặc định hệ thống"
+
+msgid "System fan"
+msgstr "Quạt hệ thống"
+
+msgid "SYSTEM INFO"
+msgstr "Thông Tin Hệ Thống"
+
+msgid "System Scan"
+msgstr "Quét hệ thống"
+
+msgid "System Services"
+msgstr "Dịch vụ hệ thống"
+
+msgid "TEMPERATURES"
+msgstr "NHIỆT ĐỘ"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "Mức sử dụng CPU vượt quá {}%."
+
+msgid "The amount of disk used is over {}%."
+msgstr "Mức sử dụng ổ đĩa vượt quá {}%."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "Mức sử dụng GPU vượt quá {}%."
+
+msgid "The amount of memory used is over {}%."
+msgstr "Mức sử dụng bộ nhớ vượt quá {}%."
+
+msgid "The IP address and hostname fields are required."
+msgstr "Địa chỉ IP và tên máy là bắt buộc."
+
+msgid "Theme"
+msgstr "Chủ đề"
+
+msgid "Time"
+msgstr "Thời gian"
+
+msgid "Title bar double click"
+msgstr "Nhấn đúp thanh tiêu đề"
+
+msgid "Title bar middle click"
+msgstr "Nhấn chuột giữa thanh tiêu đề"
+
+msgid "Title bar right click"
+msgstr "Nhấn chuột phải thanh tiêu đề"
+
+msgid "Total {} · selected {}"
+msgstr "Tổng {} · đã chọn {}"
+
+msgid "Total: {}"
+msgstr "Tổng: {}"
+
+msgid "Trash"
+msgstr "Thùng Rác"
+
+msgid "Type"
+msgstr "Loại"
+
+msgid "Types"
+msgstr "Các loại"
+
+msgid "Types, URI and suites are required."
+msgstr "Loại, URI và bản phát hành là bắt buộc."
+
+msgid "Uninstall Selected ({})"
+msgstr "Gỡ cài đặt mục đã chọn ({})"
+
+msgid "Uninstaller"
+msgstr "Gỡ Cài Đặt"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "Đang gỡ cài đặt {} gói…"
+
+msgid "Unit"
+msgstr "Đơn vị"
+
+msgid "Unsaved changes"
+msgstr "Thay đổi chưa lưu"
+
+msgid "UPLOAD"
+msgstr "Tải Lên"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "Tải lên: {}/s  Tổng: {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "Người Dùng"
+
+msgid "Very hot"
+msgstr "Rất nóng"
+
+msgid "Virtual"
+msgstr "Ảo"
+
+msgid "Wallpaper"
+msgstr "Hình nền"
+
+msgid "When the window is closed"
+msgstr "Khi đóng cửa sổ"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "Chương trình có tiếp tục chạy trong khay hệ thống không?"
+
+msgid "Window Manager"
+msgstr "Trình quản lý cửa sổ"
+
+msgid "Within (<)"
+msgstr "Trong vòng (<)"
+
+msgid "Write: {}/s"
+msgstr "Ghi: {}/s"
+
+msgid "Zoom"
+msgstr "Thu phóng"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  (còn trống {})"
+
+msgid "{} cleaned."
+msgstr "Đã dọn {}."
+
+msgid "{} deleted."
+msgstr "Đã xóa {}."
+
+msgid "{} disabled."
+msgstr "Đã tắt {}."
+
+msgid "{} enabled."
+msgstr "Đã bật {}."
+
+msgid "{} found"
+msgstr "Tìm thấy {}"
+
+msgid "{} found, showing {}"
+msgstr "Tìm thấy {}, hiển thị {}"
+
+msgid "{} minute average: {}"
+msgstr "Trung bình {} phút: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "Thêm {} gói phụ thuộc vào lựa chọn của bạn và cũng sẽ bị gỡ bỏ."
+
+msgid "{} moved to trash."
+msgstr "Đã chuyển {} vào thùng rác."
+
+msgid "{} package(s) removed."
+msgstr "Đã gỡ bỏ {} gói."
+
+msgid "{} started."
+msgstr "Đã khởi động {}."
+
+msgid "{} stopped."
+msgstr "Đã dừng {}."
+
+msgid "{} used · {} free"
+msgstr "Đã dùng {} · còn trống {}"

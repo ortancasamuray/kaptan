@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "«{}» — неприпустима IP-адреса."
+
+msgid "/etc/hosts saved."
+msgstr "/etc/hosts збережено."
+
+msgid "0 disables the alert"
+msgstr "0 вимикає попередження"
+
+msgid "ABOUT"
+msgstr "ПРО ПРОГРАМУ"
+
+msgid "Accessed"
+msgstr "Доступ"
+
+msgid "Accessibility"
+msgstr "Спеціальні можливості"
+
+msgid "Add Repository"
+msgstr "Додати репозиторій"
+
+msgid "Add Startup App"
+msgstr "Додати"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository не встановлено (пакунок: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "Додатково ▲"
+
+msgid "Advanced ▼"
+msgstr "Додатково ▼"
+
+msgid "ALERTS"
+msgstr "ПОПЕРЕДЖЕННЯ"
+
+msgid "Aliases"
+msgstr "Псевдоніми"
+
+msgid "All"
+msgstr "Усі"
+
+msgid "All Disks"
+msgstr "Усі диски"
+
+msgid "All users"
+msgstr "Усі користувачі"
+
+msgid "Amount"
+msgstr "Кількість"
+
+msgid "Any"
+msgstr "Будь-який"
+
+msgid "Appearance"
+msgstr "Вигляд"
+
+msgid "Application Caches"
+msgstr "Кеші програми"
+
+msgid "Application Logs"
+msgstr "Журнали програми"
+
+msgid "Apply"
+msgstr "Застосувати"
+
+msgid "APT Repositories"
+msgstr "Репозиторії APT"
+
+msgid "Ask"
+msgstr "Питати"
+
+msgid "Back to categories"
+msgstr "Назад до категорій"
+
+msgid "Browse"
+msgstr "Огляд"
+
+msgid "Cancel"
+msgstr "Скасувати"
+
+msgid "Case insensitive"
+msgstr "Без урахування регістру"
+
+msgid "Center new windows"
+msgstr "Розміщувати нові вікна по центру"
+
+msgid "Centered"
+msgstr "По центру"
+
+msgid "Changed"
+msgstr "Зміна статусу"
+
+msgid "Chassis fan"
+msgstr "Вентилятор корпусу"
+
+msgid "Clean"
+msgstr "Очистити"
+
+msgid "Click"
+msgstr "Клацання"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "Натисніть на змонтований розділ, щоб показати його на панелі."
+
+msgid "Close"
+msgstr "Закрити"
+
+msgid "Cold"
+msgstr "Холодний"
+
+msgid "Command *"
+msgstr "Команда *"
+
+msgid "Comment"
+msgstr "Коментар"
+
+msgid "Comparison"
+msgstr "Порівняння"
+
+msgid "Components"
+msgstr "Компоненти"
+
+msgid "Continue"
+msgstr "Продовжити"
+
+msgid "CPU"
+msgstr "ЦП"
+
+msgid "CPU Cores: {}"
+msgstr "Ядра ЦП: {}"
+
+msgid "CPU fan"
+msgstr "Вентилятор ЦП"
+
+msgid "CPU History"
+msgstr "Історія ЦП"
+
+msgid "CPU Load Averages"
+msgstr "Середнє навантаження ЦП"
+
+msgid "CPU Model: {}"
+msgstr "Модель ЦП: {}"
+
+msgid "CPU Speed: {}"
+msgstr "Частота ЦП: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "Попередження про навантаження ЦП (%)"
+
+msgid "Crash Reports"
+msgstr "Звіти про помилки"
+
+msgid "Dark"
+msgstr "Темна"
+
+msgid "Dashboard"
+msgstr "Огляд"
+
+msgid "Dashboard disk"
+msgstr "Диск на панелі"
+
+msgid "Delete"
+msgstr "Видалити"
+
+msgid "Delete Permanently"
+msgstr "Видалити назавжди"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "Видалити вибраний елемент назавжди? Цю дію не можна скасувати."
+
+msgid "Desktop"
+msgstr "Стільниця"
+
+msgid "Desktop background mode"
+msgstr "Режим тла стільниці"
+
+msgid "Desktop Settings"
+msgstr "Налаштування стільниці"
+
+msgid "Directory"
+msgstr "Тека"
+
+msgid "Disabled"
+msgstr "Вимкнено"
+
+msgid "DISK"
+msgstr "ДИСК"
+
+msgid "Disk Read / Write"
+msgstr "Читання / запис диска"
+
+msgid "Disk usage alert (%)"
+msgstr "Попередження про заповнення диска (%)"
+
+msgid "Distribution: {}"
+msgstr "Дистрибутив: {}"
+
+msgid "Don't ask again."
+msgstr "Більше не питати."
+
+msgid "DOWNLOAD"
+msgstr "Завантажити"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "Завантаження: {}/с  Усього: {}"
+
+msgid "Dynamic workspaces"
+msgstr "Динамічні робочі простори"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "напр. ppa:user/repo  або  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "Змінити"
+
+msgid "Edit Repository"
+msgstr "Редагувати репозиторій"
+
+msgid "Edit Startup Application"
+msgstr "Редагувати програму автозапуску"
+
+msgid "Empty only"
+msgstr "Лише порожні"
+
+msgid "Enable animations"
+msgstr "Увімкнути анімацію"
+
+msgid "Enabled"
+msgstr "Увімкнено"
+
+msgid "End Process"
+msgstr "Завершити процес"
+
+msgid "End Process {}"
+msgstr "Завершити процес {}"
+
+msgid "Equal (=)"
+msgstr "Дорівнює (=)"
+
+msgid "Exactly (=)"
+msgstr "Рівно (=)"
+
+msgid "FANS"
+msgstr "ВЕНТИЛЯТОРИ"
+
+msgid "File"
+msgstr "Файл"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "Назва файлу або шаблон, напр. *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "Файлова система, що показується на індикаторі диска на панелі"
+
+msgid "File Systems"
+msgstr "Файлові системи"
+
+msgid "Filter by name, user or PID"
+msgstr "Фільтр за назвою, користувачем або PID"
+
+msgid "Focus mode"
+msgstr "Режим фокусу"
+
+msgid "GENERAL"
+msgstr "ЗАГАЛЬНІ"
+
+msgid "Generic name"
+msgstr "Загальна назва"
+
+msgid "GPU"
+msgstr "ГП"
+
+msgid "GPU fan"
+msgstr "Вентилятор ГП"
+
+msgid "GPU History"
+msgstr "Історія ГП"
+
+msgid "GPU usage alert (%)"
+msgstr "Попередження про навантаження ГП (%)"
+
+msgid "Graphics Card"
+msgstr "Відеокарта"
+
+msgid "Greater (>)"
+msgstr "Більше (>)"
+
+msgid "Group"
+msgstr "Група"
+
+msgid "High CPU Usage"
+msgstr "Високе навантаження ЦП"
+
+msgid "High Disk Usage"
+msgstr "Високе заповнення диска"
+
+msgid "High GPU Usage"
+msgstr "Високе навантаження ГП"
+
+msgid "High Memory Usage"
+msgstr "Високе навантаження пам'яті"
+
+msgid "Hostname"
+msgstr "Ім'я хоста"
+
+msgid "Hostname *"
+msgstr "Ім'я хоста *"
+
+msgid "Hostname: {}"
+msgstr "Ім'я комп'ютера: {}"
+
+msgid "Hosts"
+msgstr "Хости"
+
+msgid "Hot"
+msgstr "Гарячий"
+
+msgid "Icon"
+msgstr "Піктограма"
+
+msgid "Icons and text"
+msgstr "Піктограми й текст"
+
+msgid "Icons only"
+msgstr "Лише піктограми"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "Встановіть zenity або kdialog для вибору теки або введіть шлях вручну."
+
+msgid "Invert match"
+msgstr "Інвертувати збіг"
+
+msgid "IP Address"
+msgstr "IP-адреса"
+
+msgid "IP address *"
+msgstr "IP-адреса *"
+
+msgid "Keep running in the tray"
+msgstr "Продовжити роботу в треї"
+
+msgid "Kernel Release: {}"
+msgstr "Версія ядра: {}"
+
+msgid "Language"
+msgstr "Мова"
+
+msgid "Light"
+msgstr "Світла"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Оптимізатор і монітор системи Linux — порт Stacer на Rust. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "Режим тла екрана блокування"
+
+msgid "Lower"
+msgstr "Опустити"
+
+msgid "Maximize"
+msgstr "Розгорнути"
+
+msgid "Maximize Horizontally"
+msgstr "Розгорнути горизонтально"
+
+msgid "Maximize Vertically"
+msgstr "Розгорнути вертикально"
+
+msgid "Mem"
+msgstr "Пам."
+
+msgid "MEMORY"
+msgstr "ПАМ'ЯТЬ"
+
+msgid "Memory History"
+msgstr "Історія пам'яті"
+
+msgid "Memory usage alert (%)"
+msgstr "Попередження про навантаження пам'яті (%)"
+
+msgid "Memory: {} of {}"
+msgstr "Пам'ять: {} з {}"
+
+msgid "Menu"
+msgstr "Меню"
+
+msgid "Middle fan"
+msgstr "Середній вентилятор"
+
+msgid "Minimize"
+msgstr "Згорнути"
+
+msgid "Minutes"
+msgstr "Хвилини"
+
+msgid "Modified"
+msgstr "Змінено"
+
+msgid "Mouse"
+msgstr "Миша"
+
+msgid "Move to Trash"
+msgstr "Перемістити до смітника"
+
+msgid "Name"
+msgstr "Назва"
+
+msgid "Name *"
+msgstr "Назва *"
+
+msgid "Name and command fields are required."
+msgstr "Поля «Назва» та «Команда» обов'язкові."
+
+msgid "Network History"
+msgstr "Історія мережі"
+
+msgid "New Host"
+msgstr "Новий хост"
+
+msgid "New Startup Application"
+msgstr "Нова програма автозапуску"
+
+msgid "Nice"
+msgstr "Пріоритет"
+
+msgid "No packages found."
+msgstr "Пакунки не знайдено."
+
+msgid "No repositories found."
+msgstr "Репозиторії не знайдено."
+
+msgid "No services found."
+msgstr "Служби не знайдено."
+
+msgid "No startup applications found."
+msgstr "Програми автозапуску не знайдено."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "У цій системі не знайдено підтримуваних налаштувань GNOME."
+
+msgid "No supported package manager found"
+msgstr "Підтримуваний менеджер пакунків не знайдено"
+
+msgid "None"
+msgstr "Немає"
+
+msgid "Not mounted"
+msgstr "Не змонтовано"
+
+msgid "Nothing selected."
+msgstr "Нічого не вибрано."
+
+msgid "Nothing to remove."
+msgstr "Нічого видаляти."
+
+msgid "Number of workspaces"
+msgstr "Кількість робочих просторів"
+
+msgid "Older (>)"
+msgstr "Старіше (>)"
+
+msgid "On-screen keyboard"
+msgstr "Екранна клавіатура"
+
+msgid "Open Folder"
+msgstr "Відкрити теку"
+
+msgid "Open Kaptan"
+msgstr "Відкрити Kaptan"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "Відкриває вікно Kaptan під час входу в систему"
+
+msgid "Other"
+msgstr "Інше"
+
+msgid "Owner"
+msgstr "Власник"
+
+msgid "Package Caches"
+msgstr "Завантажені пакети"
+
+msgid "Packages ({})"
+msgstr "Пакунки ({})"
+
+msgid "Path"
+msgstr "Шлях"
+
+msgid "Permissions"
+msgstr "Права доступу"
+
+msgid "Platform: {}"
+msgstr "Платформа: {}"
+
+msgid "Process"
+msgstr "Процес"
+
+msgid "Processes"
+msgstr "Процеси"
+
+msgid "Processor"
+msgstr "Процесор"
+
+msgid "Pump"
+msgstr "Помпа"
+
+msgid "Quit"
+msgstr "Вийти"
+
+msgid "Raise windows on click"
+msgstr "Піднімати вікно при клацанні"
+
+msgid "Read: {}/s"
+msgstr "Читання: {}/с"
+
+msgid "Refresh every {} s"
+msgstr "Оновлювати кожні {} с"
+
+msgid "Regular expression"
+msgstr "Регулярний вираз"
+
+msgid "Remove"
+msgstr "Видалити"
+
+msgid "Remove {} package(s)?"
+msgstr "Видалити пакунки ({})?"
+
+msgid "Repository added."
+msgstr "Репозиторій додано."
+
+msgid "Repository disabled."
+msgstr "Репозиторій вимкнено."
+
+msgid "Repository enabled."
+msgstr "Репозиторій увімкнено."
+
+msgid "Repository is empty"
+msgstr "Репозиторій не вказано"
+
+msgid "Repository removed."
+msgstr "Репозиторій видалено."
+
+msgid "Repository updated."
+msgstr "Репозиторій оновлено."
+
+msgid "Resident"
+msgstr "Резидентна"
+
+msgid "Resources"
+msgstr "Ресурси"
+
+msgid "Running"
+msgstr "Працює"
+
+msgid "Save"
+msgstr "Зберегти"
+
+msgid "Save Changes"
+msgstr "Зберегти зміни"
+
+msgid "Scaled"
+msgstr "Масштабувати"
+
+msgid "Scanning…"
+msgstr "Сканування…"
+
+msgid "Screen reader"
+msgstr "Екранний диктор"
+
+msgid "Search"
+msgstr "Пошук.."
+
+msgid "Search as root"
+msgstr "Шукати від імені root"
+
+msgid "Search packages"
+msgstr "Пошук пакунків"
+
+msgid "Search services"
+msgstr "Пошук служб"
+
+msgid "Select all"
+msgstr "Вибрати все"
+
+msgid "Select at least one category."
+msgstr "Виберіть принаймні одну категорію."
+
+msgid "Select none"
+msgstr "Зняти вибір"
+
+msgid "Select the search directory."
+msgstr "Виберіть теку для пошуку."
+
+msgid "Service"
+msgstr "Служба"
+
+msgid "Services"
+msgstr "Служби"
+
+msgid "Settings"
+msgstr "Налаштування"
+
+msgid "Show battery percentage"
+msgstr "Показувати відсоток заряду батареї"
+
+msgid "Show home folder on desktop"
+msgstr "Показувати домашню теку на стільниці"
+
+msgid "Show mounted volumes on desktop"
+msgstr "Показувати змонтовані томи на стільниці"
+
+msgid "Show seconds in clock"
+msgstr "Показувати секунди в годиннику"
+
+msgid "Show trash on desktop"
+msgstr "Показувати смітник на стільниці"
+
+msgid "Show weekday in clock"
+msgstr "Показувати день тижня в годиннику"
+
+msgid "Shown on dashboard"
+msgstr "Показано на панелі"
+
+msgid "Sidebar"
+msgstr "Бічна панель"
+
+msgid "Size"
+msgstr "Розмір"
+
+msgid "Sleeping"
+msgstr "У сплячому режимі"
+
+msgid "Sloppy"
+msgstr "Недбалий"
+
+msgid "Smaller (<)"
+msgstr "Менше (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Snap-пакунки ({})"
+
+msgid "Source code"
+msgstr "Вихідний код"
+
+msgid "source entry not found"
+msgstr "запис репозиторію не знайдено"
+
+msgid "Spanned"
+msgstr "Розтягнути на всі екрани"
+
+msgid "Start at boot"
+msgstr "Під час завантаження"
+
+msgid "Start Kaptan at login"
+msgstr "Запускати Kaptan під час входу"
+
+msgid "Start page"
+msgstr "Початкова сторінка"
+
+msgid "Started"
+msgstr "Запущено"
+
+msgid "Startup Applications"
+msgstr "Програми автозапуску"
+
+msgid "Startup Apps"
+msgstr "Автозапуск"
+
+msgid "State"
+msgstr "Стан"
+
+msgid "Stopped"
+msgstr "Зупинено"
+
+msgid "Stretched"
+msgstr "Розтягнути"
+
+msgid "Suites"
+msgstr "Випуски"
+
+msgid "Swap"
+msgstr "Підкачка"
+
+msgid "Swap (inactive)"
+msgstr "Підкачка (неактивна)"
+
+msgid "Swap: {} of {}"
+msgstr "Підкачка: {} з {}"
+
+msgid "Symbolic Link"
+msgstr "Символічне посилання"
+
+msgid "System Cleaner"
+msgstr "Очищення системи"
+
+msgid "System default"
+msgstr "Типова системна"
+
+msgid "System fan"
+msgstr "Системний вентилятор"
+
+msgid "SYSTEM INFO"
+msgstr "СИСТЕМНА ІНФОРМАЦІЯ"
+
+msgid "System Scan"
+msgstr "Сканувати систему"
+
+msgid "System Services"
+msgstr "Системні служби"
+
+msgid "TEMPERATURES"
+msgstr "ТЕМПЕРАТУРА"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "Навантаження ЦП перевищило {}%."
+
+msgid "The amount of disk used is over {}%."
+msgstr "Заповнення диска перевищило {}%."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "Навантаження ГП перевищило {}%."
+
+msgid "The amount of memory used is over {}%."
+msgstr "Навантаження пам'яті перевищило {}%."
+
+msgid "The IP address and hostname fields are required."
+msgstr "Поля «IP-адреса» та «Ім'я хоста» обов'язкові."
+
+msgid "Theme"
+msgstr "Тема"
+
+msgid "Time"
+msgstr "Час"
+
+msgid "Title bar double click"
+msgstr "Подвійне клацання по заголовку"
+
+msgid "Title bar middle click"
+msgstr "Середнє клацання по заголовку"
+
+msgid "Title bar right click"
+msgstr "Праве клацання по заголовку"
+
+msgid "Total {} · selected {}"
+msgstr "Усього {} · вибрано {}"
+
+msgid "Total: {}"
+msgstr "Всього: {}"
+
+msgid "Trash"
+msgstr "Смітник"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Types"
+msgstr "Типи"
+
+msgid "Types, URI and suites are required."
+msgstr "Типи, URI та випуски обов'язкові."
+
+msgid "Uninstall Selected ({})"
+msgstr "Видалити вибрані ({})"
+
+msgid "Uninstaller"
+msgstr "Видалення пакетів"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "Видалення пакунків ({})…"
+
+msgid "Unit"
+msgstr "Одиниця"
+
+msgid "Unsaved changes"
+msgstr "Незбережені зміни"
+
+msgid "UPLOAD"
+msgstr "НАДІСЛАНО"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "Вивантаження: {}/с  Усього: {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "Користувач"
+
+msgid "Very hot"
+msgstr "Дуже гарячий"
+
+msgid "Virtual"
+msgstr "Віртуальна"
+
+msgid "Wallpaper"
+msgstr "Шпалери"
+
+msgid "When the window is closed"
+msgstr "Під час закриття вікна"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "Продовжити роботу програми в системному треї?"
+
+msgid "Window Manager"
+msgstr "Віконний менеджер"
+
+msgid "Within (<)"
+msgstr "У межах (<)"
+
+msgid "Write: {}/s"
+msgstr "Запис: {}/с"
+
+msgid "Zoom"
+msgstr "Масштабувати"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} вільно)"
+
+msgid "{} cleaned."
+msgstr "Очищено: {}."
+
+msgid "{} deleted."
+msgstr "{} видалено."
+
+msgid "{} disabled."
+msgstr "{} вимкнено."
+
+msgid "{} enabled."
+msgstr "{} увімкнено."
+
+msgid "{} found"
+msgstr "Знайдено: {}"
+
+msgid "{} found, showing {}"
+msgstr "Знайдено: {}, показано: {}"
+
+msgid "{} minute average: {}"
+msgstr "Середнє за {} хв: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "Ще пакунків, що залежать від вибраних і також будуть видалені: {}."
+
+msgid "{} moved to trash."
+msgstr "{} переміщено до смітника."
+
+msgid "{} package(s) removed."
+msgstr "Видалено пакунків: {}."
+
+msgid "{} started."
+msgstr "{} запущено."
+
+msgid "{} stopped."
+msgstr "{} зупинено."
+
+msgid "{} used · {} free"
+msgstr "{} зайнято · {} вільно"

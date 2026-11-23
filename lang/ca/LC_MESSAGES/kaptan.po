@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "«{}» no és una adreça IP vàlida."
+
+msgid "/etc/hosts saved."
+msgstr "S'ha desat /etc/hosts."
+
+msgid "0 disables the alert"
+msgstr "0 desactiva l'avís"
+
+msgid "ABOUT"
+msgstr "QUANT A"
+
+msgid "Accessed"
+msgstr "Accés"
+
+msgid "Accessibility"
+msgstr "Accessibilitat"
+
+msgid "Add Repository"
+msgstr "Afegeix un repositori"
+
+msgid "Add Startup App"
+msgstr "Afegeix una aplicació d'inici"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository no està instal·lat (paquet: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "Avançat ▲"
+
+msgid "Advanced ▼"
+msgstr "Avançat ▼"
+
+msgid "ALERTS"
+msgstr "AVISOS"
+
+msgid "Aliases"
+msgstr "Àlies"
+
+msgid "All"
+msgstr "Tots"
+
+msgid "All Disks"
+msgstr "Tots els discos"
+
+msgid "All users"
+msgstr "Tots els usuaris"
+
+msgid "Amount"
+msgstr "Quantitat"
+
+msgid "Any"
+msgstr "Qualsevol"
+
+msgid "Appearance"
+msgstr "Aparença"
+
+msgid "Application Caches"
+msgstr "Memòria cau d'aplicacions"
+
+msgid "Application Logs"
+msgstr "Registres d'aplicacions"
+
+msgid "Apply"
+msgstr "Aplica"
+
+msgid "APT Repositories"
+msgstr "Repositoris APT"
+
+msgid "Ask"
+msgstr "Pregunta"
+
+msgid "Back to categories"
+msgstr "Torna a les categories"
+
+msgid "Browse"
+msgstr "Navega"
+
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgid "Case insensitive"
+msgstr "Sense distingir majúscules"
+
+msgid "Center new windows"
+msgstr "Centra les finestres noves"
+
+msgid "Centered"
+msgstr "Centrat"
+
+msgid "Changed"
+msgstr "Canvi d'estat"
+
+msgid "Chassis fan"
+msgstr "Ventilador de la caixa"
+
+msgid "Clean"
+msgstr "Neteja"
+
+msgid "Click"
+msgstr "Clic"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "Feu clic en una partició muntada per mostrar-la al tauler."
+
+msgid "Close"
+msgstr "Tanca"
+
+msgid "Cold"
+msgstr "Fred"
+
+msgid "Command *"
+msgstr "Ordre *"
+
+msgid "Comment"
+msgstr "Comentari"
+
+msgid "Comparison"
+msgstr "Comparació"
+
+msgid "Components"
+msgstr "Components"
+
+msgid "Continue"
+msgstr "Continua"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "CPU Cores: {}"
+msgstr "Nuclis de la CPU: {}"
+
+msgid "CPU fan"
+msgstr "Ventilador de la CPU"
+
+msgid "CPU History"
+msgstr "Historial de la CPU"
+
+msgid "CPU Load Averages"
+msgstr "Càrrega mitjana de la CPU"
+
+msgid "CPU Model: {}"
+msgstr "Model de la CPU: {}"
+
+msgid "CPU Speed: {}"
+msgstr "Velocitat de la CPU: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "Avís d'ús de la CPU (%)"
+
+msgid "Crash Reports"
+msgstr "Informes de fallida"
+
+msgid "Dark"
+msgstr "Fosc"
+
+msgid "Dashboard"
+msgstr "Panell de control"
+
+msgid "Dashboard disk"
+msgstr "Disc del tauler"
+
+msgid "Delete"
+msgstr "Esborra"
+
+msgid "Delete Permanently"
+msgstr "Suprimeix permanentment"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "Voleu suprimir permanentment l'element seleccionat? No es pot desfer."
+
+msgid "Desktop"
+msgstr "Escriptori"
+
+msgid "Desktop background mode"
+msgstr "Mode del fons de l'escriptori"
+
+msgid "Desktop Settings"
+msgstr "Configuració de l'escriptori"
+
+msgid "Directory"
+msgstr "Carpeta"
+
+msgid "Disabled"
+msgstr "Desactivat"
+
+msgid "DISK"
+msgstr "DISC"
+
+msgid "Disk Read / Write"
+msgstr "Lectura / escriptura del disc"
+
+msgid "Disk usage alert (%)"
+msgstr "Avís d'ús del disc (%)"
+
+msgid "Distribution: {}"
+msgstr "Distribució: {}"
+
+msgid "Don't ask again."
+msgstr "No ho tornis a preguntar."
+
+msgid "DOWNLOAD"
+msgstr "Baixa"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "Baixada: {}/s  Total: {}"
+
+msgid "Dynamic workspaces"
+msgstr "Espais de treball dinàmics"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "p. ex. ppa:usuari/repo  o  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "Edita"
+
+msgid "Edit Repository"
+msgstr "Edita el repositori"
+
+msgid "Edit Startup Application"
+msgstr "Edita l'aplicació d'inici"
+
+msgid "Empty only"
+msgstr "Només buits"
+
+msgid "Enable animations"
+msgstr "Activa les animacions"
+
+msgid "Enabled"
+msgstr "Activat"
+
+msgid "End Process"
+msgstr "Finalitza el procés"
+
+msgid "End Process {}"
+msgstr "Finalitza el procés {}"
+
+msgid "Equal (=)"
+msgstr "Igual (=)"
+
+msgid "Exactly (=)"
+msgstr "Exactament (=)"
+
+msgid "FANS"
+msgstr "VENTILADORS"
+
+msgid "File"
+msgstr "Fitxer"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "Nom de fitxer o patró, p. ex. *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "Sistema de fitxers que es mostra a l'indicador de disc del tauler"
+
+msgid "File Systems"
+msgstr "Sistemes de fitxers"
+
+msgid "Filter by name, user or PID"
+msgstr "Filtra per nom, usuari o PID"
+
+msgid "Focus mode"
+msgstr "Mode d'enfocament"
+
+msgid "GENERAL"
+msgstr "General"
+
+msgid "Generic name"
+msgstr "Nom genèric"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "Ventilador de la GPU"
+
+msgid "GPU History"
+msgstr "Historial de la GPU"
+
+msgid "GPU usage alert (%)"
+msgstr "Avís d'ús de la GPU (%)"
+
+msgid "Graphics Card"
+msgstr "Targeta gràfica"
+
+msgid "Greater (>)"
+msgstr "Més gran (>)"
+
+msgid "Group"
+msgstr "Grup"
+
+msgid "High CPU Usage"
+msgstr "Ús alt de CPU"
+
+msgid "High Disk Usage"
+msgstr "Ús alt de disc"
+
+msgid "High GPU Usage"
+msgstr "Ús elevat de la GPU"
+
+msgid "High Memory Usage"
+msgstr "Ús alt de memòria"
+
+msgid "Hostname"
+msgstr "Nom de l'amfitrió"
+
+msgid "Hostname *"
+msgstr "Nom de l'amfitrió *"
+
+msgid "Hostname: {}"
+msgstr "Nom de l'amfitrió: {}"
+
+msgid "Hosts"
+msgstr "Amfitrions"
+
+msgid "Hot"
+msgstr "Calent"
+
+msgid "Icon"
+msgstr "Icona"
+
+msgid "Icons and text"
+msgstr "Icones i text"
+
+msgid "Icons only"
+msgstr "Només icones"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "Instal·leu zenity o kdialog per navegar, o escriviu el camí de la carpeta."
+
+msgid "Invert match"
+msgstr "Inverteix la coincidència"
+
+msgid "IP Address"
+msgstr "Adreça IP"
+
+msgid "IP address *"
+msgstr "Adreça IP *"
+
+msgid "Keep running in the tray"
+msgstr "Continua a la safata del sistema"
+
+msgid "Kernel Release: {}"
+msgstr "Versió del nucli: {}"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Light"
+msgstr "Clar"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Optimitzador i monitor del sistema Linux — una versió de Stacer en Rust. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "Mode del fons de la pantalla de bloqueig"
+
+msgid "Lower"
+msgstr "Inferior"
+
+msgid "Maximize"
+msgstr "Maximitza"
+
+msgid "Maximize Horizontally"
+msgstr "Maximitza horitzontalment"
+
+msgid "Maximize Vertically"
+msgstr "Maximitza verticalment"
+
+msgid "Mem"
+msgstr "Mem."
+
+msgid "MEMORY"
+msgstr "MEMÒRIA"
+
+msgid "Memory History"
+msgstr "Historial de la memòria"
+
+msgid "Memory usage alert (%)"
+msgstr "Avís d'ús de la memòria (%)"
+
+msgid "Memory: {} of {}"
+msgstr "Memòria: {} de {}"
+
+msgid "Menu"
+msgstr "Menú"
+
+msgid "Middle fan"
+msgstr "Ventilador central"
+
+msgid "Minimize"
+msgstr "Minimitza"
+
+msgid "Minutes"
+msgstr "Minuts"
+
+msgid "Modified"
+msgstr "Modificat"
+
+msgid "Mouse"
+msgstr "Ratolí"
+
+msgid "Move to Trash"
+msgstr "Mou a la paperera"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "Name *"
+msgstr "Nom *"
+
+msgid "Name and command fields are required."
+msgstr "Els camps nom i ordre són obligatoris."
+
+msgid "Network History"
+msgstr "Historial de la xarxa"
+
+msgid "New Host"
+msgstr "Amfitrió nou"
+
+msgid "New Startup Application"
+msgstr "Aplicació d'inici nova"
+
+msgid "Nice"
+msgstr "Bonic"
+
+msgid "No packages found."
+msgstr "No s'han trobat paquets."
+
+msgid "No repositories found."
+msgstr "No s'han trobat repositoris."
+
+msgid "No services found."
+msgstr "No s'han trobat serveis."
+
+msgid "No startup applications found."
+msgstr "No s'han trobat aplicacions d'inici."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "No s'ha trobat cap configuració de GNOME compatible en aquest sistema."
+
+msgid "No supported package manager found"
+msgstr "No s'ha trobat cap gestor de paquets compatible"
+
+msgid "None"
+msgstr "Cap"
+
+msgid "Not mounted"
+msgstr "No muntat"
+
+msgid "Nothing selected."
+msgstr "No hi ha res seleccionat."
+
+msgid "Nothing to remove."
+msgstr "No hi ha res a eliminar."
+
+msgid "Number of workspaces"
+msgstr "Nombre d'espais de treball"
+
+msgid "Older (>)"
+msgstr "Més antic (>)"
+
+msgid "On-screen keyboard"
+msgstr "Teclat en pantalla"
+
+msgid "Open Folder"
+msgstr "Obre la carpeta"
+
+msgid "Open Kaptan"
+msgstr "Obre el Kaptan"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "Obre la finestra del Kaptan en iniciar la sessió"
+
+msgid "Other"
+msgstr "Altres"
+
+msgid "Owner"
+msgstr "Propietari"
+
+msgid "Package Caches"
+msgstr "Memòria cau dels paquets"
+
+msgid "Packages ({})"
+msgstr "Paquets ({})"
+
+msgid "Path"
+msgstr "Camí"
+
+msgid "Permissions"
+msgstr "Permisos"
+
+msgid "Platform: {}"
+msgstr "Plataforma: {}"
+
+msgid "Process"
+msgstr "Procés"
+
+msgid "Processes"
+msgstr "Processos"
+
+msgid "Processor"
+msgstr "Processador"
+
+msgid "Pump"
+msgstr "Bomba"
+
+msgid "Quit"
+msgstr "Surt"
+
+msgid "Raise windows on click"
+msgstr "Porta la finestra al davant en fer clic"
+
+msgid "Read: {}/s"
+msgstr "Lectura: {}/s"
+
+msgid "Refresh every {} s"
+msgstr "Actualitza cada {} s"
+
+msgid "Regular expression"
+msgstr "Expressió regular"
+
+msgid "Remove"
+msgstr "Elimina"
+
+msgid "Remove {} package(s)?"
+msgstr "Voleu eliminar {} paquet(s)?"
+
+msgid "Repository added."
+msgstr "S'ha afegit el repositori."
+
+msgid "Repository disabled."
+msgstr "S'ha desactivat el repositori."
+
+msgid "Repository enabled."
+msgstr "S'ha activat el repositori."
+
+msgid "Repository is empty"
+msgstr "El repositori està buit"
+
+msgid "Repository removed."
+msgstr "S'ha eliminat el repositori."
+
+msgid "Repository updated."
+msgstr "S'ha actualitzat el repositori."
+
+msgid "Resident"
+msgstr "Resident"
+
+msgid "Resources"
+msgstr "Recursos"
+
+msgid "Running"
+msgstr "S'està executant"
+
+msgid "Save"
+msgstr "Desa"
+
+msgid "Save Changes"
+msgstr "Desa els canvis"
+
+msgid "Scaled"
+msgstr "Escalat"
+
+msgid "Scanning…"
+msgstr "S'està analitzant…"
+
+msgid "Screen reader"
+msgstr "Lector de pantalla"
+
+msgid "Search"
+msgstr "Cerca.."
+
+msgid "Search as root"
+msgstr "Cerca com a root"
+
+msgid "Search packages"
+msgstr "Cerca paquets"
+
+msgid "Search services"
+msgstr "Cerca serveis"
+
+msgid "Select all"
+msgstr "Selecciona-ho tot"
+
+msgid "Select at least one category."
+msgstr "Seleccioneu almenys una categoria."
+
+msgid "Select none"
+msgstr "No en seleccionis cap"
+
+msgid "Select the search directory."
+msgstr "Seleccioneu la carpeta de cerca."
+
+msgid "Service"
+msgstr "Servei"
+
+msgid "Services"
+msgstr "Serveis"
+
+msgid "Settings"
+msgstr "Configuració"
+
+msgid "Show battery percentage"
+msgstr "Mostra el percentatge de bateria"
+
+msgid "Show home folder on desktop"
+msgstr "Mostra la carpeta personal a l'escriptori"
+
+msgid "Show mounted volumes on desktop"
+msgstr "Mostra els volums muntats a l'escriptori"
+
+msgid "Show seconds in clock"
+msgstr "Mostra els segons al rellotge"
+
+msgid "Show trash on desktop"
+msgstr "Mostra la paperera a l'escriptori"
+
+msgid "Show weekday in clock"
+msgstr "Mostra el dia de la setmana al rellotge"
+
+msgid "Shown on dashboard"
+msgstr "Es mostra al tauler"
+
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+msgid "Size"
+msgstr "Mida"
+
+msgid "Sleeping"
+msgstr "En repòs"
+
+msgid "Sloppy"
+msgstr "Descuidat"
+
+msgid "Smaller (<)"
+msgstr "Més petit (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Paquets Snap ({})"
+
+msgid "Source code"
+msgstr "Codi font"
+
+msgid "source entry not found"
+msgstr "no s'ha trobat l'entrada del repositori"
+
+msgid "Spanned"
+msgstr "Expandit"
+
+msgid "Start at boot"
+msgstr "En arrencar"
+
+msgid "Start Kaptan at login"
+msgstr "Inicia el Kaptan en iniciar la sessió"
+
+msgid "Start page"
+msgstr "Pàgina d'inici"
+
+msgid "Started"
+msgstr "Iniciat"
+
+msgid "Startup Applications"
+msgstr "Aplicacions d'inici"
+
+msgid "Startup Apps"
+msgstr "Aplicacions d'inici"
+
+msgid "State"
+msgstr "Estat"
+
+msgid "Stopped"
+msgstr "Aturat"
+
+msgid "Stretched"
+msgstr "Estirat"
+
+msgid "Suites"
+msgstr "Suites"
+
+msgid "Swap"
+msgstr "Intercanvi"
+
+msgid "Swap (inactive)"
+msgstr "Intercanvi (inactiu)"
+
+msgid "Swap: {} of {}"
+msgstr "Intercanvi: {} de {}"
+
+msgid "Symbolic Link"
+msgstr "Enllaç simbòlic"
+
+msgid "System Cleaner"
+msgstr "Netejador del sistema"
+
+msgid "System default"
+msgstr "Predeterminat del sistema"
+
+msgid "System fan"
+msgstr "Ventilador del sistema"
+
+msgid "SYSTEM INFO"
+msgstr "INFORMACIÓ DEL SISTEMA"
+
+msgid "System Scan"
+msgstr "Analitza el sistema"
+
+msgid "System Services"
+msgstr "Serveis del sistema"
+
+msgid "TEMPERATURES"
+msgstr "TEMPERATURES"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "La quantitat de CPU utilitzada és superior al {}%."
+
+msgid "The amount of disk used is over {}%."
+msgstr "La quantitat de disc utilitzat és superior al {}%."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "L'ús de la GPU supera el {}%."
+
+msgid "The amount of memory used is over {}%."
+msgstr "La quantitat de memòria utilitzada és superior al {}%."
+
+msgid "The IP address and hostname fields are required."
+msgstr "Els camps adreça IP i nom de l'amfitrió són obligatoris."
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "Time"
+msgstr "Temps"
+
+msgid "Title bar double click"
+msgstr "Doble clic a la barra de títol"
+
+msgid "Title bar middle click"
+msgstr "Clic del mig a la barra de títol"
+
+msgid "Title bar right click"
+msgstr "Clic dret a la barra de títol"
+
+msgid "Total {} · selected {}"
+msgstr "Total {} · seleccionat {}"
+
+msgid "Total: {}"
+msgstr "Total: {}"
+
+msgid "Trash"
+msgstr "Paperera"
+
+msgid "Type"
+msgstr "Tipus"
+
+msgid "Types"
+msgstr "Tipus"
+
+msgid "Types, URI and suites are required."
+msgstr "Els tipus, l'URI i les suites són obligatoris."
+
+msgid "Uninstall Selected ({})"
+msgstr "Desinstal·la els seleccionats ({})"
+
+msgid "Uninstaller"
+msgstr "Desinstal·lador"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "S'està desinstal·lant {} paquet(s)…"
+
+msgid "Unit"
+msgstr "Unitat"
+
+msgid "Unsaved changes"
+msgstr "Canvis sense desar"
+
+msgid "UPLOAD"
+msgstr "PUJADA"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "Pujada: {}/s  Total: {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "Usuari"
+
+msgid "Very hot"
+msgstr "Molt calent"
+
+msgid "Virtual"
+msgstr "Virtual"
+
+msgid "Wallpaper"
+msgstr "Fons de pantalla"
+
+msgid "When the window is closed"
+msgstr "En tancar la finestra"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "Voleu que el programa continuï funcionant a la safata del sistema?"
+
+msgid "Window Manager"
+msgstr "Administrador de finestres"
+
+msgid "Within (<)"
+msgstr "Dins de (<)"
+
+msgid "Write: {}/s"
+msgstr "Escriptura: {}/s"
+
+msgid "Zoom"
+msgstr "Augmentat"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} lliure)"
+
+msgid "{} cleaned."
+msgstr "{} netejat."
+
+msgid "{} deleted."
+msgstr "{} suprimit."
+
+msgid "{} disabled."
+msgstr "{} desactivat."
+
+msgid "{} enabled."
+msgstr "{} activat."
+
+msgid "{} found"
+msgstr "{} trobats"
+
+msgid "{} found, showing {}"
+msgstr "{} trobats, se'n mostren {}"
+
+msgid "{} minute average: {}"
+msgstr "{} minut mitjana: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "{} paquet(s) més depenen de la vostra selecció i també s'eliminaran."
+
+msgid "{} moved to trash."
+msgstr "{} s'ha mogut a la paperera."
+
+msgid "{} package(s) removed."
+msgstr "{} paquet(s) eliminat(s)."
+
+msgid "{} started."
+msgstr "{} iniciat."
+
+msgid "{} stopped."
+msgstr "{} aturat."
+
+msgid "{} used · {} free"
+msgstr "{} usat · {} lliure"

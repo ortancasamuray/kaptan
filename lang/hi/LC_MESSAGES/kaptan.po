@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "'{}' मान्य IP पता नहीं है।"
+
+msgid "/etc/hosts saved."
+msgstr "/etc/hosts सहेजा गया।"
+
+msgid "0 disables the alert"
+msgstr "0 चेतावनी बंद करता है"
+
+msgid "ABOUT"
+msgstr "परिचय"
+
+msgid "Accessed"
+msgstr "पहुँच"
+
+msgid "Accessibility"
+msgstr "सुलभता"
+
+msgid "Add Repository"
+msgstr "रिपॉज़िटरी जोड़ें"
+
+msgid "Add Startup App"
+msgstr "स्टार्टअप ऐप जोड़ें"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository स्थापित नहीं है (पैकेज: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "उन्नत ▲"
+
+msgid "Advanced ▼"
+msgstr "उन्नत ▼"
+
+msgid "ALERTS"
+msgstr "चेतावनियाँ"
+
+msgid "Aliases"
+msgstr "उपनाम"
+
+msgid "All"
+msgstr "सभी"
+
+msgid "All Disks"
+msgstr "सभी डिस्क"
+
+msgid "All users"
+msgstr "सभी उपयोगकर्ता"
+
+msgid "Amount"
+msgstr "मात्रा"
+
+msgid "Any"
+msgstr "कोई भी"
+
+msgid "Appearance"
+msgstr "रूप-रंग"
+
+msgid "Application Caches"
+msgstr "आवेदन कैश"
+
+msgid "Application Logs"
+msgstr "एप्लिकेशन लॉग"
+
+msgid "Apply"
+msgstr "लागू करें"
+
+msgid "APT Repositories"
+msgstr "APT रिपॉज़िटरी"
+
+msgid "Ask"
+msgstr "पूछें"
+
+msgid "Back to categories"
+msgstr "श्रेणियों पर वापस जाएँ"
+
+msgid "Browse"
+msgstr "ब्राउज़ करें"
+
+msgid "Cancel"
+msgstr "रद्द करें"
+
+msgid "Case insensitive"
+msgstr "अक्षर का आकार अनदेखा करें"
+
+msgid "Center new windows"
+msgstr "नई विंडो को बीच में रखें"
+
+msgid "Centered"
+msgstr "केंद्रित"
+
+msgid "Changed"
+msgstr "स्थिति बदली"
+
+msgid "Chassis fan"
+msgstr "केस फ़ैन"
+
+msgid "Clean"
+msgstr "साफ़ करें"
+
+msgid "Click"
+msgstr "क्लिक"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "डैशबोर्ड पर दिखाने के लिए किसी माउंट किए गए विभाजन पर क्लिक करें।"
+
+msgid "Close"
+msgstr "बंद करें"
+
+msgid "Cold"
+msgstr "ठंडा"
+
+msgid "Command *"
+msgstr "आदेश *"
+
+msgid "Comment"
+msgstr "टिप्पणी"
+
+msgid "Comparison"
+msgstr "तुलना"
+
+msgid "Components"
+msgstr "घटक"
+
+msgid "Continue"
+msgstr "जारी रखें"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "CPU Cores: {}"
+msgstr "CPU कोर: {}"
+
+msgid "CPU fan"
+msgstr "CPU फ़ैन"
+
+msgid "CPU History"
+msgstr "CPU इतिहास"
+
+msgid "CPU Load Averages"
+msgstr "CPU औसत लोड"
+
+msgid "CPU Model: {}"
+msgstr "CPU आदर्श: {}"
+
+msgid "CPU Speed: {}"
+msgstr "CPU गति: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "CPU उपयोग चेतावनी (%)"
+
+msgid "Crash Reports"
+msgstr "क्रैश रिपोर्ट"
+
+msgid "Dark"
+msgstr "गहरा"
+
+msgid "Dashboard"
+msgstr "डैशबोर्ड"
+
+msgid "Dashboard disk"
+msgstr "डैशबोर्ड डिस्क"
+
+msgid "Delete"
+msgstr "हटाना"
+
+msgid "Delete Permanently"
+msgstr "स्थायी रूप से हटाएँ"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "चुने गए आइटम को स्थायी रूप से हटाएँ? इसे वापस नहीं किया जा सकता।"
+
+msgid "Desktop"
+msgstr "डेस्कटॉप"
+
+msgid "Desktop background mode"
+msgstr "डेस्कटॉप पृष्ठभूमि मोड"
+
+msgid "Desktop Settings"
+msgstr "डेस्कटॉप सेटिंग्स"
+
+msgid "Directory"
+msgstr "फ़ोल्डर"
+
+msgid "Disabled"
+msgstr "अक्षम"
+
+msgid "DISK"
+msgstr "डिस्क"
+
+msgid "Disk Read / Write"
+msgstr "डिस्क पढ़ना / लिखना"
+
+msgid "Disk usage alert (%)"
+msgstr "डिस्क उपयोग चेतावनी (%)"
+
+msgid "Distribution: {}"
+msgstr "वितरण: {}"
+
+msgid "Don't ask again."
+msgstr "फिर से न पूछें।"
+
+msgid "DOWNLOAD"
+msgstr "डाउनलोड"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "डाउनलोड: {}/s  कुल: {}"
+
+msgid "Dynamic workspaces"
+msgstr "डायनेमिक कार्यस्थान"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "उदा. ppa:user/repo  या  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "संपादित करें"
+
+msgid "Edit Repository"
+msgstr "रिपॉज़िटरी संपादित करें"
+
+msgid "Edit Startup Application"
+msgstr "स्टार्टअप अनुप्रयोग संपादित करें"
+
+msgid "Empty only"
+msgstr "केवल खाली"
+
+msgid "Enable animations"
+msgstr "एनिमेशन सक्षम करें"
+
+msgid "Enabled"
+msgstr "सक्षम"
+
+msgid "End Process"
+msgstr "प्रक्रिया समाप्त"
+
+msgid "End Process {}"
+msgstr "प्रक्रिया {} समाप्त करें"
+
+msgid "Equal (=)"
+msgstr "बराबर (=)"
+
+msgid "Exactly (=)"
+msgstr "ठीक (=)"
+
+msgid "FANS"
+msgstr "फ़ैन"
+
+msgid "File"
+msgstr "फ़ाइल"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "फ़ाइल नाम या पैटर्न, उदा. *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "डैशबोर्ड के डिस्क गेज में दिखाया जाने वाला फ़ाइल सिस्टम"
+
+msgid "File Systems"
+msgstr "फ़ाइल सिस्टम"
+
+msgid "Filter by name, user or PID"
+msgstr "नाम, उपयोगकर्ता या PID से छाँटें"
+
+msgid "Focus mode"
+msgstr "फ़ोकस मोड"
+
+msgid "GENERAL"
+msgstr "सामान्य"
+
+msgid "Generic name"
+msgstr "सामान्य नाम"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "GPU फ़ैन"
+
+msgid "GPU History"
+msgstr "GPU इतिहास"
+
+msgid "GPU usage alert (%)"
+msgstr "GPU उपयोग चेतावनी (%)"
+
+msgid "Graphics Card"
+msgstr "ग्राफ़िक्स कार्ड"
+
+msgid "Greater (>)"
+msgstr "बड़ा (>)"
+
+msgid "Group"
+msgstr "समूह"
+
+msgid "High CPU Usage"
+msgstr "उच्च CPU उपयोग"
+
+msgid "High Disk Usage"
+msgstr "उच्च डिस्क उपयोग"
+
+msgid "High GPU Usage"
+msgstr "उच्च GPU उपयोग"
+
+msgid "High Memory Usage"
+msgstr "उच्च मेमोरी उपयोग"
+
+msgid "Hostname"
+msgstr "होस्टनाम"
+
+msgid "Hostname *"
+msgstr "होस्टनाम *"
+
+msgid "Hostname: {}"
+msgstr "होस्ट का नाम: {}"
+
+msgid "Hosts"
+msgstr "होस्ट"
+
+msgid "Hot"
+msgstr "गर्म"
+
+msgid "Icon"
+msgstr "आइकन"
+
+msgid "Icons and text"
+msgstr "आइकन और पाठ"
+
+msgid "Icons only"
+msgstr "केवल आइकन"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "ब्राउज़ करने के लिए zenity या kdialog स्थापित करें, या फ़ोल्डर का पथ लिखें।"
+
+msgid "Invert match"
+msgstr "मिलान उलटें"
+
+msgid "IP Address"
+msgstr "IP पता"
+
+msgid "IP address *"
+msgstr "IP पता *"
+
+msgid "Keep running in the tray"
+msgstr "सिस्टम ट्रे में चलते रहें"
+
+msgid "Kernel Release: {}"
+msgstr "कर्नेल रिलीज: {}"
+
+msgid "Language"
+msgstr "भाषा"
+
+msgid "Light"
+msgstr "हल्का"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Linux सिस्टम ऑप्टिमाइज़र और मॉनिटर — Stacer का Rust संस्करण। GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "लॉक स्क्रीन पृष्ठभूमि मोड"
+
+msgid "Lower"
+msgstr "पीछे करें"
+
+msgid "Maximize"
+msgstr "अधिकतम करें"
+
+msgid "Maximize Horizontally"
+msgstr "क्षैतिज रूप से अधिकतम करें"
+
+msgid "Maximize Vertically"
+msgstr "लंबवत रूप से अधिकतम करें"
+
+msgid "Mem"
+msgstr "मेमोरी"
+
+msgid "MEMORY"
+msgstr "याद"
+
+msgid "Memory History"
+msgstr "मेमोरी इतिहास"
+
+msgid "Memory usage alert (%)"
+msgstr "मेमोरी उपयोग चेतावनी (%)"
+
+msgid "Memory: {} of {}"
+msgstr "मेमोरी: {} में से {}"
+
+msgid "Menu"
+msgstr "मेनू"
+
+msgid "Middle fan"
+msgstr "बीच का फ़ैन"
+
+msgid "Minimize"
+msgstr "न्यूनतम करें"
+
+msgid "Minutes"
+msgstr "मिनट"
+
+msgid "Modified"
+msgstr "संशोधित"
+
+msgid "Mouse"
+msgstr "माउस"
+
+msgid "Move to Trash"
+msgstr "ट्रैश में ले जाएँ"
+
+msgid "Name"
+msgstr "नाम"
+
+msgid "Name *"
+msgstr "नाम *"
+
+msgid "Name and command fields are required."
+msgstr "नाम और आदेश आवश्यक हैं।"
+
+msgid "Network History"
+msgstr "नेटवर्क इतिहास"
+
+msgid "New Host"
+msgstr "नया होस्ट"
+
+msgid "New Startup Application"
+msgstr "नया स्टार्टअप अनुप्रयोग"
+
+msgid "Nice"
+msgstr "अच्छा"
+
+msgid "No packages found."
+msgstr "कोई पैकेज नहीं मिला।"
+
+msgid "No repositories found."
+msgstr "कोई रिपॉज़िटरी नहीं मिली।"
+
+msgid "No services found."
+msgstr "कोई सेवा नहीं मिली।"
+
+msgid "No startup applications found."
+msgstr "कोई स्टार्टअप अनुप्रयोग नहीं मिला।"
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "इस सिस्टम पर कोई समर्थित GNOME सेटिंग नहीं मिली।"
+
+msgid "No supported package manager found"
+msgstr "कोई समर्थित पैकेज प्रबंधक नहीं मिला"
+
+msgid "None"
+msgstr "कोई नहीं"
+
+msgid "Not mounted"
+msgstr "माउंट नहीं है"
+
+msgid "Nothing selected."
+msgstr "कुछ भी चयनित नहीं है।"
+
+msgid "Nothing to remove."
+msgstr "हटाने के लिए कुछ नहीं है।"
+
+msgid "Number of workspaces"
+msgstr "कार्यस्थानों की संख्या"
+
+msgid "Older (>)"
+msgstr "पुराना (>)"
+
+msgid "On-screen keyboard"
+msgstr "ऑन-स्क्रीन कीबोर्ड"
+
+msgid "Open Folder"
+msgstr "फ़ोल्डर खोलें"
+
+msgid "Open Kaptan"
+msgstr "Kaptan खोलें"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "लॉग इन करने पर Kaptan विंडो खोलता है"
+
+msgid "Other"
+msgstr "अन्य"
+
+msgid "Owner"
+msgstr "स्वामी"
+
+msgid "Package Caches"
+msgstr "पैकेज कैश"
+
+msgid "Packages ({})"
+msgstr "पैकेज ({})"
+
+msgid "Path"
+msgstr "पथ"
+
+msgid "Permissions"
+msgstr "अनुमतियाँ"
+
+msgid "Platform: {}"
+msgstr "मंच: {}"
+
+msgid "Process"
+msgstr "प्रक्रिया"
+
+msgid "Processes"
+msgstr "प्रक्रियाओं"
+
+msgid "Processor"
+msgstr "प्रोसेसर"
+
+msgid "Pump"
+msgstr "पंप"
+
+msgid "Quit"
+msgstr "बाहर निकलें"
+
+msgid "Raise windows on click"
+msgstr "क्लिक करने पर विंडो आगे लाएँ"
+
+msgid "Read: {}/s"
+msgstr "पढ़ना: {}/s"
+
+msgid "Refresh every {} s"
+msgstr "हर {} सेकंड में ताज़ा करें"
+
+msgid "Regular expression"
+msgstr "रेगुलर एक्सप्रेशन"
+
+msgid "Remove"
+msgstr "हटाएँ"
+
+msgid "Remove {} package(s)?"
+msgstr "{} पैकेज हटाएँ?"
+
+msgid "Repository added."
+msgstr "रिपॉज़िटरी जोड़ी गई।"
+
+msgid "Repository disabled."
+msgstr "रिपॉज़िटरी अक्षम की गई।"
+
+msgid "Repository enabled."
+msgstr "रिपॉज़िटरी सक्षम की गई।"
+
+msgid "Repository is empty"
+msgstr "रिपॉज़िटरी खाली है"
+
+msgid "Repository removed."
+msgstr "रिपॉज़िटरी हटाई गई।"
+
+msgid "Repository updated."
+msgstr "रिपॉज़िटरी अद्यतन की गई।"
+
+msgid "Resident"
+msgstr "रेज़िडेंट"
+
+msgid "Resources"
+msgstr "साधन"
+
+msgid "Running"
+msgstr "चल रहा है"
+
+msgid "Save"
+msgstr "बचाना"
+
+msgid "Save Changes"
+msgstr "बदलाव सहेजें"
+
+msgid "Scaled"
+msgstr "स्केल किया गया"
+
+msgid "Scanning…"
+msgstr "स्कैन हो रहा है…"
+
+msgid "Screen reader"
+msgstr "स्क्रीन रीडर"
+
+msgid "Search"
+msgstr "खोज.."
+
+msgid "Search as root"
+msgstr "root के रूप में खोजें"
+
+msgid "Search packages"
+msgstr "पैकेज खोजें"
+
+msgid "Search services"
+msgstr "सेवाएँ खोजें"
+
+msgid "Select all"
+msgstr "सभी चुनें"
+
+msgid "Select at least one category."
+msgstr "कम से कम एक श्रेणी चुनें।"
+
+msgid "Select none"
+msgstr "कुछ न चुनें"
+
+msgid "Select the search directory."
+msgstr "खोज फ़ोल्डर चुनें।"
+
+msgid "Service"
+msgstr "सेवा"
+
+msgid "Services"
+msgstr "सेवाएँ"
+
+msgid "Settings"
+msgstr "सेटिंग्स"
+
+msgid "Show battery percentage"
+msgstr "बैटरी प्रतिशत दिखाएँ"
+
+msgid "Show home folder on desktop"
+msgstr "डेस्कटॉप पर होम फ़ोल्डर दिखाएँ"
+
+msgid "Show mounted volumes on desktop"
+msgstr "डेस्कटॉप पर माउंट किए गए वॉल्यूम दिखाएँ"
+
+msgid "Show seconds in clock"
+msgstr "घड़ी में सेकंड दिखाएँ"
+
+msgid "Show trash on desktop"
+msgstr "डेस्कटॉप पर ट्रैश दिखाएँ"
+
+msgid "Show weekday in clock"
+msgstr "घड़ी में सप्ताह का दिन दिखाएँ"
+
+msgid "Shown on dashboard"
+msgstr "डैशबोर्ड पर दिखाया गया"
+
+msgid "Sidebar"
+msgstr "साइडबार"
+
+msgid "Size"
+msgstr "आकार"
+
+msgid "Sleeping"
+msgstr "निष्क्रिय"
+
+msgid "Sloppy"
+msgstr "ढीला"
+
+msgid "Smaller (<)"
+msgstr "छोटा (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Snap पैकेज ({})"
+
+msgid "Source code"
+msgstr "स्रोत कोड"
+
+msgid "source entry not found"
+msgstr "रिपॉज़िटरी प्रविष्टि नहीं मिली"
+
+msgid "Spanned"
+msgstr "फैला हुआ"
+
+msgid "Start at boot"
+msgstr "बूट पर शुरू"
+
+msgid "Start Kaptan at login"
+msgstr "लॉगिन पर Kaptan शुरू करें"
+
+msgid "Start page"
+msgstr "प्रारंभ पृष्ठ"
+
+msgid "Started"
+msgstr "शुरू हुआ"
+
+msgid "Startup Applications"
+msgstr "स्टार्टअप अनुप्रयोग"
+
+msgid "Startup Apps"
+msgstr "स्टार्टअप"
+
+msgid "State"
+msgstr "राज्य"
+
+msgid "Stopped"
+msgstr "रुका हुआ"
+
+msgid "Stretched"
+msgstr "खींचा हुआ"
+
+msgid "Suites"
+msgstr "सूट"
+
+msgid "Swap"
+msgstr "स्वैप"
+
+msgid "Swap (inactive)"
+msgstr "स्वैप (निष्क्रिय)"
+
+msgid "Swap: {} of {}"
+msgstr "स्वैप: {} में से {}"
+
+msgid "Symbolic Link"
+msgstr "प्रतीकात्मक लिंक"
+
+msgid "System Cleaner"
+msgstr "सिस्टम क्लीनर"
+
+msgid "System default"
+msgstr "सिस्टम डिफ़ॉल्ट"
+
+msgid "System fan"
+msgstr "सिस्टम फ़ैन"
+
+msgid "SYSTEM INFO"
+msgstr "व्यवस्था की सूचना"
+
+msgid "System Scan"
+msgstr "सिस्टम स्कैन करें"
+
+msgid "System Services"
+msgstr "सिस्टम सेवाएँ"
+
+msgid "TEMPERATURES"
+msgstr "तापमान"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "CPU उपयोग {}% से अधिक है।"
+
+msgid "The amount of disk used is over {}%."
+msgstr "डिस्क उपयोग {}% से अधिक है।"
+
+msgid "The amount of GPU used is over {}%."
+msgstr "GPU उपयोग {}% से अधिक है।"
+
+msgid "The amount of memory used is over {}%."
+msgstr "मेमोरी उपयोग {}% से अधिक है।"
+
+msgid "The IP address and hostname fields are required."
+msgstr "IP पता और होस्टनाम आवश्यक हैं।"
+
+msgid "Theme"
+msgstr "थीम"
+
+msgid "Time"
+msgstr "समय"
+
+msgid "Title bar double click"
+msgstr "टाइटल बार पर डबल क्लिक"
+
+msgid "Title bar middle click"
+msgstr "टाइटल बार पर मध्य क्लिक"
+
+msgid "Title bar right click"
+msgstr "टाइटल बार पर दायाँ क्लिक"
+
+msgid "Total {} · selected {}"
+msgstr "कुल {} · चयनित {}"
+
+msgid "Total: {}"
+msgstr "कुल: {}"
+
+msgid "Trash"
+msgstr "कचरा"
+
+msgid "Type"
+msgstr "प्रकार"
+
+msgid "Types"
+msgstr "प्रकार"
+
+msgid "Types, URI and suites are required."
+msgstr "प्रकार, URI और सूट आवश्यक हैं।"
+
+msgid "Uninstall Selected ({})"
+msgstr "चयनित अनइंस्टॉल करें ({})"
+
+msgid "Uninstaller"
+msgstr "अनइंस्टॉलर"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "{} पैकेज अनइंस्टॉल हो रहे हैं…"
+
+msgid "Unit"
+msgstr "इकाई"
+
+msgid "Unsaved changes"
+msgstr "असहेजे बदलाव"
+
+msgid "UPLOAD"
+msgstr "अपलोड"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "अपलोड: {}/s  कुल: {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "उपयोगकर्ता"
+
+msgid "Very hot"
+msgstr "बहुत गर्म"
+
+msgid "Virtual"
+msgstr "वर्चुअल"
+
+msgid "Wallpaper"
+msgstr "वॉलपेपर"
+
+msgid "When the window is closed"
+msgstr "विंडो बंद करने पर"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "क्या प्रोग्राम सिस्टम ट्रे में चलता रहे?"
+
+msgid "Window Manager"
+msgstr "विंडो प्रबंधक"
+
+msgid "Within (<)"
+msgstr "भीतर (<)"
+
+msgid "Write: {}/s"
+msgstr "लिखना: {}/s"
+
+msgid "Zoom"
+msgstr "ज़ूम"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} खाली)"
+
+msgid "{} cleaned."
+msgstr "{} साफ़ किया गया।"
+
+msgid "{} deleted."
+msgstr "{} हटाया गया।"
+
+msgid "{} disabled."
+msgstr "{} अक्षम किया गया।"
+
+msgid "{} enabled."
+msgstr "{} सक्षम किया गया।"
+
+msgid "{} found"
+msgstr "{} मिले"
+
+msgid "{} found, showing {}"
+msgstr "{} मिले, {} दिखाए जा रहे हैं"
+
+msgid "{} minute average: {}"
+msgstr "{} मिनट का औसत: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "{} और पैकेज आपके चयन पर निर्भर हैं और वे भी हटाए जाएँगे।"
+
+msgid "{} moved to trash."
+msgstr "{} ट्रैश में ले जाया गया।"
+
+msgid "{} package(s) removed."
+msgstr "{} पैकेज हटाए गए।"
+
+msgid "{} started."
+msgstr "{} शुरू किया गया।"
+
+msgid "{} stopped."
+msgstr "{} रोका गया।"
+
+msgid "{} used · {} free"
+msgstr "{} उपयोग में · {} खाली"

@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "„{}“ není platná IP adresa."
+
+msgid "/etc/hosts saved."
+msgstr "Soubor /etc/hosts uložen."
+
+msgid "0 disables the alert"
+msgstr "0 vypne upozornění"
+
+msgid "ABOUT"
+msgstr "O APLIKACI"
+
+msgid "Accessed"
+msgstr "Přístup"
+
+msgid "Accessibility"
+msgstr "Přístupnost"
+
+msgid "Add Repository"
+msgstr "Přidat repozitář"
+
+msgid "Add Startup App"
+msgstr "Přidat automatické spouštění aplikace"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository není nainstalován (balíček: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "Pokročilé ▲"
+
+msgid "Advanced ▼"
+msgstr "Pokročilé ▼"
+
+msgid "ALERTS"
+msgstr "UPOZORNĚNÍ"
+
+msgid "Aliases"
+msgstr "Aliasy"
+
+msgid "All"
+msgstr "Vše"
+
+msgid "All Disks"
+msgstr "Všechny disky"
+
+msgid "All users"
+msgstr "Všichni uživatelé"
+
+msgid "Amount"
+msgstr "Množství"
+
+msgid "Any"
+msgstr "Libovolné"
+
+msgid "Appearance"
+msgstr "Vzhled"
+
+msgid "Application Caches"
+msgstr "Cache aplikací"
+
+msgid "Application Logs"
+msgstr "Logy aplikací"
+
+msgid "Apply"
+msgstr "Použít"
+
+msgid "APT Repositories"
+msgstr "Repozitáře APT"
+
+msgid "Ask"
+msgstr "Zeptat se"
+
+msgid "Back to categories"
+msgstr "Zpět na kategorie"
+
+msgid "Browse"
+msgstr "Procházet"
+
+msgid "Cancel"
+msgstr "Zrušit"
+
+msgid "Case insensitive"
+msgstr "Nerozlišovat velikost písmen"
+
+msgid "Center new windows"
+msgstr "Vystředit nová okna"
+
+msgid "Centered"
+msgstr "Vycentrované"
+
+msgid "Changed"
+msgstr "Změna stavu"
+
+msgid "Chassis fan"
+msgstr "Ventilátor skříně"
+
+msgid "Clean"
+msgstr "Vyčistit"
+
+msgid "Click"
+msgstr "Kliknutí"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "Klepnutím na připojený oddíl jej zobrazíte na nástěnce."
+
+msgid "Close"
+msgstr "Zavřít"
+
+msgid "Cold"
+msgstr "Studený"
+
+msgid "Command *"
+msgstr "Příkaz *"
+
+msgid "Comment"
+msgstr "Komentář"
+
+msgid "Comparison"
+msgstr "Porovnání"
+
+msgid "Components"
+msgstr "Komponenty"
+
+msgid "Continue"
+msgstr "Pokračovat"
+
+msgid "CPU"
+msgstr "PROCESOR"
+
+msgid "CPU Cores: {}"
+msgstr "Jádra procesoru: {}"
+
+msgid "CPU fan"
+msgstr "Ventilátor procesoru"
+
+msgid "CPU History"
+msgstr "Historie procesoru"
+
+msgid "CPU Load Averages"
+msgstr "Průměrná zátěž procesoru"
+
+msgid "CPU Model: {}"
+msgstr "Model procesoru: {}"
+
+msgid "CPU Speed: {}"
+msgstr "Frekvence procesoru: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "Upozornění na využití procesoru (%)"
+
+msgid "Crash Reports"
+msgstr "Nahlášení pádu"
+
+msgid "Dark"
+msgstr "Tmavý"
+
+msgid "Dashboard"
+msgstr "Nástěnka"
+
+msgid "Dashboard disk"
+msgstr "Disk na nástěnce"
+
+msgid "Delete"
+msgstr "Smazat"
+
+msgid "Delete Permanently"
+msgstr "Trvale smazat"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "Trvale smazat vybranou položku? Tuto akci nelze vrátit zpět."
+
+msgid "Desktop"
+msgstr "Plocha"
+
+msgid "Desktop background mode"
+msgstr "Režim pozadí plochy"
+
+msgid "Desktop Settings"
+msgstr "Nastavení plochy"
+
+msgid "Directory"
+msgstr "Složka"
+
+msgid "Disabled"
+msgstr "Zakázáno"
+
+msgid "DISK"
+msgstr "DISK"
+
+msgid "Disk Read / Write"
+msgstr "Čtení / zápis disku"
+
+msgid "Disk usage alert (%)"
+msgstr "Upozornění na zaplnění disku (%)"
+
+msgid "Distribution: {}"
+msgstr "Distribuce: {}"
+
+msgid "Don't ask again."
+msgstr "Už se neptat."
+
+msgid "DOWNLOAD"
+msgstr "Stáhnout"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "Stahování: {}/s  Celkem: {}"
+
+msgid "Dynamic workspaces"
+msgstr "Dynamické pracovní plochy"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "např. ppa:uzivatel/repo  nebo  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "Upravit"
+
+msgid "Edit Repository"
+msgstr "Upravit repozitář"
+
+msgid "Edit Startup Application"
+msgstr "Upravit aplikaci po spuštění"
+
+msgid "Empty only"
+msgstr "Pouze prázdné"
+
+msgid "Enable animations"
+msgstr "Povolit animace"
+
+msgid "Enabled"
+msgstr "Povoleno"
+
+msgid "End Process"
+msgstr "Ukončit proces"
+
+msgid "End Process {}"
+msgstr "Ukončit proces {}"
+
+msgid "Equal (=)"
+msgstr "Rovno (=)"
+
+msgid "Exactly (=)"
+msgstr "Přesně (=)"
+
+msgid "FANS"
+msgstr "VENTILÁTORY"
+
+msgid "File"
+msgstr "Soubor"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "Název souboru nebo vzor, např. *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "Souborový systém zobrazený v ukazateli disku na nástěnce"
+
+msgid "File Systems"
+msgstr "Souborové systémy"
+
+msgid "Filter by name, user or PID"
+msgstr "Filtrovat podle názvu, uživatele nebo PID"
+
+msgid "Focus mode"
+msgstr "Režim zaměření"
+
+msgid "GENERAL"
+msgstr "Obecné"
+
+msgid "Generic name"
+msgstr "Obecný název"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "Ventilátor GPU"
+
+msgid "GPU History"
+msgstr "Historie GPU"
+
+msgid "GPU usage alert (%)"
+msgstr "Upozornění na využití GPU (%)"
+
+msgid "Graphics Card"
+msgstr "Grafická karta"
+
+msgid "Greater (>)"
+msgstr "Větší (>)"
+
+msgid "Group"
+msgstr "Skupina"
+
+msgid "High CPU Usage"
+msgstr "Vysoké využití procesoru"
+
+msgid "High Disk Usage"
+msgstr "Vysoké využití disku"
+
+msgid "High GPU Usage"
+msgstr "Vysoké využití GPU"
+
+msgid "High Memory Usage"
+msgstr "Vysoké využití paměti"
+
+msgid "Hostname"
+msgstr "Název počítače"
+
+msgid "Hostname *"
+msgstr "Název počítače *"
+
+msgid "Hostname: {}"
+msgstr "Jméno počítače: {}"
+
+msgid "Hosts"
+msgstr "Hostitelé"
+
+msgid "Hot"
+msgstr "Horký"
+
+msgid "Icon"
+msgstr "Ikona"
+
+msgid "Icons and text"
+msgstr "Ikony a text"
+
+msgid "Icons only"
+msgstr "Pouze ikony"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "Pro procházení nainstalujte zenity nebo kdialog, nebo zadejte cestu ke složce."
+
+msgid "Invert match"
+msgstr "Obrátit shodu"
+
+msgid "IP Address"
+msgstr "IP adresa"
+
+msgid "IP address *"
+msgstr "IP adresa *"
+
+msgid "Keep running in the tray"
+msgstr "Pokračovat v oznamovací oblasti"
+
+msgid "Kernel Release: {}"
+msgstr "Verze jádra: {}"
+
+msgid "Language"
+msgstr "Jazyk"
+
+msgid "Light"
+msgstr "Světlý"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Optimalizátor a monitor systému Linux — port Staceru v jazyce Rust. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "Režim pozadí zamykací obrazovky"
+
+msgid "Lower"
+msgstr "Nejnižší"
+
+msgid "Maximize"
+msgstr "Maximalizovat"
+
+msgid "Maximize Horizontally"
+msgstr "Horizontálně maximalizovat"
+
+msgid "Maximize Vertically"
+msgstr "Vertikálně maximalizovat"
+
+msgid "Mem"
+msgstr "Pam."
+
+msgid "MEMORY"
+msgstr "PAMĚŤ"
+
+msgid "Memory History"
+msgstr "Historie paměti"
+
+msgid "Memory usage alert (%)"
+msgstr "Upozornění na využití paměti (%)"
+
+msgid "Memory: {} of {}"
+msgstr "Paměť: {} z {}"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Middle fan"
+msgstr "Prostřední ventilátor"
+
+msgid "Minimize"
+msgstr "Minimalizovat"
+
+msgid "Minutes"
+msgstr "Minuty"
+
+msgid "Modified"
+msgstr "Upraveno"
+
+msgid "Mouse"
+msgstr "Myš"
+
+msgid "Move to Trash"
+msgstr "Přesunout do koše"
+
+msgid "Name"
+msgstr "Jméno"
+
+msgid "Name *"
+msgstr "Název *"
+
+msgid "Name and command fields are required."
+msgstr "Pole název a příkaz jsou povinná."
+
+msgid "Network History"
+msgstr "Historie sítě"
+
+msgid "New Host"
+msgstr "Nový hostitel"
+
+msgid "New Startup Application"
+msgstr "Nová aplikace po spuštění"
+
+msgid "Nice"
+msgstr "Priorita"
+
+msgid "No packages found."
+msgstr "Nebyly nalezeny žádné balíčky."
+
+msgid "No repositories found."
+msgstr "Nebyly nalezeny žádné repozitáře."
+
+msgid "No services found."
+msgstr "Nebyly nalezeny žádné služby."
+
+msgid "No startup applications found."
+msgstr "Nebyly nalezeny žádné aplikace po spuštění."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "V tomto systému nebyla nalezena žádná podporovaná nastavení GNOME."
+
+msgid "No supported package manager found"
+msgstr "Nebyl nalezen žádný podporovaný správce balíčků"
+
+msgid "None"
+msgstr "Žádný"
+
+msgid "Not mounted"
+msgstr "Nepřipojeno"
+
+msgid "Nothing selected."
+msgstr "Nic není vybráno."
+
+msgid "Nothing to remove."
+msgstr "Není co odebrat."
+
+msgid "Number of workspaces"
+msgstr "Počet pracovních ploch"
+
+msgid "Older (>)"
+msgstr "Starší (>)"
+
+msgid "On-screen keyboard"
+msgstr "Klávesnice na obrazovce"
+
+msgid "Open Folder"
+msgstr "Otevřít složku"
+
+msgid "Open Kaptan"
+msgstr "Otevřít Kaptan"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "Při přihlášení otevře okno Kaptanu"
+
+msgid "Other"
+msgstr "Ostatní"
+
+msgid "Owner"
+msgstr "Vlastník"
+
+msgid "Package Caches"
+msgstr "Cache balíčků"
+
+msgid "Packages ({})"
+msgstr "Balíčky ({})"
+
+msgid "Path"
+msgstr "Cesta"
+
+msgid "Permissions"
+msgstr "Oprávnění"
+
+msgid "Platform: {}"
+msgstr "Systém: {}"
+
+msgid "Process"
+msgstr "Proces"
+
+msgid "Processes"
+msgstr "Procesy"
+
+msgid "Processor"
+msgstr "Procesor"
+
+msgid "Pump"
+msgstr "Čerpadlo"
+
+msgid "Quit"
+msgstr "Zavřít"
+
+msgid "Raise windows on click"
+msgstr "Po klepnutí přenést okno do popředí"
+
+msgid "Read: {}/s"
+msgstr "Čtení: {}/s"
+
+msgid "Refresh every {} s"
+msgstr "Obnovovat každých {} s"
+
+msgid "Regular expression"
+msgstr "Regulární výraz"
+
+msgid "Remove"
+msgstr "Odebrat"
+
+msgid "Remove {} package(s)?"
+msgstr "Odebrat balíčky ({})?"
+
+msgid "Repository added."
+msgstr "Repozitář přidán."
+
+msgid "Repository disabled."
+msgstr "Repozitář zakázán."
+
+msgid "Repository enabled."
+msgstr "Repozitář povolen."
+
+msgid "Repository is empty"
+msgstr "Repozitář je prázdný"
+
+msgid "Repository removed."
+msgstr "Repozitář odebrán."
+
+msgid "Repository updated."
+msgstr "Repozitář aktualizován."
+
+msgid "Resident"
+msgstr "Rezidentní"
+
+msgid "Resources"
+msgstr "Prostředky"
+
+msgid "Running"
+msgstr "Běžící"
+
+msgid "Save"
+msgstr "Uložit"
+
+msgid "Save Changes"
+msgstr "Uložit změny"
+
+msgid "Scaled"
+msgstr "Škálované"
+
+msgid "Scanning…"
+msgstr "Prohledávání…"
+
+msgid "Screen reader"
+msgstr "Předčítač obrazovky"
+
+msgid "Search"
+msgstr "Hledat.."
+
+msgid "Search as root"
+msgstr "Hledat jako root"
+
+msgid "Search packages"
+msgstr "Hledat balíčky"
+
+msgid "Search services"
+msgstr "Hledat služby"
+
+msgid "Select all"
+msgstr "Vybrat vše"
+
+msgid "Select at least one category."
+msgstr "Vyberte alespoň jednu kategorii."
+
+msgid "Select none"
+msgstr "Zrušit výběr"
+
+msgid "Select the search directory."
+msgstr "Vyberte složku pro hledání."
+
+msgid "Service"
+msgstr "Služba"
+
+msgid "Services"
+msgstr "Služby"
+
+msgid "Settings"
+msgstr "Nastavení"
+
+msgid "Show battery percentage"
+msgstr "Zobrazit procenta baterie"
+
+msgid "Show home folder on desktop"
+msgstr "Zobrazit domovskou složku na ploše"
+
+msgid "Show mounted volumes on desktop"
+msgstr "Zobrazit připojené svazky na ploše"
+
+msgid "Show seconds in clock"
+msgstr "Zobrazit sekundy v hodinách"
+
+msgid "Show trash on desktop"
+msgstr "Zobrazit koš na ploše"
+
+msgid "Show weekday in clock"
+msgstr "Zobrazit den v týdnu v hodinách"
+
+msgid "Shown on dashboard"
+msgstr "Zobrazeno na nástěnce"
+
+msgid "Sidebar"
+msgstr "Postranní panel"
+
+msgid "Size"
+msgstr "Velikost"
+
+msgid "Sleeping"
+msgstr "Uspáno"
+
+msgid "Sloppy"
+msgstr "Neupravený"
+
+msgid "Smaller (<)"
+msgstr "Menší (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Balíčky Snap ({})"
+
+msgid "Source code"
+msgstr "Zdrojový kód"
+
+msgid "source entry not found"
+msgstr "záznam repozitáře nenalezen"
+
+msgid "Spanned"
+msgstr "Rozložené"
+
+msgid "Start at boot"
+msgstr "Při startu"
+
+msgid "Start Kaptan at login"
+msgstr "Spouštět Kaptan po přihlášení"
+
+msgid "Start page"
+msgstr "Úvodní stránka"
+
+msgid "Started"
+msgstr "Spuštěno"
+
+msgid "Startup Applications"
+msgstr "Aplikace po spuštění"
+
+msgid "Startup Apps"
+msgstr "Automatické spuštění aplikací"
+
+msgid "State"
+msgstr "Stav"
+
+msgid "Stopped"
+msgstr "Zastaveno"
+
+msgid "Stretched"
+msgstr "Roztažené"
+
+msgid "Suites"
+msgstr "Vydání"
+
+msgid "Swap"
+msgstr "Odkládací prostor"
+
+msgid "Swap (inactive)"
+msgstr "Odkládací prostor (neaktivní)"
+
+msgid "Swap: {} of {}"
+msgstr "Odkládací prostor: {} z {}"
+
+msgid "Symbolic Link"
+msgstr "Symbolický odkaz"
+
+msgid "System Cleaner"
+msgstr "Čistič systému"
+
+msgid "System default"
+msgstr "Výchozí systémový"
+
+msgid "System fan"
+msgstr "Systémový ventilátor"
+
+msgid "SYSTEM INFO"
+msgstr "INFORMACE O SYSTÉMU"
+
+msgid "System Scan"
+msgstr "Prohledat systém"
+
+msgid "System Services"
+msgstr "Systémové služby"
+
+msgid "TEMPERATURES"
+msgstr "TEPLOTY"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "Využití procesoru je vyšší než {}%."
+
+msgid "The amount of disk used is over {}%."
+msgstr "Využití disku je vyšší než {}%."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "Využití GPU překročilo {}%."
+
+msgid "The amount of memory used is over {}%."
+msgstr "Využití paměti je vyšší než {}%."
+
+msgid "The IP address and hostname fields are required."
+msgstr "Pole IP adresa a název počítače jsou povinná."
+
+msgid "Theme"
+msgstr "Motiv"
+
+msgid "Time"
+msgstr "Čas"
+
+msgid "Title bar double click"
+msgstr "Dvojklik na záhlaví okna"
+
+msgid "Title bar middle click"
+msgstr "Prostřední klik na záhlaví okna"
+
+msgid "Title bar right click"
+msgstr "Pravý klik na záhlaví okna"
+
+msgid "Total {} · selected {}"
+msgstr "Celkem {} · vybráno {}"
+
+msgid "Total: {}"
+msgstr "Celkem: {}"
+
+msgid "Trash"
+msgstr "Koš"
+
+msgid "Type"
+msgstr "Typ"
+
+msgid "Types"
+msgstr "Typy"
+
+msgid "Types, URI and suites are required."
+msgstr "Typy, URI a vydání jsou povinné."
+
+msgid "Uninstall Selected ({})"
+msgstr "Odinstalovat vybrané ({})"
+
+msgid "Uninstaller"
+msgstr "Odinstalovávač"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "Odinstalace balíčků ({})…"
+
+msgid "Unit"
+msgstr "Jednotka"
+
+msgid "Unsaved changes"
+msgstr "Neuložené změny"
+
+msgid "UPLOAD"
+msgstr "NAHRÁVÁNÍ"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "Nahrávání: {}/s Celkem: {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "Uživatel"
+
+msgid "Very hot"
+msgstr "Velmi horký"
+
+msgid "Virtual"
+msgstr "Virtuální"
+
+msgid "Wallpaper"
+msgstr "Pozadí"
+
+msgid "When the window is closed"
+msgstr "Při zavření okna"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "Má program pokračovat v práci na systémové liště?"
+
+msgid "Window Manager"
+msgstr "Správce oken"
+
+msgid "Within (<)"
+msgstr "Během (<)"
+
+msgid "Write: {}/s"
+msgstr "Zápis: {}/s"
+
+msgid "Zoom"
+msgstr "Přiblížené"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} volno)"
+
+msgid "{} cleaned."
+msgstr "Vyčištěno {}."
+
+msgid "{} deleted."
+msgstr "{} smazáno."
+
+msgid "{} disabled."
+msgstr "{} zakázána."
+
+msgid "{} enabled."
+msgstr "{} povolena."
+
+msgid "{} found"
+msgstr "Nalezeno: {}"
+
+msgid "{} found, showing {}"
+msgstr "Nalezeno: {}, zobrazeno: {}"
+
+msgid "{} minute average: {}"
+msgstr "Průměr za {} minut(y): {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "Další balíčky závislé na výběru, které budou také odebrány: {}."
+
+msgid "{} moved to trash."
+msgstr "{} přesunuto do koše."
+
+msgid "{} package(s) removed."
+msgstr "Odebrané balíčky: {}."
+
+msgid "{} started."
+msgstr "{} spuštěna."
+
+msgid "{} stopped."
+msgstr "{} zastavena."
+
+msgid "{} used · {} free"
+msgstr "{} obsazeno · {} volno"

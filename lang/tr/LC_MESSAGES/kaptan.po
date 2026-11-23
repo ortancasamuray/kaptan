@@ -5,7 +5,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "'{}' is not a valid IP address."
 msgstr "'{}' geçerli bir IP adresi değil."
@@ -114,6 +113,9 @@ msgstr "Gösterge panelinde göstermek için bağlı bir bölüme tıklayın."
 
 msgid "Close"
 msgstr "Kapat"
+
+msgid "Cold"
+msgstr "Soğuk"
 
 msgid "Command *"
 msgstr "Komut *"
@@ -286,6 +288,9 @@ msgstr "GPU Geçmişi"
 msgid "GPU usage alert (%)"
 msgstr "GPU kullanım uyarısı (%)"
 
+msgid "Graphics Card"
+msgstr "Ekran kartı"
+
 msgid "Greater (>)"
 msgstr "Büyük (>)"
 
@@ -315,6 +320,9 @@ msgstr "Bilgisayar adı: {}"
 
 msgid "Hosts"
 msgstr "Hosts"
+
+msgid "Hot"
+msgstr "Sıcak"
 
 msgid "Icon"
 msgstr "Simge"
@@ -469,6 +477,9 @@ msgstr "Klasörü Aç"
 msgid "Open Kaptan"
 msgstr "Kaptan'ı Aç"
 
+msgid "Opens the Kaptan window when you log in"
+msgstr "Oturum açıldığında Kaptan penceresi açılır"
+
 msgid "Other"
 msgstr "Diğer"
 
@@ -495,6 +506,9 @@ msgstr "İşlem"
 
 msgid "Processes"
 msgstr "İşlemler"
+
+msgid "Processor"
+msgstr "İşlemci"
 
 msgid "Pump"
 msgstr "Pompa"
@@ -622,6 +636,9 @@ msgstr "Yan menü"
 msgid "Size"
 msgstr "Boyut"
 
+msgid "Sleeping"
+msgstr "Uyku modunda"
+
 msgid "Sloppy"
 msgstr "Gevşek"
 
@@ -651,9 +668,6 @@ msgstr "Açılış sayfası"
 
 msgid "Started"
 msgstr "Başlangıç"
-
-msgid "Starts hidden in the system tray"
-msgstr "Sistem tepsisinde gizli başlar"
 
 msgid "Startup Applications"
 msgstr "Başlangıç Uygulamaları"
@@ -702,6 +716,9 @@ msgstr "Sistemi Tara"
 
 msgid "System Services"
 msgstr "Sistem Servisleri"
+
+msgid "TEMPERATURES"
+msgstr "SICAKLIKLAR"
 
 msgid "The amount of CPU used is over {}%."
 msgstr "İşlemci kullanımı %{} değerini aştı."
@@ -777,6 +794,9 @@ msgstr "URI"
 
 msgid "User"
 msgstr "Kullanıcı"
+
+msgid "Very hot"
+msgstr "Çok sıcak"
 
 msgid "Virtual"
 msgstr "Sanal"

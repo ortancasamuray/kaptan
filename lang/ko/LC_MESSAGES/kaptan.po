@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "'{}'은(는) 올바른 IP 주소가 아닙니다."
+
+msgid "/etc/hosts saved."
+msgstr "/etc/hosts를 저장했습니다."
+
+msgid "0 disables the alert"
+msgstr "0이면 경고를 끕니다"
+
+msgid "ABOUT"
+msgstr "정보"
+
+msgid "Accessed"
+msgstr "접근"
+
+msgid "Accessibility"
+msgstr "접근성"
+
+msgid "Add Repository"
+msgstr "저장소 추가"
+
+msgid "Add Startup App"
+msgstr "시작 프로그램 추가"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository가 설치되어 있지 않습니다 (패키지: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "고급 ▲"
+
+msgid "Advanced ▼"
+msgstr "고급 ▼"
+
+msgid "ALERTS"
+msgstr "경고"
+
+msgid "Aliases"
+msgstr "별칭"
+
+msgid "All"
+msgstr "모두"
+
+msgid "All Disks"
+msgstr "모든 디스크"
+
+msgid "All users"
+msgstr "모든 사용자"
+
+msgid "Amount"
+msgstr "크기"
+
+msgid "Any"
+msgstr "모두"
+
+msgid "Appearance"
+msgstr "모양"
+
+msgid "Application Caches"
+msgstr "프로그램 캐시"
+
+msgid "Application Logs"
+msgstr "프로그램 로그"
+
+msgid "Apply"
+msgstr "적용"
+
+msgid "APT Repositories"
+msgstr "APT 저장소"
+
+msgid "Ask"
+msgstr "묻기"
+
+msgid "Back to categories"
+msgstr "카테고리로 돌아가기"
+
+msgid "Browse"
+msgstr "찾아보기"
+
+msgid "Cancel"
+msgstr "취소"
+
+msgid "Case insensitive"
+msgstr "대소문자 무시"
+
+msgid "Center new windows"
+msgstr "새 창을 가운데에 배치"
+
+msgid "Centered"
+msgstr "가운데"
+
+msgid "Changed"
+msgstr "상태 변경"
+
+msgid "Chassis fan"
+msgstr "케이스 팬"
+
+msgid "Clean"
+msgstr "정리"
+
+msgid "Click"
+msgstr "클릭"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "마운트된 파티션을 클릭하면 대시보드에 표시됩니다."
+
+msgid "Close"
+msgstr "닫기"
+
+msgid "Cold"
+msgstr "낮음"
+
+msgid "Command *"
+msgstr "명령 *"
+
+msgid "Comment"
+msgstr "설명"
+
+msgid "Comparison"
+msgstr "비교"
+
+msgid "Components"
+msgstr "구성 요소"
+
+msgid "Continue"
+msgstr "계속"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "CPU Cores: {}"
+msgstr "CPU 코어: {}"
+
+msgid "CPU fan"
+msgstr "CPU 팬"
+
+msgid "CPU History"
+msgstr "CPU 기록"
+
+msgid "CPU Load Averages"
+msgstr "CPU 평균 부하"
+
+msgid "CPU Model: {}"
+msgstr "CPU 모델: {}"
+
+msgid "CPU Speed: {}"
+msgstr "CPU 속도: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "CPU 사용량 경고 (%)"
+
+msgid "Crash Reports"
+msgstr "시스템 오류 기록"
+
+msgid "Dark"
+msgstr "어둡게"
+
+msgid "Dashboard"
+msgstr "대시보드"
+
+msgid "Dashboard disk"
+msgstr "대시보드 디스크"
+
+msgid "Delete"
+msgstr "삭제"
+
+msgid "Delete Permanently"
+msgstr "영구 삭제"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "선택한 항목을 영구적으로 삭제할까요? 되돌릴 수 없습니다."
+
+msgid "Desktop"
+msgstr "데스크톱"
+
+msgid "Desktop background mode"
+msgstr "데스크톱 배경 모드"
+
+msgid "Desktop Settings"
+msgstr "데스크톱 설정"
+
+msgid "Directory"
+msgstr "디렉터리"
+
+msgid "Disabled"
+msgstr "사용안함"
+
+msgid "DISK"
+msgstr "디스크"
+
+msgid "Disk Read / Write"
+msgstr "디스크 읽기 / 쓰기"
+
+msgid "Disk usage alert (%)"
+msgstr "디스크 사용량 경고 (%)"
+
+msgid "Distribution: {}"
+msgstr "운영체제: {}"
+
+msgid "Don't ask again."
+msgstr "다시 묻지 않기."
+
+msgid "DOWNLOAD"
+msgstr "다운로드"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "다운로드: {}/s  합계: {}"
+
+msgid "Dynamic workspaces"
+msgstr "동적 작업 공간"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "예: ppa:user/repo  또는  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "수정"
+
+msgid "Edit Repository"
+msgstr "저장소 편집"
+
+msgid "Edit Startup Application"
+msgstr "시작 프로그램 편집"
+
+msgid "Empty only"
+msgstr "빈 항목만"
+
+msgid "Enable animations"
+msgstr "애니메이션 사용"
+
+msgid "Enabled"
+msgstr "시작됨"
+
+msgid "End Process"
+msgstr "프로세스 종료"
+
+msgid "End Process {}"
+msgstr "프로세스 {} 종료"
+
+msgid "Equal (=)"
+msgstr "같음 (=)"
+
+msgid "Exactly (=)"
+msgstr "정확히 (=)"
+
+msgid "FANS"
+msgstr "팬"
+
+msgid "File"
+msgstr "파일"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "파일 이름 또는 패턴, 예: *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "대시보드 디스크 게이지에 표시할 파일 시스템"
+
+msgid "File Systems"
+msgstr "파일 시스템"
+
+msgid "Filter by name, user or PID"
+msgstr "이름, 사용자 또는 PID로 필터"
+
+msgid "Focus mode"
+msgstr "포커스 모드"
+
+msgid "GENERAL"
+msgstr "일반"
+
+msgid "Generic name"
+msgstr "일반 이름"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "GPU 팬"
+
+msgid "GPU History"
+msgstr "GPU 기록"
+
+msgid "GPU usage alert (%)"
+msgstr "GPU 사용량 경고 (%)"
+
+msgid "Graphics Card"
+msgstr "그래픽 카드"
+
+msgid "Greater (>)"
+msgstr "큼 (>)"
+
+msgid "Group"
+msgstr "그룹"
+
+msgid "High CPU Usage"
+msgstr "높은 CPU 사용율"
+
+msgid "High Disk Usage"
+msgstr "높은 디스크 사용율"
+
+msgid "High GPU Usage"
+msgstr "높은 GPU 사용량"
+
+msgid "High Memory Usage"
+msgstr "높은 메모리 사용율"
+
+msgid "Hostname"
+msgstr "호스트 이름"
+
+msgid "Hostname *"
+msgstr "호스트 이름 *"
+
+msgid "Hostname: {}"
+msgstr "호스트명: {}"
+
+msgid "Hosts"
+msgstr "호스트"
+
+msgid "Hot"
+msgstr "높음"
+
+msgid "Icon"
+msgstr "아이콘"
+
+msgid "Icons and text"
+msgstr "아이콘과 텍스트"
+
+msgid "Icons only"
+msgstr "아이콘만"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "찾아보려면 zenity 또는 kdialog를 설치하거나 디렉터리 경로를 입력하세요."
+
+msgid "Invert match"
+msgstr "일치 반전"
+
+msgid "IP Address"
+msgstr "IP 주소"
+
+msgid "IP address *"
+msgstr "IP 주소 *"
+
+msgid "Keep running in the tray"
+msgstr "트레이에서 계속 실행"
+
+msgid "Kernel Release: {}"
+msgstr "커널 버전: {}"
+
+msgid "Language"
+msgstr "언어설정"
+
+msgid "Light"
+msgstr "밝게"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "리눅스 시스템 최적화 및 모니터 — Stacer의 Rust 포트. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "잠금 화면 배경 모드"
+
+msgid "Lower"
+msgstr "뒤로 보내기"
+
+msgid "Maximize"
+msgstr "최대화"
+
+msgid "Maximize Horizontally"
+msgstr "가로로 최대화"
+
+msgid "Maximize Vertically"
+msgstr "세로로 최대화"
+
+msgid "Mem"
+msgstr "메모리"
+
+msgid "MEMORY"
+msgstr "메모리"
+
+msgid "Memory History"
+msgstr "메모리 기록"
+
+msgid "Memory usage alert (%)"
+msgstr "메모리 사용량 경고 (%)"
+
+msgid "Memory: {} of {}"
+msgstr "메모리: {} / {}"
+
+msgid "Menu"
+msgstr "메뉴"
+
+msgid "Middle fan"
+msgstr "중앙 팬"
+
+msgid "Minimize"
+msgstr "최소화"
+
+msgid "Minutes"
+msgstr "분"
+
+msgid "Modified"
+msgstr "수정됨"
+
+msgid "Mouse"
+msgstr "마우스"
+
+msgid "Move to Trash"
+msgstr "휴지통으로 이동"
+
+msgid "Name"
+msgstr "이름"
+
+msgid "Name *"
+msgstr "이름 *"
+
+msgid "Name and command fields are required."
+msgstr "이름과 명령은 필수 항목입니다."
+
+msgid "Network History"
+msgstr "네트워크 기록"
+
+msgid "New Host"
+msgstr "새 호스트"
+
+msgid "New Startup Application"
+msgstr "새 시작 프로그램"
+
+msgid "Nice"
+msgstr "실행시간"
+
+msgid "No packages found."
+msgstr "패키지를 찾지 못했습니다."
+
+msgid "No repositories found."
+msgstr "저장소를 찾지 못했습니다."
+
+msgid "No services found."
+msgstr "서비스를 찾지 못했습니다."
+
+msgid "No startup applications found."
+msgstr "시작 프로그램을 찾지 못했습니다."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "이 시스템에서 지원되는 GNOME 설정을 찾지 못했습니다."
+
+msgid "No supported package manager found"
+msgstr "지원되는 패키지 관리자를 찾지 못했습니다"
+
+msgid "None"
+msgstr "없음"
+
+msgid "Not mounted"
+msgstr "마운트되지 않음"
+
+msgid "Nothing selected."
+msgstr "선택된 항목이 없습니다."
+
+msgid "Nothing to remove."
+msgstr "제거할 항목이 없습니다."
+
+msgid "Number of workspaces"
+msgstr "작업 공간 수"
+
+msgid "Older (>)"
+msgstr "이전 (>)"
+
+msgid "On-screen keyboard"
+msgstr "화상 키보드"
+
+msgid "Open Folder"
+msgstr "폴더 열기"
+
+msgid "Open Kaptan"
+msgstr "Kaptan 열기"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "로그인할 때 Kaptan 창을 엽니다"
+
+msgid "Other"
+msgstr "기타"
+
+msgid "Owner"
+msgstr "소유자"
+
+msgid "Package Caches"
+msgstr "패키지 캐시"
+
+msgid "Packages ({})"
+msgstr "패키지 ({})"
+
+msgid "Path"
+msgstr "경로"
+
+msgid "Permissions"
+msgstr "권한"
+
+msgid "Platform: {}"
+msgstr "플랫폼: {}"
+
+msgid "Process"
+msgstr "프로세스"
+
+msgid "Processes"
+msgstr "프로세스"
+
+msgid "Processor"
+msgstr "프로세서"
+
+msgid "Pump"
+msgstr "펌프"
+
+msgid "Quit"
+msgstr "종료"
+
+msgid "Raise windows on click"
+msgstr "클릭하면 창을 앞으로 가져오기"
+
+msgid "Read: {}/s"
+msgstr "읽기: {}/s"
+
+msgid "Refresh every {} s"
+msgstr "{}초마다 새로 고침"
+
+msgid "Regular expression"
+msgstr "정규 표현식"
+
+msgid "Remove"
+msgstr "제거"
+
+msgid "Remove {} package(s)?"
+msgstr "패키지 {}개를 제거할까요?"
+
+msgid "Repository added."
+msgstr "저장소를 추가했습니다."
+
+msgid "Repository disabled."
+msgstr "저장소를 비활성화했습니다."
+
+msgid "Repository enabled."
+msgstr "저장소를 활성화했습니다."
+
+msgid "Repository is empty"
+msgstr "저장소가 비어 있습니다"
+
+msgid "Repository removed."
+msgstr "저장소를 제거했습니다."
+
+msgid "Repository updated."
+msgstr "저장소를 업데이트했습니다."
+
+msgid "Resident"
+msgstr "상주"
+
+msgid "Resources"
+msgstr "시스템 자원"
+
+msgid "Running"
+msgstr "구동 중"
+
+msgid "Save"
+msgstr "저장"
+
+msgid "Save Changes"
+msgstr "변경 사항 저장"
+
+msgid "Scaled"
+msgstr "크기 조정"
+
+msgid "Scanning…"
+msgstr "검사 중…"
+
+msgid "Screen reader"
+msgstr "화면 낭독기"
+
+msgid "Search"
+msgstr "검색.."
+
+msgid "Search as root"
+msgstr "루트로 검색"
+
+msgid "Search packages"
+msgstr "패키지 검색"
+
+msgid "Search services"
+msgstr "서비스 검색"
+
+msgid "Select all"
+msgstr "모두 선택"
+
+msgid "Select at least one category."
+msgstr "카테고리를 하나 이상 선택하세요."
+
+msgid "Select none"
+msgstr "선택 해제"
+
+msgid "Select the search directory."
+msgstr "검색할 디렉터리를 선택하세요."
+
+msgid "Service"
+msgstr "서비스"
+
+msgid "Services"
+msgstr "서비스"
+
+msgid "Settings"
+msgstr "프로그램 설정"
+
+msgid "Show battery percentage"
+msgstr "배터리 잔량 표시"
+
+msgid "Show home folder on desktop"
+msgstr "데스크톱에 홈 폴더 표시"
+
+msgid "Show mounted volumes on desktop"
+msgstr "데스크톱에 마운트된 볼륨 표시"
+
+msgid "Show seconds in clock"
+msgstr "시계에 초 표시"
+
+msgid "Show trash on desktop"
+msgstr "데스크톱에 휴지통 표시"
+
+msgid "Show weekday in clock"
+msgstr "시계에 요일 표시"
+
+msgid "Shown on dashboard"
+msgstr "대시보드에 표시됨"
+
+msgid "Sidebar"
+msgstr "사이드바"
+
+msgid "Size"
+msgstr "크기"
+
+msgid "Sleeping"
+msgstr "절전 중"
+
+msgid "Sloppy"
+msgstr "느슨하게"
+
+msgid "Smaller (<)"
+msgstr "작음 (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Snap 패키지 ({})"
+
+msgid "Source code"
+msgstr "소스 코드"
+
+msgid "source entry not found"
+msgstr "저장소 항목을 찾을 수 없습니다"
+
+msgid "Spanned"
+msgstr "화면에 걸쳐"
+
+msgid "Start at boot"
+msgstr "부팅 시 시작"
+
+msgid "Start Kaptan at login"
+msgstr "로그인 시 Kaptan 시작"
+
+msgid "Start page"
+msgstr "프로그램 시작 페이지"
+
+msgid "Started"
+msgstr "시작 시각"
+
+msgid "Startup Applications"
+msgstr "시작 프로그램"
+
+msgid "Startup Apps"
+msgstr "시작 프로그램"
+
+msgid "State"
+msgstr "상태"
+
+msgid "Stopped"
+msgstr "중지됨"
+
+msgid "Stretched"
+msgstr "늘이기"
+
+msgid "Suites"
+msgstr "스위트"
+
+msgid "Swap"
+msgstr "스왑"
+
+msgid "Swap (inactive)"
+msgstr "스왑 (비활성)"
+
+msgid "Swap: {} of {}"
+msgstr "스왑: {} / {}"
+
+msgid "Symbolic Link"
+msgstr "심볼릭 링크"
+
+msgid "System Cleaner"
+msgstr "시스템 클리너"
+
+msgid "System default"
+msgstr "시스템 기본값"
+
+msgid "System fan"
+msgstr "시스템 팬"
+
+msgid "SYSTEM INFO"
+msgstr "시스템 정보"
+
+msgid "System Scan"
+msgstr "시스템 검사"
+
+msgid "System Services"
+msgstr "시스템 서비스"
+
+msgid "TEMPERATURES"
+msgstr "온도"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "{}% 이상의 CPU를 사용 중입니다."
+
+msgid "The amount of disk used is over {}%."
+msgstr "{}% 이상의 디스크를 사용 중입니다."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "GPU 사용량이 {}%를 넘었습니다."
+
+msgid "The amount of memory used is over {}%."
+msgstr "{}% 이상의 메모리를 사용 중입니다."
+
+msgid "The IP address and hostname fields are required."
+msgstr "IP 주소와 호스트 이름은 필수 항목입니다."
+
+msgid "Theme"
+msgstr "테마"
+
+msgid "Time"
+msgstr "시간"
+
+msgid "Title bar double click"
+msgstr "제목 표시줄 두 번 클릭"
+
+msgid "Title bar middle click"
+msgstr "제목 표시줄 가운데 클릭"
+
+msgid "Title bar right click"
+msgstr "제목 표시줄 오른쪽 클릭"
+
+msgid "Total {} · selected {}"
+msgstr "합계 {} · 선택 {}"
+
+msgid "Total: {}"
+msgstr "전체: {}"
+
+msgid "Trash"
+msgstr "휴지통"
+
+msgid "Type"
+msgstr "유형"
+
+msgid "Types"
+msgstr "유형"
+
+msgid "Types, URI and suites are required."
+msgstr "유형, URI, 스위트는 필수 항목입니다."
+
+msgid "Uninstall Selected ({})"
+msgstr "선택 항목 제거 ({})"
+
+msgid "Uninstaller"
+msgstr "프로그램 제거"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "패키지 {}개 제거 중…"
+
+msgid "Unit"
+msgstr "단위"
+
+msgid "Unsaved changes"
+msgstr "저장하지 않은 변경 사항"
+
+msgid "UPLOAD"
+msgstr "업로드 속도"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "업로드: {}/s  전체: {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "사용자"
+
+msgid "Very hot"
+msgstr "매우 높음"
+
+msgid "Virtual"
+msgstr "가상"
+
+msgid "Wallpaper"
+msgstr "배경 화면"
+
+msgid "When the window is closed"
+msgstr "창을 닫을 때"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "프로그램을 시스템 트레이에서 계속 실행할까요?"
+
+msgid "Window Manager"
+msgstr "창 관리자"
+
+msgid "Within (<)"
+msgstr "이내 (<)"
+
+msgid "Write: {}/s"
+msgstr "쓰기: {}/s"
+
+msgid "Zoom"
+msgstr "확대"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} 남음)"
+
+msgid "{} cleaned."
+msgstr "{} 정리했습니다."
+
+msgid "{} deleted."
+msgstr "{} 삭제했습니다."
+
+msgid "{} disabled."
+msgstr "{} 비활성화했습니다."
+
+msgid "{} enabled."
+msgstr "{} 활성화했습니다."
+
+msgid "{} found"
+msgstr "{}개 찾음"
+
+msgid "{} found, showing {}"
+msgstr "{}개 찾음, {}개 표시"
+
+msgid "{} minute average: {}"
+msgstr "{} 분 평균: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "선택 항목에 의존하는 패키지 {}개도 함께 제거됩니다."
+
+msgid "{} moved to trash."
+msgstr "{}을(를) 휴지통으로 옮겼습니다."
+
+msgid "{} package(s) removed."
+msgstr "패키지 {}개를 제거했습니다."
+
+msgid "{} started."
+msgstr "{} 시작했습니다."
+
+msgid "{} stopped."
+msgstr "{} 중지했습니다."
+
+msgid "{} used · {} free"
+msgstr "{} 사용 · {} 남음"

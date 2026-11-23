@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "'{}' is geen geldig IP-adres."
+
+msgid "/etc/hosts saved."
+msgstr "/etc/hosts opgeslagen."
+
+msgid "0 disables the alert"
+msgstr "0 schakelt de waarschuwing uit"
+
+msgid "ABOUT"
+msgstr "OVER"
+
+msgid "Accessed"
+msgstr "Toegang"
+
+msgid "Accessibility"
+msgstr "Toegankelijkheid"
+
+msgid "Add Repository"
+msgstr "Pakketbron toevoegen"
+
+msgid "Add Startup App"
+msgstr "Applicatie toevoegen"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository is niet geïnstalleerd (pakket: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "Geavanceerd ▲"
+
+msgid "Advanced ▼"
+msgstr "Geavanceerd ▼"
+
+msgid "ALERTS"
+msgstr "WAARSCHUWINGEN"
+
+msgid "Aliases"
+msgstr "Aliassen"
+
+msgid "All"
+msgstr "Alle"
+
+msgid "All Disks"
+msgstr "Alle schijven"
+
+msgid "All users"
+msgstr "Alle gebruikers"
+
+msgid "Amount"
+msgstr "Hoeveelheid"
+
+msgid "Any"
+msgstr "Willekeurig"
+
+msgid "Appearance"
+msgstr "Uiterlijk"
+
+msgid "Application Caches"
+msgstr "Applicatiecaches"
+
+msgid "Application Logs"
+msgstr "Applicatielogbestanden"
+
+msgid "Apply"
+msgstr "Toepassen"
+
+msgid "APT Repositories"
+msgstr "APT-pakketbronnen"
+
+msgid "Ask"
+msgstr "Vragen"
+
+msgid "Back to categories"
+msgstr "Terug naar de categorieën"
+
+msgid "Browse"
+msgstr "Bladeren"
+
+msgid "Cancel"
+msgstr "Annuleren"
+
+msgid "Case insensitive"
+msgstr "Hoofdletterongevoelig"
+
+msgid "Center new windows"
+msgstr "Nieuwe vensters centreren"
+
+msgid "Centered"
+msgstr "Centreren"
+
+msgid "Changed"
+msgstr "Gewijzigd (status)"
+
+msgid "Chassis fan"
+msgstr "Behuizingsventilator"
+
+msgid "Clean"
+msgstr "Opschonen"
+
+msgid "Click"
+msgstr "Klik"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "Klik op een aangekoppelde partitie om deze op het dashboard te tonen."
+
+msgid "Close"
+msgstr "Sluiten"
+
+msgid "Cold"
+msgstr "Koel"
+
+msgid "Command *"
+msgstr "Opdracht *"
+
+msgid "Comment"
+msgstr "Opmerking"
+
+msgid "Comparison"
+msgstr "Vergelijking"
+
+msgid "Components"
+msgstr "Onderdelen"
+
+msgid "Continue"
+msgstr "Doorgaan"
+
+msgid "CPU"
+msgstr "CPU (processor)"
+
+msgid "CPU Cores: {}"
+msgstr "Processorkernen: {}"
+
+msgid "CPU fan"
+msgstr "Processorventilator"
+
+msgid "CPU History"
+msgstr "Processorgeschiedenis"
+
+msgid "CPU Load Averages"
+msgstr "Gemiddelde processorbelasting"
+
+msgid "CPU Model: {}"
+msgstr "CPU-model: {}"
+
+msgid "CPU Speed: {}"
+msgstr "CPU-frequentie: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "Waarschuwing processorgebruik (%)"
+
+msgid "Crash Reports"
+msgstr "Crashrapporten"
+
+msgid "Dark"
+msgstr "Donker"
+
+msgid "Dashboard"
+msgstr "Overzicht"
+
+msgid "Dashboard disk"
+msgstr "Dashboardschijf"
+
+msgid "Delete"
+msgstr "Verwijderen"
+
+msgid "Delete Permanently"
+msgstr "Definitief verwijderen"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "Het geselecteerde item definitief verwijderen? Dit kan niet ongedaan worden gemaakt."
+
+msgid "Desktop"
+msgstr "Bureaublad"
+
+msgid "Desktop background mode"
+msgstr "Achtergrondmodus van het bureaublad"
+
+msgid "Desktop Settings"
+msgstr "Bureaubladinstellingen"
+
+msgid "Directory"
+msgstr "Map"
+
+msgid "Disabled"
+msgstr "Uitgeschakeld"
+
+msgid "DISK"
+msgstr "SCHIJF"
+
+msgid "Disk Read / Write"
+msgstr "Schijf lezen / schrijven"
+
+msgid "Disk usage alert (%)"
+msgstr "Waarschuwing schijfgebruik (%)"
+
+msgid "Distribution: {}"
+msgstr "Distributie: {}"
+
+msgid "Don't ask again."
+msgstr "Niet meer vragen."
+
+msgid "DOWNLOAD"
+msgstr "Downloaden"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "Download: {}/s  Totaal: {}"
+
+msgid "Dynamic workspaces"
+msgstr "Dynamische werkbladen"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "bijv. ppa:gebruiker/repo  of  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "Bewerken"
+
+msgid "Edit Repository"
+msgstr "Pakketbron bewerken"
+
+msgid "Edit Startup Application"
+msgstr "Opstarttoepassing bewerken"
+
+msgid "Empty only"
+msgstr "Alleen lege"
+
+msgid "Enable animations"
+msgstr "Animaties inschakelen"
+
+msgid "Enabled"
+msgstr "Ingeschakeld"
+
+msgid "End Process"
+msgstr "Proces beëindigen"
+
+msgid "End Process {}"
+msgstr "Proces {} beëindigen"
+
+msgid "Equal (=)"
+msgstr "Gelijk (=)"
+
+msgid "Exactly (=)"
+msgstr "Precies (=)"
+
+msgid "FANS"
+msgstr "VENTILATOREN"
+
+msgid "File"
+msgstr "Bestand"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "Bestandsnaam of patroon, bijv. *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "Bestandssysteem dat in de schijfmeter van het dashboard wordt getoond"
+
+msgid "File Systems"
+msgstr "Bestandssystemen"
+
+msgid "Filter by name, user or PID"
+msgstr "Filteren op naam, gebruiker of PID"
+
+msgid "Focus mode"
+msgstr "Focusmodus"
+
+msgid "GENERAL"
+msgstr "Algemeen"
+
+msgid "Generic name"
+msgstr "Algemene naam"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "GPU-ventilator"
+
+msgid "GPU History"
+msgstr "GPU-geschiedenis"
+
+msgid "GPU usage alert (%)"
+msgstr "Waarschuwing GPU-gebruik (%)"
+
+msgid "Graphics Card"
+msgstr "Grafische kaart"
+
+msgid "Greater (>)"
+msgstr "Groter (>)"
+
+msgid "Group"
+msgstr "Groep"
+
+msgid "High CPU Usage"
+msgstr "Hoog CPU-gebruik"
+
+msgid "High Disk Usage"
+msgstr "Veel schijfruimtegebruik"
+
+msgid "High GPU Usage"
+msgstr "Hoog GPU-gebruik"
+
+msgid "High Memory Usage"
+msgstr "Hoog geheugengebruik"
+
+msgid "Hostname"
+msgstr "Hostnaam"
+
+msgid "Hostname *"
+msgstr "Hostnaam *"
+
+msgid "Hostname: {}"
+msgstr "Hostnaam: {}"
+
+msgid "Hosts"
+msgstr "Hosts"
+
+msgid "Hot"
+msgstr "Warm"
+
+msgid "Icon"
+msgstr "Pictogram"
+
+msgid "Icons and text"
+msgstr "Pictogrammen en tekst"
+
+msgid "Icons only"
+msgstr "Alleen pictogrammen"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "Installeer zenity of kdialog om te bladeren, of typ het pad van de map."
+
+msgid "Invert match"
+msgstr "Overeenkomst omkeren"
+
+msgid "IP Address"
+msgstr "IP-adres"
+
+msgid "IP address *"
+msgstr "IP-adres *"
+
+msgid "Keep running in the tray"
+msgstr "Doorgaan in het systeemvak"
+
+msgid "Kernel Release: {}"
+msgstr "Kernelversie: {}"
+
+msgid "Language"
+msgstr "Taal"
+
+msgid "Light"
+msgstr "Licht"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Linux-systeemoptimalisatie en -monitor — een Rust-versie van Stacer. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "Achtergrondmodus van het vergrendelscherm"
+
+msgid "Lower"
+msgstr "Verlagen"
+
+msgid "Maximize"
+msgstr "Maximaliseren"
+
+msgid "Maximize Horizontally"
+msgstr "Horizontaal maximaliseren"
+
+msgid "Maximize Vertically"
+msgstr "Verticaal maximaliseren"
+
+msgid "Mem"
+msgstr "Geh."
+
+msgid "MEMORY"
+msgstr "GEHEUGEN"
+
+msgid "Memory History"
+msgstr "Geheugengeschiedenis"
+
+msgid "Memory usage alert (%)"
+msgstr "Waarschuwing geheugengebruik (%)"
+
+msgid "Memory: {} of {}"
+msgstr "Geheugen: {} van {}"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Middle fan"
+msgstr "Middelste ventilator"
+
+msgid "Minimize"
+msgstr "Minimaliseren"
+
+msgid "Minutes"
+msgstr "Minuten"
+
+msgid "Modified"
+msgstr "Gewijzigd"
+
+msgid "Mouse"
+msgstr "Muis"
+
+msgid "Move to Trash"
+msgstr "Naar prullenbak verplaatsen"
+
+msgid "Name"
+msgstr "Naam"
+
+msgid "Name *"
+msgstr "Naam *"
+
+msgid "Name and command fields are required."
+msgstr "De velden naam en opdracht zijn verplicht."
+
+msgid "Network History"
+msgstr "Netwerkgeschiedenis"
+
+msgid "New Host"
+msgstr "Nieuwe host"
+
+msgid "New Startup Application"
+msgstr "Nieuwe opstarttoepassing"
+
+msgid "Nice"
+msgstr "Nice"
+
+msgid "No packages found."
+msgstr "Geen pakketten gevonden."
+
+msgid "No repositories found."
+msgstr "Geen pakketbronnen gevonden."
+
+msgid "No services found."
+msgstr "Geen diensten gevonden."
+
+msgid "No startup applications found."
+msgstr "Geen opstarttoepassingen gevonden."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "Er zijn op dit systeem geen ondersteunde GNOME-instellingen gevonden."
+
+msgid "No supported package manager found"
+msgstr "Geen ondersteund pakketbeheer gevonden"
+
+msgid "None"
+msgstr "Geen"
+
+msgid "Not mounted"
+msgstr "Niet aangekoppeld"
+
+msgid "Nothing selected."
+msgstr "Niets geselecteerd."
+
+msgid "Nothing to remove."
+msgstr "Niets te verwijderen."
+
+msgid "Number of workspaces"
+msgstr "Aantal werkbladen"
+
+msgid "Older (>)"
+msgstr "Ouder (>)"
+
+msgid "On-screen keyboard"
+msgstr "Schermtoetsenbord"
+
+msgid "Open Folder"
+msgstr "Map openen"
+
+msgid "Open Kaptan"
+msgstr "Kaptan openen"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "Opent het Kaptan-venster bij het aanmelden"
+
+msgid "Other"
+msgstr "Overig"
+
+msgid "Owner"
+msgstr "Eigenaar"
+
+msgid "Package Caches"
+msgstr "Pakketcaches"
+
+msgid "Packages ({})"
+msgstr "Pakketten ({})"
+
+msgid "Path"
+msgstr "Pad"
+
+msgid "Permissions"
+msgstr "Rechten"
+
+msgid "Platform: {}"
+msgstr "Platform: {}"
+
+msgid "Process"
+msgstr "Proces"
+
+msgid "Processes"
+msgstr "Processen"
+
+msgid "Processor"
+msgstr "Processor"
+
+msgid "Pump"
+msgstr "Pomp"
+
+msgid "Quit"
+msgstr "Afsluiten"
+
+msgid "Raise windows on click"
+msgstr "Vensters naar voren halen bij klikken"
+
+msgid "Read: {}/s"
+msgstr "Lezen: {}/s"
+
+msgid "Refresh every {} s"
+msgstr "Elke {} s vernieuwen"
+
+msgid "Regular expression"
+msgstr "Reguliere expressie"
+
+msgid "Remove"
+msgstr "Verwijderen"
+
+msgid "Remove {} package(s)?"
+msgstr "{} pakket(ten) verwijderen?"
+
+msgid "Repository added."
+msgstr "Pakketbron toegevoegd."
+
+msgid "Repository disabled."
+msgstr "Pakketbron uitgeschakeld."
+
+msgid "Repository enabled."
+msgstr "Pakketbron ingeschakeld."
+
+msgid "Repository is empty"
+msgstr "Pakketbron is leeg"
+
+msgid "Repository removed."
+msgstr "Pakketbron verwijderd."
+
+msgid "Repository updated."
+msgstr "Pakketbron bijgewerkt."
+
+msgid "Resident"
+msgstr "Resident"
+
+msgid "Resources"
+msgstr "Bronnen"
+
+msgid "Running"
+msgstr "Wordt uitgevoerd"
+
+msgid "Save"
+msgstr "Opslaan"
+
+msgid "Save Changes"
+msgstr "Wijzigingen opslaan"
+
+msgid "Scaled"
+msgstr "Schalen"
+
+msgid "Scanning…"
+msgstr "Bezig met scannen…"
+
+msgid "Screen reader"
+msgstr "Schermlezer"
+
+msgid "Search"
+msgstr "Zoeken.."
+
+msgid "Search as root"
+msgstr "Zoeken als root"
+
+msgid "Search packages"
+msgstr "Pakketten zoeken"
+
+msgid "Search services"
+msgstr "Diensten zoeken"
+
+msgid "Select all"
+msgstr "Alles selecteren"
+
+msgid "Select at least one category."
+msgstr "Selecteer ten minste één categorie."
+
+msgid "Select none"
+msgstr "Niets selecteren"
+
+msgid "Select the search directory."
+msgstr "Selecteer de zoekmap."
+
+msgid "Service"
+msgstr "Dienst"
+
+msgid "Services"
+msgstr "Diensten"
+
+msgid "Settings"
+msgstr "Instellingen"
+
+msgid "Show battery percentage"
+msgstr "Batterijpercentage tonen"
+
+msgid "Show home folder on desktop"
+msgstr "Persoonlijke map op het bureaublad tonen"
+
+msgid "Show mounted volumes on desktop"
+msgstr "Aangekoppelde volumes op het bureaublad tonen"
+
+msgid "Show seconds in clock"
+msgstr "Seconden in de klok tonen"
+
+msgid "Show trash on desktop"
+msgstr "Prullenbak op het bureaublad tonen"
+
+msgid "Show weekday in clock"
+msgstr "Weekdag in de klok tonen"
+
+msgid "Shown on dashboard"
+msgstr "Getoond op dashboard"
+
+msgid "Sidebar"
+msgstr "Zijbalk"
+
+msgid "Size"
+msgstr "Grootte"
+
+msgid "Sleeping"
+msgstr "In slaapstand"
+
+msgid "Sloppy"
+msgstr "Slordig"
+
+msgid "Smaller (<)"
+msgstr "Kleiner (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Snap-pakketten ({})"
+
+msgid "Source code"
+msgstr "Broncode"
+
+msgid "source entry not found"
+msgstr "pakketbronvermelding niet gevonden"
+
+msgid "Spanned"
+msgstr "Opvullen"
+
+msgid "Start at boot"
+msgstr "Bij opstarten"
+
+msgid "Start Kaptan at login"
+msgstr "Kaptan starten bij aanmelden"
+
+msgid "Start page"
+msgstr "Startpagina"
+
+msgid "Started"
+msgstr "Gestart"
+
+msgid "Startup Applications"
+msgstr "Opstarttoepassingen"
+
+msgid "Startup Apps"
+msgstr "Opstartapplicaties"
+
+msgid "State"
+msgstr "Status"
+
+msgid "Stopped"
+msgstr "Gestopt"
+
+msgid "Stretched"
+msgstr "Uitrekken"
+
+msgid "Suites"
+msgstr "Suites"
+
+msgid "Swap"
+msgstr "Wisselgeheugen"
+
+msgid "Swap (inactive)"
+msgstr "Wisselgeheugen (inactief)"
+
+msgid "Swap: {} of {}"
+msgstr "Wisselgeheugen: {} van {}"
+
+msgid "Symbolic Link"
+msgstr "Symbolische koppeling"
+
+msgid "System Cleaner"
+msgstr "Systeemopschoning"
+
+msgid "System default"
+msgstr "Systeemstandaard"
+
+msgid "System fan"
+msgstr "Systeemventilator"
+
+msgid "SYSTEM INFO"
+msgstr "SYSTEEMINFORMATIE"
+
+msgid "System Scan"
+msgstr "Systeem scannen"
+
+msgid "System Services"
+msgstr "Systeemdiensten"
+
+msgid "TEMPERATURES"
+msgstr "TEMPERATUREN"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "Het CPU-gebruik is meer dan {}%."
+
+msgid "The amount of disk used is over {}%."
+msgstr "De gebruikte schijfruimte is meer dan {}%."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "Het GPU-gebruik is hoger dan {}%."
+
+msgid "The amount of memory used is over {}%."
+msgstr "Het geheugengebruik is meer dan {}%."
+
+msgid "The IP address and hostname fields are required."
+msgstr "De velden IP-adres en hostnaam zijn verplicht."
+
+msgid "Theme"
+msgstr "Thema"
+
+msgid "Time"
+msgstr "Tijd"
+
+msgid "Title bar double click"
+msgstr "Dubbelklik op titelbalk"
+
+msgid "Title bar middle click"
+msgstr "Middelklik op titelbalk"
+
+msgid "Title bar right click"
+msgstr "Rechtsklik op titelbalk"
+
+msgid "Total {} · selected {}"
+msgstr "Totaal {} · geselecteerd {}"
+
+msgid "Total: {}"
+msgstr "Totaal: {}"
+
+msgid "Trash"
+msgstr "Prullenbak"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Types"
+msgstr "Typen"
+
+msgid "Types, URI and suites are required."
+msgstr "Typen, URI en suites zijn verplicht."
+
+msgid "Uninstall Selected ({})"
+msgstr "Geselecteerde verwijderen ({})"
+
+msgid "Uninstaller"
+msgstr "Pakketverwijdering"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "{} pakket(ten) worden verwijderd…"
+
+msgid "Unit"
+msgstr "Eenheid"
+
+msgid "Unsaved changes"
+msgstr "Niet-opgeslagen wijzigingen"
+
+msgid "UPLOAD"
+msgstr "UPLOAD"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "Upload: {}/s  Totaal: {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "Gebruiker"
+
+msgid "Very hot"
+msgstr "Zeer heet"
+
+msgid "Virtual"
+msgstr "Virtueel"
+
+msgid "Wallpaper"
+msgstr "Achtergrond"
+
+msgid "When the window is closed"
+msgstr "Bij het sluiten van het venster"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "Moet het programma in het systeemvak blijven werken?"
+
+msgid "Window Manager"
+msgstr "Vensterbeheerder"
+
+msgid "Within (<)"
+msgstr "Binnen (<)"
+
+msgid "Write: {}/s"
+msgstr "Schrijven: {}/s"
+
+msgid "Zoom"
+msgstr "Vergroten"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} vrij)"
+
+msgid "{} cleaned."
+msgstr "{} opgeschoond."
+
+msgid "{} deleted."
+msgstr "{} verwijderd."
+
+msgid "{} disabled."
+msgstr "{} uitgeschakeld."
+
+msgid "{} enabled."
+msgstr "{} ingeschakeld."
+
+msgid "{} found"
+msgstr "{} gevonden"
+
+msgid "{} found, showing {}"
+msgstr "{} gevonden, {} getoond"
+
+msgid "{} minute average: {}"
+msgstr "{} gemiddeld aantal minuten: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "Nog {} pakket(ten) zijn afhankelijk van uw selectie en worden ook verwijderd."
+
+msgid "{} moved to trash."
+msgstr "{} naar de prullenbak verplaatst."
+
+msgid "{} package(s) removed."
+msgstr "{} pakket(ten) verwijderd."
+
+msgid "{} started."
+msgstr "{} gestart."
+
+msgid "{} stopped."
+msgstr "{} gestopt."
+
+msgid "{} used · {} free"
+msgstr "{} gebruikt · {} vrij"

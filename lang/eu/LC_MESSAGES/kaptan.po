@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "'{}' ez da baliozko IP helbide bat."
+
+msgid "/etc/hosts saved."
+msgstr "/etc/hosts gorde da."
+
+msgid "0 disables the alert"
+msgstr "0 balioak abisua desgaitzen du"
+
+msgid "ABOUT"
+msgstr "HONI BURUZ"
+
+msgid "Accessed"
+msgstr "Atzipena"
+
+msgid "Accessibility"
+msgstr "Erabilerraztasuna"
+
+msgid "Add Repository"
+msgstr "Gehitu biltegia"
+
+msgid "Add Startup App"
+msgstr "Gehitu abioko aplikazioa"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository ez dago instalatuta (paketea: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "Aurreratua ▲"
+
+msgid "Advanced ▼"
+msgstr "Aurreratua ▼"
+
+msgid "ALERTS"
+msgstr "ABISUAK"
+
+msgid "Aliases"
+msgstr "Aliasak"
+
+msgid "All"
+msgstr "Guztiak"
+
+msgid "All Disks"
+msgstr "Disko guztiak"
+
+msgid "All users"
+msgstr "Erabiltzaile guztiak"
+
+msgid "Amount"
+msgstr "Kopurua"
+
+msgid "Any"
+msgstr "Edozein"
+
+msgid "Appearance"
+msgstr "Itxura"
+
+msgid "Application Caches"
+msgstr "Aplikazioen cachea"
+
+msgid "Application Logs"
+msgstr "Aplikazioen erregistroak"
+
+msgid "Apply"
+msgstr "Aplikatu"
+
+msgid "APT Repositories"
+msgstr "APT biltegiak"
+
+msgid "Ask"
+msgstr "Galdetu"
+
+msgid "Back to categories"
+msgstr "Itzuli kategorietara"
+
+msgid "Browse"
+msgstr "Arakatu"
+
+msgid "Cancel"
+msgstr "Utzi"
+
+msgid "Case insensitive"
+msgstr "Maiuskulak eta minuskulak bereizi gabe"
+
+msgid "Center new windows"
+msgstr "Zentratu leiho berriak"
+
+msgid "Centered"
+msgstr "Erdiratua"
+
+msgid "Changed"
+msgstr "Egoera aldaketa"
+
+msgid "Chassis fan"
+msgstr "Kaxaren haizagailua"
+
+msgid "Clean"
+msgstr "Garbitu"
+
+msgid "Click"
+msgstr "Klik"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "Egin klik muntatutako partizio batean panelean erakusteko."
+
+msgid "Close"
+msgstr "Itxi"
+
+msgid "Cold"
+msgstr "Hotza"
+
+msgid "Command *"
+msgstr "Komandoa *"
+
+msgid "Comment"
+msgstr "Iruzkina"
+
+msgid "Comparison"
+msgstr "Konparazioa"
+
+msgid "Components"
+msgstr "Osagaiak"
+
+msgid "Continue"
+msgstr "Jarraitu"
+
+msgid "CPU"
+msgstr "PUZ"
+
+msgid "CPU Cores: {}"
+msgstr "PUZaren nukleoak: {}"
+
+msgid "CPU fan"
+msgstr "PUZaren haizagailua"
+
+msgid "CPU History"
+msgstr "PUZaren historia"
+
+msgid "CPU Load Averages"
+msgstr "PUZaren batez besteko karga"
+
+msgid "CPU Model: {}"
+msgstr "PUZ Modeloa: {}"
+
+msgid "CPU Speed: {}"
+msgstr "PUZaren abiadura: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "PUZaren erabileraren abisua (%)"
+
+msgid "Crash Reports"
+msgstr "Erroren informeak"
+
+msgid "Dark"
+msgstr "Iluna"
+
+msgid "Dashboard"
+msgstr "Panela"
+
+msgid "Dashboard disk"
+msgstr "Paneleko diskoa"
+
+msgid "Delete"
+msgstr "Ezabatu"
+
+msgid "Delete Permanently"
+msgstr "Ezabatu betiko"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "Hautatutako elementua betiko ezabatu? Ezin da desegin."
+
+msgid "Desktop"
+msgstr "Mahaigaina"
+
+msgid "Desktop background mode"
+msgstr "Mahaigainaren atzeko planoaren modua"
+
+msgid "Desktop Settings"
+msgstr "Mahaigainaren ezarpenak"
+
+msgid "Directory"
+msgstr "Karpeta"
+
+msgid "Disabled"
+msgstr "Desgaituta"
+
+msgid "DISK"
+msgstr "DISKOA"
+
+msgid "Disk Read / Write"
+msgstr "Diskoaren irakurketa / idazketa"
+
+msgid "Disk usage alert (%)"
+msgstr "Diskoaren erabileraren abisua (%)"
+
+msgid "Distribution: {}"
+msgstr "Distribución: {}"
+
+msgid "Don't ask again."
+msgstr "Ez galdetu berriro."
+
+msgid "DOWNLOAD"
+msgstr "Deskargatu"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "Deskarga: {}/s  Guztira: {}"
+
+msgid "Dynamic workspaces"
+msgstr "Laneko area dinamikoak"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "adib. ppa:erabiltzailea/biltegia  edo  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "Editatu"
+
+msgid "Edit Repository"
+msgstr "Editatu biltegia"
+
+msgid "Edit Startup Application"
+msgstr "Editatu abioko aplikazioa"
+
+msgid "Empty only"
+msgstr "Hutsik daudenak soilik"
+
+msgid "Enable animations"
+msgstr "Gaitu animazioak"
+
+msgid "Enabled"
+msgstr "Gaituta"
+
+msgid "End Process"
+msgstr "Prozesu finala"
+
+msgid "End Process {}"
+msgstr "Amaitu {} prozesua"
+
+msgid "Equal (=)"
+msgstr "Berdin (=)"
+
+msgid "Exactly (=)"
+msgstr "Zehazki (=)"
+
+msgid "FANS"
+msgstr "HAIZAGAILUAK"
+
+msgid "File"
+msgstr "Fitxategia"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "Fitxategi-izena edo eredua, adib. *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "Paneleko disko-adierazlean erakusten den fitxategi-sistema"
+
+msgid "File Systems"
+msgstr "Fitxategi-sistemak"
+
+msgid "Filter by name, user or PID"
+msgstr "Iragazi izenaren, erabiltzailearen edo PIDaren arabera"
+
+msgid "Focus mode"
+msgstr "Fokatze-modua"
+
+msgid "GENERAL"
+msgstr "Orokorra"
+
+msgid "Generic name"
+msgstr "Izen generikoa"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "GPUaren haizagailua"
+
+msgid "GPU History"
+msgstr "GPUaren historia"
+
+msgid "GPU usage alert (%)"
+msgstr "GPUaren erabileraren abisua (%)"
+
+msgid "Graphics Card"
+msgstr "Txartel grafikoa"
+
+msgid "Greater (>)"
+msgstr "Handiagoa (>)"
+
+msgid "Group"
+msgstr "Taldea"
+
+msgid "High CPU Usage"
+msgstr "PUZ erabilpen handia"
+
+msgid "High Disk Usage"
+msgstr "Diskoaren erabilera handia"
+
+msgid "High GPU Usage"
+msgstr "GPUaren erabilera handia"
+
+msgid "High Memory Usage"
+msgstr "UMemoria erabilpen handia"
+
+msgid "Hostname"
+msgstr "Ostalari-izena"
+
+msgid "Hostname *"
+msgstr "Ostalari-izena *"
+
+msgid "Hostname: {}"
+msgstr "Ostalari-izena: {}"
+
+msgid "Hosts"
+msgstr "Ostalariak"
+
+msgid "Hot"
+msgstr "Beroa"
+
+msgid "Icon"
+msgstr "Ikonoa"
+
+msgid "Icons and text"
+msgstr "Ikonoak eta testua"
+
+msgid "Icons only"
+msgstr "Ikonoak soilik"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "Instalatu zenity edo kdialog arakatzeko, edo idatzi karpetaren bidea."
+
+msgid "Invert match"
+msgstr "Alderantzikatu bat etortzea"
+
+msgid "IP Address"
+msgstr "IP helbidea"
+
+msgid "IP address *"
+msgstr "IP helbidea *"
+
+msgid "Keep running in the tray"
+msgstr "Jarraitu sistemaren erretiluan"
+
+msgid "Kernel Release: {}"
+msgstr "Kernel bertsioa: {}"
+
+msgid "Language"
+msgstr "Hizkuntza"
+
+msgid "Light"
+msgstr "Argia"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Linux sistemaren optimizatzailea eta monitorea — Stacer-en Rust bertsioa. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "Blokeo-pantailaren atzeko planoaren modua"
+
+msgid "Lower"
+msgstr "Azpian"
+
+msgid "Maximize"
+msgstr "Maximizatu"
+
+msgid "Maximize Horizontally"
+msgstr "Maximiztu horizontalki"
+
+msgid "Maximize Vertically"
+msgstr "Maximizatu bertikalki"
+
+msgid "Mem"
+msgstr "Mem."
+
+msgid "MEMORY"
+msgstr "MEMORIA"
+
+msgid "Memory History"
+msgstr "Memoriaren historia"
+
+msgid "Memory usage alert (%)"
+msgstr "Memoriaren erabileraren abisua (%)"
+
+msgid "Memory: {} of {}"
+msgstr "Memoria: {} / {}"
+
+msgid "Menu"
+msgstr "Menua"
+
+msgid "Middle fan"
+msgstr "Erdiko haizagailua"
+
+msgid "Minimize"
+msgstr "Minimizatu"
+
+msgid "Minutes"
+msgstr "Minutuak"
+
+msgid "Modified"
+msgstr "Aldatua"
+
+msgid "Mouse"
+msgstr "Sagua"
+
+msgid "Move to Trash"
+msgstr "Bota zakarrontzira"
+
+msgid "Name"
+msgstr "Izena"
+
+msgid "Name *"
+msgstr "Izena *"
+
+msgid "Name and command fields are required."
+msgstr "Izena eta komandoa derrigorrezkoak dira."
+
+msgid "Network History"
+msgstr "Sarearen historia"
+
+msgid "New Host"
+msgstr "Ostalari berria"
+
+msgid "New Startup Application"
+msgstr "Abioko aplikazio berria"
+
+msgid "Nice"
+msgstr "Prioritatea"
+
+msgid "No packages found."
+msgstr "Ez da paketerik aurkitu."
+
+msgid "No repositories found."
+msgstr "Ez da biltegirik aurkitu."
+
+msgid "No services found."
+msgstr "Ez da zerbitzurik aurkitu."
+
+msgid "No startup applications found."
+msgstr "Ez da abioko aplikaziorik aurkitu."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "Ez da onartutako GNOME ezarpenik aurkitu sistema honetan."
+
+msgid "No supported package manager found"
+msgstr "Ez da onartutako pakete-kudeatzailerik aurkitu"
+
+msgid "None"
+msgstr "Bat ere ez"
+
+msgid "Not mounted"
+msgstr "Muntatu gabe"
+
+msgid "Nothing selected."
+msgstr "Ez dago ezer hautatuta."
+
+msgid "Nothing to remove."
+msgstr "Ez dago ezer kentzeko."
+
+msgid "Number of workspaces"
+msgstr "Laneko areen kopurua"
+
+msgid "Older (>)"
+msgstr "Zaharragoa (>)"
+
+msgid "On-screen keyboard"
+msgstr "Pantailako teklatua"
+
+msgid "Open Folder"
+msgstr "Ireki karpeta"
+
+msgid "Open Kaptan"
+msgstr "Ireki Kaptan"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "Kaptan leihoa irekitzen du saioa hastean"
+
+msgid "Other"
+msgstr "Bestelakoak"
+
+msgid "Owner"
+msgstr "Jabea"
+
+msgid "Package Caches"
+msgstr "Paketeen cachea"
+
+msgid "Packages ({})"
+msgstr "Paketeak ({})"
+
+msgid "Path"
+msgstr "Bidea"
+
+msgid "Permissions"
+msgstr "Baimenak"
+
+msgid "Platform: {}"
+msgstr "Plataforma: {}"
+
+msgid "Process"
+msgstr "Prozesua"
+
+msgid "Processes"
+msgstr "Prozesuak"
+
+msgid "Processor"
+msgstr "Prozesadorea"
+
+msgid "Pump"
+msgstr "Ponpa"
+
+msgid "Quit"
+msgstr "Irten"
+
+msgid "Raise windows on click"
+msgstr "Igo leihoa klik egitean"
+
+msgid "Read: {}/s"
+msgstr "Irakurketa: {}/s"
+
+msgid "Refresh every {} s"
+msgstr "Freskatu {} segundoro"
+
+msgid "Regular expression"
+msgstr "Adierazpen erregularra"
+
+msgid "Remove"
+msgstr "Kendu"
+
+msgid "Remove {} package(s)?"
+msgstr "{} pakete kendu?"
+
+msgid "Repository added."
+msgstr "Biltegia gehitu da."
+
+msgid "Repository disabled."
+msgstr "Biltegia desgaitu da."
+
+msgid "Repository enabled."
+msgstr "Biltegia gaitu da."
+
+msgid "Repository is empty"
+msgstr "Biltegia hutsik dago"
+
+msgid "Repository removed."
+msgstr "Biltegia kendu da."
+
+msgid "Repository updated."
+msgstr "Biltegia eguneratu da."
+
+msgid "Resident"
+msgstr "Egoiliarra"
+
+msgid "Resources"
+msgstr "Baliabideak"
+
+msgid "Running"
+msgstr "Exekutatzen"
+
+msgid "Save"
+msgstr "Gorde"
+
+msgid "Save Changes"
+msgstr "Gorde aldaketak"
+
+msgid "Scaled"
+msgstr "Eskalatua"
+
+msgid "Scanning…"
+msgstr "Eskaneatzen…"
+
+msgid "Screen reader"
+msgstr "Pantaila irakurlea"
+
+msgid "Search"
+msgstr "Bilatu.."
+
+msgid "Search as root"
+msgstr "Bilatu root gisa"
+
+msgid "Search packages"
+msgstr "Bilatu paketeak"
+
+msgid "Search services"
+msgstr "Bilatu zerbitzuak"
+
+msgid "Select all"
+msgstr "Hautatu guztiak"
+
+msgid "Select at least one category."
+msgstr "Hautatu kategoria bat gutxienez."
+
+msgid "Select none"
+msgstr "Ez hautatu ezer"
+
+msgid "Select the search directory."
+msgstr "Hautatu bilaketa-karpeta."
+
+msgid "Service"
+msgstr "Zerbitzua"
+
+msgid "Services"
+msgstr "Zerbitzuak"
+
+msgid "Settings"
+msgstr "Ezarpenak"
+
+msgid "Show battery percentage"
+msgstr "Erakutsi bateriaren ehunekoa"
+
+msgid "Show home folder on desktop"
+msgstr "Erakutsi karpeta nagusia mahaigainean"
+
+msgid "Show mounted volumes on desktop"
+msgstr "Erakutsi muntatutako bolumenak mahaigainean"
+
+msgid "Show seconds in clock"
+msgstr "Erakutsi segundoak erlojuan"
+
+msgid "Show trash on desktop"
+msgstr "Erakutsi zakarrontzia mahaigainean"
+
+msgid "Show weekday in clock"
+msgstr "Erakutsi asteko eguna erlojuan"
+
+msgid "Shown on dashboard"
+msgstr "Panelean erakusten da"
+
+msgid "Sidebar"
+msgstr "Alboko barra"
+
+msgid "Size"
+msgstr "Tamaina"
+
+msgid "Sleeping"
+msgstr "Lo"
+
+msgid "Sloppy"
+msgstr "Zaindu gabea"
+
+msgid "Smaller (<)"
+msgstr "Txikiagoa (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Snap paketeak ({})"
+
+msgid "Source code"
+msgstr "Iturburu-kodea"
+
+msgid "source entry not found"
+msgstr "ez da biltegiaren sarrera aurkitu"
+
+msgid "Spanned"
+msgstr "Hedatua"
+
+msgid "Start at boot"
+msgstr "Abiaraztean"
+
+msgid "Start Kaptan at login"
+msgstr "Abiarazi Kaptan saioa hastean"
+
+msgid "Start page"
+msgstr "Hasiera-orria"
+
+msgid "Started"
+msgstr "Abiarazita"
+
+msgid "Startup Applications"
+msgstr "Abioko aplikazioak"
+
+msgid "Startup Apps"
+msgstr "Abioko aplikazioak"
+
+msgid "State"
+msgstr "Egoera"
+
+msgid "Stopped"
+msgstr "Geldituta"
+
+msgid "Stretched"
+msgstr "Luzatua"
+
+msgid "Suites"
+msgstr "Suiteak"
+
+msgid "Swap"
+msgstr "Swap"
+
+msgid "Swap (inactive)"
+msgstr "Swap (inaktiboa)"
+
+msgid "Swap: {} of {}"
+msgstr "Swap: {} / {}"
+
+msgid "Symbolic Link"
+msgstr "Esteka sinbolikoa"
+
+msgid "System Cleaner"
+msgstr "Sistemaren garbitzailea"
+
+msgid "System default"
+msgstr "Sistemaren lehenetsia"
+
+msgid "System fan"
+msgstr "Sistemaren haizagailua"
+
+msgid "SYSTEM INFO"
+msgstr "SISTEMAREN INFORMAZIOA"
+
+msgid "System Scan"
+msgstr "Eskaneatu sistema"
+
+msgid "System Services"
+msgstr "Sistemaren zerbitzuak"
+
+msgid "TEMPERATURES"
+msgstr "TENPERATURAK"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "PUZaren erabilera {}%-tik gainekoa da."
+
+msgid "The amount of disk used is over {}%."
+msgstr "Erabilitako diskoa {}% baino handiagoa da."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "GPUaren erabilerak %{} gainditu du."
+
+msgid "The amount of memory used is over {}%."
+msgstr "Erabilitako memoria {}% baino handiagoa da."
+
+msgid "The IP address and hostname fields are required."
+msgstr "IP helbidea eta ostalari-izena derrigorrezkoak dira."
+
+msgid "Theme"
+msgstr "Gaia"
+
+msgid "Time"
+msgstr "Denbora"
+
+msgid "Title bar double click"
+msgstr "Klik bikoitza titulu-barran"
+
+msgid "Title bar middle click"
+msgstr "Erdiko klika titulu-barran"
+
+msgid "Title bar right click"
+msgstr "Eskuineko klika titulu-barran"
+
+msgid "Total {} · selected {}"
+msgstr "Guztira {} · hautatuta {}"
+
+msgid "Total: {}"
+msgstr "Totala: {}"
+
+msgid "Trash"
+msgstr "Zakarrontzia"
+
+msgid "Type"
+msgstr "Mota"
+
+msgid "Types"
+msgstr "Motak"
+
+msgid "Types, URI and suites are required."
+msgstr "Motak, URIa eta suiteak derrigorrezkoak dira."
+
+msgid "Uninstall Selected ({})"
+msgstr "Desinstalatu hautatuak ({})"
+
+msgid "Uninstaller"
+msgstr "Desinstalatzailea"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "{} pakete desinstalatzen…"
+
+msgid "Unit"
+msgstr "Unitatea"
+
+msgid "Unsaved changes"
+msgstr "Gorde gabeko aldaketak"
+
+msgid "UPLOAD"
+msgstr "KARGA"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "Karga: {}/s Totala: {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "Erabiltzailea"
+
+msgid "Very hot"
+msgstr "Oso beroa"
+
+msgid "Virtual"
+msgstr "Birtuala"
+
+msgid "Wallpaper"
+msgstr "Horma-papera"
+
+msgid "When the window is closed"
+msgstr "Leihoa ixtean"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "Programak sistemaren erretiluan jarraitu behar du?"
+
+msgid "Window Manager"
+msgstr "Leiho-kudeatzailea"
+
+msgid "Within (<)"
+msgstr "Barruan (<)"
+
+msgid "Write: {}/s"
+msgstr "Idazketa: {}/s"
+
+msgid "Zoom"
+msgstr "Handitua"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} libre)"
+
+msgid "{} cleaned."
+msgstr "{} garbitu da."
+
+msgid "{} deleted."
+msgstr "{} ezabatu da."
+
+msgid "{} disabled."
+msgstr "{} desgaitu da."
+
+msgid "{} enabled."
+msgstr "{} gaitu da."
+
+msgid "{} found"
+msgstr "{} aurkitu dira"
+
+msgid "{} found, showing {}"
+msgstr "{} aurkitu dira, {} erakusten"
+
+msgid "{} minute average: {}"
+msgstr "{} minutuko batezbestekoa: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "Beste {} pakete zure hautapenaren menpe daude eta haiek ere kenduko dira."
+
+msgid "{} moved to trash."
+msgstr "{} zakarrontzira bota da."
+
+msgid "{} package(s) removed."
+msgstr "{} pakete kendu dira."
+
+msgid "{} started."
+msgstr "{} abiarazi da."
+
+msgid "{} stopped."
+msgstr "{} gelditu da."
+
+msgid "{} used · {} free"
+msgstr "{} erabilita · {} libre"

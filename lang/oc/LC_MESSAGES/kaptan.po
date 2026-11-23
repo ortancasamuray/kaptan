@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "« {} » es pas una adreça IP valida."
+
+msgid "/etc/hosts saved."
+msgstr "/etc/hosts enregistrat."
+
+msgid "0 disables the alert"
+msgstr "0 desactiva l'alèrta"
+
+msgid "ABOUT"
+msgstr "A PROPÒSIT"
+
+msgid "Accessed"
+msgstr "Accès"
+
+msgid "Accessibility"
+msgstr "Accessibilitat"
+
+msgid "Add Repository"
+msgstr "Apondre un depaus"
+
+msgid "Add Startup App"
+msgstr "Ajustar una aplicacion a l’aviada"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository es pas installat (paquet : software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "Avançat ▲"
+
+msgid "Advanced ▼"
+msgstr "Avançat ▼"
+
+msgid "ALERTS"
+msgstr "ALÈRTAS"
+
+msgid "Aliases"
+msgstr "Aliases"
+
+msgid "All"
+msgstr "Tot"
+
+msgid "All Disks"
+msgstr "Totes los disques"
+
+msgid "All users"
+msgstr "Totes los utilizaires"
+
+msgid "Amount"
+msgstr "Quantitat"
+
+msgid "Any"
+msgstr "Quin que siá"
+
+msgid "Appearance"
+msgstr "Aparéncia"
+
+msgid "Application Caches"
+msgstr "Escondedor de las aplicacions"
+
+msgid "Application Logs"
+msgstr "Jornals de las aplicacions"
+
+msgid "Apply"
+msgstr "Aplicar"
+
+msgid "APT Repositories"
+msgstr "Depauses APT"
+
+msgid "Ask"
+msgstr "Demandar"
+
+msgid "Back to categories"
+msgstr "Tornar a las categorias"
+
+msgid "Browse"
+msgstr "Percórrer"
+
+msgid "Cancel"
+msgstr "Anullar"
+
+msgid "Case insensitive"
+msgstr "Ignorar la cassa"
+
+msgid "Center new windows"
+msgstr "Centrar las fenèstras novèlas"
+
+msgid "Centered"
+msgstr "Centrat"
+
+msgid "Changed"
+msgstr "Cambiament d'estat"
+
+msgid "Chassis fan"
+msgstr "Ventilador del bóstia"
+
+msgid "Clean"
+msgstr "Netejar"
+
+msgid "Click"
+msgstr "Clic"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "Clicatz sus una particion montada per l'afichar sul tablèu de bòrd."
+
+msgid "Close"
+msgstr "Tampar"
+
+msgid "Cold"
+msgstr "Freg"
+
+msgid "Command *"
+msgstr "Comanda *"
+
+msgid "Comment"
+msgstr "Comentari"
+
+msgid "Comparison"
+msgstr "Comparason"
+
+msgid "Components"
+msgstr "Components"
+
+msgid "Continue"
+msgstr "Contunhar"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "CPU Cores: {}"
+msgstr "Còrs del processador : {}"
+
+msgid "CPU fan"
+msgstr "Ventilador del processador"
+
+msgid "CPU History"
+msgstr "Istoric del processador"
+
+msgid "CPU Load Averages"
+msgstr "Carga mejana del processador"
+
+msgid "CPU Model: {}"
+msgstr "Modèl del Processor : {}"
+
+msgid "CPU Speed: {}"
+msgstr "Velocitat : {}"
+
+msgid "CPU usage alert (%)"
+msgstr "Alèrta d'utilizacion del processador (%)"
+
+msgid "Crash Reports"
+msgstr "Rapòrt de problèmas"
+
+msgid "Dark"
+msgstr "Escur"
+
+msgid "Dashboard"
+msgstr "Panèl de configuracion"
+
+msgid "Dashboard disk"
+msgstr "Disc del tablèu de bòrd"
+
+msgid "Delete"
+msgstr "Suprimir"
+
+msgid "Delete Permanently"
+msgstr "Suprimir definitivament"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "Suprimir definitivament l'element seleccionat ? Aquò se pòt pas anullar."
+
+msgid "Desktop"
+msgstr "Burèu"
+
+msgid "Desktop background mode"
+msgstr "Mòde del fons del burèu"
+
+msgid "Desktop Settings"
+msgstr "Paramètres del burèu"
+
+msgid "Directory"
+msgstr "Dossièr"
+
+msgid "Disabled"
+msgstr "Desactivat"
+
+msgid "DISK"
+msgstr "DISC"
+
+msgid "Disk Read / Write"
+msgstr "Lectura / escritura del disc"
+
+msgid "Disk usage alert (%)"
+msgstr "Alèrta d'utilizacion del disc (%)"
+
+msgid "Distribution: {}"
+msgstr "Distribucion : {}"
+
+msgid "Don't ask again."
+msgstr "Demandar pas mai."
+
+msgid "DOWNLOAD"
+msgstr "Telecargar"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "Telecargament : {}/s  Total : {}"
+
+msgid "Dynamic workspaces"
+msgstr "Espacis de trabalh dinamics"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "ex. ppa:utilizaire/depaus  o  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "Modificar"
+
+msgid "Edit Repository"
+msgstr "Modificar lo depaus"
+
+msgid "Edit Startup Application"
+msgstr "Modificar l'aplicacion d'aviada"
+
+msgid "Empty only"
+msgstr "Sonque los voids"
+
+msgid "Enable animations"
+msgstr "Activar las animacions"
+
+msgid "Enabled"
+msgstr "Activat"
+
+msgid "End Process"
+msgstr "Arrestar lo processús"
+
+msgid "End Process {}"
+msgstr "Acabar lo processus {}"
+
+msgid "Equal (=)"
+msgstr "Egal (=)"
+
+msgid "Exactly (=)"
+msgstr "Exactament (=)"
+
+msgid "FANS"
+msgstr "VENTILADORS"
+
+msgid "File"
+msgstr "Fichièr"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "Nom de fichièr o motiu, ex. *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "Sistèma de fichièrs afichat sus l'indicador de disc del tablèu de bòrd"
+
+msgid "File Systems"
+msgstr "Sistèmas de fichièrs"
+
+msgid "Filter by name, user or PID"
+msgstr "Filtrar per nom, utilizaire o PID"
+
+msgid "Focus mode"
+msgstr "Mòde de focus"
+
+msgid "GENERAL"
+msgstr "GENERAL"
+
+msgid "Generic name"
+msgstr "Nom generic"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "Ventilador del GPU"
+
+msgid "GPU History"
+msgstr "Istoric del GPU"
+
+msgid "GPU usage alert (%)"
+msgstr "Alèrta d'utilizacion del GPU (%)"
+
+msgid "Graphics Card"
+msgstr "Carta grafica"
+
+msgid "Greater (>)"
+msgstr "Mai grand (>)"
+
+msgid "Group"
+msgstr "Grop"
+
+msgid "High CPU Usage"
+msgstr "Utilizacion elevada del processador"
+
+msgid "High Disk Usage"
+msgstr "Utilizacion elevada del disc"
+
+msgid "High GPU Usage"
+msgstr "Utilizacion elevada del GPU"
+
+msgid "High Memory Usage"
+msgstr "Utilizacion elevada de la memòria"
+
+msgid "Hostname"
+msgstr "Nom d'òste"
+
+msgid "Hostname *"
+msgstr "Nom d'òste *"
+
+msgid "Hostname: {}"
+msgstr "Nom d’Òste : {}"
+
+msgid "Hosts"
+msgstr "Òstes"
+
+msgid "Hot"
+msgstr "Caud"
+
+msgid "Icon"
+msgstr "Icòna"
+
+msgid "Icons and text"
+msgstr "Icònas e tèxte"
+
+msgid "Icons only"
+msgstr "Sonque las icònas"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "Installatz zenity o kdialog per navigar, o picatz lo camin del dossièr."
+
+msgid "Invert match"
+msgstr "Inversar la correspondéncia"
+
+msgid "IP Address"
+msgstr "Adreça IP"
+
+msgid "IP address *"
+msgstr "Adreça IP *"
+
+msgid "Keep running in the tray"
+msgstr "Contunhar dins la zòna de notificacion"
+
+msgid "Kernel Release: {}"
+msgstr "Version del nucli : {}"
+
+msgid "Language"
+msgstr "Lenga"
+
+msgid "Light"
+msgstr "Clar"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Optimizaire e monitor del sistèma Linux — un pòrt de Stacer en Rust. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "Mòde del fons de l'ecran de verrolhatge"
+
+msgid "Lower"
+msgstr "Abaissar"
+
+msgid "Maximize"
+msgstr "Maximizar"
+
+msgid "Maximize Horizontally"
+msgstr "Maximizar orizontalament"
+
+msgid "Maximize Vertically"
+msgstr "Maximizar verticalament"
+
+msgid "Mem"
+msgstr "Mem."
+
+msgid "MEMORY"
+msgstr "MEMÒRIA"
+
+msgid "Memory History"
+msgstr "Istoric de la memòria"
+
+msgid "Memory usage alert (%)"
+msgstr "Alèrta d'utilizacion de la memòria (%)"
+
+msgid "Memory: {} of {}"
+msgstr "Memòria : {} sus {}"
+
+msgid "Menu"
+msgstr "Menú"
+
+msgid "Middle fan"
+msgstr "Ventilador central"
+
+msgid "Minimize"
+msgstr "Minimizar"
+
+msgid "Minutes"
+msgstr "Minutas"
+
+msgid "Modified"
+msgstr "Modificat"
+
+msgid "Mouse"
+msgstr "Mirga"
+
+msgid "Move to Trash"
+msgstr "Desplaçar a l'escobilhièr"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "Name *"
+msgstr "Nom *"
+
+msgid "Name and command fields are required."
+msgstr "Los camps nom e comanda son obligatòris."
+
+msgid "Network History"
+msgstr "Istoric del ret"
+
+msgid "New Host"
+msgstr "Òste novèl"
+
+msgid "New Startup Application"
+msgstr "Aplicacion d'aviada novèla"
+
+msgid "Nice"
+msgstr "Bon"
+
+msgid "No packages found."
+msgstr "Cap de paquet pas trobat."
+
+msgid "No repositories found."
+msgstr "Cap de depaus pas trobat."
+
+msgid "No services found."
+msgstr "Cap de servici pas trobat."
+
+msgid "No startup applications found."
+msgstr "Cap d'aplicacion d'aviada pas trobada."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "Cap de paramètre GNOME pres en carga es pas estat trobat sus aqueste sistèma."
+
+msgid "No supported package manager found"
+msgstr "Cap de gestionari de paquets pres en carga pas trobat"
+
+msgid "None"
+msgstr "Cap"
+
+msgid "Not mounted"
+msgstr "Pas montat"
+
+msgid "Nothing selected."
+msgstr "Res es pas seleccionat."
+
+msgid "Nothing to remove."
+msgstr "Res de suprimir."
+
+msgid "Number of workspaces"
+msgstr "Nombre d'espacis de trabalh"
+
+msgid "Older (>)"
+msgstr "Mai ancian (>)"
+
+msgid "On-screen keyboard"
+msgstr "Clavièr visual"
+
+msgid "Open Folder"
+msgstr "Dobrir lo dossièr"
+
+msgid "Open Kaptan"
+msgstr "Dobrir Kaptan"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "Dobrís la fenèstra de Kaptan a la connexion"
+
+msgid "Other"
+msgstr "Autre"
+
+msgid "Owner"
+msgstr "Proprietari"
+
+msgid "Package Caches"
+msgstr "Paquet de l’escondedor"
+
+msgid "Packages ({})"
+msgstr "Paquets ({})"
+
+msgid "Path"
+msgstr "Camin"
+
+msgid "Permissions"
+msgstr "Permissions"
+
+msgid "Platform: {}"
+msgstr "Plataforma : {}"
+
+msgid "Process"
+msgstr "Processús"
+
+msgid "Processes"
+msgstr "Processús"
+
+msgid "Processor"
+msgstr "Processador"
+
+msgid "Pump"
+msgstr "Pompa"
+
+msgid "Quit"
+msgstr "Quitar"
+
+msgid "Raise windows on click"
+msgstr "Metre en primièr plan al clic"
+
+msgid "Read: {}/s"
+msgstr "Lectura : {}/s"
+
+msgid "Refresh every {} s"
+msgstr "Actualizar cada {} s"
+
+msgid "Regular expression"
+msgstr "Expression regulara"
+
+msgid "Remove"
+msgstr "Suprimir"
+
+msgid "Remove {} package(s)?"
+msgstr "Suprimir {} paquet(s) ?"
+
+msgid "Repository added."
+msgstr "Depaus apondut."
+
+msgid "Repository disabled."
+msgstr "Depaus desactivat."
+
+msgid "Repository enabled."
+msgstr "Depaus activat."
+
+msgid "Repository is empty"
+msgstr "Lo depaus es void"
+
+msgid "Repository removed."
+msgstr "Depaus suprimit."
+
+msgid "Repository updated."
+msgstr "Depaus mes a jorn."
+
+msgid "Resident"
+msgstr "Residenta"
+
+msgid "Resources"
+msgstr "Ressorsas"
+
+msgid "Running"
+msgstr "En execucion"
+
+msgid "Save"
+msgstr "Salvar"
+
+msgid "Save Changes"
+msgstr "Enregistrar las modificacions"
+
+msgid "Scaled"
+msgstr "Adaptat"
+
+msgid "Scanning…"
+msgstr "Analisi…"
+
+msgid "Screen reader"
+msgstr "Lector d'ecran"
+
+msgid "Search"
+msgstr "Cercar.."
+
+msgid "Search as root"
+msgstr "Cercar coma root"
+
+msgid "Search packages"
+msgstr "Cercar de paquets"
+
+msgid "Search services"
+msgstr "Cercar de servicis"
+
+msgid "Select all"
+msgstr "Tot seleccionar"
+
+msgid "Select at least one category."
+msgstr "Seleccionatz almens una categoria."
+
+msgid "Select none"
+msgstr "Seleccionar pas res"
+
+msgid "Select the search directory."
+msgstr "Seleccionatz lo dossièr de recèrca."
+
+msgid "Service"
+msgstr "Servici"
+
+msgid "Services"
+msgstr "Servicis"
+
+msgid "Settings"
+msgstr "Paramètres"
+
+msgid "Show battery percentage"
+msgstr "Afichar lo percentatge de la batariá"
+
+msgid "Show home folder on desktop"
+msgstr "Afichar lo dossièr personal sul burèu"
+
+msgid "Show mounted volumes on desktop"
+msgstr "Afichar los volums montats sul burèu"
+
+msgid "Show seconds in clock"
+msgstr "Afichar las segondas dins lo relòtge"
+
+msgid "Show trash on desktop"
+msgstr "Afichar l'escobilhièr sul burèu"
+
+msgid "Show weekday in clock"
+msgstr "Afichar lo jorn de la setmana dins lo relòtge"
+
+msgid "Shown on dashboard"
+msgstr "Afichat sul tablèu de bòrd"
+
+msgid "Sidebar"
+msgstr "Barra laterala"
+
+msgid "Size"
+msgstr "Talha"
+
+msgid "Sleeping"
+msgstr "En velha"
+
+msgid "Sloppy"
+msgstr "Sople"
+
+msgid "Smaller (<)"
+msgstr "Mai pichon (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Paquets Snap ({})"
+
+msgid "Source code"
+msgstr "Còdi font"
+
+msgid "source entry not found"
+msgstr "entrada de depaus introbabla"
+
+msgid "Spanned"
+msgstr "Espandit"
+
+msgid "Start at boot"
+msgstr "A l'aviada"
+
+msgid "Start Kaptan at login"
+msgstr "Aviar Kaptan a la dobertura de session"
+
+msgid "Start page"
+msgstr "Pagina d'aviada"
+
+msgid "Started"
+msgstr "Aviat"
+
+msgid "Startup Applications"
+msgstr "Aplicacions d'aviada"
+
+msgid "Startup Apps"
+msgstr "Aviada"
+
+msgid "State"
+msgstr "Estats"
+
+msgid "Stopped"
+msgstr "Arrestat"
+
+msgid "Stretched"
+msgstr "Estirat"
+
+msgid "Suites"
+msgstr "Suites"
+
+msgid "Swap"
+msgstr "Swap"
+
+msgid "Swap (inactive)"
+msgstr "Swap (inactiu)"
+
+msgid "Swap: {} of {}"
+msgstr "Swap : {} sus {}"
+
+msgid "Symbolic Link"
+msgstr "Ligam simbolic"
+
+msgid "System Cleaner"
+msgstr "Netejador sistèma"
+
+msgid "System default"
+msgstr "Per defaut del sistèma"
+
+msgid "System fan"
+msgstr "Ventilador del sistèma"
+
+msgid "SYSTEM INFO"
+msgstr "INFORMACIONS SISTÈMA"
+
+msgid "System Scan"
+msgstr "Analisar lo sistèma"
+
+msgid "System Services"
+msgstr "Servicis del sistèma"
+
+msgid "TEMPERATURES"
+msgstr "TEMPERATURAS"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "L'utilizacion del processador depassa {}%."
+
+msgid "The amount of disk used is over {}%."
+msgstr "L'utilizacion del disc depassa {}%."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "L'utilizacion del GPU depassa {}%."
+
+msgid "The amount of memory used is over {}%."
+msgstr "L'utilizacion de la memòria depassa {}%."
+
+msgid "The IP address and hostname fields are required."
+msgstr "Los camps adreça IP e nom d'òste son obligatòris."
+
+msgid "Theme"
+msgstr "Tèma"
+
+msgid "Time"
+msgstr "Temps"
+
+msgid "Title bar double click"
+msgstr "Doble clic sus la barra de títol"
+
+msgid "Title bar middle click"
+msgstr "Clic del mitan sus la barra de títol"
+
+msgid "Title bar right click"
+msgstr "Clic drech sus la barra de títol"
+
+msgid "Total {} · selected {}"
+msgstr "Total {} · seleccionat {}"
+
+msgid "Total: {}"
+msgstr "Total : {}"
+
+msgid "Trash"
+msgstr "Escobilhièr"
+
+msgid "Type"
+msgstr "Tipe"
+
+msgid "Types"
+msgstr "Tipes"
+
+msgid "Types, URI and suites are required."
+msgstr "Los tipes, l'URI e las suites son obligatòris."
+
+msgid "Uninstall Selected ({})"
+msgstr "Desinstallar la seleccion ({})"
+
+msgid "Uninstaller"
+msgstr "Desinstallador"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "Desinstallacion de {} paquet(s)…"
+
+msgid "Unit"
+msgstr "Unitat"
+
+msgid "Unsaved changes"
+msgstr "Modificacions pas enregistradas"
+
+msgid "UPLOAD"
+msgstr "MANDADÍS"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "Mandadís : {}/s  Total : {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "Utilizaire"
+
+msgid "Very hot"
+msgstr "Fòrça caud"
+
+msgid "Virtual"
+msgstr "Virtuala"
+
+msgid "Wallpaper"
+msgstr "Fons d'ecran"
+
+msgid "When the window is closed"
+msgstr "A la tampadura de la fenèstra"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "Lo programa deu contunhar de foncionar dins la zòna de notificacion ?"
+
+msgid "Window Manager"
+msgstr "Gestionari de fenèstras"
+
+msgid "Within (<)"
+msgstr "Dins las (<)"
+
+msgid "Write: {}/s"
+msgstr "Escritura : {}/s"
+
+msgid "Zoom"
+msgstr "Zoom"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} liure)"
+
+msgid "{} cleaned."
+msgstr "{} netejat."
+
+msgid "{} deleted."
+msgstr "{} suprimit."
+
+msgid "{} disabled."
+msgstr "{} desactivat."
+
+msgid "{} enabled."
+msgstr "{} activat."
+
+msgid "{} found"
+msgstr "{} trobat(s)"
+
+msgid "{} found, showing {}"
+msgstr "{} trobat(s), {} afichat(s)"
+
+msgid "{} minute average: {}"
+msgstr "Mejana sus {} minuta(s) : {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "{} autre(s) paquet(s) dependon de vòstra seleccion e seràn tanben suprimits."
+
+msgid "{} moved to trash."
+msgstr "{} desplaçat a l'escobilhièr."
+
+msgid "{} package(s) removed."
+msgstr "{} paquet(s) suprimit(s)."
+
+msgid "{} started."
+msgstr "{} aviat."
+
+msgid "{} stopped."
+msgstr "{} arrestat."
+
+msgid "{} used · {} free"
+msgstr "{} utilizat · {} liure"

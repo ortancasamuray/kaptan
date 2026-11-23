@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "A(z) „{}” nem érvényes IP-cím."
+
+msgid "/etc/hosts saved."
+msgstr "Az /etc/hosts mentve."
+
+msgid "0 disables the alert"
+msgstr "A 0 kikapcsolja a figyelmeztetést"
+
+msgid "ABOUT"
+msgstr "NÉVJEGY"
+
+msgid "Accessed"
+msgstr "Hozzáférés"
+
+msgid "Accessibility"
+msgstr "Akadálymentesítés"
+
+msgid "Add Repository"
+msgstr "Csomagtárolót Hozzáad"
+
+msgid "Add Startup App"
+msgstr "Alkalmazás Hozzáadása"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "Az add-apt-repository nincs telepítve (csomag: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "Speciális ▲"
+
+msgid "Advanced ▼"
+msgstr "Speciális ▼"
+
+msgid "ALERTS"
+msgstr "FIGYELMEZTETÉSEK"
+
+msgid "Aliases"
+msgstr "Álnevek"
+
+msgid "All"
+msgstr "Összes"
+
+msgid "All Disks"
+msgstr "Összes lemez"
+
+msgid "All users"
+msgstr "Összes felhasználó"
+
+msgid "Amount"
+msgstr "Mennyiség"
+
+msgid "Any"
+msgstr "Bármely"
+
+msgid "Appearance"
+msgstr "Megjelenés"
+
+msgid "Application Caches"
+msgstr "Alkalmazás Gyorsítótárak"
+
+msgid "Application Logs"
+msgstr "Alkalmazásnaplók"
+
+msgid "Apply"
+msgstr "Alkalmaz"
+
+msgid "APT Repositories"
+msgstr "APT-tárolók"
+
+msgid "Ask"
+msgstr "Kérdezzen"
+
+msgid "Back to categories"
+msgstr "Vissza a kategóriákhoz"
+
+msgid "Browse"
+msgstr "Tallózás"
+
+msgid "Cancel"
+msgstr "Mégse"
+
+msgid "Case insensitive"
+msgstr "Kis- és nagybetű nem számít"
+
+msgid "Center new windows"
+msgstr "Új ablakok középre helyezése"
+
+msgid "Centered"
+msgstr "Középre"
+
+msgid "Changed"
+msgstr "Állapotváltozás"
+
+msgid "Chassis fan"
+msgstr "Házventilátor"
+
+msgid "Clean"
+msgstr "Tisztítás"
+
+msgid "Click"
+msgstr "Kattintás"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "Kattintson egy csatolt partícióra, hogy a vezérlőpulton jelenjen meg."
+
+msgid "Close"
+msgstr "Bezárás"
+
+msgid "Cold"
+msgstr "Hideg"
+
+msgid "Command *"
+msgstr "Parancs *"
+
+msgid "Comment"
+msgstr "Megjegyzés"
+
+msgid "Comparison"
+msgstr "Összehasonlítás"
+
+msgid "Components"
+msgstr "Komponensek"
+
+msgid "Continue"
+msgstr "Folytatás"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "CPU Cores: {}"
+msgstr "Processzormagok: {}"
+
+msgid "CPU fan"
+msgstr "Processzorventilátor"
+
+msgid "CPU History"
+msgstr "Processzorelőzmények"
+
+msgid "CPU Load Averages"
+msgstr "Processzor átlagos terhelése"
+
+msgid "CPU Model: {}"
+msgstr "CPU Modell: {}"
+
+msgid "CPU Speed: {}"
+msgstr "CPU Sebessége: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "Processzorhasználati figyelmeztetés (%)"
+
+msgid "Crash Reports"
+msgstr "Összeomlás Jelentések"
+
+msgid "Dark"
+msgstr "Sötét"
+
+msgid "Dashboard"
+msgstr "Vezérlőpult"
+
+msgid "Dashboard disk"
+msgstr "Vezérlőpult lemeze"
+
+msgid "Delete"
+msgstr "Töröl"
+
+msgid "Delete Permanently"
+msgstr "Végleges törlés"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "Véglegesen törli a kijelölt elemet? Ez nem vonható vissza."
+
+msgid "Desktop"
+msgstr "Asztal"
+
+msgid "Desktop background mode"
+msgstr "Asztal háttérmódja"
+
+msgid "Desktop Settings"
+msgstr "Asztalbeállítások"
+
+msgid "Directory"
+msgstr "Mappa"
+
+msgid "Disabled"
+msgstr "Tiltva"
+
+msgid "DISK"
+msgstr "LEMEZ"
+
+msgid "Disk Read / Write"
+msgstr "Lemez olvasás / írás"
+
+msgid "Disk usage alert (%)"
+msgstr "Lemezhasználati figyelmeztetés (%)"
+
+msgid "Distribution: {}"
+msgstr "Disztribúció: {}"
+
+msgid "Don't ask again."
+msgstr "Ne kérdezze újra."
+
+msgid "DOWNLOAD"
+msgstr "Letöltés"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "Letöltés: {}/s  Összesen: {}"
+
+msgid "Dynamic workspaces"
+msgstr "Dinamikus munkaterületek"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "pl. ppa:felhasznalo/tarolo  vagy  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "Szerkeszt"
+
+msgid "Edit Repository"
+msgstr "Tároló szerkesztése"
+
+msgid "Edit Startup Application"
+msgstr "Automatikusan induló alkalmazás szerkesztése"
+
+msgid "Empty only"
+msgstr "Csak üresek"
+
+msgid "Enable animations"
+msgstr "Animációk engedélyezése"
+
+msgid "Enabled"
+msgstr "Engedélyezve"
+
+msgid "End Process"
+msgstr "Folyamat Befejezése"
+
+msgid "End Process {}"
+msgstr "{} folyamat befejezése"
+
+msgid "Equal (=)"
+msgstr "Egyenlő (=)"
+
+msgid "Exactly (=)"
+msgstr "Pontosan (=)"
+
+msgid "FANS"
+msgstr "VENTILÁTOROK"
+
+msgid "File"
+msgstr "Fájl"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "Fájlnév vagy minta, pl. *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "A vezérlőpult lemezmérőjén megjelenő fájlrendszer"
+
+msgid "File Systems"
+msgstr "Fájlrendszerek"
+
+msgid "Filter by name, user or PID"
+msgstr "Szűrés név, felhasználó vagy PID szerint"
+
+msgid "Focus mode"
+msgstr "Fókusz mód"
+
+msgid "GENERAL"
+msgstr "Általános"
+
+msgid "Generic name"
+msgstr "Általános név"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "GPU-ventilátor"
+
+msgid "GPU History"
+msgstr "GPU-előzmények"
+
+msgid "GPU usage alert (%)"
+msgstr "GPU-használati figyelmeztetés (%)"
+
+msgid "Graphics Card"
+msgstr "Videokártya"
+
+msgid "Greater (>)"
+msgstr "Nagyobb (>)"
+
+msgid "Group"
+msgstr "Csoport"
+
+msgid "High CPU Usage"
+msgstr "Magas Processzorhasználat"
+
+msgid "High Disk Usage"
+msgstr "Magas Lemez Felhasználás"
+
+msgid "High GPU Usage"
+msgstr "Magas GPU-használat"
+
+msgid "High Memory Usage"
+msgstr "Magas Memóriahasználat"
+
+msgid "Hostname"
+msgstr "Gépnév"
+
+msgid "Hostname *"
+msgstr "Gépnév *"
+
+msgid "Hostname: {}"
+msgstr "Gazdagépnév: {}"
+
+msgid "Hosts"
+msgstr "Gépek"
+
+msgid "Hot"
+msgstr "Meleg"
+
+msgid "Icon"
+msgstr "Ikon"
+
+msgid "Icons and text"
+msgstr "Ikonok és szöveg"
+
+msgid "Icons only"
+msgstr "Csak ikonok"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "A tallózáshoz telepítse a zenity vagy a kdialog programot, vagy írja be a mappa útvonalát."
+
+msgid "Invert match"
+msgstr "Egyezés megfordítása"
+
+msgid "IP Address"
+msgstr "IP-cím"
+
+msgid "IP address *"
+msgstr "IP-cím *"
+
+msgid "Keep running in the tray"
+msgstr "Futás a tálcán"
+
+msgid "Kernel Release: {}"
+msgstr "Kernel Kiadás: {}"
+
+msgid "Language"
+msgstr "Nyelv"
+
+msgid "Light"
+msgstr "Világos"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Linux rendszeroptimalizáló és -figyelő — a Stacer Rust-változata. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "Zárolási képernyő háttérmódja"
+
+msgid "Lower"
+msgstr "Alsó"
+
+msgid "Maximize"
+msgstr "Maximalizálás"
+
+msgid "Maximize Horizontally"
+msgstr "Vízszintes Maximalizállás"
+
+msgid "Maximize Vertically"
+msgstr "Függőleges Maximalizállás"
+
+msgid "Mem"
+msgstr "Mem."
+
+msgid "MEMORY"
+msgstr "MEMÓRIA"
+
+msgid "Memory History"
+msgstr "Memóriaelőzmények"
+
+msgid "Memory usage alert (%)"
+msgstr "Memóriahasználati figyelmeztetés (%)"
+
+msgid "Memory: {} of {}"
+msgstr "Memória: {} / {}"
+
+msgid "Menu"
+msgstr "Menü"
+
+msgid "Middle fan"
+msgstr "Középső ventilátor"
+
+msgid "Minimize"
+msgstr "Minimalizálás"
+
+msgid "Minutes"
+msgstr "Perc"
+
+msgid "Modified"
+msgstr "Módosítva"
+
+msgid "Mouse"
+msgstr "Egér"
+
+msgid "Move to Trash"
+msgstr "Áthelyezés a kukába"
+
+msgid "Name"
+msgstr "Név"
+
+msgid "Name *"
+msgstr "Név *"
+
+msgid "Name and command fields are required."
+msgstr "A név és a parancs mező kitöltése kötelező."
+
+msgid "Network History"
+msgstr "Hálózati előzmények"
+
+msgid "New Host"
+msgstr "Új gép"
+
+msgid "New Startup Application"
+msgstr "Új automatikusan induló alkalmazás"
+
+msgid "Nice"
+msgstr "Szép"
+
+msgid "No packages found."
+msgstr "Nem található csomag."
+
+msgid "No repositories found."
+msgstr "Nem található tároló."
+
+msgid "No services found."
+msgstr "Nem található szolgáltatás."
+
+msgid "No startup applications found."
+msgstr "Nem található automatikusan induló alkalmazás."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "Ezen a rendszeren nem található támogatott GNOME-beállítás."
+
+msgid "No supported package manager found"
+msgstr "Nem található támogatott csomagkezelő"
+
+msgid "None"
+msgstr "Semmi"
+
+msgid "Not mounted"
+msgstr "Nincs csatolva"
+
+msgid "Nothing selected."
+msgstr "Nincs kijelölve semmi."
+
+msgid "Nothing to remove."
+msgstr "Nincs mit eltávolítani."
+
+msgid "Number of workspaces"
+msgstr "Munkaterületek száma"
+
+msgid "Older (>)"
+msgstr "Régebbi (>)"
+
+msgid "On-screen keyboard"
+msgstr "Képernyő-billentyűzet"
+
+msgid "Open Folder"
+msgstr "Mappa megnyitása"
+
+msgid "Open Kaptan"
+msgstr "Kaptan megnyitása"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "Bejelentkezéskor megnyitja a Kaptan ablakát"
+
+msgid "Other"
+msgstr "Egyéb"
+
+msgid "Owner"
+msgstr "Tulajdonos"
+
+msgid "Package Caches"
+msgstr "Csomag Gyorsítótárak"
+
+msgid "Packages ({})"
+msgstr "Csomagok ({})"
+
+msgid "Path"
+msgstr "Útvonal"
+
+msgid "Permissions"
+msgstr "Jogosultságok"
+
+msgid "Platform: {}"
+msgstr "Platform: {}"
+
+msgid "Process"
+msgstr "Folyamat"
+
+msgid "Processes"
+msgstr "Folyamatok"
+
+msgid "Processor"
+msgstr "Processzor"
+
+msgid "Pump"
+msgstr "Szivattyú"
+
+msgid "Quit"
+msgstr "Kilépés"
+
+msgid "Raise windows on click"
+msgstr "Ablak előtérbe hozása kattintáskor"
+
+msgid "Read: {}/s"
+msgstr "Olvasás: {}/s"
+
+msgid "Refresh every {} s"
+msgstr "Frissítés {} másodpercenként"
+
+msgid "Regular expression"
+msgstr "Reguláris kifejezés"
+
+msgid "Remove"
+msgstr "Eltávolítás"
+
+msgid "Remove {} package(s)?"
+msgstr "Eltávolít {} csomagot?"
+
+msgid "Repository added."
+msgstr "Tároló hozzáadva."
+
+msgid "Repository disabled."
+msgstr "Tároló letiltva."
+
+msgid "Repository enabled."
+msgstr "Tároló engedélyezve."
+
+msgid "Repository is empty"
+msgstr "A tároló üres"
+
+msgid "Repository removed."
+msgstr "Tároló eltávolítva."
+
+msgid "Repository updated."
+msgstr "Tároló frissítve."
+
+msgid "Resident"
+msgstr "Rezidens"
+
+msgid "Resources"
+msgstr "Erőforrások"
+
+msgid "Running"
+msgstr "Futó"
+
+msgid "Save"
+msgstr "Mentés"
+
+msgid "Save Changes"
+msgstr "Változtatások mentése"
+
+msgid "Scaled"
+msgstr "Mozaik"
+
+msgid "Scanning…"
+msgstr "Keresés…"
+
+msgid "Screen reader"
+msgstr "Képernyőolvasó"
+
+msgid "Search"
+msgstr "Keresés.."
+
+msgid "Search as root"
+msgstr "Keresés rootként"
+
+msgid "Search packages"
+msgstr "Csomagok keresése"
+
+msgid "Search services"
+msgstr "Szolgáltatások keresése"
+
+msgid "Select all"
+msgstr "Összes kijelölése"
+
+msgid "Select at least one category."
+msgstr "Válasszon legalább egy kategóriát."
+
+msgid "Select none"
+msgstr "Kijelölés törlése"
+
+msgid "Select the search directory."
+msgstr "Válassza ki a keresési mappát."
+
+msgid "Service"
+msgstr "Szolgáltatás"
+
+msgid "Services"
+msgstr "Szolgáltatások"
+
+msgid "Settings"
+msgstr "Beállítások"
+
+msgid "Show battery percentage"
+msgstr "Akkumulátor-töltöttség megjelenítése"
+
+msgid "Show home folder on desktop"
+msgstr "Saját mappa megjelenítése az asztalon"
+
+msgid "Show mounted volumes on desktop"
+msgstr "Csatolt kötetek megjelenítése az asztalon"
+
+msgid "Show seconds in clock"
+msgstr "Másodpercek megjelenítése az órán"
+
+msgid "Show trash on desktop"
+msgstr "Kuka megjelenítése az asztalon"
+
+msgid "Show weekday in clock"
+msgstr "Hét napjának megjelenítése az órán"
+
+msgid "Shown on dashboard"
+msgstr "Megjelenítve a vezérlőpulton"
+
+msgid "Sidebar"
+msgstr "Oldalsáv"
+
+msgid "Size"
+msgstr "Méret"
+
+msgid "Sleeping"
+msgstr "Alvó állapotban"
+
+msgid "Sloppy"
+msgstr "Hanyag"
+
+msgid "Smaller (<)"
+msgstr "Kisebb (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Snap-csomagok ({})"
+
+msgid "Source code"
+msgstr "Forráskód"
+
+msgid "source entry not found"
+msgstr "a tárolóbejegyzés nem található"
+
+msgid "Spanned"
+msgstr "Nyújtott"
+
+msgid "Start at boot"
+msgstr "Rendszerindításkor"
+
+msgid "Start Kaptan at login"
+msgstr "Kaptan indítása bejelentkezéskor"
+
+msgid "Start page"
+msgstr "Kezdőoldal"
+
+msgid "Started"
+msgstr "Elindítva"
+
+msgid "Startup Applications"
+msgstr "Automatikusan induló alkalmazások"
+
+msgid "Startup Apps"
+msgstr "lkalmazások Indítópult"
+
+msgid "State"
+msgstr "Állapot"
+
+msgid "Stopped"
+msgstr "Leállítva"
+
+msgid "Stretched"
+msgstr "Kiterjesztett"
+
+msgid "Suites"
+msgstr "Kiadások"
+
+msgid "Swap"
+msgstr "Cserehely"
+
+msgid "Swap (inactive)"
+msgstr "Cserehely (inaktív)"
+
+msgid "Swap: {} of {}"
+msgstr "Cserehely: {} / {}"
+
+msgid "Symbolic Link"
+msgstr "Szimbolikus link"
+
+msgid "System Cleaner"
+msgstr "Rendszertisztító"
+
+msgid "System default"
+msgstr "Rendszer alapértelmezése"
+
+msgid "System fan"
+msgstr "Rendszerventilátor"
+
+msgid "SYSTEM INFO"
+msgstr "RENDSZER INFORMÁCIÓK"
+
+msgid "System Scan"
+msgstr "Rendszer átvizsgálása"
+
+msgid "System Services"
+msgstr "Rendszerszolgáltatások"
+
+msgid "TEMPERATURES"
+msgstr "HŐMÉRSÉKLETEK"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "A felhasznált processzorteljesítmény meghaladja a {}%-ot."
+
+msgid "The amount of disk used is over {}%."
+msgstr "A felhasznált lemez mennyisége meghaladja a {}%-ot."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "A GPU-használat meghaladta a(z) {}%-ot."
+
+msgid "The amount of memory used is over {}%."
+msgstr "A felhasznált memória mennyiség meghaladja a {}%-ot."
+
+msgid "The IP address and hostname fields are required."
+msgstr "Az IP-cím és a gépnév mező kitöltése kötelező."
+
+msgid "Theme"
+msgstr "Téma"
+
+msgid "Time"
+msgstr "Idő"
+
+msgid "Title bar double click"
+msgstr "Dupla kattintás a címsoron"
+
+msgid "Title bar middle click"
+msgstr "Középső kattintás a címsoron"
+
+msgid "Title bar right click"
+msgstr "Jobb kattintás a címsoron"
+
+msgid "Total {} · selected {}"
+msgstr "Összesen {} · kijelölve {}"
+
+msgid "Total: {}"
+msgstr "Összesen: {}"
+
+msgid "Trash"
+msgstr "Lomtár"
+
+msgid "Type"
+msgstr "Típus"
+
+msgid "Types"
+msgstr "Típusok"
+
+msgid "Types, URI and suites are required."
+msgstr "A típusok, az URI és a kiadások kötelezők."
+
+msgid "Uninstall Selected ({})"
+msgstr "Kijelöltek eltávolítása ({})"
+
+msgid "Uninstaller"
+msgstr "Program Eltávolító"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "{} csomag eltávolítása…"
+
+msgid "Unit"
+msgstr "Egység"
+
+msgid "Unsaved changes"
+msgstr "Mentetlen változtatások"
+
+msgid "UPLOAD"
+msgstr "FELTÖLTÉS"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "Feltöltés: {}/s Összesen: {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "Felhasználó"
+
+msgid "Very hot"
+msgstr "Nagyon meleg"
+
+msgid "Virtual"
+msgstr "Virtuális"
+
+msgid "Wallpaper"
+msgstr "Háttérkép"
+
+msgid "When the window is closed"
+msgstr "Az ablak bezárásakor"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "Továbbra is fusson a program a tálcán?"
+
+msgid "Window Manager"
+msgstr "Ablakkezelő"
+
+msgid "Within (<)"
+msgstr "Belül (<)"
+
+msgid "Write: {}/s"
+msgstr "Írás: {}/s"
+
+msgid "Zoom"
+msgstr "Nagyítás"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} szabad)"
+
+msgid "{} cleaned."
+msgstr "{} megtisztítva."
+
+msgid "{} deleted."
+msgstr "{} törölve."
+
+msgid "{} disabled."
+msgstr "{} letiltva."
+
+msgid "{} enabled."
+msgstr "{} engedélyezve."
+
+msgid "{} found"
+msgstr "{} találat"
+
+msgid "{} found, showing {}"
+msgstr "{} találat, {} megjelenítve"
+
+msgid "{} minute average: {}"
+msgstr "{} Perc Átlaga: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "További {} csomag függ a kijelöléstől, ezek is eltávolításra kerülnek."
+
+msgid "{} moved to trash."
+msgstr "{} áthelyezve a kukába."
+
+msgid "{} package(s) removed."
+msgstr "{} csomag eltávolítva."
+
+msgid "{} started."
+msgstr "{} elindítva."
+
+msgid "{} stopped."
+msgstr "{} leállítva."
+
+msgid "{} used · {} free"
+msgstr "{} foglalt · {} szabad"

@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "'{}' സാധുവായ IP വിലാസമല്ല."
+
+msgid "/etc/hosts saved."
+msgstr "/etc/hosts സംരക്ഷിച്ചു."
+
+msgid "0 disables the alert"
+msgstr "0 മുന്നറിയിപ്പ് ഓഫാക്കുന്നു"
+
+msgid "ABOUT"
+msgstr "കുറിച്ച്"
+
+msgid "Accessed"
+msgstr "പ്രവേശനം"
+
+msgid "Accessibility"
+msgstr "പ്രവേശനക്ഷമത"
+
+msgid "Add Repository"
+msgstr "ശേഖരം ചേർക്കുക"
+
+msgid "Add Startup App"
+msgstr "സ്റ്റാർട്ടപ്പ് പ്രയോഗം ചേർക്കുക"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല (പാക്കേജ്: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "വിപുലമായത് ▲"
+
+msgid "Advanced ▼"
+msgstr "വിപുലമായത് ▼"
+
+msgid "ALERTS"
+msgstr "മുന്നറിയിപ്പുകൾ"
+
+msgid "Aliases"
+msgstr "അപരനാമങ്ങൾ"
+
+msgid "All"
+msgstr "എല്ലാം"
+
+msgid "All Disks"
+msgstr "എല്ലാ ഡിസ്കുകളും"
+
+msgid "All users"
+msgstr "എല്ലാ ഉപയോക്താക്കളും"
+
+msgid "Amount"
+msgstr "അളവ്"
+
+msgid "Any"
+msgstr "ഏതെങ്കിലും"
+
+msgid "Appearance"
+msgstr "കാഴ്ച"
+
+msgid "Application Caches"
+msgstr "അപ്ലിക്കേഷൻ കാഷെകൾ"
+
+msgid "Application Logs"
+msgstr "അപ്ലിക്കേഷൻ ലോഗുകൾ"
+
+msgid "Apply"
+msgstr "പ്രയോഗിക്കുക"
+
+msgid "APT Repositories"
+msgstr "APT ശേഖരങ്ങൾ"
+
+msgid "Ask"
+msgstr "ചോദിക്കുക"
+
+msgid "Back to categories"
+msgstr "വിഭാഗങ്ങളിലേക്ക് മടങ്ങുക"
+
+msgid "Browse"
+msgstr "ബ്രൗസ് ചെയ്യുക"
+
+msgid "Cancel"
+msgstr "റദ്ദാക്കുക"
+
+msgid "Case insensitive"
+msgstr "അക്ഷര വലുപ്പം അവഗണിക്കുക"
+
+msgid "Center new windows"
+msgstr "പുതിയ ജാലകങ്ങൾ മധ്യത്തിലാക്കുക"
+
+msgid "Centered"
+msgstr "നടുക്ക്"
+
+msgid "Changed"
+msgstr "നില മാറ്റം"
+
+msgid "Chassis fan"
+msgstr "കേസ് ഫാൻ"
+
+msgid "Clean"
+msgstr "വൃത്തിയാക്കുക"
+
+msgid "Click"
+msgstr "ക്ലിക്ക്"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "ഡാഷ്‌ബോർഡിൽ കാണിക്കാൻ മൗണ്ട് ചെയ്ത ഒരു പാർട്ടീഷനിൽ ക്ലിക്ക് ചെയ്യുക."
+
+msgid "Close"
+msgstr "അടയ്ക്കുക"
+
+msgid "Cold"
+msgstr "തണുപ്പ്"
+
+msgid "Command *"
+msgstr "കമാൻഡ് *"
+
+msgid "Comment"
+msgstr "അഭിപ്രായം"
+
+msgid "Comparison"
+msgstr "താരതമ്യം"
+
+msgid "Components"
+msgstr "ഘടകങ്ങള്‍"
+
+msgid "Continue"
+msgstr "തുടരുക"
+
+msgid "CPU"
+msgstr "സി പി യു"
+
+msgid "CPU Cores: {}"
+msgstr "CPU കോറുകൾ: {}"
+
+msgid "CPU fan"
+msgstr "CPU ഫാൻ"
+
+msgid "CPU History"
+msgstr "CPU ചരിത്രം"
+
+msgid "CPU Load Averages"
+msgstr "CPU ശരാശരി ലോഡ്"
+
+msgid "CPU Model: {}"
+msgstr "സിപിയു: {}"
+
+msgid "CPU Speed: {}"
+msgstr "സിപിയു വേഗത: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "CPU ഉപയോഗ മുന്നറിയിപ്പ് (%)"
+
+msgid "Crash Reports"
+msgstr "ക്രാഷ് റിപ്പോർട്ടുകൾ"
+
+msgid "Dark"
+msgstr "ഇരുണ്ട"
+
+msgid "Dashboard"
+msgstr "അവലോകനം"
+
+msgid "Dashboard disk"
+msgstr "ഡാഷ്‌ബോർഡ് ഡിസ്ക്"
+
+msgid "Delete"
+msgstr "നീക്കം ചെയ്യുക"
+
+msgid "Delete Permanently"
+msgstr "ശാശ്വതമായി ഇല്ലാതാക്കുക"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "തിരഞ്ഞെടുത്ത ഇനം ശാശ്വതമായി ഇല്ലാതാക്കണോ? ഇത് പഴയപടിയാക്കാനാവില്ല."
+
+msgid "Desktop"
+msgstr "ഡെസ്ക്ടോപ്പ്"
+
+msgid "Desktop background mode"
+msgstr "ഡെസ്ക്ടോപ്പ് പശ്ചാത്തല രീതി"
+
+msgid "Desktop Settings"
+msgstr "ഡെസ്ക്ടോപ്പ് ക്രമീകരണങ്ങൾ"
+
+msgid "Directory"
+msgstr "ഫോൾഡർ"
+
+msgid "Disabled"
+msgstr "അപ്രാപ്തമാക്കി"
+
+msgid "DISK"
+msgstr "ഡിസ്ക്"
+
+msgid "Disk Read / Write"
+msgstr "ഡിസ്ക് വായന / എഴുത്ത്"
+
+msgid "Disk usage alert (%)"
+msgstr "ഡിസ്ക് ഉപയോഗ മുന്നറിയിപ്പ് (%)"
+
+msgid "Distribution: {}"
+msgstr "വിതരണം: {}"
+
+msgid "Don't ask again."
+msgstr "വീണ്ടും ചോദിക്കരുത്."
+
+msgid "DOWNLOAD"
+msgstr "ഡൌൺലോഡ്"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "ഡൗൺലോഡ്: {}/s  ആകെ: {}"
+
+msgid "Dynamic workspaces"
+msgstr "ഡൈനാമിക് വർക്ക്‌സ്പേസുകൾ"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "ഉദാ. ppa:user/repo  അല്ലെങ്കിൽ  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "തിരുത്തുക"
+
+msgid "Edit Repository"
+msgstr "ശേഖരം തിരുത്തുക"
+
+msgid "Edit Startup Application"
+msgstr "സ്റ്റാർട്ടപ്പ് ആപ്ലിക്കേഷൻ തിരുത്തുക"
+
+msgid "Empty only"
+msgstr "ശൂന്യമായവ മാത്രം"
+
+msgid "Enable animations"
+msgstr "ആനിമേഷനുകൾ പ്രവർത്തനക്ഷമമാക്കുക"
+
+msgid "Enabled"
+msgstr "പ്രാപ്തമാക്കി"
+
+msgid "End Process"
+msgstr "പ്രക്രിയ നിർത്തുക"
+
+msgid "End Process {}"
+msgstr "പ്രോസസ്സ് {} അവസാനിപ്പിക്കുക"
+
+msgid "Equal (=)"
+msgstr "തുല്യം (=)"
+
+msgid "Exactly (=)"
+msgstr "കൃത്യമായി (=)"
+
+msgid "FANS"
+msgstr "ഫാനുകൾ"
+
+msgid "File"
+msgstr "ഫയൽ"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "ഫയൽ പേര് അല്ലെങ്കിൽ പാറ്റേൺ, ഉദാ. *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "ഡാഷ്‌ബോർഡ് ഡിസ്ക് ഗേജിൽ കാണിക്കുന്ന ഫയൽ സിസ്റ്റം"
+
+msgid "File Systems"
+msgstr "ഫയൽ സിസ്റ്റങ്ങൾ"
+
+msgid "Filter by name, user or PID"
+msgstr "പേര്, ഉപയോക്താവ് അല്ലെങ്കിൽ PID അനുസരിച്ച് അരിക്കുക"
+
+msgid "Focus mode"
+msgstr "ഫോക്കസ് രീതി"
+
+msgid "GENERAL"
+msgstr "പൊതുവായത്"
+
+msgid "Generic name"
+msgstr "പൊതുനാമം"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "GPU ഫാൻ"
+
+msgid "GPU History"
+msgstr "GPU ചരിത്രം"
+
+msgid "GPU usage alert (%)"
+msgstr "GPU ഉപയോഗ മുന്നറിയിപ്പ് (%)"
+
+msgid "Graphics Card"
+msgstr "ഗ്രാഫിക്സ് കാർഡ്"
+
+msgid "Greater (>)"
+msgstr "വലുത് (>)"
+
+msgid "Group"
+msgstr "കൂട്ടം"
+
+msgid "High CPU Usage"
+msgstr "ഉയർന്ന സിപിയു ഉപയോഗം"
+
+msgid "High Disk Usage"
+msgstr "ഉയർന്ന ഡിസ്ക് ഉപയോഗം"
+
+msgid "High GPU Usage"
+msgstr "ഉയർന്ന GPU ഉപയോഗം"
+
+msgid "High Memory Usage"
+msgstr "ഉയർന്ന മെമ്മറി ഉപയോഗം"
+
+msgid "Hostname"
+msgstr "ഹോസ്റ്റ് നാമം"
+
+msgid "Hostname *"
+msgstr "ഹോസ്റ്റ് നാമം *"
+
+msgid "Hostname: {}"
+msgstr "ഹോസ്റ്റ് നെയിം: {}"
+
+msgid "Hosts"
+msgstr "ഹോസ്റ്റുകൾ"
+
+msgid "Hot"
+msgstr "ചൂട്"
+
+msgid "Icon"
+msgstr "ഐക്കൺ"
+
+msgid "Icons and text"
+msgstr "ഐക്കണുകളും വാചകവും"
+
+msgid "Icons only"
+msgstr "ഐക്കണുകൾ മാത്രം"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "ബ്രൗസ് ചെയ്യാൻ zenity അല്ലെങ്കിൽ kdialog ഇൻസ്റ്റാൾ ചെയ്യുക, അല്ലെങ്കിൽ ഫോൾഡർ പാത ടൈപ്പ് ചെയ്യുക."
+
+msgid "Invert match"
+msgstr "പൊരുത്തം വിപരീതമാക്കുക"
+
+msgid "IP Address"
+msgstr "IP വിലാസം"
+
+msgid "IP address *"
+msgstr "IP വിലാസം *"
+
+msgid "Keep running in the tray"
+msgstr "സിസ്റ്റം ട്രേയിൽ പ്രവർത്തനം തുടരുക"
+
+msgid "Kernel Release: {}"
+msgstr "കേർണൽ റിലീസ്: {}"
+
+msgid "Language"
+msgstr "ഭാഷ"
+
+msgid "Light"
+msgstr "തെളിഞ്ഞ"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Linux സിസ്റ്റം ഒപ്റ്റിമൈസറും മോണിറ്ററും — Stacer-ന്റെ Rust പതിപ്പ്. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "ലോക്ക് സ്ക്രീൻ പശ്ചാത്തല രീതി"
+
+msgid "Lower"
+msgstr "പിന്നിലേക്ക് മാറ്റുക"
+
+msgid "Maximize"
+msgstr "വലുതാക്കുക"
+
+msgid "Maximize Horizontally"
+msgstr "തിരശ്ചീനമായി വലുതാക്കുക"
+
+msgid "Maximize Vertically"
+msgstr "ലംബമായി വലുതാക്കുക"
+
+msgid "Mem"
+msgstr "മെമ്മറി"
+
+msgid "MEMORY"
+msgstr "മെമ്മറി"
+
+msgid "Memory History"
+msgstr "മെമ്മറി ചരിത്രം"
+
+msgid "Memory usage alert (%)"
+msgstr "മെമ്മറി ഉപയോഗ മുന്നറിയിപ്പ് (%)"
+
+msgid "Memory: {} of {}"
+msgstr "മെമ്മറി: {} / {}"
+
+msgid "Menu"
+msgstr "മെനു"
+
+msgid "Middle fan"
+msgstr "മധ്യ ഫാൻ"
+
+msgid "Minimize"
+msgstr "ചെറുതാക്കുക"
+
+msgid "Minutes"
+msgstr "മിനിറ്റുകൾ"
+
+msgid "Modified"
+msgstr "മാറ്റം വരുത്തിയത്"
+
+msgid "Mouse"
+msgstr "മൗസ്"
+
+msgid "Move to Trash"
+msgstr "ട്രാഷിലേക്ക് നീക്കുക"
+
+msgid "Name"
+msgstr "പേര്"
+
+msgid "Name *"
+msgstr "പേര് *"
+
+msgid "Name and command fields are required."
+msgstr "പേരും കമാൻഡും ആവശ്യമാണ്."
+
+msgid "Network History"
+msgstr "നെറ്റ്‌വർക്ക് ചരിത്രം"
+
+msgid "New Host"
+msgstr "പുതിയ ഹോസ്റ്റ്"
+
+msgid "New Startup Application"
+msgstr "പുതിയ സ്റ്റാർട്ടപ്പ് ആപ്ലിക്കേഷൻ"
+
+msgid "Nice"
+msgstr "മുൻഗണന"
+
+msgid "No packages found."
+msgstr "പാക്കേജുകളൊന്നും കണ്ടെത്തിയില്ല."
+
+msgid "No repositories found."
+msgstr "ശേഖരങ്ങളൊന്നും കണ്ടെത്തിയില്ല."
+
+msgid "No services found."
+msgstr "സേവനങ്ങളൊന്നും കണ്ടെത്തിയില്ല."
+
+msgid "No startup applications found."
+msgstr "സ്റ്റാർട്ടപ്പ് ആപ്ലിക്കേഷനുകളൊന്നും കണ്ടെത്തിയില്ല."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "ഈ സിസ്റ്റത്തിൽ പിന്തുണയുള്ള GNOME ക്രമീകരണങ്ങളൊന്നും കണ്ടെത്തിയില്ല."
+
+msgid "No supported package manager found"
+msgstr "പിന്തുണയുള്ള പാക്കേജ് മാനേജർ കണ്ടെത്തിയില്ല"
+
+msgid "None"
+msgstr "ഒന്നുമില്ല"
+
+msgid "Not mounted"
+msgstr "മൗണ്ട് ചെയ്തിട്ടില്ല"
+
+msgid "Nothing selected."
+msgstr "ഒന്നും തിരഞ്ഞെടുത്തിട്ടില്ല."
+
+msgid "Nothing to remove."
+msgstr "നീക്കം ചെയ്യാൻ ഒന്നുമില്ല."
+
+msgid "Number of workspaces"
+msgstr "വർക്ക്‌സ്പേസുകളുടെ എണ്ണം"
+
+msgid "Older (>)"
+msgstr "പഴയത് (>)"
+
+msgid "On-screen keyboard"
+msgstr "ഓൺ-സ്ക്രീൻ കീബോർഡ്"
+
+msgid "Open Folder"
+msgstr "ഫോൾഡർ തുറക്കുക"
+
+msgid "Open Kaptan"
+msgstr "Kaptan തുറക്കുക"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "ലോഗിൻ ചെയ്യുമ്പോൾ Kaptan ജാലകം തുറക്കുന്നു"
+
+msgid "Other"
+msgstr "മറ്റുള്ളവ"
+
+msgid "Owner"
+msgstr "ഉടമ"
+
+msgid "Package Caches"
+msgstr "പാക്കേജ് കാഷെകൾ"
+
+msgid "Packages ({})"
+msgstr "പാക്കേജുകൾ ({})"
+
+msgid "Path"
+msgstr "പാത"
+
+msgid "Permissions"
+msgstr "അനുമതികൾ"
+
+msgid "Platform: {}"
+msgstr "പ്ലാറ്റഫോം: {}"
+
+msgid "Process"
+msgstr "പ്രക്രിയ"
+
+msgid "Processes"
+msgstr "പ്രക്രിയകൾ"
+
+msgid "Processor"
+msgstr "പ്രോസസർ"
+
+msgid "Pump"
+msgstr "പമ്പ്"
+
+msgid "Quit"
+msgstr "പുറത്ത് കടക്കുക"
+
+msgid "Raise windows on click"
+msgstr "ക്ലിക്ക് ചെയ്യുമ്പോൾ ജാലകം മുന്നിലേക്ക് കൊണ്ടുവരിക"
+
+msgid "Read: {}/s"
+msgstr "വായന: {}/s"
+
+msgid "Refresh every {} s"
+msgstr "ഓരോ {} സെക്കൻഡിലും പുതുക്കുക"
+
+msgid "Regular expression"
+msgstr "റെഗുലർ എക്സ്പ്രഷൻ"
+
+msgid "Remove"
+msgstr "നീക്കം ചെയ്യുക"
+
+msgid "Remove {} package(s)?"
+msgstr "{} പാക്കേജ് നീക്കം ചെയ്യണോ?"
+
+msgid "Repository added."
+msgstr "ശേഖരം ചേർത്തു."
+
+msgid "Repository disabled."
+msgstr "ശേഖരം പ്രവർത്തനരഹിതമാക്കി."
+
+msgid "Repository enabled."
+msgstr "ശേഖരം പ്രവർത്തനക്ഷമമാക്കി."
+
+msgid "Repository is empty"
+msgstr "ശേഖരം ശൂന്യമാണ്"
+
+msgid "Repository removed."
+msgstr "ശേഖരം നീക്കം ചെയ്തു."
+
+msgid "Repository updated."
+msgstr "ശേഖരം പുതുക്കി."
+
+msgid "Resident"
+msgstr "റെസിഡന്റ്"
+
+msgid "Resources"
+msgstr "വിഭവങ്ങൾ"
+
+msgid "Running"
+msgstr "പ്രവർത്തിക്കുന്നു"
+
+msgid "Save"
+msgstr "സൂക്ഷിക്കുക"
+
+msgid "Save Changes"
+msgstr "മാറ്റങ്ങൾ സംരക്ഷിക്കുക"
+
+msgid "Scaled"
+msgstr "തോതാക്കിയത്"
+
+msgid "Scanning…"
+msgstr "സ്കാൻ ചെയ്യുന്നു…"
+
+msgid "Screen reader"
+msgstr "സ്ക്രീൻ റീഡർ"
+
+msgid "Search"
+msgstr "തിരയുക.."
+
+msgid "Search as root"
+msgstr "root ആയി തിരയുക"
+
+msgid "Search packages"
+msgstr "പാക്കേജുകൾ തിരയുക"
+
+msgid "Search services"
+msgstr "സേവനങ്ങൾ തിരയുക"
+
+msgid "Select all"
+msgstr "എല്ലാം തിരഞ്ഞെടുക്കുക"
+
+msgid "Select at least one category."
+msgstr "കുറഞ്ഞത് ഒരു വിഭാഗമെങ്കിലും തിരഞ്ഞെടുക്കുക."
+
+msgid "Select none"
+msgstr "ഒന്നും തിരഞ്ഞെടുക്കരുത്"
+
+msgid "Select the search directory."
+msgstr "തിരയൽ ഫോൾഡർ തിരഞ്ഞെടുക്കുക."
+
+msgid "Service"
+msgstr "സേവനം"
+
+msgid "Services"
+msgstr "സര്‍വീസുകള്‍"
+
+msgid "Settings"
+msgstr "ക്രമീകരണങ്ങൾ"
+
+msgid "Show battery percentage"
+msgstr "ബാറ്ററി ശതമാനം കാണിക്കുക"
+
+msgid "Show home folder on desktop"
+msgstr "ഡെസ്ക്ടോപ്പിൽ ഹോം ഫോൾഡർ കാണിക്കുക"
+
+msgid "Show mounted volumes on desktop"
+msgstr "ഡെസ്ക്ടോപ്പിൽ മൗണ്ട് ചെയ്ത വോള്യങ്ങൾ കാണിക്കുക"
+
+msgid "Show seconds in clock"
+msgstr "ക്ലോക്കിൽ സെക്കൻഡുകൾ കാണിക്കുക"
+
+msgid "Show trash on desktop"
+msgstr "ഡെസ്ക്ടോപ്പിൽ ട്രാഷ് കാണിക്കുക"
+
+msgid "Show weekday in clock"
+msgstr "ക്ലോക്കിൽ ആഴ്ചയിലെ ദിവസം കാണിക്കുക"
+
+msgid "Shown on dashboard"
+msgstr "ഡാഷ്‌ബോർഡിൽ കാണിക്കുന്നു"
+
+msgid "Sidebar"
+msgstr "സൈഡ്‌ബാർ"
+
+msgid "Size"
+msgstr "വലിപ്പം"
+
+msgid "Sleeping"
+msgstr "നിദ്രയിൽ"
+
+msgid "Sloppy"
+msgstr "അയഞ്ഞ"
+
+msgid "Smaller (<)"
+msgstr "ചെറുത് (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Snap പാക്കേജുകൾ ({})"
+
+msgid "Source code"
+msgstr "സോഴ്സ് കോഡ്"
+
+msgid "source entry not found"
+msgstr "ശേഖര എൻട്രി കണ്ടെത്തിയില്ല"
+
+msgid "Spanned"
+msgstr "വ്യാപിച്ചത്"
+
+msgid "Start at boot"
+msgstr "ബൂട്ടിൽ ആരംഭിക്കുക"
+
+msgid "Start Kaptan at login"
+msgstr "ലോഗിൻ ചെയ്യുമ്പോൾ Kaptan ആരംഭിക്കുക"
+
+msgid "Start page"
+msgstr "ആരംഭ പേജ്"
+
+msgid "Started"
+msgstr "ആരംഭിച്ചത്"
+
+msgid "Startup Applications"
+msgstr "സ്റ്റാർട്ടപ്പ് ആപ്ലിക്കേഷനുകൾ"
+
+msgid "Startup Apps"
+msgstr "സ്റ്റാർട്ടപ്പ് പ്രയോഗങ്ങൾ"
+
+msgid "State"
+msgstr "അവസ്ഥ"
+
+msgid "Stopped"
+msgstr "നിർത്തി"
+
+msgid "Stretched"
+msgstr "വലിച്ചു നീട്ടിയത്"
+
+msgid "Suites"
+msgstr "സ്യൂട്ടുകൾ"
+
+msgid "Swap"
+msgstr "സ്വാപ്പ്"
+
+msgid "Swap (inactive)"
+msgstr "സ്വാപ്പ് (നിഷ്ക്രിയം)"
+
+msgid "Swap: {} of {}"
+msgstr "സ്വാപ്പ്: {} / {}"
+
+msgid "Symbolic Link"
+msgstr "സിംബോളിക് ലിങ്ക്"
+
+msgid "System Cleaner"
+msgstr "സിസ്റ്റം ക്ലീനർ"
+
+msgid "System default"
+msgstr "സിസ്റ്റം സ്ഥിരസ്ഥിതി"
+
+msgid "System fan"
+msgstr "സിസ്റ്റം ഫാൻ"
+
+msgid "SYSTEM INFO"
+msgstr "സിസ്റ്റം വിവരങ്ങൾ"
+
+msgid "System Scan"
+msgstr "സിസ്റ്റം സ്കാൻ ചെയ്യുക"
+
+msgid "System Services"
+msgstr "സിസ്റ്റം സേവനങ്ങൾ"
+
+msgid "TEMPERATURES"
+msgstr "താപനിലകൾ"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "ഉപയോഗിച്ച സിപിയു അളവ് {}% -ത്തിലധികമാണ്."
+
+msgid "The amount of disk used is over {}%."
+msgstr "ഉപയോഗിച്ചിരിക്കുന്ന ഡിസ്കിന്റെ അളവ് {}% -ത്തിലധികമാണ്."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "GPU ഉപയോഗം {}% കവിഞ്ഞു."
+
+msgid "The amount of memory used is over {}%."
+msgstr "ഉപയോഗിച്ച മെമ്മറി {}%.-ത്തിലധികമാണ്."
+
+msgid "The IP address and hostname fields are required."
+msgstr "IP വിലാസവും ഹോസ്റ്റ് നാമവും ആവശ്യമാണ്."
+
+msgid "Theme"
+msgstr "തീം"
+
+msgid "Time"
+msgstr "സമയം"
+
+msgid "Title bar double click"
+msgstr "ടൈറ്റിൽ ബാറിൽ ഇരട്ട ക്ലിക്ക്"
+
+msgid "Title bar middle click"
+msgstr "ടൈറ്റിൽ ബാറിൽ മധ്യ ക്ലിക്ക്"
+
+msgid "Title bar right click"
+msgstr "ടൈറ്റിൽ ബാറിൽ വലത് ക്ലിക്ക്"
+
+msgid "Total {} · selected {}"
+msgstr "ആകെ {} · തിരഞ്ഞെടുത്തത് {}"
+
+msgid "Total: {}"
+msgstr "മൊത്തം: {}"
+
+msgid "Trash"
+msgstr "ചവറ്റുകുട്ട"
+
+msgid "Type"
+msgstr "തരം"
+
+msgid "Types"
+msgstr "തരങ്ങൾ"
+
+msgid "Types, URI and suites are required."
+msgstr "തരങ്ങൾ, URI, സ്യൂട്ടുകൾ എന്നിവ ആവശ്യമാണ്."
+
+msgid "Uninstall Selected ({})"
+msgstr "തിരഞ്ഞെടുത്തവ അൺഇൻസ്റ്റാൾ ചെയ്യുക ({})"
+
+msgid "Uninstaller"
+msgstr "പ്രയോഗങ്ങൾ ഒഴിവാക്കൽ"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "{} പാക്കേജ് അൺഇൻസ്റ്റാൾ ചെയ്യുന്നു…"
+
+msgid "Unit"
+msgstr "യൂണിറ്റ്"
+
+msgid "Unsaved changes"
+msgstr "സംരക്ഷിക്കാത്ത മാറ്റങ്ങൾ"
+
+msgid "UPLOAD"
+msgstr "അപ്‌ലോഡ്"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "അപ്‌ലോഡ് : {}/s മൊത്തം : {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "ഉപയോക്താവ്"
+
+msgid "Very hot"
+msgstr "അമിത ചൂട്"
+
+msgid "Virtual"
+msgstr "വെർച്വൽ"
+
+msgid "Wallpaper"
+msgstr "പശ്ചാത്തല ചിത്രം"
+
+msgid "When the window is closed"
+msgstr "ജാലകം അടയ്ക്കുമ്പോൾ"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "സിസ്റ്റം ട്രേയിൽ പ്രോഗ്രാം തുടർന്നും പ്രവർത്തിക്കണോ?"
+
+msgid "Window Manager"
+msgstr "ജാലകപാലകൻ"
+
+msgid "Within (<)"
+msgstr "ഉള്ളിൽ (<)"
+
+msgid "Write: {}/s"
+msgstr "എഴുത്ത്: {}/s"
+
+msgid "Zoom"
+msgstr "വലുതാക്കിയത്"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} ശൂന്യം)"
+
+msgid "{} cleaned."
+msgstr "{} വൃത്തിയാക്കി."
+
+msgid "{} deleted."
+msgstr "{} ഇല്ലാതാക്കി."
+
+msgid "{} disabled."
+msgstr "{} പ്രവർത്തനരഹിതമാക്കി."
+
+msgid "{} enabled."
+msgstr "{} പ്രവർത്തനക്ഷമമാക്കി."
+
+msgid "{} found"
+msgstr "{} കണ്ടെത്തി"
+
+msgid "{} found, showing {}"
+msgstr "{} കണ്ടെത്തി, {} കാണിക്കുന്നു"
+
+msgid "{} minute average: {}"
+msgstr "{} മിനിറ്റ് ശരാശരി: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "മറ്റ് {} പാക്കേജുകൾ നിങ്ങളുടെ തിരഞ്ഞെടുപ്പിനെ ആശ്രയിക്കുന്നു, അവയും നീക്കം ചെയ്യപ്പെടും."
+
+msgid "{} moved to trash."
+msgstr "{} ട്രാഷിലേക്ക് നീക്കി."
+
+msgid "{} package(s) removed."
+msgstr "{} പാക്കേജ് നീക്കം ചെയ്തു."
+
+msgid "{} started."
+msgstr "{} ആരംഭിച്ചു."
+
+msgid "{} stopped."
+msgstr "{} നിർത്തി."
+
+msgid "{} used · {} free"
+msgstr "{} ഉപയോഗത്തിൽ · {} ശൂന്യം"

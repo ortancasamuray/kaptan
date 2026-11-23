@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "'{}' är inte en giltig IP-adress."
+
+msgid "/etc/hosts saved."
+msgstr "/etc/hosts sparad."
+
+msgid "0 disables the alert"
+msgstr "0 inaktiverar varningen"
+
+msgid "ABOUT"
+msgstr "OM"
+
+msgid "Accessed"
+msgstr "Åtkomst"
+
+msgid "Accessibility"
+msgstr "Hjälpmedel"
+
+msgid "Add Repository"
+msgstr "Lägg till programkälla"
+
+msgid "Add Startup App"
+msgstr "Lägg till uppstartsprogram"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository är inte installerat (paket: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "Avancerat ▲"
+
+msgid "Advanced ▼"
+msgstr "Avancerat ▼"
+
+msgid "ALERTS"
+msgstr "VARNINGAR"
+
+msgid "Aliases"
+msgstr "Alias"
+
+msgid "All"
+msgstr "Alla"
+
+msgid "All Disks"
+msgstr "Alla diskar"
+
+msgid "All users"
+msgstr "Alla användare"
+
+msgid "Amount"
+msgstr "Mängd"
+
+msgid "Any"
+msgstr "Valfri"
+
+msgid "Appearance"
+msgstr "Utseende"
+
+msgid "Application Caches"
+msgstr "Programcache"
+
+msgid "Application Logs"
+msgstr "Programloggar"
+
+msgid "Apply"
+msgstr "Verkställ"
+
+msgid "APT Repositories"
+msgstr "APT-förråd"
+
+msgid "Ask"
+msgstr "Fråga"
+
+msgid "Back to categories"
+msgstr "Tillbaka till kategorierna"
+
+msgid "Browse"
+msgstr "Bläddra.."
+
+msgid "Cancel"
+msgstr "Avbryt"
+
+msgid "Case insensitive"
+msgstr "Skiftlägesokänslig"
+
+msgid "Center new windows"
+msgstr "Centrera nya fönster"
+
+msgid "Centered"
+msgstr "Centrerad"
+
+msgid "Changed"
+msgstr "Ändrad (status)"
+
+msgid "Chassis fan"
+msgstr "Chassifläkt"
+
+msgid "Clean"
+msgstr "Rensa"
+
+msgid "Click"
+msgstr "Klick"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "Klicka på en monterad partition för att visa den på instrumentpanelen."
+
+msgid "Close"
+msgstr "Stäng"
+
+msgid "Cold"
+msgstr "Kall"
+
+msgid "Command *"
+msgstr "Kommando *"
+
+msgid "Comment"
+msgstr "Kommentar"
+
+msgid "Comparison"
+msgstr "Jämförelse"
+
+msgid "Components"
+msgstr "Komponenter"
+
+msgid "Continue"
+msgstr "Fortsätt"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "CPU Cores: {}"
+msgstr "CPU-kärnor: {}"
+
+msgid "CPU fan"
+msgstr "CPU-fläkt"
+
+msgid "CPU History"
+msgstr "CPU-historik"
+
+msgid "CPU Load Averages"
+msgstr "CPU-belastningsmedel"
+
+msgid "CPU Model: {}"
+msgstr "CPU-modell: {}"
+
+msgid "CPU Speed: {}"
+msgstr "CPU-hastighet: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "Varning för CPU-användning (%)"
+
+msgid "Crash Reports"
+msgstr "Kraschrapporter"
+
+msgid "Dark"
+msgstr "Mörkt"
+
+msgid "Dashboard"
+msgstr "Instrumentpanel"
+
+msgid "Dashboard disk"
+msgstr "Disk på instrumentpanelen"
+
+msgid "Delete"
+msgstr "Ta bort"
+
+msgid "Delete Permanently"
+msgstr "Ta bort permanent"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "Ta bort det markerade objektet permanent? Detta kan inte ångras."
+
+msgid "Desktop"
+msgstr "Skrivbord"
+
+msgid "Desktop background mode"
+msgstr "Skrivbordets bakgrundsläge"
+
+msgid "Desktop Settings"
+msgstr "Skrivbordsinställningar"
+
+msgid "Directory"
+msgstr "Katalog"
+
+msgid "Disabled"
+msgstr "Inaktiverad"
+
+msgid "DISK"
+msgstr "DISK"
+
+msgid "Disk Read / Write"
+msgstr "Disk läsning / skrivning"
+
+msgid "Disk usage alert (%)"
+msgstr "Varning för diskanvändning (%)"
+
+msgid "Distribution: {}"
+msgstr "Distribution: {}"
+
+msgid "Don't ask again."
+msgstr "Fråga inte igen."
+
+msgid "DOWNLOAD"
+msgstr "Ladda ner"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "Nedladdning: {}/s  Totalt: {}"
+
+msgid "Dynamic workspaces"
+msgstr "Dynamiska arbetsytor"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "t.ex. ppa:anvandare/forrad  eller  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "Redigera"
+
+msgid "Edit Repository"
+msgstr "Redigera förråd"
+
+msgid "Edit Startup Application"
+msgstr "Redigera uppstartsprogram"
+
+msgid "Empty only"
+msgstr "Endast tomma"
+
+msgid "Enable animations"
+msgstr "Aktivera animeringar"
+
+msgid "Enabled"
+msgstr "Aktiverad"
+
+msgid "End Process"
+msgstr "Avsluta process"
+
+msgid "End Process {}"
+msgstr "Avsluta process {}"
+
+msgid "Equal (=)"
+msgstr "Lika med (=)"
+
+msgid "Exactly (=)"
+msgstr "Exakt (=)"
+
+msgid "FANS"
+msgstr "FLÄKTAR"
+
+msgid "File"
+msgstr "Fil"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "Filnamn eller mönster, t.ex. *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "Filsystem som visas i diskmätaren på instrumentpanelen"
+
+msgid "File Systems"
+msgstr "Filsystem"
+
+msgid "Filter by name, user or PID"
+msgstr "Filtrera efter namn, användare eller PID"
+
+msgid "Focus mode"
+msgstr "Fokusläge"
+
+msgid "GENERAL"
+msgstr "Allmänt"
+
+msgid "Generic name"
+msgstr "Generiskt namn"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "GPU-fläkt"
+
+msgid "GPU History"
+msgstr "GPU-historik"
+
+msgid "GPU usage alert (%)"
+msgstr "Varning för GPU-användning (%)"
+
+msgid "Graphics Card"
+msgstr "Grafikkort"
+
+msgid "Greater (>)"
+msgstr "Större (>)"
+
+msgid "Group"
+msgstr "Grupp"
+
+msgid "High CPU Usage"
+msgstr "Hög CPU-belastning"
+
+msgid "High Disk Usage"
+msgstr "Hög diskbelastning"
+
+msgid "High GPU Usage"
+msgstr "Hög GPU-användning"
+
+msgid "High Memory Usage"
+msgstr "Hög minnesanvändning"
+
+msgid "Hostname"
+msgstr "Värdnamn"
+
+msgid "Hostname *"
+msgstr "Värdnamn *"
+
+msgid "Hostname: {}"
+msgstr "Värdnamn: {}"
+
+msgid "Hosts"
+msgstr "Värdar"
+
+msgid "Hot"
+msgstr "Varm"
+
+msgid "Icon"
+msgstr "Ikon"
+
+msgid "Icons and text"
+msgstr "Ikoner och text"
+
+msgid "Icons only"
+msgstr "Endast ikoner"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "Installera zenity eller kdialog för att bläddra, eller skriv sökvägen till mappen."
+
+msgid "Invert match"
+msgstr "Invertera matchning"
+
+msgid "IP Address"
+msgstr "IP-adress"
+
+msgid "IP address *"
+msgstr "IP-adress *"
+
+msgid "Keep running in the tray"
+msgstr "Fortsätt i aktivitetsfältet"
+
+msgid "Kernel Release: {}"
+msgstr "Linux-kärna: {}"
+
+msgid "Language"
+msgstr "Språk"
+
+msgid "Light"
+msgstr "Ljust"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Systemoptimerare och övervakare för Linux — en Rust-version av Stacer. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "Låsskärmens bakgrundsläge"
+
+msgid "Lower"
+msgstr "Lägre"
+
+msgid "Maximize"
+msgstr "Maximera"
+
+msgid "Maximize Horizontally"
+msgstr "Maximera horisontellt"
+
+msgid "Maximize Vertically"
+msgstr "Maximera vertikalt"
+
+msgid "Mem"
+msgstr "Minne"
+
+msgid "MEMORY"
+msgstr "MINNE"
+
+msgid "Memory History"
+msgstr "Minneshistorik"
+
+msgid "Memory usage alert (%)"
+msgstr "Varning för minnesanvändning (%)"
+
+msgid "Memory: {} of {}"
+msgstr "Minne: {} av {}"
+
+msgid "Menu"
+msgstr "Meny"
+
+msgid "Middle fan"
+msgstr "Mittfläkt"
+
+msgid "Minimize"
+msgstr "Minimera"
+
+msgid "Minutes"
+msgstr "Minuter"
+
+msgid "Modified"
+msgstr "Ändrad"
+
+msgid "Mouse"
+msgstr "Mus"
+
+msgid "Move to Trash"
+msgstr "Flytta till papperskorgen"
+
+msgid "Name"
+msgstr "Namn"
+
+msgid "Name *"
+msgstr "Namn *"
+
+msgid "Name and command fields are required."
+msgstr "Fälten namn och kommando är obligatoriska."
+
+msgid "Network History"
+msgstr "Nätverkshistorik"
+
+msgid "New Host"
+msgstr "Nytt värdnamn"
+
+msgid "New Startup Application"
+msgstr "Nytt uppstartsprogram"
+
+msgid "Nice"
+msgstr "Prioritet"
+
+msgid "No packages found."
+msgstr "Inga paket hittades."
+
+msgid "No repositories found."
+msgstr "Inga förråd hittades."
+
+msgid "No services found."
+msgstr "Inga tjänster hittades."
+
+msgid "No startup applications found."
+msgstr "Inga uppstartsprogram hittades."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "Inga GNOME-inställningar som stöds hittades på detta system."
+
+msgid "No supported package manager found"
+msgstr "Ingen pakethanterare som stöds hittades"
+
+msgid "None"
+msgstr "Ingen"
+
+msgid "Not mounted"
+msgstr "Inte monterad"
+
+msgid "Nothing selected."
+msgstr "Inget markerat."
+
+msgid "Nothing to remove."
+msgstr "Inget att ta bort."
+
+msgid "Number of workspaces"
+msgstr "Antal arbetsytor"
+
+msgid "Older (>)"
+msgstr "Äldre (>)"
+
+msgid "On-screen keyboard"
+msgstr "Skärmtangentbord"
+
+msgid "Open Folder"
+msgstr "Öppna mapp"
+
+msgid "Open Kaptan"
+msgstr "Öppna Kaptan"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "Öppnar Kaptan-fönstret vid inloggning"
+
+msgid "Other"
+msgstr "Övrigt"
+
+msgid "Owner"
+msgstr "Ägare"
+
+msgid "Package Caches"
+msgstr "Paketcache"
+
+msgid "Packages ({})"
+msgstr "Paket ({})"
+
+msgid "Path"
+msgstr "Sökväg"
+
+msgid "Permissions"
+msgstr "Rättigheter"
+
+msgid "Platform: {}"
+msgstr "Plattform: {}"
+
+msgid "Process"
+msgstr "Process"
+
+msgid "Processes"
+msgstr "Processer"
+
+msgid "Processor"
+msgstr "Processor"
+
+msgid "Pump"
+msgstr "Pump"
+
+msgid "Quit"
+msgstr "Avsluta"
+
+msgid "Raise windows on click"
+msgstr "Höj fönster vid klick"
+
+msgid "Read: {}/s"
+msgstr "Läsning: {}/s"
+
+msgid "Refresh every {} s"
+msgstr "Uppdatera var {} s"
+
+msgid "Regular expression"
+msgstr "Reguljärt uttryck"
+
+msgid "Remove"
+msgstr "Ta bort"
+
+msgid "Remove {} package(s)?"
+msgstr "Ta bort {} paket?"
+
+msgid "Repository added."
+msgstr "Förråd tillagt."
+
+msgid "Repository disabled."
+msgstr "Förråd inaktiverat."
+
+msgid "Repository enabled."
+msgstr "Förråd aktiverat."
+
+msgid "Repository is empty"
+msgstr "Förrådet är tomt"
+
+msgid "Repository removed."
+msgstr "Förråd borttaget."
+
+msgid "Repository updated."
+msgstr "Förråd uppdaterat."
+
+msgid "Resident"
+msgstr "Resident"
+
+msgid "Resources"
+msgstr "Resurser"
+
+msgid "Running"
+msgstr "Körs"
+
+msgid "Save"
+msgstr "Spara"
+
+msgid "Save Changes"
+msgstr "Spara ändringar"
+
+msgid "Scaled"
+msgstr "Skalad"
+
+msgid "Scanning…"
+msgstr "Söker…"
+
+msgid "Screen reader"
+msgstr "Skärmläsare"
+
+msgid "Search"
+msgstr "Sök.."
+
+msgid "Search as root"
+msgstr "Sök som root"
+
+msgid "Search packages"
+msgstr "Sök paket"
+
+msgid "Search services"
+msgstr "Sök tjänster"
+
+msgid "Select all"
+msgstr "Markera alla"
+
+msgid "Select at least one category."
+msgstr "Välj minst en kategori."
+
+msgid "Select none"
+msgstr "Avmarkera alla"
+
+msgid "Select the search directory."
+msgstr "Välj sökkatalog."
+
+msgid "Service"
+msgstr "Tjänst"
+
+msgid "Services"
+msgstr "Tjänster"
+
+msgid "Settings"
+msgstr "Inställningar"
+
+msgid "Show battery percentage"
+msgstr "Visa batteriprocent"
+
+msgid "Show home folder on desktop"
+msgstr "Visa hemmappen på skrivbordet"
+
+msgid "Show mounted volumes on desktop"
+msgstr "Visa monterade volymer på skrivbordet"
+
+msgid "Show seconds in clock"
+msgstr "Visa sekunder i klockan"
+
+msgid "Show trash on desktop"
+msgstr "Visa papperskorgen på skrivbordet"
+
+msgid "Show weekday in clock"
+msgstr "Visa veckodag i klockan"
+
+msgid "Shown on dashboard"
+msgstr "Visas på instrumentpanelen"
+
+msgid "Sidebar"
+msgstr "Sidopanel"
+
+msgid "Size"
+msgstr "Storlek"
+
+msgid "Sleeping"
+msgstr "Viloläge"
+
+msgid "Sloppy"
+msgstr "Slarvig"
+
+msgid "Smaller (<)"
+msgstr "Mindre (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Snap-paket ({})"
+
+msgid "Source code"
+msgstr "Källkod"
+
+msgid "source entry not found"
+msgstr "förrådspost hittades inte"
+
+msgid "Spanned"
+msgstr "Mosaik"
+
+msgid "Start at boot"
+msgstr "Vid uppstart"
+
+msgid "Start Kaptan at login"
+msgstr "Starta Kaptan vid inloggning"
+
+msgid "Start page"
+msgstr "Startsida"
+
+msgid "Started"
+msgstr "Startad"
+
+msgid "Startup Applications"
+msgstr "Uppstartsprogram"
+
+msgid "Startup Apps"
+msgstr "Uppstartsprogram"
+
+msgid "State"
+msgstr "Status"
+
+msgid "Stopped"
+msgstr "Stoppad"
+
+msgid "Stretched"
+msgstr "Utsträckt"
+
+msgid "Suites"
+msgstr "Sviter"
+
+msgid "Swap"
+msgstr "Växlingsutrymme"
+
+msgid "Swap (inactive)"
+msgstr "Växlingsutrymme (inaktivt)"
+
+msgid "Swap: {} of {}"
+msgstr "Växlingsutrymme: {} av {}"
+
+msgid "Symbolic Link"
+msgstr "Symbolisk länk"
+
+msgid "System Cleaner"
+msgstr "Systemrensare"
+
+msgid "System default"
+msgstr "Systemstandard"
+
+msgid "System fan"
+msgstr "Systemfläkt"
+
+msgid "SYSTEM INFO"
+msgstr "SYSTEMINFORMATION"
+
+msgid "System Scan"
+msgstr "Genomsök systemet"
+
+msgid "System Services"
+msgstr "Systemtjänster"
+
+msgid "TEMPERATURES"
+msgstr "TEMPERATURER"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "CPU-belastningen överstiger {}%."
+
+msgid "The amount of disk used is over {}%."
+msgstr "Diskbelastningen överstiger {}%."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "GPU-användningen överstiger {}%."
+
+msgid "The amount of memory used is over {}%."
+msgstr "Minnesanvändningen överstiger {}%."
+
+msgid "The IP address and hostname fields are required."
+msgstr "Fälten IP-adress och värdnamn är obligatoriska."
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "Time"
+msgstr "Tid"
+
+msgid "Title bar double click"
+msgstr "Dubbelklick på namnlisten"
+
+msgid "Title bar middle click"
+msgstr "Mittenklick på namnlisten"
+
+msgid "Title bar right click"
+msgstr "Högerklick på namnlisten"
+
+msgid "Total {} · selected {}"
+msgstr "Totalt {} · markerat {}"
+
+msgid "Total: {}"
+msgstr "Totalt: {}"
+
+msgid "Trash"
+msgstr "Papperskorgen"
+
+msgid "Type"
+msgstr "Typ"
+
+msgid "Types"
+msgstr "Typer"
+
+msgid "Types, URI and suites are required."
+msgstr "Typer, URI och sviter är obligatoriska."
+
+msgid "Uninstall Selected ({})"
+msgstr "Avinstallera markerade ({})"
+
+msgid "Uninstaller"
+msgstr "Avinstallerare"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "Avinstallerar {} paket…"
+
+msgid "Unit"
+msgstr "Enhet"
+
+msgid "Unsaved changes"
+msgstr "Osparade ändringar"
+
+msgid "UPLOAD"
+msgstr "UPPLADDNING"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "Uppladdning: {}/s  Totalt: {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "Användare"
+
+msgid "Very hot"
+msgstr "Mycket varm"
+
+msgid "Virtual"
+msgstr "Virtuellt"
+
+msgid "Wallpaper"
+msgstr "Skrivbordsbakgrund"
+
+msgid "When the window is closed"
+msgstr "När fönstret stängs"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "Ska programmet fortsätta köras i aktivitetsfältet?"
+
+msgid "Window Manager"
+msgstr "Fönsterhanterare"
+
+msgid "Within (<)"
+msgstr "Inom (<)"
+
+msgid "Write: {}/s"
+msgstr "Skrivning: {}/s"
+
+msgid "Zoom"
+msgstr "Zooma"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} ledigt)"
+
+msgid "{} cleaned."
+msgstr "{} rensat."
+
+msgid "{} deleted."
+msgstr "{} borttagen."
+
+msgid "{} disabled."
+msgstr "{} inaktiverad."
+
+msgid "{} enabled."
+msgstr "{} aktiverad."
+
+msgid "{} found"
+msgstr "{} hittades"
+
+msgid "{} found, showing {}"
+msgstr "{} hittades, visar {}"
+
+msgid "{} minute average: {}"
+msgstr "{} minut(er) medelvärde: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "Ytterligare {} paket beror på ditt val och tas också bort."
+
+msgid "{} moved to trash."
+msgstr "{} flyttad till papperskorgen."
+
+msgid "{} package(s) removed."
+msgstr "{} paket borttagna."
+
+msgid "{} started."
+msgstr "{} startad."
+
+msgid "{} stopped."
+msgstr "{} stoppad."
+
+msgid "{} used · {} free"
+msgstr "{} använt · {} ledigt"

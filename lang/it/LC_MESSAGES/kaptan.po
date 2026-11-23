@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "'{}' non è un indirizzo IP valido."
+
+msgid "/etc/hosts saved."
+msgstr "/etc/hosts salvato."
+
+msgid "0 disables the alert"
+msgstr "0 disattiva l'avviso"
+
+msgid "ABOUT"
+msgstr "INFORMAZIONI"
+
+msgid "Accessed"
+msgstr "Accesso"
+
+msgid "Accessibility"
+msgstr "Accessibilità"
+
+msgid "Add Repository"
+msgstr "Aggiungi Repository"
+
+msgid "Add Startup App"
+msgstr "Aggiungi App d'Avvio"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "add-apt-repository non è installato (pacchetto: software-properties-common)"
+
+msgid "Advanced ▲"
+msgstr "Avanzate ▲"
+
+msgid "Advanced ▼"
+msgstr "Avanzate ▼"
+
+msgid "ALERTS"
+msgstr "AVVISI"
+
+msgid "Aliases"
+msgstr "Alias"
+
+msgid "All"
+msgstr "Tutti"
+
+msgid "All Disks"
+msgstr "Tutti i dischi"
+
+msgid "All users"
+msgstr "Tutti gli utenti"
+
+msgid "Amount"
+msgstr "Quantità"
+
+msgid "Any"
+msgstr "Qualsiasi"
+
+msgid "Appearance"
+msgstr "Aspetto"
+
+msgid "Application Caches"
+msgstr "Cache delle Applicationi"
+
+msgid "Application Logs"
+msgstr "Registri delle Applicazioni"
+
+msgid "Apply"
+msgstr "Applica"
+
+msgid "APT Repositories"
+msgstr "Repository APT"
+
+msgid "Ask"
+msgstr "Chiedi"
+
+msgid "Back to categories"
+msgstr "Torna alle categorie"
+
+msgid "Browse"
+msgstr "Sfoglia"
+
+msgid "Cancel"
+msgstr "Annulla"
+
+msgid "Case insensitive"
+msgstr "Senza distinzione maiuscole/minuscole"
+
+msgid "Center new windows"
+msgstr "Centra le nuove finestre"
+
+msgid "Centered"
+msgstr "Centrato"
+
+msgid "Changed"
+msgstr "Modificato (stato)"
+
+msgid "Chassis fan"
+msgstr "Ventola del case"
+
+msgid "Clean"
+msgstr "Pulisci"
+
+msgid "Click"
+msgstr "Click"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "Fai clic su una partizione montata per mostrarla nel pannello."
+
+msgid "Close"
+msgstr "Chiudi"
+
+msgid "Cold"
+msgstr "Freddo"
+
+msgid "Command *"
+msgstr "Comando *"
+
+msgid "Comment"
+msgstr "Commento"
+
+msgid "Comparison"
+msgstr "Confronto"
+
+msgid "Components"
+msgstr "Componenti"
+
+msgid "Continue"
+msgstr "Continua"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "CPU Cores: {}"
+msgstr "Core della CPU: {}"
+
+msgid "CPU fan"
+msgstr "Ventola della CPU"
+
+msgid "CPU History"
+msgstr "Cronologia CPU"
+
+msgid "CPU Load Averages"
+msgstr "Carico medio della CPU"
+
+msgid "CPU Model: {}"
+msgstr "Modello CPU: {}"
+
+msgid "CPU Speed: {}"
+msgstr "Velocità CPU: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "Avviso utilizzo CPU (%)"
+
+msgid "Crash Reports"
+msgstr "Rapporti sui Crash"
+
+msgid "Dark"
+msgstr "Scuro"
+
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "Dashboard disk"
+msgstr "Disco del pannello"
+
+msgid "Delete"
+msgstr "Cancella"
+
+msgid "Delete Permanently"
+msgstr "Elimina definitivamente"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "Eliminare definitivamente l'elemento selezionato? L'operazione non può essere annullata."
+
+msgid "Desktop"
+msgstr "Desktop"
+
+msgid "Desktop background mode"
+msgstr "Modalità sfondo del desktop"
+
+msgid "Desktop Settings"
+msgstr "Impostazioni del desktop"
+
+msgid "Directory"
+msgstr "Cartella"
+
+msgid "Disabled"
+msgstr "Disabilitato"
+
+msgid "DISK"
+msgstr "DISCO"
+
+msgid "Disk Read / Write"
+msgstr "Lettura / scrittura disco"
+
+msgid "Disk usage alert (%)"
+msgstr "Avviso utilizzo disco (%)"
+
+msgid "Distribution: {}"
+msgstr "Distribuzione: {}"
+
+msgid "Don't ask again."
+msgstr "Non chiedere più."
+
+msgid "DOWNLOAD"
+msgstr "Scarica"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "Download: {}/s  Totale: {}"
+
+msgid "Dynamic workspaces"
+msgstr "Spazi di lavoro dinamici"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "es. ppa:utente/repo  oppure  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "Modifica"
+
+msgid "Edit Repository"
+msgstr "Modifica repository"
+
+msgid "Edit Startup Application"
+msgstr "Modifica applicazione all'avvio"
+
+msgid "Empty only"
+msgstr "Solo vuoti"
+
+msgid "Enable animations"
+msgstr "Abilita animazioni"
+
+msgid "Enabled"
+msgstr "Abilitato"
+
+msgid "End Process"
+msgstr "Termina Processo"
+
+msgid "End Process {}"
+msgstr "Termina il processo {}"
+
+msgid "Equal (=)"
+msgstr "Uguale (=)"
+
+msgid "Exactly (=)"
+msgstr "Esattamente (=)"
+
+msgid "FANS"
+msgstr "VENTOLE"
+
+msgid "File"
+msgstr "File"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "Nome file o modello, es. *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "File system mostrato nell'indicatore disco del pannello"
+
+msgid "File Systems"
+msgstr "File system"
+
+msgid "Filter by name, user or PID"
+msgstr "Filtra per nome, utente o PID"
+
+msgid "Focus mode"
+msgstr "Modalità Focalizzazione"
+
+msgid "GENERAL"
+msgstr "Generale"
+
+msgid "Generic name"
+msgstr "Nome generico"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "Ventola della GPU"
+
+msgid "GPU History"
+msgstr "Cronologia GPU"
+
+msgid "GPU usage alert (%)"
+msgstr "Avviso utilizzo GPU (%)"
+
+msgid "Graphics Card"
+msgstr "Scheda grafica"
+
+msgid "Greater (>)"
+msgstr "Maggiore (>)"
+
+msgid "Group"
+msgstr "Gruppo"
+
+msgid "High CPU Usage"
+msgstr "Utilizzo elevato della CPU"
+
+msgid "High Disk Usage"
+msgstr "Utilizzo elevato del Disco"
+
+msgid "High GPU Usage"
+msgstr "Utilizzo GPU elevato"
+
+msgid "High Memory Usage"
+msgstr "Utilizzo elevato della Memoria"
+
+msgid "Hostname"
+msgstr "Nome host"
+
+msgid "Hostname *"
+msgstr "Nome host *"
+
+msgid "Hostname: {}"
+msgstr "Hostname: {}"
+
+msgid "Hosts"
+msgstr "Host"
+
+msgid "Hot"
+msgstr "Caldo"
+
+msgid "Icon"
+msgstr "Icona"
+
+msgid "Icons and text"
+msgstr "Icone e testo"
+
+msgid "Icons only"
+msgstr "Solo icone"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "Installa zenity o kdialog per sfogliare, oppure digita il percorso della cartella."
+
+msgid "Invert match"
+msgstr "Inverti corrispondenza"
+
+msgid "IP Address"
+msgstr "Indirizzo IP"
+
+msgid "IP address *"
+msgstr "Indirizzo IP *"
+
+msgid "Keep running in the tray"
+msgstr "Continua nell'area di notifica"
+
+msgid "Kernel Release: {}"
+msgstr "Versione Kernel: {}"
+
+msgid "Language"
+msgstr "Lingua"
+
+msgid "Light"
+msgstr "Chiaro"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Ottimizzatore e monitor di sistema Linux — un port di Stacer in Rust. GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "Modalità sfondo della schermata di blocco"
+
+msgid "Lower"
+msgstr "Riduci"
+
+msgid "Maximize"
+msgstr "Massimizza"
+
+msgid "Maximize Horizontally"
+msgstr "Massimizza Orizzontalmente"
+
+msgid "Maximize Vertically"
+msgstr "Massimizza Verticalmente"
+
+msgid "Mem"
+msgstr "Mem."
+
+msgid "MEMORY"
+msgstr "MEMORIA"
+
+msgid "Memory History"
+msgstr "Cronologia memoria"
+
+msgid "Memory usage alert (%)"
+msgstr "Avviso utilizzo memoria (%)"
+
+msgid "Memory: {} of {}"
+msgstr "Memoria: {} di {}"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Middle fan"
+msgstr "Ventola centrale"
+
+msgid "Minimize"
+msgstr "Minimizza"
+
+msgid "Minutes"
+msgstr "Minuti"
+
+msgid "Modified"
+msgstr "Modificato"
+
+msgid "Mouse"
+msgstr "Mouse"
+
+msgid "Move to Trash"
+msgstr "Sposta nel cestino"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Name *"
+msgstr "Nome *"
+
+msgid "Name and command fields are required."
+msgstr "I campi nome e comando sono obbligatori."
+
+msgid "Network History"
+msgstr "Cronologia rete"
+
+msgid "New Host"
+msgstr "Nuovo host"
+
+msgid "New Startup Application"
+msgstr "Nuova applicazione all'avvio"
+
+msgid "Nice"
+msgstr "Nice"
+
+msgid "No packages found."
+msgstr "Nessun pacchetto trovato."
+
+msgid "No repositories found."
+msgstr "Nessun repository trovato."
+
+msgid "No services found."
+msgstr "Nessun servizio trovato."
+
+msgid "No startup applications found."
+msgstr "Nessuna applicazione all'avvio trovata."
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "Su questo sistema non sono state trovate impostazioni GNOME supportate."
+
+msgid "No supported package manager found"
+msgstr "Nessun gestore di pacchetti supportato trovato"
+
+msgid "None"
+msgstr "Nessuno"
+
+msgid "Not mounted"
+msgstr "Non montato"
+
+msgid "Nothing selected."
+msgstr "Nessuna selezione."
+
+msgid "Nothing to remove."
+msgstr "Niente da rimuovere."
+
+msgid "Number of workspaces"
+msgstr "Numero di spazi di lavoro"
+
+msgid "Older (>)"
+msgstr "Più vecchio (>)"
+
+msgid "On-screen keyboard"
+msgstr "Tastiera su schermo"
+
+msgid "Open Folder"
+msgstr "Apri cartella"
+
+msgid "Open Kaptan"
+msgstr "Apri Kaptan"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "Apre la finestra di Kaptan all'accesso"
+
+msgid "Other"
+msgstr "Altro"
+
+msgid "Owner"
+msgstr "Proprietario"
+
+msgid "Package Caches"
+msgstr "Cache dei Pacchetti"
+
+msgid "Packages ({})"
+msgstr "Pacchetti ({})"
+
+msgid "Path"
+msgstr "Percorso"
+
+msgid "Permissions"
+msgstr "Permessi"
+
+msgid "Platform: {}"
+msgstr "Piattaforma: {}"
+
+msgid "Process"
+msgstr "Processo"
+
+msgid "Processes"
+msgstr "Processi"
+
+msgid "Processor"
+msgstr "Processore"
+
+msgid "Pump"
+msgstr "Pompa"
+
+msgid "Quit"
+msgstr "Esci"
+
+msgid "Raise windows on click"
+msgstr "Porta in primo piano al clic"
+
+msgid "Read: {}/s"
+msgstr "Lettura: {}/s"
+
+msgid "Refresh every {} s"
+msgstr "Aggiorna ogni {} s"
+
+msgid "Regular expression"
+msgstr "Espressione regolare"
+
+msgid "Remove"
+msgstr "Rimuovi"
+
+msgid "Remove {} package(s)?"
+msgstr "Rimuovere {} pacchetto/i?"
+
+msgid "Repository added."
+msgstr "Repository aggiunto."
+
+msgid "Repository disabled."
+msgstr "Repository disattivato."
+
+msgid "Repository enabled."
+msgstr "Repository attivato."
+
+msgid "Repository is empty"
+msgstr "Il repository è vuoto"
+
+msgid "Repository removed."
+msgstr "Repository rimosso."
+
+msgid "Repository updated."
+msgstr "Repository aggiornato."
+
+msgid "Resident"
+msgstr "Residente"
+
+msgid "Resources"
+msgstr "Risorse"
+
+msgid "Running"
+msgstr "In Esecuzione"
+
+msgid "Save"
+msgstr "Salva"
+
+msgid "Save Changes"
+msgstr "Salva modifiche"
+
+msgid "Scaled"
+msgstr "Scalato"
+
+msgid "Scanning…"
+msgstr "Scansione…"
+
+msgid "Screen reader"
+msgstr "Lettore Schermo"
+
+msgid "Search"
+msgstr "Cerca.."
+
+msgid "Search as root"
+msgstr "Cerca come root"
+
+msgid "Search packages"
+msgstr "Cerca pacchetti"
+
+msgid "Search services"
+msgstr "Cerca servizi"
+
+msgid "Select all"
+msgstr "Seleziona Tutto"
+
+msgid "Select at least one category."
+msgstr "Seleziona almeno una categoria."
+
+msgid "Select none"
+msgstr "Deseleziona tutto"
+
+msgid "Select the search directory."
+msgstr "Seleziona la cartella di ricerca."
+
+msgid "Service"
+msgstr "Servizio"
+
+msgid "Services"
+msgstr "Servizi"
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Show battery percentage"
+msgstr "Mostra la percentuale della batteria"
+
+msgid "Show home folder on desktop"
+msgstr "Mostra la cartella home sul desktop"
+
+msgid "Show mounted volumes on desktop"
+msgstr "Mostra i volumi montati sul desktop"
+
+msgid "Show seconds in clock"
+msgstr "Mostra i secondi nell'orologio"
+
+msgid "Show trash on desktop"
+msgstr "Mostra il cestino sul desktop"
+
+msgid "Show weekday in clock"
+msgstr "Mostra il giorno della settimana nell'orologio"
+
+msgid "Shown on dashboard"
+msgstr "Mostrato nel pannello"
+
+msgid "Sidebar"
+msgstr "Barra laterale"
+
+msgid "Size"
+msgstr "Dimensione"
+
+msgid "Sleeping"
+msgstr "In sospensione"
+
+msgid "Sloppy"
+msgstr "Scadente"
+
+msgid "Smaller (<)"
+msgstr "Minore (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Pacchetti Snap ({})"
+
+msgid "Source code"
+msgstr "Codice sorgente"
+
+msgid "source entry not found"
+msgstr "voce del repository non trovata"
+
+msgid "Spanned"
+msgstr "Esteso"
+
+msgid "Start at boot"
+msgstr "All'avvio"
+
+msgid "Start Kaptan at login"
+msgstr "Avvia Kaptan all'accesso"
+
+msgid "Start page"
+msgstr "Pagina Iniziale"
+
+msgid "Started"
+msgstr "Avviato"
+
+msgid "Startup Applications"
+msgstr "Applicazioni all'avvio"
+
+msgid "Startup Apps"
+msgstr "App d'Avvio"
+
+msgid "State"
+msgstr "Stato"
+
+msgid "Stopped"
+msgstr "Fermato"
+
+msgid "Stretched"
+msgstr "Stirato"
+
+msgid "Suites"
+msgstr "Suite"
+
+msgid "Swap"
+msgstr "Swap"
+
+msgid "Swap (inactive)"
+msgstr "Swap (inattivo)"
+
+msgid "Swap: {} of {}"
+msgstr "Swap: {} di {}"
+
+msgid "Symbolic Link"
+msgstr "Collegamento simbolico"
+
+msgid "System Cleaner"
+msgstr "Pulizia Sistema"
+
+msgid "System default"
+msgstr "Predefinita di sistema"
+
+msgid "System fan"
+msgstr "Ventola di sistema"
+
+msgid "SYSTEM INFO"
+msgstr "INFO SISTEMA"
+
+msgid "System Scan"
+msgstr "Scansione del sistema"
+
+msgid "System Services"
+msgstr "Servizi di sistema"
+
+msgid "TEMPERATURES"
+msgstr "TEMPERATURE"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "La quantità di CPU utilizzata è superiore al {}%."
+
+msgid "The amount of disk used is over {}%."
+msgstr "Lo spazio sul disco utilizzato è superiore al {}%."
+
+msgid "The amount of GPU used is over {}%."
+msgstr "L'utilizzo della GPU supera il {}%."
+
+msgid "The amount of memory used is over {}%."
+msgstr "La quantità di memoria utilizzata è superiore al {}%."
+
+msgid "The IP address and hostname fields are required."
+msgstr "I campi indirizzo IP e nome host sono obbligatori."
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "Time"
+msgstr "Tempo"
+
+msgid "Title bar double click"
+msgstr "Doppio clic sulla barra del titolo"
+
+msgid "Title bar middle click"
+msgstr "Clic centrale sulla barra del titolo"
+
+msgid "Title bar right click"
+msgstr "Clic destro sulla barra del titolo"
+
+msgid "Total {} · selected {}"
+msgstr "Totale {} · selezionati {}"
+
+msgid "Total: {}"
+msgstr "Totale: {}"
+
+msgid "Trash"
+msgstr "Cestino"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Types"
+msgstr "Tipi"
+
+msgid "Types, URI and suites are required."
+msgstr "Tipi, URI e suite sono obbligatori."
+
+msgid "Uninstall Selected ({})"
+msgstr "Disinstalla selezionati ({})"
+
+msgid "Uninstaller"
+msgstr "Uninstaller"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "Disinstallazione di {} pacchetto/i…"
+
+msgid "Unit"
+msgstr "Unità"
+
+msgid "Unsaved changes"
+msgstr "Modifiche non salvate"
+
+msgid "UPLOAD"
+msgstr "UPLOAD"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "Upload: {}/s  Totale: {}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "Utente"
+
+msgid "Very hot"
+msgstr "Molto caldo"
+
+msgid "Virtual"
+msgstr "Virtuale"
+
+msgid "Wallpaper"
+msgstr "Sfondo"
+
+msgid "When the window is closed"
+msgstr "Alla chiusura della finestra"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "Il programma deve continuare a funzionare nell'area di notifica?"
+
+msgid "Window Manager"
+msgstr "Gestore delle Finestre"
+
+msgid "Within (<)"
+msgstr "Entro (<)"
+
+msgid "Write: {}/s"
+msgstr "Scrittura: {}/s"
+
+msgid "Zoom"
+msgstr "Ingrandito"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  ({} liberi)"
+
+msgid "{} cleaned."
+msgstr "{} ripuliti."
+
+msgid "{} deleted."
+msgstr "{} eliminato."
+
+msgid "{} disabled."
+msgstr "{} disattivato."
+
+msgid "{} enabled."
+msgstr "{} attivato."
+
+msgid "{} found"
+msgstr "{} trovati"
+
+msgid "{} found, showing {}"
+msgstr "{} trovati, ne vengono mostrati {}"
+
+msgid "{} minute average: {}"
+msgstr "Media su {} Minuto/i: {}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "Altri {} pacchetti dipendono dalla selezione e verranno anch'essi rimossi."
+
+msgid "{} moved to trash."
+msgstr "{} spostato nel cestino."
+
+msgid "{} package(s) removed."
+msgstr "{} pacchetto/i rimosso/i."
+
+msgid "{} started."
+msgstr "{} avviato."
+
+msgid "{} stopped."
+msgstr "{} fermato."
+
+msgid "{} used · {} free"
+msgstr "{} usati · {} liberi"

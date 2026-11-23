@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kaptan\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "'{}' is not a valid IP address."
+msgstr "「{}」不是有效的 IP 位址。"
+
+msgid "/etc/hosts saved."
+msgstr "已儲存 /etc/hosts。"
+
+msgid "0 disables the alert"
+msgstr "0 表示關閉警告"
+
+msgid "ABOUT"
+msgstr "關於"
+
+msgid "Accessed"
+msgstr "存取"
+
+msgid "Accessibility"
+msgstr "無障礙功能"
+
+msgid "Add Repository"
+msgstr "新增軟體庫"
+
+msgid "Add Startup App"
+msgstr "加入系統開機啟動項目"
+
+msgid "add-apt-repository is not installed (package: software-properties-common)"
+msgstr "未安裝 add-apt-repository（套件：software-properties-common）"
+
+msgid "Advanced ▲"
+msgstr "進階 ▲"
+
+msgid "Advanced ▼"
+msgstr "進階 ▼"
+
+msgid "ALERTS"
+msgstr "警告"
+
+msgid "Aliases"
+msgstr "別名"
+
+msgid "All"
+msgstr "全部"
+
+msgid "All Disks"
+msgstr "所有磁碟"
+
+msgid "All users"
+msgstr "所有使用者"
+
+msgid "Amount"
+msgstr "數量"
+
+msgid "Any"
+msgstr "任意"
+
+msgid "Appearance"
+msgstr "外觀"
+
+msgid "Application Caches"
+msgstr "應用程式快取"
+
+msgid "Application Logs"
+msgstr "應用程式日誌"
+
+msgid "Apply"
+msgstr "套用"
+
+msgid "APT Repositories"
+msgstr "APT 軟體庫"
+
+msgid "Ask"
+msgstr "詢問"
+
+msgid "Back to categories"
+msgstr "返回分類"
+
+msgid "Browse"
+msgstr "瀏覽"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Case insensitive"
+msgstr "不區分大小寫"
+
+msgid "Center new windows"
+msgstr "新視窗置中"
+
+msgid "Centered"
+msgstr "置中"
+
+msgid "Changed"
+msgstr "狀態變更"
+
+msgid "Chassis fan"
+msgstr "機殼風扇"
+
+msgid "Clean"
+msgstr "清理"
+
+msgid "Click"
+msgstr "點擊"
+
+msgid "Click a mounted partition to show it on the dashboard."
+msgstr "點擊已掛載的分割區，在儀表板上顯示它。"
+
+msgid "Close"
+msgstr "關閉"
+
+msgid "Cold"
+msgstr "涼爽"
+
+msgid "Command *"
+msgstr "指令 *"
+
+msgid "Comment"
+msgstr "註解"
+
+msgid "Comparison"
+msgstr "比較"
+
+msgid "Components"
+msgstr "元件"
+
+msgid "Continue"
+msgstr "繼續"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "CPU Cores: {}"
+msgstr "CPU 核心：{}"
+
+msgid "CPU fan"
+msgstr "CPU 風扇"
+
+msgid "CPU History"
+msgstr "CPU 歷史"
+
+msgid "CPU Load Averages"
+msgstr "CPU 平均負載"
+
+msgid "CPU Model: {}"
+msgstr "CPU 型號: {}"
+
+msgid "CPU Speed: {}"
+msgstr "CPU 時脈: {}"
+
+msgid "CPU usage alert (%)"
+msgstr "CPU 使用率警告（%）"
+
+msgid "Crash Reports"
+msgstr "當機報告"
+
+msgid "Dark"
+msgstr "深色"
+
+msgid "Dashboard"
+msgstr "儀表板"
+
+msgid "Dashboard disk"
+msgstr "儀表板磁碟"
+
+msgid "Delete"
+msgstr "刪除"
+
+msgid "Delete Permanently"
+msgstr "永久刪除"
+
+msgid "Delete the selected item permanently? This cannot be undone."
+msgstr "永久刪除所選項目？此操作無法復原。"
+
+msgid "Desktop"
+msgstr "桌面"
+
+msgid "Desktop background mode"
+msgstr "桌面背景模式"
+
+msgid "Desktop Settings"
+msgstr "桌面設定"
+
+msgid "Directory"
+msgstr "目錄"
+
+msgid "Disabled"
+msgstr "已停用"
+
+msgid "DISK"
+msgstr "磁碟"
+
+msgid "Disk Read / Write"
+msgstr "磁碟讀取 / 寫入"
+
+msgid "Disk usage alert (%)"
+msgstr "磁碟使用率警告（%）"
+
+msgid "Distribution: {}"
+msgstr "發行版: {}"
+
+msgid "Don't ask again."
+msgstr "不再詢問。"
+
+msgid "DOWNLOAD"
+msgstr "下載"
+
+msgid "Download: {}/s  Total: {}"
+msgstr "下載：{}/s  總計：{}"
+
+msgid "Dynamic workspaces"
+msgstr "動態工作區"
+
+msgid "e.g. ppa:user/repo  or  deb http://example.com/debian stable main"
+msgstr "例如 ppa:user/repo  或  deb http://example.com/debian stable main"
+
+msgid "Edit"
+msgstr "編輯"
+
+msgid "Edit Repository"
+msgstr "編輯軟體庫"
+
+msgid "Edit Startup Application"
+msgstr "編輯開機啟動程式"
+
+msgid "Empty only"
+msgstr "僅空項目"
+
+msgid "Enable animations"
+msgstr "啟用動畫"
+
+msgid "Enabled"
+msgstr "已啟用"
+
+msgid "End Process"
+msgstr "結束處理程序"
+
+msgid "End Process {}"
+msgstr "結束程序 {}"
+
+msgid "Equal (=)"
+msgstr "等於 (=)"
+
+msgid "Exactly (=)"
+msgstr "等於 (=)"
+
+msgid "FANS"
+msgstr "風扇"
+
+msgid "File"
+msgstr "檔案"
+
+msgid "File name or pattern, e.g. *.log"
+msgstr "檔名或樣式，例如 *.log"
+
+msgid "File system shown on the dashboard disk gauge"
+msgstr "儀表板磁碟儀表中顯示的檔案系統"
+
+msgid "File Systems"
+msgstr "檔案系統"
+
+msgid "Filter by name, user or PID"
+msgstr "依名稱、使用者或 PID 篩選"
+
+msgid "Focus mode"
+msgstr "焦點模式"
+
+msgid "GENERAL"
+msgstr "一般"
+
+msgid "Generic name"
+msgstr "通用名稱"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU fan"
+msgstr "GPU 風扇"
+
+msgid "GPU History"
+msgstr "GPU 歷史"
+
+msgid "GPU usage alert (%)"
+msgstr "GPU 使用率警告（%）"
+
+msgid "Graphics Card"
+msgstr "顯示卡"
+
+msgid "Greater (>)"
+msgstr "大於 (>)"
+
+msgid "Group"
+msgstr "群組"
+
+msgid "High CPU Usage"
+msgstr "CPU 使用率過高"
+
+msgid "High Disk Usage"
+msgstr "磁碟使用率過高"
+
+msgid "High GPU Usage"
+msgstr "GPU 使用率過高"
+
+msgid "High Memory Usage"
+msgstr "記憶體使用率過高"
+
+msgid "Hostname"
+msgstr "主機名稱"
+
+msgid "Hostname *"
+msgstr "主機名稱 *"
+
+msgid "Hostname: {}"
+msgstr "主機名稱: {}"
+
+msgid "Hosts"
+msgstr "主機"
+
+msgid "Hot"
+msgstr "較熱"
+
+msgid "Icon"
+msgstr "圖示"
+
+msgid "Icons and text"
+msgstr "圖示與文字"
+
+msgid "Icons only"
+msgstr "僅圖示"
+
+msgid "Install zenity or kdialog to browse, or type the directory path."
+msgstr "請安裝 zenity 或 kdialog 以瀏覽，或直接輸入目錄路徑。"
+
+msgid "Invert match"
+msgstr "反向比對"
+
+msgid "IP Address"
+msgstr "IP 位址"
+
+msgid "IP address *"
+msgstr "IP 位址 *"
+
+msgid "Keep running in the tray"
+msgstr "在系統匣中繼續執行"
+
+msgid "Kernel Release: {}"
+msgstr "Kernel 版本: {}"
+
+msgid "Language"
+msgstr "語言"
+
+msgid "Light"
+msgstr "淺色"
+
+msgid "Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"
+msgstr "Linux 系統最佳化與監控工具 — Stacer 的 Rust 移植版。GPL-3.0"
+
+msgid "Lock screen background mode"
+msgstr "鎖定畫面背景模式"
+
+msgid "Lower"
+msgstr "降低"
+
+msgid "Maximize"
+msgstr "最大化"
+
+msgid "Maximize Horizontally"
+msgstr "水平最大化"
+
+msgid "Maximize Vertically"
+msgstr "垂直最大化"
+
+msgid "Mem"
+msgstr "記憶體"
+
+msgid "MEMORY"
+msgstr "記憶體"
+
+msgid "Memory History"
+msgstr "記憶體歷史"
+
+msgid "Memory usage alert (%)"
+msgstr "記憶體使用率警告（%）"
+
+msgid "Memory: {} of {}"
+msgstr "記憶體：{} / {}"
+
+msgid "Menu"
+msgstr "選單"
+
+msgid "Middle fan"
+msgstr "中間風扇"
+
+msgid "Minimize"
+msgstr "最小化"
+
+msgid "Minutes"
+msgstr "分鐘"
+
+msgid "Modified"
+msgstr "修改時間"
+
+msgid "Mouse"
+msgstr "滑鼠"
+
+msgid "Move to Trash"
+msgstr "移到垃圾桶"
+
+msgid "Name"
+msgstr "名稱"
+
+msgid "Name *"
+msgstr "名稱 *"
+
+msgid "Name and command fields are required."
+msgstr "名稱和指令為必填欄位。"
+
+msgid "Network History"
+msgstr "網路歷史"
+
+msgid "New Host"
+msgstr "新增主機"
+
+msgid "New Startup Application"
+msgstr "新增開機啟動程式"
+
+msgid "Nice"
+msgstr "優先權"
+
+msgid "No packages found."
+msgstr "找不到套件。"
+
+msgid "No repositories found."
+msgstr "找不到軟體庫。"
+
+msgid "No services found."
+msgstr "找不到服務。"
+
+msgid "No startup applications found."
+msgstr "找不到開機啟動程式。"
+
+msgid "No supported GNOME settings were found on this system."
+msgstr "在此系統上找不到支援的 GNOME 設定。"
+
+msgid "No supported package manager found"
+msgstr "找不到支援的套件管理員"
+
+msgid "None"
+msgstr "無"
+
+msgid "Not mounted"
+msgstr "未掛載"
+
+msgid "Nothing selected."
+msgstr "未選取任何項目。"
+
+msgid "Nothing to remove."
+msgstr "沒有需要移除的內容。"
+
+msgid "Number of workspaces"
+msgstr "工作區數量"
+
+msgid "Older (>)"
+msgstr "早於 (>)"
+
+msgid "On-screen keyboard"
+msgstr "螢幕小鍵盤"
+
+msgid "Open Folder"
+msgstr "開啟資料夾"
+
+msgid "Open Kaptan"
+msgstr "開啟 Kaptan"
+
+msgid "Opens the Kaptan window when you log in"
+msgstr "登入時開啟 Kaptan 視窗"
+
+msgid "Other"
+msgstr "其他"
+
+msgid "Owner"
+msgstr "擁有者"
+
+msgid "Package Caches"
+msgstr "套件快取"
+
+msgid "Packages ({})"
+msgstr "套件（{}）"
+
+msgid "Path"
+msgstr "路徑"
+
+msgid "Permissions"
+msgstr "權限"
+
+msgid "Platform: {}"
+msgstr "平台: {}"
+
+msgid "Process"
+msgstr "處理程序"
+
+msgid "Processes"
+msgstr "處理程序"
+
+msgid "Processor"
+msgstr "處理器"
+
+msgid "Pump"
+msgstr "水泵"
+
+msgid "Quit"
+msgstr "離開"
+
+msgid "Raise windows on click"
+msgstr "點擊時提升視窗"
+
+msgid "Read: {}/s"
+msgstr "讀取：{}/s"
+
+msgid "Refresh every {} s"
+msgstr "每 {} 秒重新整理"
+
+msgid "Regular expression"
+msgstr "正規表示式"
+
+msgid "Remove"
+msgstr "移除"
+
+msgid "Remove {} package(s)?"
+msgstr "移除 {} 個套件？"
+
+msgid "Repository added."
+msgstr "已新增軟體庫。"
+
+msgid "Repository disabled."
+msgstr "已停用軟體庫。"
+
+msgid "Repository enabled."
+msgstr "已啟用軟體庫。"
+
+msgid "Repository is empty"
+msgstr "軟體庫為空"
+
+msgid "Repository removed."
+msgstr "已移除軟體庫。"
+
+msgid "Repository updated."
+msgstr "已更新軟體庫。"
+
+msgid "Resident"
+msgstr "常駐記憶體"
+
+msgid "Resources"
+msgstr "系統資源"
+
+msgid "Running"
+msgstr "執行中"
+
+msgid "Save"
+msgstr "儲存"
+
+msgid "Save Changes"
+msgstr "儲存變更"
+
+msgid "Scaled"
+msgstr "縮放"
+
+msgid "Scanning…"
+msgstr "正在掃描…"
+
+msgid "Screen reader"
+msgstr "螢幕閱讀器"
+
+msgid "Search"
+msgstr "搜尋.."
+
+msgid "Search as root"
+msgstr "以 root 身分搜尋"
+
+msgid "Search packages"
+msgstr "搜尋套件"
+
+msgid "Search services"
+msgstr "搜尋服務"
+
+msgid "Select all"
+msgstr "全選"
+
+msgid "Select at least one category."
+msgstr "請至少選擇一個類別。"
+
+msgid "Select none"
+msgstr "全不選"
+
+msgid "Select the search directory."
+msgstr "請選擇搜尋目錄。"
+
+msgid "Service"
+msgstr "服務"
+
+msgid "Services"
+msgstr "服務"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Show battery percentage"
+msgstr "顯示電池百分比"
+
+msgid "Show home folder on desktop"
+msgstr "在桌面上顯示家目錄"
+
+msgid "Show mounted volumes on desktop"
+msgstr "在桌面上顯示已掛載的磁碟區"
+
+msgid "Show seconds in clock"
+msgstr "在時鐘中顯示秒"
+
+msgid "Show trash on desktop"
+msgstr "在桌面上顯示垃圾桶"
+
+msgid "Show weekday in clock"
+msgstr "在時鐘中顯示星期"
+
+msgid "Shown on dashboard"
+msgstr "已在儀表板顯示"
+
+msgid "Sidebar"
+msgstr "側邊欄"
+
+msgid "Size"
+msgstr "大小"
+
+msgid "Sleeping"
+msgstr "休眠中"
+
+msgid "Sloppy"
+msgstr "寬鬆"
+
+msgid "Smaller (<)"
+msgstr "小於 (<)"
+
+msgid "Snap Packages ({})"
+msgstr "Snap 套件（{}）"
+
+msgid "Source code"
+msgstr "原始碼"
+
+msgid "source entry not found"
+msgstr "找不到軟體庫項目"
+
+msgid "Spanned"
+msgstr "跨螢幕"
+
+msgid "Start at boot"
+msgstr "開機啟動"
+
+msgid "Start Kaptan at login"
+msgstr "登入時啟動 Kaptan"
+
+msgid "Start page"
+msgstr "啟動頁面"
+
+msgid "Started"
+msgstr "啟動時間"
+
+msgid "Startup Applications"
+msgstr "開機啟動程式"
+
+msgid "Startup Apps"
+msgstr "開機啟動"
+
+msgid "State"
+msgstr "狀態"
+
+msgid "Stopped"
+msgstr "已停止"
+
+msgid "Stretched"
+msgstr "延展"
+
+msgid "Suites"
+msgstr "套組"
+
+msgid "Swap"
+msgstr "置換空間"
+
+msgid "Swap (inactive)"
+msgstr "置換空間（未啟用）"
+
+msgid "Swap: {} of {}"
+msgstr "置換空間：{} / {}"
+
+msgid "Symbolic Link"
+msgstr "符號連結"
+
+msgid "System Cleaner"
+msgstr "系統清理"
+
+msgid "System default"
+msgstr "系統預設"
+
+msgid "System fan"
+msgstr "系統風扇"
+
+msgid "SYSTEM INFO"
+msgstr "系統資訊"
+
+msgid "System Scan"
+msgstr "掃描系統"
+
+msgid "System Services"
+msgstr "系統服務"
+
+msgid "TEMPERATURES"
+msgstr "溫度"
+
+msgid "The amount of CPU used is over {}%."
+msgstr "CPU 使用率超過 {}%。"
+
+msgid "The amount of disk used is over {}%."
+msgstr "磁碟使用率超過 {}%。"
+
+msgid "The amount of GPU used is over {}%."
+msgstr "GPU 使用率超過 {}%。"
+
+msgid "The amount of memory used is over {}%."
+msgstr "記憶體使用率超過 {}%。"
+
+msgid "The IP address and hostname fields are required."
+msgstr "IP 位址和主機名稱為必填欄位。"
+
+msgid "Theme"
+msgstr "主題"
+
+msgid "Time"
+msgstr "時間"
+
+msgid "Title bar double click"
+msgstr "雙擊標題列"
+
+msgid "Title bar middle click"
+msgstr "中鍵點擊標題列"
+
+msgid "Title bar right click"
+msgstr "右鍵點擊標題列"
+
+msgid "Total {} · selected {}"
+msgstr "總計 {} · 已選 {}"
+
+msgid "Total: {}"
+msgstr "總計: {}"
+
+msgid "Trash"
+msgstr "垃圾桶"
+
+msgid "Type"
+msgstr "類型"
+
+msgid "Types"
+msgstr "類型"
+
+msgid "Types, URI and suites are required."
+msgstr "類型、URI 和套組為必填欄位。"
+
+msgid "Uninstall Selected ({})"
+msgstr "解除安裝所選（{}）"
+
+msgid "Uninstaller"
+msgstr "解除安裝"
+
+msgid "Uninstalling {} package(s)…"
+msgstr "正在解除安裝 {} 個套件…"
+
+msgid "Unit"
+msgstr "單位"
+
+msgid "Unsaved changes"
+msgstr "未儲存的變更"
+
+msgid "UPLOAD"
+msgstr "上傳"
+
+msgid "Upload: {}/s  Total: {}"
+msgstr "上傳：{}/s  總計：{}"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "User"
+msgstr "使用者"
+
+msgid "Very hot"
+msgstr "過熱"
+
+msgid "Virtual"
+msgstr "虛擬記憶體"
+
+msgid "Wallpaper"
+msgstr "桌布"
+
+msgid "When the window is closed"
+msgstr "關閉視窗時"
+
+msgid "Will the program continue to work in the system tray?"
+msgstr "是否讓程式在系統匣中繼續執行？"
+
+msgid "Window Manager"
+msgstr "視窗管理員"
+
+msgid "Within (<)"
+msgstr "以內 (<)"
+
+msgid "Write: {}/s"
+msgstr "寫入：{}/s"
+
+msgid "Zoom"
+msgstr "縮放"
+
+msgid "{} / {}  ({} free)"
+msgstr "{} / {}  （可用 {}）"
+
+msgid "{} cleaned."
+msgstr "已清理 {}。"
+
+msgid "{} deleted."
+msgstr "已刪除 {}。"
+
+msgid "{} disabled."
+msgstr "已停用 {}。"
+
+msgid "{} enabled."
+msgstr "已啟用 {}。"
+
+msgid "{} found"
+msgstr "找到 {} 個"
+
+msgid "{} found, showing {}"
+msgstr "找到 {} 個，顯示 {} 個"
+
+msgid "{} minute average: {}"
+msgstr "{} 分鐘平均：{}"
+
+msgid "{} more package(s) depend on your selection and will be removed too."
+msgstr "另有 {} 個套件相依於所選項目，也將被移除。"
+
+msgid "{} moved to trash."
+msgstr "已將 {} 移到垃圾桶。"
+
+msgid "{} package(s) removed."
+msgstr "已移除 {} 個套件。"
+
+msgid "{} started."
+msgstr "已啟動 {}。"
+
+msgid "{} stopped."
+msgstr "已停止 {}。"
+
+msgid "{} used · {} free"
+msgstr "已用 {} · 可用 {}"
