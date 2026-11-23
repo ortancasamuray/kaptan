@@ -112,6 +112,7 @@
     margin: 0; overflow-x: auto; background: var(--code-bg); border-radius: 8px; padding: 10px 14px;
     font-family: var(--f-mono); font-size: .85rem; line-height: 1.5;
   }
+  .install a, footer a { color: var(--accent); }
   .note { margin-top: 18px; font-size: .85rem; color: var(--ink-soft); }
   footer { font-size: .85rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 20px; }
 
@@ -243,7 +244,7 @@
 
   <section class="install">
     <h2>Kurulum</h2>
-    <p>Hazır paketler Debian/Ubuntu, Fedora/openSUSE ve Arch Linux için var. İndirdiğiniz paketi dağıtımınızın paket yöneticisiyle kurun:</p>
+    <p>Hazır paketler Debian/Ubuntu, Fedora/openSUSE ve Arch Linux için var. Paketi <a href="https://github.com/ortancasamuray/kaptan/releases/latest">GitHub sürümler sayfasından</a> indirip dağıtımınızın paket yöneticisiyle kurun:</p>
     <div class="pkgs">
       <div class="pkg"><span>Debian, Ubuntu</span><pre>sudo apt install ./kaptan_0.1.3-1_amd64.deb</pre></div>
       <div class="pkg"><span>Fedora, openSUSE</span><pre>sudo dnf install ./kaptan-0.1.3-1.x86_64.rpm</pre></div>
@@ -252,7 +253,7 @@
     <p class="note">Hazır paketler glibc 2.39 veya üzerini ister (Ubuntu 24.04+, Fedora 40+, güncel Arch). Daha eski sistemlerde kaynak paketi, RPM spec dosyası veya PKGBUILD ile derleyebilirsiniz.</p>
   </section>
 
-  <footer>Kaptan, Stacer'ın kodu ve çevirileri üzerine kuruludur. GPL-3.0-or-later lisansıyla dağıtılır.</footer>
+  <footer>Kaptan, Stacer'ın kodu ve çevirileri üzerine kuruludur. GPL-3.0-or-later lisansıyla dağıtılır. · <a href="https://www.anadolupanteri.org.tr">www.anadolupanteri.org.tr</a> · <a href="https://github.com/ortancasamuray/kaptan">GitHub</a></footer>
 </div>
 </body>
 </html>

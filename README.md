@@ -1,7 +1,12 @@
 # Kaptan
 
+**English** · [Türkçe](README.tr.md)
+
 Linux system optimizer and monitor written in Rust with a [Slint](https://slint.dev) UI.
 Kaptan is a port of [Stacer](https://github.com/QuentiumYT/Stacer) (C++/Qt).
+
+Website: [www.anadolupanteri.org.tr](https://www.anadolupanteri.org.tr) ·
+Download: [GitHub releases](https://github.com/ortancasamuray/kaptan/releases)
 
 ## Features
 
