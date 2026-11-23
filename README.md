@@ -7,7 +7,7 @@ Kaptan is a port of [Stacer](https://github.com/QuentiumYT/Stacer) (C++/Qt).
 
 | Page | What it does |
 |---|---|
-| Dashboard | CPU, memory, disk and GPU gauges, network speed, system info |
+| Dashboard | CPU, memory, disk and GPU gauges, network speed, fan speeds, system info, CPU and GPU temperature gauges (cold / hot / very hot zones) |
 | Resources | 60-second history charts: per-core CPU, load averages, memory/swap, GPU/VRAM, network, disk I/O; file system usage |
 | Processes | Sortable, filterable process list; end a process (falls back to `pkexec`) |
 | Startup Apps | Enable, disable, add, edit and delete `~/.config/autostart` entries |
@@ -22,11 +22,16 @@ Kaptan is a port of [Stacer](https://github.com/QuentiumYT/Stacer) (C++/Qt).
 
 Like Stacer, Kaptan has a system tray icon (StatusNotifierItem: KDE, XFCE 4.16+, GNOME with the
 AppIndicator extension). Its menu opens any page or quits; closing the window asks whether to keep
-running in the tray (Settings → When the window is closed). Started at login, it starts hidden in the
-tray. Without a tray host, closing the window quits.
+running in the tray (Settings → When the window is closed). Started at login (Settings → Start Kaptan
+at login), the window opens; `kaptan --hide` starts hidden in the tray. Without a tray host, closing
+the window quits.
 
 GPU usage is read from sysfs on AMD and from `nvidia-smi` on NVIDIA. On hybrid laptops a sleeping
 NVIDIA GPU is not woken up. Intel iGPUs expose no usage counter and are not shown.
+
+Temperatures come from hwmon (`coretemp`, `k10temp`, `zenpower`, ARM `cpu_thermal`, thermal zones as a
+fallback) and, for the GPU, from `nvidia-smi` or the card's hwmon sensor (amdgpu, nouveau, xe). Zone
+borders are in `src/core/temps.rs`: CPU 60 / 85 °C, GPU 60 / 80 °C.
 
 ## Build
 
@@ -58,6 +63,24 @@ sudo apt install ./target/debian/kaptan_*_amd64.deb
 
 Package metadata is in `[package.metadata.deb]` in `Cargo.toml`; `debian/` holds the changelog,
 copyright and man page. Bump the version in both `Cargo.toml` and `debian/changelog`.
+
+## Packages for Debian, Fedora and Arch
+
+```sh
+packaging/build-packages.sh            # all of them, into dist/
+packaging/build-packages.sh deb rpm    # or a subset: deb rpm arch src
+```
+
+| Output | Built with |
+|---|---|
+| `kaptan_<ver>-1_amd64.deb` | `cargo deb` |
+| `kaptan-<ver>-1.x86_64.rpm` | `rpmbuild` with `packaging/rpm/kaptan.spec` (repackages the release binary) |
+| `kaptan-<ver>-1-x86_64.pkg.tar.zst` | `packaging/arch/mkpkg.py` (no `makepkg` needed; reads `packaging/arch/PKGBUILD`) |
+| `kaptan-<ver>.tar.gz` | source tarball for `rpmbuild -ba kaptan.spec` or `makepkg -si` |
+
+The script stops if the spec or PKGBUILD version differs from `Cargo.toml`. Binaries built on
+Debian 13 need glibc ≥ 2.39 (Ubuntu 24.04+, Fedora 40+, current Arch); for older systems build from
+source with the spec or PKGBUILD. `docs/tanitim/` is a short Turkish introduction page with screenshots.
 
 ## Install (system-wide)
 
@@ -96,7 +119,7 @@ src/core/    platform logic, no UI (ported from stacer-core)
 src/pages/   one module per page: connects core to the UI
 src/i18n.rs  translations for strings built in Rust
 lang/        gettext catalogs
-tools/       translation catalog generator
+tools/       translation sources and catalog generator
 ui/          Slint UI: theme, widgets, globals (data contract), pages, icons
 ```
 
@@ -110,18 +133,30 @@ Settings are stored in `~/.config/kaptan/settings.json`.
 
 ## Translations
 
-Kaptan ships with English and Turkish. The language follows the system locale and can be changed
-live in Settings → Language.
+Kaptan ships with English and 26 more languages, the same set as Stacer: Arabic, Basque, Catalan,
+Chinese (Simplified and Traditional), Czech, Dutch, French, Galician, German, Hindi, Hungarian,
+Italian, Kannada, Korean, Malayalam, Occitan, Polish, Portuguese, Romanian, Russian, Spanish,
+Swedish, Turkish, Ukrainian and Vietnamese. The language follows the system locale and can be
+changed live in Settings → Language.
 
-`lang/<code>/LC_MESSAGES/kaptan.po` is bundled into the Slint UI at build time (`@tr(...)`) and is also
-read by `src/i18n.rs` for strings built in Rust (`tr()` / `trf()`). After adding or changing texts, run:
+Where Stacer had the same text, its translators' work is reused (13–39 % of the strings depending
+on the language). The rest was translated for Kaptan and has **not been reviewed by native
+speakers** yet — corrections are welcome in `tools/translations/<code>.json`.
+
+Sources: `tools/translations/<code>.json` (`{"English": "translation"}`), compiled into
+`lang/<code>/LC_MESSAGES/kaptan.po` (bundled into the Slint UI, `@tr(...)`, and read by
+`src/i18n.rs` for strings built in Rust). After adding or changing texts, run:
 
 ```sh
-python3 tools/tr_catalog.py   # regenerates the Turkish catalog, fails on missing translations
+python3 tools/i18n.py   # regenerates all catalogs and src/i18n_languages.rs
 ```
 
-To add a language, copy the Turkish catalog to `lang/<code>/LC_MESSAGES/kaptan.po`, translate it and
-add the code to `LANGUAGES` in `src/i18n.rs`.
+Turkish must be complete (the tool fails otherwise); other languages fall back to English for
+missing strings. To add a language, create `tools/translations/<code>.json` and add the code to
+`LANGUAGES` in `tools/i18n.py`. `tools/stacer_ts.py` reads Stacer's Qt `.ts` catalogs.
+
+Korean, Chinese and the Indic scripts need a font that covers them (e.g. `fonts-noto-cjk` or
+`fonts-nanum` for Korean); otherwise characters show as boxes.
 
 ## License
 

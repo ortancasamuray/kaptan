@@ -31,6 +31,16 @@ export struct DiskRow {
     depth: int,
 }
 
+export struct TempItem {
+    name: string,
+    text: string,   // "65 °C" or "—"
+    status: string, // Cold / Hot / Very hot / Sleeping
+    level: int,     // 0 cold, 1 hot, 2 very hot, -1 no reading
+    percent: float, // position on the scale (0-100)
+    warm: float,    // zone borders on the same scale
+    hot: float,
+}
+
 export struct FanItem {
     name: string,
     rpm: string,
@@ -56,6 +66,7 @@ export global Dashboard {
     in property <string> up-text;
     in property <string> up-total;
     in property <[StandardListViewItem]> system-info;
+    in property <[TempItem]> temps;
     in property <[FanItem]> fans;
     // all disks dialog (click on the DISK gauge)
     in-out property <bool> disks-open;

@@ -89,6 +89,136 @@ export component IconButton inherits Rectangle {
 }
 
 /// Circular gauge (Stacer's CircleBar).
+/// Donut gauge (Stacer's circle bar). With `zones`, the track shows the cold / hot / very hot
+/// ranges (blue, yellow, red) and `warm` / `hot` are their borders on the 0-100 scale.
+export component RingGauge inherits Rectangle {
+    in property <float> value; // 0..100
+    in property <string> text;
+    in property <color> color-a;
+    in property <color> color-b;
+    in property <bool> zones: false;
+    in property <float> warm: 50;
+    in property <float> hot: 80;
+    in property <length> font-size: max(10px, size / 14);
+
+    out property <color> cold-color: #3d8bfd;
+    out property <color> warm-color: #f5c518;
+    out property <color> hot-color: #e5484d;
+
+    property <length> size: min(self.width, self.height);
+    property <float> v: clamp(root.value, 0, 100) / 100;
+    property <angle> a: v * 360deg;
+    // Round caps reach half the ring thickness past both ends of the arc (7.5 / 42 rad = 10.2deg),
+    // so the arc is drawn that much shorter at each end: the visible ring then matches the value.
+    // Arcs too short for two caps are drawn with flat ends instead.
+    property <angle> cap: 10.23deg;
+    property <bool> round-caps: a > 2 * cap;
+    property <angle> sa: round-caps ? cap : 0deg;
+    property <angle> ea: round-caps ? a - cap : a;
+    property <float> sx: 50 + 42 * Math.sin(sa);
+    property <float> sy: 50 - 42 * Math.cos(sa);
+    property <float> ex: 50 + 42 * Math.sin(ea);
+    property <float> ey: 50 - 42 * Math.cos(ea);
+    // Ring is 15% of the diameter (hole ~69%), close to Stacer's donut (hole size 0.67).
+    // Radius 42 + half of 15 stays inside the 100-unit viewbox.
+    property <length> thickness: self.size * 0.15;
+    // zone borders as angles / points on the ring
+    property <angle> wa: clamp(warm, 0, 100) / 100 * 360deg;
+    property <angle> ha: clamp(hot, 0, 100) / 100 * 360deg;
+    property <float> wx: 50 + 42 * Math.sin(wa);
+    property <float> wy: 50 - 42 * Math.cos(wa);
+    property <float> hx: 50 + 42 * Math.sin(ha);
+    property <float> hy: 50 - 42 * Math.cos(ha);
+
+    min-height: 60px;
+
+    if !root.zones: Path {
+        x: (root.width - root.size) / 2;
+        y: (root.height - root.size) / 2;
+        width: root.size;
+        height: root.size;
+        viewbox-width: 100;
+        viewbox-height: 100;
+        stroke: Theme.track;
+        stroke-width: root.thickness;
+        commands: "M 50 8 A 42 42 0 1 1 49.99 8";
+    }
+    // Numeric path elements: string commands would depend on the locale's decimal separator.
+    if root.zones: Path {
+        x: (root.width - root.size) / 2;
+        y: (root.height - root.size) / 2;
+        width: root.size;
+        height: root.size;
+        viewbox-width: 100;
+        viewbox-height: 100;
+        stroke: root.cold-color.transparentize(0.75);
+        stroke-width: root.thickness;
+        MoveTo { x: 50; y: 8; }
+        ArcTo { x: root.wx; y: root.wy; radius-x: 42; radius-y: 42; large-arc: root.warm > 50; sweep: true; }
+    }
+    if root.zones: Path {
+        x: (root.width - root.size) / 2;
+        y: (root.height - root.size) / 2;
+        width: root.size;
+        height: root.size;
+        viewbox-width: 100;
+        viewbox-height: 100;
+        stroke: root.warm-color.transparentize(0.75);
+        stroke-width: root.thickness;
+        MoveTo { x: root.wx; y: root.wy; }
+        ArcTo { x: root.hx; y: root.hy; radius-x: 42; radius-y: 42; large-arc: root.hot - root.warm > 50; sweep: true; }
+    }
+    if root.zones: Path {
+        x: (root.width - root.size) / 2;
+        y: (root.height - root.size) / 2;
+        width: root.size;
+        height: root.size;
+        viewbox-width: 100;
+        viewbox-height: 100;
+        stroke: root.hot-color.transparentize(0.7);
+        stroke-width: root.thickness;
+        MoveTo { x: root.hx; y: root.hy; }
+        ArcTo { x: 49.99; y: 8; radius-x: 42; radius-y: 42; large-arc: 100 - root.hot > 50; sweep: true; }
+    }
+    if root.v > 0.004: Path {
+        x: (root.width - root.size) / 2;
+        y: (root.height - root.size) / 2;
+        width: root.size;
+        height: root.size;
+        viewbox-width: 100;
+        viewbox-height: 100;
+        stroke: @linear-gradient(135deg, root.color-a 0%, root.color-b 100%);
+        stroke-width: root.thickness;
+        stroke-line-cap: root.round-caps ? round : butt;
+        MoveTo {
+            x: root.v >= 0.999 ? 50 : root.sx;
+            y: root.v >= 0.999 ? 8 : root.sy;
+        }
+        ArcTo {
+            x: root.v >= 0.999 ? 49.99 : root.ex;
+            y: root.v >= 0.999 ? 8 : root.ey;
+            radius-x: 42;
+            radius-y: 42;
+            large-arc: root.v >= 0.999 || root.ea - root.sa > 180deg;
+            sweep: true;
+        }
+    }
+    Text {
+        text: root.text;
+        color: Theme.text;
+        font-size: root.font-size;
+        font-weight: 600;
+        horizontal-alignment: center;
+        vertical-alignment: center;
+        // fits inside the hole
+        width: root.size * 0.58;
+        height: root.size * 0.5;
+        x: (root.width - self.width) / 2;
+        y: (root.height - self.height) / 2;
+        wrap: word-wrap;
+    }
+}
+
 export component CircleBar inherits Card {
     in property <string> title;
     in property <float> value; // 0..100
@@ -120,62 +250,11 @@ export component CircleBar inherits Card {
             letter-spacing: 1px;
             horizontal-alignment: center;
         }
-        gauge := Rectangle {
-            property <length> size: min(self.width, self.height);
-            property <float> v: clamp(root.value, 0, 100) / 100;
-            property <angle> a: v * 360deg;
-            property <float> ex: 50 + 42 * Math.sin(a);
-            property <float> ey: 50 - 42 * Math.cos(a);
-            // Ring is 15% of the diameter (hole ~69%), close to Stacer's donut (hole size 0.67).
-            // Radius 42 + half of 15 stays inside the 100-unit viewbox.
-            property <length> thickness: self.size * 0.15;
-
-            Path {
-                x: (gauge.width - gauge.size) / 2;
-                y: (gauge.height - gauge.size) / 2;
-                width: gauge.size;
-                height: gauge.size;
-                viewbox-width: 100;
-                viewbox-height: 100;
-                stroke: Theme.track;
-                stroke-width: gauge.thickness;
-                commands: "M 50 8 A 42 42 0 1 1 49.99 8";
-            }
-            // Numeric path elements: string commands would depend on the locale's decimal separator.
-            if gauge.v > 0.004: Path {
-                x: (gauge.width - gauge.size) / 2;
-                y: (gauge.height - gauge.size) / 2;
-                width: gauge.size;
-                height: gauge.size;
-                viewbox-width: 100;
-                viewbox-height: 100;
-                stroke: @linear-gradient(135deg, root.color-a 0%, root.color-b 100%);
-                stroke-width: gauge.thickness;
-                stroke-line-cap: round;
-                MoveTo { x: 50; y: 8; }
-                ArcTo {
-                    x: gauge.v >= 0.999 ? 49.99 : gauge.ex;
-                    y: gauge.v >= 0.999 ? 8 : gauge.ey;
-                    radius-x: 42;
-                    radius-y: 42;
-                    large-arc: gauge.v > 0.5;
-                    sweep: true;
-                }
-            }
-            Text {
-                text: root.text;
-                color: Theme.text;
-                font-size: max(10px, gauge.size / 14);
-                font-weight: 600;
-                horizontal-alignment: center;
-                vertical-alignment: center;
-                // fits inside the hole
-                width: gauge.size * 0.58;
-                height: gauge.size * 0.5;
-                x: (gauge.width - self.width) / 2;
-                y: (gauge.height - self.height) / 2;
-                wrap: word-wrap;
-            }
+        RingGauge {
+            value: root.value;
+            text: root.text;
+            color-a: root.color-a;
+            color-b: root.color-b;
         }
     }
 }

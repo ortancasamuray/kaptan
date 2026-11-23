@@ -74,15 +74,31 @@ pub fn set_self_autostart(on: bool) -> std::io::Result<()> {
     let p = self_autostart_path();
     if on {
         std::fs::create_dir_all(super::startup::autostart_dir())?;
-        let exe = std::env::current_exe().map(|e| e.display().to_string()).unwrap_or_else(|_| "kaptan".into());
+        // Installed (package) binary: plain "kaptan", so the entry survives upgrades/moves.
+        let exe = std::env::current_exe()
+            .ok()
+            .filter(|e| !e.starts_with("/usr/"))
+            .map(|e| e.display().to_string())
+            .unwrap_or_else(|| "kaptan".into());
+        // No --hide: the window opens at login.
         std::fs::write(
             p,
-            format!("[Desktop Entry]\nType=Application\nName=Kaptan\nComment=System optimizer and monitor\nExec={exe} --hide\nIcon=kaptan\nTerminal=false\nX-GNOME-Autostart-enabled=true\n"),
+            format!("[Desktop Entry]\nType=Application\nName=Kaptan\nComment=System optimizer and monitor\nExec={exe}\nIcon=kaptan\nTerminal=false\nX-GNOME-Autostart-enabled=true\n"),
         )
     } else if p.exists() {
         std::fs::remove_file(p)
     } else {
         Ok(())
+    }
+}
+
+/// Entries written by Kaptan 0.1.1 started hidden in the tray (`--hide`); now the window opens.
+pub fn migrate_self_autostart() {
+    let p = self_autostart_path();
+    let text = super::fsutil::read_string(&p);
+    if text.lines().any(|l| l.starts_with("Exec=") && l.ends_with(" --hide")) {
+        let fixed: Vec<&str> = text.lines().map(|l| if l.starts_with("Exec=") { l.trim_end_matches(" --hide") } else { l }).collect();
+        let _ = std::fs::write(&p, fixed.join("\n") + "\n");
     }
 }
 

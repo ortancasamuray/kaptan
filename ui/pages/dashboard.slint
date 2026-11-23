@@ -1,15 +1,18 @@
 import { StandardListView, ListView } from "std-widgets.slint";
 import { Theme } from "../theme.slint";
-import { Card, CircleBar, LineBar, UsageBar, IconButton, Icon } from "../widgets.slint";
+import { Card, CircleBar, LineBar, UsageBar, IconButton, Icon, RingGauge } from "../widgets.slint";
 import { Dashboard } from "../globals.slint";
 
 export component DashboardPage inherits Rectangle {
   VerticalLayout {
     spacing: Theme.gap;
 
+    // The gauges take the free height; the lower row is as tall as its content, so both of its
+    // columns end on the same line and nothing is left empty below them.
     HorizontalLayout {
         spacing: Theme.gap;
-        min-height: 220px;
+        min-height: 200px;
+        vertical-stretch: 1;
         CircleBar {
             title: @tr("CPU");
             value: Dashboard.cpu-value;
@@ -44,7 +47,7 @@ export component DashboardPage inherits Rectangle {
 
     HorizontalLayout {
         spacing: Theme.gap;
-        vertical-stretch: 1;
+        vertical-stretch: 0;
         Card {
             horizontal-stretch: 1;
             VerticalLayout {
@@ -63,16 +66,57 @@ export component DashboardPage inherits Rectangle {
                     font-size: Theme.font-normal;
                     wrap: word-wrap;
                 }
-                Rectangle { vertical-stretch: 1; }
+                if Dashboard.temps.length > 0: Rectangle { height: 1px; background: Theme.border; }
+                if Dashboard.temps.length > 0: Text {
+                    text: @tr("TEMPERATURES");
+                    color: Theme.text-dim;
+                    font-size: Theme.font-small;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                }
+                if Dashboard.temps.length > 0: HorizontalLayout {
+                    spacing: Theme.gap;
+                    min-height: 150px;
+                    vertical-stretch: 1;
+                    for t in Dashboard.temps: VerticalLayout {
+                        spacing: 6px;
+                        horizontal-stretch: 1;
+                        Text {
+                            text: t.name;
+                            color: Theme.text;
+                            font-size: Theme.font-normal;
+                            font-weight: 600;
+                            horizontal-alignment: center;
+                        }
+                        RingGauge {
+                            vertical-stretch: 1;
+                            zones: true;
+                            value: t.percent;
+                            warm: t.warm;
+                            hot: t.hot;
+                            text: t.text;
+                            font-size: max(12px, min(self.width, self.height) / 6.5);
+                            color-a: t.level == 2 ? #ff7a7a : t.level == 1 ? #ffe066 : t.level == 0 ? #6fc3ff : Theme.track;
+                            color-b: t.level == 2 ? #d62f3a : t.level == 1 ? #f0a500 : t.level == 0 ? #2f6fed : Theme.track;
+                        }
+                        Text {
+                            text: t.status;
+                            color: t.level == 2 ? #e5484d : t.level == 1 ? #f0b400 : t.level == 0 ? #4f9bff : Theme.text-dim;
+                            font-size: Theme.font-normal;
+                            font-weight: 700;
+                            horizontal-alignment: center;
+                        }
+                    }
+                }
             }
         }
         // Fixed width: the speed texts change every second and must not move the layout.
         VerticalLayout {
             width: 340px;
             spacing: Theme.gap;
-            alignment: start;
             LineBar {
                 title: @tr("DOWNLOAD");
+                vertical-stretch: 0;
                 value: Dashboard.down-value;
                 text: Dashboard.down-text;
                 caption: Dashboard.down-total;
@@ -80,13 +124,17 @@ export component DashboardPage inherits Rectangle {
             }
             LineBar {
                 title: @tr("UPLOAD");
+                vertical-stretch: 0;
                 value: Dashboard.up-value;
                 text: Dashboard.up-text;
                 caption: Dashboard.up-total;
                 bar-color: #3d8bfd;
             }
+            if Dashboard.fans.length == 0: Rectangle { vertical-stretch: 1; }
             if Dashboard.fans.length > 0: Card {
+                vertical-stretch: 1;
                 VerticalLayout {
+                    alignment: space-between;
                     padding: 14px;
                     spacing: 10px;
                     Text {

@@ -2,24 +2,37 @@
 
 use super::fsutil::{read_lines, read_string};
 use std::collections::HashSet;
+use std::time::{Duration, Instant};
+
+/// Shorter sampling windows hold only a few clock ticks (10 ms each) per core: too noisy.
+const MIN_INTERVAL: Duration = Duration::from_millis(250);
 
 /// Keeps the previous /proc/stat sample so percentages can be computed from deltas.
 #[derive(Default)]
 pub struct CpuInfo {
     last: Vec<(f64, f64)>, // (idle, total) per line: [all, cpu0, cpu1, ...]
+    sampled: Option<Instant>,
+    result: Vec<i32>,
 }
 
 impl CpuInfo {
     /// Index 0 is the overall usage, then one entry per logical core.
+    /// Called sooner than `MIN_INTERVAL` after the previous sample, it returns that result again.
     pub fn percents(&mut self) -> Vec<i32> {
+        if self.sampled.is_some_and(|t| t.elapsed() < MIN_INTERVAL) {
+            return self.result.clone();
+        }
+        self.sampled = Some(Instant::now());
         let mut out = Vec::new();
         for (i, line) in read_lines("/proc/stat").iter().filter(|l| l.starts_with("cpu")).enumerate() {
             let times: Vec<f64> = line.split_whitespace().skip(1).filter_map(|t| t.parse().ok()).collect();
             if times.len() < 5 {
                 continue;
             }
+            // user nice system idle iowait irq softirq steal [guest guest_nice]: guest time is
+            // already counted in user/nice, so only the first 8 fields make up the total.
             let idle = times[3] + times[4];
-            let total: f64 = times.iter().sum();
+            let total: f64 = times.iter().take(8).sum();
             if self.last.len() <= i {
                 self.last.push((0.0, 0.0));
             }
@@ -28,8 +41,9 @@ impl CpuInfo {
             let d_idle = idle - l_idle;
             let p = if d_total > 0.0 { 100.0 * (d_total - d_idle) / d_total } else { 0.0 };
             self.last[i] = (idle, total);
-            out.push(p.clamp(0.0, 100.0) as i32);
+            out.push(p.clamp(0.0, 100.0).round() as i32);
         }
+        self.result = out.clone();
         out
     }
 }

@@ -1,9 +1,9 @@
 //! Live monitoring: Dashboard gauges, Resources history charts and usage alerts.
 
 use super::{model, strings, sync};
-use crate::core::{cpu, disk, fans, format, gpu, memory, network, settings, system};
+use crate::core::{cpu, disk, fans, format, gpu, memory, network, settings, system, temps};
 use crate::i18n::{tr, trf};
-use crate::{App, AppWindow, ChartData, ChartSeries, Dashboard, DiskUsage, FanItem, Resources};
+use crate::{App, AppWindow, ChartData, ChartSeries, Dashboard, DiskUsage, FanItem, Resources, TempItem};
 use slint::{Color, ComponentHandle, ModelRc, SharedString, StandardListViewItem, Timer, TimerMode, VecModel};
 use std::cell::RefCell;
 use std::collections::VecDeque;
@@ -95,6 +95,9 @@ struct State {
     alerts: [Alert; 4], // cpu, memory, disk, gpu
     charts_model: Rc<VecModel<ChartData>>,
     fans_model: Rc<VecModel<FanItem>>,
+    temps_model: Rc<VecModel<TempItem>>,
+    /// latest GPU temperature reading: (°C, asleep); None = no GPU sensor
+    gpu_temp: Option<(Option<f64>, bool)>,
     /// Highest speed seen per fan, scales the bars when the driver has no maximum
     fan_max: Vec<u32>,
     disks_model: Rc<VecModel<DiskUsage>>,
@@ -185,6 +188,8 @@ pub fn setup(ui: &AppWindow, s: &settings::Settings) -> MonitorHandle {
         alerts: Default::default(),
         charts_model: Rc::new(VecModel::default()),
         fans_model: Rc::new(VecModel::default()),
+        temps_model: Rc::new(VecModel::default()),
+        gpu_temp: None,
         fan_max: Vec::new(),
         disks_model: Rc::new(VecModel::default()),
     }));
@@ -192,6 +197,7 @@ pub fn setup(ui: &AppWindow, s: &settings::Settings) -> MonitorHandle {
         let st = state.borrow();
         ui.global::<Resources>().set_charts(ModelRc::from(st.charts_model.clone()));
         ui.global::<Dashboard>().set_fans(ModelRc::from(st.fans_model.clone()));
+        ui.global::<Dashboard>().set_temps(ModelRc::from(st.temps_model.clone()));
         ui.global::<Resources>().set_disks(ModelRc::from(st.disks_model.clone()));
     }
 
@@ -302,7 +308,20 @@ fn tick(ui: &AppWindow, st: &mut State, cfg: &MonitorConfig) {
                 busy.store(false, Ordering::SeqCst);
             });
         }
+    } else {
+        // no usage counter (e.g. Intel), but the driver may still report a temperature
+        st.gpu_temp = st.gpu.sysfs_temp().map(|t| (Some(t), false));
     }
+
+    // Temperatures
+    let mut items = Vec::new();
+    if let Some(t) = temps::cpu() {
+        items.push(temp_item(tr("Processor"), Some(t), false, temps::CPU_ZONES));
+    }
+    if let Some((t, asleep)) = st.gpu_temp {
+        items.push(temp_item(tr("Graphics Card"), t, asleep, temps::GPU_ZONES));
+    }
+    sync(&st.temps_model, items);
 
     let page = ui.global::<App>().get_current_page();
     if page == "resources" {
@@ -313,6 +332,7 @@ fn tick(ui: &AppWindow, st: &mut State, cfg: &MonitorConfig) {
 fn apply_gpu(ui: &AppWindow, st: &mut State, g: &gpu::GpuStatus, cfg: &MonitorConfig) {
     let dash = ui.global::<Dashboard>();
     dash.set_gpu_visible(g.available);
+    st.gpu_temp = (g.available && (g.temp.is_some() || g.asleep)).then_some((g.temp, g.asleep));
     if !g.available {
         return;
     }
@@ -327,6 +347,24 @@ fn apply_gpu(ui: &AppWindow, st: &mut State, g: &gpu::GpuStatus, cfg: &MonitorCo
     } else {
         format!("{}%", g.usage)
     }.into());
+}
+
+fn temp_item(name: String, temp: Option<f64>, asleep: bool, zones: temps::Zones) -> TempItem {
+    let (warm, hot) = (temps::scale_percent(zones.warm), temps::scale_percent(zones.hot));
+    let Some(t) = temp else {
+        let status = if asleep { tr("Sleeping") } else { String::new() };
+        return TempItem { name: name.into(), text: "—".into(), status: status.into(), level: -1, percent: 0.0, warm, hot };
+    };
+    let level = zones.level(t);
+    TempItem {
+        name: name.into(),
+        text: temps::format(t).into(),
+        status: tr(["Cold", "Hot", "Very hot"][level as usize]).into(),
+        level,
+        percent: temps::scale_percent(t),
+        warm,
+        hot,
+    }
 }
 
 fn update_resources(st: &State, io: (u64, u64), net: (u64, u64), m: &memory::MemoryInfo) {

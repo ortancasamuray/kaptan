@@ -23,3 +23,4 @@ pub mod service;
 pub mod settings;
 pub mod startup;
 pub mod system;
+pub mod temps;

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kaptan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: a product sheet. Short hero, big dashboard shot, then feature rows that alternate text and screenshot. */
+  :root {
+    --bg: #f3f5f9;
+    --surface: #ffffff;
+    --ink: #161b26;
+    --ink-soft: #566074;
+    --line: #dde2ea;
+    --accent: #2f6fed;
+    --cold: #3d8bfd;
+    --warm: #e0a800;
+    --hot: #e5484d;
+    --code-bg: #eef1f6;
+    --shadow: 0 18px 40px -18px rgba(22, 32, 60, .35);
+    --f-display: "Sora", "Segoe UI", system-ui, sans-serif;
+    --f-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12161d; --surface: #1b212b; --ink: #e8ebf1; --ink-soft: #97a0b2; --line: #2a3240;
+      --accent: #5b9bff; --cold: #5b9bff; --warm: #f5c518; --hot: #ff6b70; --code-bg: #1f2632;
+      --shadow: 0 18px 40px -18px rgba(0, 0, 0, .7);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12161d; --surface: #1b212b; --ink: #e8ebf1; --ink-soft: #97a0b2; --line: #2a3240;
+    --accent: #5b9bff; --cold: #5b9bff; --warm: #f5c518; --hot: #ff6b70; --code-bg: #1f2632;
+    --shadow: 0 18px 40px -18px rgba(0, 0, 0, .7);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--f-body);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 56px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+  h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+  p { margin: 0; }
+
+  /* hero */
+  .hero { display: flex; flex-direction: column; gap: 28px; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand svg { width: 48px; height: 48px; flex: none; }
+  .brand h1 { font-size: clamp(2.2rem, 5vw, 3.1rem); font-weight: 700; }
+  .tagline { font-size: clamp(1.15rem, 2.2vw, 1.4rem); font-weight: 500; max-width: 34ch; }
+  .lede { color: var(--ink-soft); max-width: 62ch; }
+  .facts { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+  .facts li {
+    font-family: var(--f-mono); font-size: .8rem;
+    padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink-soft);
+  }
+
+  figure { margin: 0; }
+  .shot img {
+    display: block; width: 100%; height: auto; max-width: 100%;
+    border-radius: 10px; border: 1px solid var(--line); box-shadow: var(--shadow);
+  }
+  .shot figcaption { margin-top: 10px; font-size: .85rem; color: var(--ink-soft); }
+
+  /* feature rows */
+  .features { display: flex; flex-direction: column; gap: 64px; }
+  .row { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 36px; align-items: center; }
+  .row.flip .text { order: 2; }
+  .text { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+  .text h2 { font-size: 1.5rem; font-weight: 600; }
+  .text p { color: var(--ink-soft); }
+  .text ul { margin: 0; padding-left: 1.1em; color: var(--ink-soft); display: flex; flex-direction: column; gap: 4px; }
+
+  .zones { display: flex; gap: 6px; flex-wrap: wrap; }
+  .zone { font-size: .8rem; font-weight: 600; padding: 3px 10px; border-radius: 999px; border: 1px solid currentColor; }
+  .zone.cold { color: var(--cold); }
+  .zone.warm { color: var(--warm); }
+  .zone.hot { color: var(--hot); }
+
+  /* everything else */
+  .more h2, .install h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 18px; }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--line); }
+  .grid div { padding: 18px 20px 18px 0; border-bottom: 1px solid var(--line); }
+  .grid h3 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+  .grid p { color: var(--ink-soft); font-size: .92rem; }
+
+  .install { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 28px; }
+  .install > p { color: var(--ink-soft); margin-bottom: 18px; max-width: 62ch; }
+  .pkgs { display: flex; flex-direction: column; gap: 14px; }
+  .pkg { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 14px; align-items: center; }
+  .pkg span { font-weight: 600; font-size: .95rem; }
+  pre {
+    margin: 0; overflow-x: auto; background: var(--code-bg); border-radius: 8px; padding: 10px 14px;
+    font-family: var(--f-mono); font-size: .85rem; line-height: 1.5;
+  }
+  .note { margin-top: 18px; font-size: .85rem; color: var(--ink-soft); }
+  footer { font-size: .85rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 20px; }
+
+  @media (max-width: 820px) {
+    .wrap { gap: 56px; padding-block: 36px 56px; }
+    .row { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+    .row.flip .text { order: 0; }
+    .grid { grid-template-columns: minmax(0, 1fr); }
+    .grid div { padding-right: 0; }
+    .pkg { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+    .install { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="brand">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="15" fill="none" stroke="var(--accent)" stroke-width="3"/>
+        <circle cx="24" cy="24" r="5" fill="var(--accent)"/>
+        <g stroke="var(--accent)" stroke-width="3" stroke-linecap="round">
+          <line x1="24" y1="3" x2="24" y2="13"/><line x1="24" y1="35" x2="24" y2="45"/>
+          <line x1="3" y1="24" x2="13" y2="24"/><line x1="35" y1="24" x2="45" y2="24"/>
+          <line x1="9.2" y1="9.2" x2="16.2" y2="16.2"/><line x1="31.8" y1="31.8" x2="38.8" y2="38.8"/>
+          <line x1="38.8" y1="9.2" x2="31.8" y2="16.2"/><line x1="16.2" y1="31.8" x2="9.2" y2="38.8"/>
+        </g>
+      </svg>
+      <h1>Kaptan</h1>
+    </div>
+    <p class="tagline">Linux sisteminizi tek pencereden izleyin, temizleyin ve yönetin.</p>
+    <p class="lede">Kaptan, sevilen sistem aracı Stacer'ın Rust ve Slint ile baştan yazılmış hali. İşlemci, bellek, disk, ağ ve ekran kartını anlık izler; işlemleri, servisleri ve başlangıç uygulamalarını yönetir; gereksiz dosyaları birkaç tıkla temizler. Tek bir hızlı ikili dosya olarak gelir, Qt gerektirmez.</p>
+    <ul class="facts">
+      <li>Rust + Slint</li>
+      <li>GPL-3.0</li>
+      <li>26 dil</li>
+      <li>.deb · .rpm · Arch</li>
+      <li>sürüm 0.1.1</li>
+    </ul>
+    <figure class="shot">
+      <img src="img/dashboard.png" width="1180" height="760" alt="Kaptan gösterge paneli: işlemci, bellek, disk ve GPU halkaları, sistem bilgisi, sıcaklık halkaları, ağ hızı ve fan devirleri">
+      <figcaption>Gösterge paneli: kullanım halkaları, sistem bilgisi, sıcaklıklar, ağ ve fanlar bir arada.</figcaption>
+    </figure>
+  </header>
+
+  <section class="features" aria-label="Özellikler">
+    <div class="row">
+      <div class="text">
+        <h2>Isınmayı önceden görün</h2>
+        <p>İşlemci ve ekran kartı sıcaklığı, bölgelere ayrılmış halkalarda gösterilir. Değer kırmızı bölgeye yaklaştıkça renk de değişir.</p>
+        <div class="zones">
+          <span class="zone cold">Soğuk · 60 °C altı</span>
+          <span class="zone warm">Sıcak · 60–85 °C</span>
+          <span class="zone hot">Çok sıcak · 85 °C ve üzeri</span>
+        </div>
+        <ul>
+          <li>Intel, AMD ve ARM işlemciler için sensör desteği</li>
+          <li>NVIDIA ve AMD ekran kartlarında kullanım, VRAM ve sıcaklık</li>
+          <li>Hibrit dizüstülerde uyuyan ekran kartını uyandırmaz</li>
+          <li>Fan devirleri ve işlemci, bellek, disk, GPU için eşik uyarıları</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <img src="img/temps.png" width="534" height="404" alt="Sistem bilgisi kartı ve sıcaklık halkaları: işlemci 87 °C ile çok sıcak bölgede, ekran kartı 50 °C ile soğuk bölgede" loading="lazy">
+      </figure>
+    </div>
+
+    <div class="row flip">
+      <div class="text">
+        <h2>Diskte yer açın</h2>
+        <p>Sistem Temizleyici; paket önbelleklerini, çökme raporlarını, uygulama günlüklerini, uygulama önbelleklerini ve çöp kutusunu tarar. Neyin silineceğini kategori kategori seçersiniz.</p>
+        <p>Örnek taramada 40,5 GiB temizlenebilir dosya bulundu; bunun 37,7 GiB'ı uygulama önbellekleriydi.</p>
+      </div>
+      <figure class="shot">
+        <img src="img/cleaner.png" width="1180" height="760" alt="Sistem Temizleyici tarama sonucu: paket önbellekleri 2,6 GiB, uygulama önbellekleri 37,7 GiB, toplam 40,5 GiB" loading="lazy">
+      </figure>
+    </div>
+
+    <div class="row">
+      <div class="text">
+        <h2>Ne çalışıyor, bilin</h2>
+        <p>İşlemler sayfası işlemci ve bellek kullanımına göre sıralanır, ada, kullanıcıya veya PID'e göre süzülür; seçtiğiniz işlemi sonlandırabilirsiniz.</p>
+        <p>Servisler sayfasında systemd servislerini tek tıkla başlatır, durdurur, açılışta çalışmasını açıp kapatırsınız. Yetki gereken işlemler pkexec ile sorulur.</p>
+      </div>
+      <figure class="shot">
+        <img src="img/processes.png" width="1180" height="760" alt="İşlemler sayfası: root ile süzülmüş işlem listesi; PID, kullanıcı, işlemci ve bellek kullanımı sütunları" loading="lazy">
+      </figure>
+    </div>
+
+    <div class="row flip">
+      <div class="text">
+        <h2>Servisleri yönetin</h2>
+        <p>Her servis için iki anahtar var: açılışta başlasın mı, şu an çalışsın mı. Arama ve durum süzgeciyle yüzlerce servis arasında istediğinizi hemen bulursunuz.</p>
+      </div>
+      <figure class="shot">
+        <img src="img/services.png" width="1180" height="760" alt="Sistem servisleri listesi: her servis için açılışta başlat ve çalışıyor anahtarları" loading="lazy">
+      </figure>
+    </div>
+
+    <div class="row">
+      <div class="text">
+        <h2>Size göre ayarlayın</h2>
+        <ul>
+          <li>26 dil; sistem dilini kendiliğinden seçer</li>
+          <li>Koyu ve açık tema, simgeli veya yalnız simgeli yan menü</li>
+          <li>Oturum açılınca otomatik başlama</li>
+          <li>Pencere kapatılınca sistem tepsisinde çalışmaya devam etme</li>
+          <li>Kullanım uyarıları için eşik değerleri</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <img src="img/settings.png" width="1180" height="760" alt="Ayarlar sayfası: dil, tema, yan menü, açılış sayfası, otomatik başlatma ve uyarı eşikleri" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="more">
+    <h2>Ayrıca</h2>
+    <div class="grid">
+      <div><h3>Kaynaklar</h3><p>Çekirdek başına işlemci, yük ortalamaları, bellek, GPU, ağ ve disk okuma/yazma geçmişi grafikleri.</p></div>
+      <div><h3>Başlangıç Uygulamaları</h3><p>Oturum açılışında çalışan uygulamaları ekleyin, düzenleyin, kapatın.</p></div>
+      <div><h3>Kaldırıcı</h3><p>Paketleri apt, dnf veya pacman ile kaldırır; önce neyin silineceğini gösterir.</p></div>
+      <div><h3>Arama</h3><p>Dosya ve klasörleri ada veya desene, türe, zamana ve boyuta göre bulun.</p></div>
+      <div><h3>Hosts</h3><p>/etc/hosts kayıtlarını ekleyin ve düzenleyin; kaydederken yetki sorulur.</p></div>
+      <div><h3>APT Depoları</h3><p>Depoları açın, kapatın, ekleyin veya kaldırın.</p></div>
+    </div>
+  </section>
+
+  <section class="install">
+    <h2>Kurulum</h2>
+    <p>Hazır paketler Debian/Ubuntu, Fedora/openSUSE ve Arch Linux için var. İndirdiğiniz paketi dağıtımınızın paket yöneticisiyle kurun:</p>
+    <div class="pkgs">
+      <div class="pkg"><span>Debian, Ubuntu</span><pre>sudo apt install ./kaptan_0.1.1-1_amd64.deb</pre></div>
+      <div class="pkg"><span>Fedora, openSUSE</span><pre>sudo dnf install ./kaptan-0.1.1-1.x86_64.rpm</pre></div>
+      <div class="pkg"><span>Arch Linux</span><pre>sudo pacman -U kaptan-0.1.1-1-x86_64.pkg.tar.zst</pre></div>
+    </div>
+    <p class="note">Hazır paketler glibc 2.39 veya üzerini ister (Ubuntu 24.04+, Fedora 40+, güncel Arch). Daha eski sistemlerde kaynak paketi, RPM spec dosyası veya PKGBUILD ile derleyebilirsiniz.</p>
+  </section>
+
+  <footer>Kaptan, Stacer'ın kodu ve çevirileri üzerine kuruludur. GPL-3.0-or-later lisansıyla dağıtılır.</footer>
+</div>
+</body>
+</html>

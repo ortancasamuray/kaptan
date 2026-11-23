@@ -98,7 +98,7 @@ export component SettingsPage inherits ScrollView {
         }
         Row {
             label: @tr("Start Kaptan at login");
-            hint: Settings.tray-available ? @tr("Starts hidden in the system tray") : "";
+            hint: @tr("Opens the Kaptan window when you log in");
             Switch {
                 checked <=> Settings.autostart;
                 toggled => { Settings.changed(); }

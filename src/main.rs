@@ -40,6 +40,7 @@ fn nav_items() -> Vec<(&'static str, &'static str, Image)> {
 fn main() -> Result<(), slint::PlatformError> {
     let ui = AppWindow::new()?;
     let settings = core::settings::Settings::load();
+    core::settings::migrate_self_autostart();
 
     i18n::set_language(&settings.language);
 
@@ -76,7 +77,7 @@ fn main() -> Result<(), slint::PlatformError> {
     });
     pages::on_page_opened(&ui, &start);
 
-    // Autostart entries pass --hide: start in the tray like Stacer (only if there is a tray).
+    // `kaptan --hide` starts in the tray (only if there is one); autostart opens the window.
     let start_hidden = tray && std::env::args().any(|a| a == "--hide");
     if !start_hidden {
         ui.show()?;
