@@ -1,3 +1,19 @@
+kaptan (0.1.2-1) unstable; urgency=medium
+
+  * Dashboard: CPU and GPU temperature ring gauges in System Info with
+    cold / hot / very hot zones (blue, yellow, red). A sleeping NVIDIA
+    GPU is not woken up to read its temperature.
+  * Dashboard layout: System Info and Fans end on the same line; the
+    gauges take the free height.
+  * Ring gauges no longer look ~6 % fuller than the value; CPU usage is
+    rounded, ignores guest time and skips too short sampling windows.
+  * Start at login opens the window (kaptan --hide still starts in the
+    tray); old autostart entries are migrated.
+  * 26 translations (Stacer's language set).
+  * RPM spec, Arch PKGBUILD and packaging/build-packages.sh.
+
+ -- os <4129330+ortancasamuray@users.noreply.github.com>  Mon, 23 Nov 2026 22:25:22 +0300
+
 kaptan (0.1.1-1) unstable; urgency=medium
 
   * System tray icon with page shortcuts; closing the window can keep Kaptan

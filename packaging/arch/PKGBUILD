@@ -2,7 +2,7 @@
 # Build on Arch:  makepkg -si   (source tarball: kaptan-$pkgver.tar.gz next to this file,
 #                 made by packaging/build-packages.sh, or `git archive`)
 pkgname=kaptan
-pkgver=0.1.1
+pkgver=0.1.2
 pkgrel=1
 pkgdesc="Linux system optimizer and monitor (Rust port of Stacer)"
 arch=('x86_64' 'aarch64')

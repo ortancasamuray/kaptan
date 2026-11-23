@@ -4,7 +4,7 @@
 #                        (packaging/build-packages.sh does this with target/release/kaptan)
 
 Name:           kaptan
-Version:        0.1.1
+Version:        0.1.2
 Release:        1%{?dist}
 Summary:        Linux system optimizer and monitor (Rust port of Stacer)
 License:        GPL-3.0-or-later
@@ -76,6 +76,13 @@ install -Dm644 LICENSE                 %{buildroot}%{_licensedir}/%{name}/LICENS
 %{_mandir}/man1/kaptan.1*
 
 %changelog
+* Mon Nov 23 2026 os <4129330+ortancasamuray@users.noreply.github.com> - 0.1.2-1
+- Dashboard: CPU and GPU temperature gauges with cold / hot / very hot zones.
+- Dashboard layout: System Info and Fans end on the same line.
+- Gauges no longer overstate small values; CPU usage is rounded correctly.
+- Start at login opens the window.
+- Packages for Debian, Fedora/openSUSE and Arch.
+
 * Mon Nov 23 2026 os <4129330+ortancasamuray@users.noreply.github.com> - 0.1.1-1
 - System tray icon, fan speeds, all-disks dialog, GPU usage alert.
 - Uninstaller previews what the package manager will remove.
