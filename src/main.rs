@@ -51,6 +51,9 @@ fn main() -> Result<(), slint::PlatformError> {
     let start = if nav.iter().any(|(id, ..)| *id == settings.start_page) { settings.start_page.clone() } else { "dashboard".into() };
     app.set_current_page(SharedString::from(start.as_str()));
     ui.global::<Theme>().set_dark(settings.theme != "light");
+    app.on_open_url(|url| {
+        let _ = std::process::Command::new("xdg-open").arg(url.as_str()).spawn();
+    });
 
 
     let monitor = pages::monitor::setup(&ui, &settings);

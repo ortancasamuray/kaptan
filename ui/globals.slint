@@ -17,6 +17,7 @@ export global App {
     in-out property <bool> quit-dialog-open;
     callback page-changed(string);
     callback quit-choice(string, bool); // "tray" | "quit", remember
+    callback open-url(string);
 }
 
 export struct DiskRow {

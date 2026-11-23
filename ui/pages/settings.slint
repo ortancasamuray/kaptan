@@ -3,6 +3,18 @@ import { Theme } from "../theme.slint";
 import { Card, PageTitle } from "../widgets.slint";
 import { App, Settings } from "../globals.slint";
 
+/// Clickable web address, opened in the default browser.
+component Link inherits Text {
+    in property <string> url;
+    text: root.url;
+    color: Theme.accent;
+    font-size: Theme.font-small;
+    TouchArea {
+        mouse-cursor: pointer;
+        clicked => { App.open-url(root.url); }
+    }
+}
+
 component Row inherits Card {
     in property <string> label;
     in property <string> hint;
@@ -129,7 +141,7 @@ export component SettingsPage inherits ScrollView {
 
         Text { text: @tr("ABOUT"); color: Theme.text-dim; font-size: Theme.font-small; font-weight: 700; letter-spacing: 1px; }
         Card {
-            height: 80px;
+            height: 116px;
             HorizontalLayout {
                 padding: 14px;
                 spacing: 14px;
@@ -141,6 +153,8 @@ export component SettingsPage inherits ScrollView {
                     alignment: center;
                     Text { text: "Kaptan " + App.version; color: Theme.text; font-size: 15px; font-weight: 700; }
                     Text { text: @tr("Linux system optimizer and monitor — a Rust port of Stacer. GPL-3.0"); color: Theme.text-dim; font-size: Theme.font-small; }
+                    Link { url: "https://github.com/ortancasamuray/kaptan"; }
+                    Link { url: "https://www.anadolupanteri.org.tr"; }
                 }
             }
         }
