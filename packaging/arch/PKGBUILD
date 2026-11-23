@@ -1,0 +1,47 @@
+# Maintainer: os <4129330+ortancasamuray@users.noreply.github.com>
+# Build on Arch:  makepkg -si   (source tarball: kaptan-$pkgver.tar.gz next to this file,
+#                 made by packaging/build-packages.sh, or `git archive`)
+pkgname=kaptan
+pkgver=0.1.1
+pkgrel=1
+pkgdesc="Linux system optimizer and monitor (Rust port of Stacer)"
+arch=('x86_64' 'aarch64')
+url="http://192.168.1.201:3100/os/kaptan"
+license=('GPL-3.0-or-later')
+# libx11..libxkbcommon-x11/libglvnd are dlopen()ed by the windowing / OpenGL backend.
+depends=('gcc-libs' 'glibc' 'fontconfig' 'freetype2' 'libx11' 'libxcursor' 'libxi'
+         'libxkbcommon-x11' 'libglvnd' 'procps-ng' 'systemd')
+makedepends=('cargo')
+optdepends=('polkit: privileged actions (pkexec)'
+            'libnotify: desktop notifications (notify-send)'
+            'wayland: native Wayland backend'
+            'zenity: file dialogs'
+            'kdialog: file dialogs on KDE'
+            'nvidia-utils: NVIDIA GPU usage (nvidia-smi)'
+            'noto-fonts-cjk: Chinese / Korean / Japanese UI fonts')
+source=("$pkgname-$pkgver.tar.gz")
+sha256sums=('SKIP')
+options=('!lto' '!debug')
+
+prepare() {
+  cd "$pkgname-$pkgver"
+  export RUSTUP_TOOLCHAIN=stable
+  cargo fetch --locked --target "$(rustc -vV | sed -n 's/host: //p')"
+}
+
+build() {
+  cd "$pkgname-$pkgver"
+  export RUSTUP_TOOLCHAIN=stable
+  export CARGO_TARGET_DIR=target
+  cargo build --frozen --release
+}
+
+package() {
+  cd "$pkgname-$pkgver"
+  install -Dm755 target/release/kaptan "$pkgdir/usr/bin/kaptan"
+  install -Dm644 data/kaptan.desktop   "$pkgdir/usr/share/applications/kaptan.desktop"
+  install -Dm644 data/kaptan.svg       "$pkgdir/usr/share/icons/hicolor/scalable/apps/kaptan.svg"
+  install -Dm644 debian/kaptan.1       "$pkgdir/usr/share/man/man1/kaptan.1"
+  install -Dm644 README.md             "$pkgdir/usr/share/doc/kaptan/README.md"
+  install -Dm644 LICENSE               "$pkgdir/usr/share/licenses/kaptan/LICENSE"
+}
